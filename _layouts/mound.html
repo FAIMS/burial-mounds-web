@@ -1,0 +1,351 @@
+---
+layout: default
+format: mound
+---
+<div class="row t30">
+   <div class="medium-8 columns{% if page.sidebar == NULL %} medium-offset-2 end{% endif %}{% if page.sidebar == "left" %} medium-push-4{% endif %}">
+   <article itemscope itemtype="http://schema.org/Article">
+      <header>
+         {% if page.image.title %}
+         <figure>
+            <img src="{{ '/images/' | absolute_url }}{{ page.image.title }}" width="970" alt="{{ page.title | escape_once }}" itemprop="image">
+            {% if page.image.caption_url and page.image.caption %}
+            <figcaption class="text-right">
+               <a href="{{ page.image.caption_url }}">{{ page.image.caption }}</a>
+            </figcaption>
+            {% elsif page.image.caption %}
+            <figcaption class="text-right">
+               {{ page.image.caption }}
+            </figcaption>
+            {% endif %}
+         </figure>
+         {% endif %}
+         <div itemprop="name">
+            {% if page.subheadline %}
+            <p class="subheadline">{{ page.subheadline }}</p>
+            {% endif %}
+            <h1>{{ page.title }}</h1>
+         </div>
+      </header>
+      {% if page.teaser %}
+      <p class="teaser" itemprop="description">
+         {{ page.teaser }}
+      </p>
+      {% endif %}
+      <div itemprop="articleSection">
+         {{ content }}
+      </div>
+
+      <div class="row">
+         <div class="small-12 large-6 columns">
+            <div class="table-scroll" id="artefactData" style="height: 500px;">
+               <table>
+                  {% if page.trap_id  %}
+                  <tr>
+                     <td>    TRAP ID #
+                     </td>
+                     <td> {{ page.trap_id }}
+                     </td>
+                  </tr>
+                  {% endif %}
+                  {% if page.certainy %}
+                  <tr>
+                     <td>    Certainy</td>
+                     <td>
+                        {{ page.certainy }}
+                     </td>
+                  </tr>
+                  {% endif %}
+                  {% if page.elevation %}
+                  <tr>
+                     <td>    Elevation</td>
+                     <td>
+                        {{ page.elevation }}
+                     </td>
+                  </tr>
+                  {% endif %}
+                  {% if page.max_diameter  %}
+                  <tr>
+                     <td>    Max diameter</td>
+                     <td>
+                        {{ page.max_diameter }}
+                     </td>
+                  </tr>
+                  {% endif %}
+                  {% if page.min_diameter  %}
+                  <tr>
+                     <td>    Min diameter</td>
+                     <td>
+                        {{ page.min_diameter }}
+                     </td>
+                  </tr>
+                  {% endif %}
+                  {% if page.height  %}
+                  <tr>
+                     <td>    Height</td>
+                     <td>
+                        {{ page.height }}
+                     </td>
+                  </tr>
+                  {% endif %}
+                  {% if page.size_category  %}
+                  <tr>
+                     <td>    Size Category</td>
+                     <td>
+                        {{ page.size_category }}
+                     </td>
+                  </tr>
+                  {% endif %}
+                  {% if page.surrounding_land_use  %}
+                  <tr>
+                     <td>    Surrounding Land Use</td>
+                     <td>
+                        {{ page.surrounding_land_use }}
+                     </td>
+                  </tr>
+                  {% endif %}
+                  {% if page.surface_condition  %}
+                  <tr>
+                     <td>    Surface Condition</td>
+                     <td>
+                        {{ page.surface_condition }}
+                     </td>
+                  </tr>
+                  {% endif %}
+                  {% if page.robbed  %}
+                  <tr>
+                     <td>    Robbed</td>
+                     <td>
+                        {{ page.robbed }}
+                     </td>
+                  </tr>
+                  {% endif %}
+                  {% if page.crm_condition  %}
+                  <tr>
+                     <td>    CRM Condition</td>
+                     <td>
+                        {{ page.crm_condition }}
+                     </td>
+                  </tr>
+                  {% endif %}
+                  {% if page.crm_intactness  %}
+                  <tr>
+                     <td>    CRM Intactness</td>
+                     <td>
+                        {{ page.crm_intactness }}
+                     </td>
+                  </tr>
+                  {% endif %}
+                  {% if page.campaign  %}
+                  <tr>
+                     <td>    Campaign</td>
+                     <td>
+                        {{ page.campaign }}
+                     </td>
+                  </tr>
+                  {% endif %}
+                  {% if page.source  %}
+                  <tr>
+                     <td>    Source</td>
+                     <td>
+                        {{ page.source }}
+                     </td>
+                  </tr>
+                  {% endif %}
+                  {% if page.municipality  %}
+                  <tr>
+                     <td>    Municipality</td>
+                     <td>
+                        {{ page.municipality }}
+                     </td>
+                  </tr>
+                  {% endif %}
+                  {% if page.locality  %}
+                  <tr>
+                     <td>    Locality</td>
+                     <td>
+                        {{ page.locality }}
+                     </td>
+                  </tr>
+                  {% endif %}
+                  {% if page.bgcode  %}
+                  <tr>
+                     <td>    BG Code</td>
+                     <td>
+                        {{ page.bgcode }}
+                     </td>
+                  </tr>
+                  {% endif %}
+               </table>
+            </div>
+         </div>
+         <!-- <div class="full reveal" style="height: 600px" id="exampleModal1" data-reveal>
+            <button class="close-button" data-close aria-label="Close modal" type="button">
+            <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            -->
+         <div class="small-12 large-6 columns">
+            <div class="row">
+               <div class="small-12 large-12 columns thumbnail " style="height:420px" id="imgCanvas">
+                  {% if page.images.image1.src %}
+
+
+                  <div id="bigImage">
+                     <img style="height:375px;" src="{{ page.images.image1.src }}"/>
+                  </div>
+                  <div id="imgCaptionPadding">
+                     <div id="imgCaption" class="image-caption">
+                        {{ page.images.image1.caption }}
+                     </div>
+                     {% else %}
+                     {% if page.images.pedestal.id %}
+                     <div id="bigImage">
+                     </div>
+                     <div id="imgCaptionPadding">
+                        <div id="imgCaption" class="image-caption">
+                           {{ page.images.pedestal.caption }}
+                        </div>
+                     </div>
+                     {% endif %}
+                     {% endif %}
+                  </div>
+                  <!--
+                     <a class="thumbnail"
+                     onclick="makeBigImage('iframe', 'https://pedestal.mq.edu.au/3d/viewer/?id={{ page.images.pedestal.id }}&amp;mode=plain&amp;view=0', '{{ page.images.pedestal.caption }}', 'https://pedestal.mq.edu.au/3d/viewer/?id={{ page.images.pedestal.id }}&amp;mode=normal&amp;view=0')">
+                     <img src="http://pedestal.mq.edu.au/3d/Ajax/getThumb?itemID={{ page.images.pedestal.id }}"/>
+                     </a>
+                     </div> -->
+                  <!-- <iframe id="IframeCanvas" height="100%" width="100%" style="border-width: 0px;" src="https://pedestal.mq.edu.au/3d/viewer/?id=175&amp;mode=plain&amp;view=0"></iframe> -->
+                  <!--  -->
+                  {% assign imagessize = page.images | size %}
+               </div>
+               {% if imagessize >= 2 %}
+               <div class="row">
+                  {% if page.images.pedestal.id %}
+                  <div class="small-{{ 12 | divided_by:imagessize }} large-{{ 12 | divided_by:imagessize }} columns thumb2" id="thumbnailPed">
+                     <a class="thumbnail"
+                        onclick="makeBigImage('iframe', 'https://pedestal.mq.edu.au/3d/viewer/?id={{ page.images.pedestal.id }}&amp;mode=plain&amp;view=0', '{{ page.images.pedestal.caption }}', 'https://pedestal.mq.edu.au/3d/viewer/?id={{ page.images.pedestal.id }}&amp;mode=normal&amp;view=0')">
+                     <img src="http://pedestal.mq.edu.au/3d/Ajax/getThumb?itemID={{ page.images.pedestal.id }}"/>
+                     </a>
+                  </div>
+                  {% endif %}
+                  {% if page.images.image1.src %}
+                  <div class="small-{{ 12 | divided_by:imagessize }} large-{{ 12 | divided_by:imagessize }} columns thumb2" id="thumbnail1">
+                     <a class="thumbnail" onclick="makeBigImage('img','{{ page.images.image1.src }}', '{{ page.images.image1.caption }}', '');" ><img src="{{ page.images.image1.src }}"/></a>
+                  </div>
+                  {% endif %}
+                  {% if page.images.image2.src %}
+                  <div class="small-{{ 12 | divided_by:imagessize }} large-{{ 12 | divided_by:imagessize }} columns thumb2" id="thumbnail2">
+                     <a class="thumbnail" onclick="makeBigImage('img','{{ page.images.image2.src }}', '{{ page.images.image2.caption }}', '');" ><img src="{{ page.images.image2.src }}"/></a>
+                  </div>
+                  {% endif %}
+                  {% if page.images.image3.src %}
+                  <div class="small-{{ 12 | divided_by:imagessize }} large-{{ 12 | divided_by:imagessize }} columns thumb2" id="thumbnail3">
+                     <a class="thumbnail" onclick="makeBigImage('img','{{ page.images.image3.src }}', '{{ page.images.image3.caption }}', '');" ><img src="{{ page.images.image3.src }}"/></a>
+                  </div>
+                  {% endif %}
+               </div>
+               {% endif %}
+               <!--  -->
+            </div>
+         </div>
+         <div class="row">
+            <div class="large-12 small-12 columns">
+               <ul class="tabs" data-tabs id="example-tabs">
+                  <li class="tabs-title is-active"><a href="#panel1" aria-selected="true">Information</a></li>
+                  {% if page.resources %}
+                  <li class="tabs-title"><a data-tabs-target="#panel2" href="#panel2">Resources</a></li>
+                  {% endif %}
+                  <li class="tabs-title"><a data-tabs-target="#panel3" href="#panel3">Sharing</a></li>
+                  {% if page.related %}
+                  <li class="tabs-title"><a data-tabs-target="#panel4" href="#panel4">Related Material</a></li>
+                  {% endif %}
+                  {% if page.notes %}
+                  <li class="tabs-title"><a data-tabs-target="#panel5" href="#panel5">Notes</a></li>
+                  {% endif %}
+               </ul>
+               <div class="tabs-content" data-tabs-content="example-tabs">
+                  <div class="tabs-panel is-active" id="panel1">
+                     {{ page.information | newline_to_br}}
+                  </div>
+                  <div class="tabs-panel" id="panel2">
+                     <ul class="accordion" data-accordion>
+                        {% for item in page.resources %}
+                        <li class="accordion-item" data-accordion-item>
+                           <a href="#" class="accordion-title">{{ item.resource.title }}</a>
+                           <div class="accordion-content" data-tab-content>
+                              <ul>
+                                 {% for link in item.resource.links %}
+                                 {% for hash in link %}
+                                 <li><a href="{{ hash[1] }}">{{hash[0]}} </a></li>
+                                 {% endfor %}
+                                 {% endfor %}
+                              </ul>
+                           </div>
+                        </li>
+                        {% endfor %}
+                     </ul>
+                  </div>
+                  <div class="tabs-panel" id="panel3">
+                     <h4>Cite this page</h4>
+                     {{page.muscollection}} ({{page.date | date: "%Y"}}). <i>{{page.title}}</i>, {{page.accession}}. {{page.url | absolute_url}} (accessed on: {{'now' | date: "%d %B %Y"}}).
+                     <h4>Rights &amp; Permissions</h4>
+                     {%if page.rights == 'standard'%}
+                     We support the <a href="http://opendefinition.org">open</a> release of data and information about our collections.
+                     <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"></a> This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>. <br/>
+                     <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a>
+                     {%else%}
+                     <p>{{page.rights}}</p>
+                     {%endif%}
+                     <h4>Share us</h4>
+                     <div>
+                        <div>
+                           <a class="twitter-share-button"
+                              href="https://twitter.com/share"
+                              data-size="large"
+                              data-text="Check out this #3d {{page.title}} at the {{page.muscollection}}"
+                              data-url="{{page.url | absolute_url}}"
+                              data-hashtags="Museum">
+                           Tweet</a>
+                        </div>
+                        <div style="vertical-align:top;zoom:1;*display:inline"
+                           class="fb-share-button" data-href="{{page.url | absolute_url}}" data-layout="button" data-size="large" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u={{page.url | absolute_url}}">Share</a></div>
+                     </div>
+                     </p>
+                  </div>
+                  <div class="tabs-panel" id="panel4">
+                     <ul class="accordion" data-accordion>
+                        {% for item in page.related %}
+                        <li class="accordion-item" data-accordion-item>
+                           <a href="#" class="accordion-title">{{ item.resource.title }}</a>
+                           <div class="accordion-content" data-tab-content>
+                              <ul>
+                                 {% for bullet in item.resource.bullets %}
+                                 <li> {{bullet}}</li>
+                                 {% endfor %}
+                              </ul>
+                           </div>
+                        </li>
+                        {% endfor %}
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+   </article>
+   </div><!-- /.medium-8.columns -->
+   {% if page.sidebar == "left" %}
+   <div class="medium-4 columns medium-pull-8">
+      {% include helper/sidebar.html %}
+   </div>
+   <!-- /.medium-4.columns -->
+   {% endif %}
+   {% if page.sidebar == "right" %}
+   <div class="medium-4 columns">
+      {% include helper/sidebar.html %}
+   </div>
+   <!-- /.medium-4.columns -->
+   {% endif %}
+</div>
+<!-- /.row -->

@@ -1,0 +1,9 @@
+/* Side-Nav
+------------------------------------------------------------------- */
+
+.side-nav { margin: 0; list-style: none; }
+.side-nav li.title { text-transform: uppercase;}
+.side-nav li { border-top: 1px solid $grey-color-light;}
+.side-nav li a { display: block; }
+.side-nav li a:not(.button) { border-bottom: 0; padding: 0.4375rem 0rem; }
+.side-nav li a:not(.button):hover, .side-nav li a:not(.button):focus { background: $grey-color-light; }

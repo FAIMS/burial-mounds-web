@@ -1,0 +1,25 @@
+---
+layout: null
+title: "RSS Feed"
+permalink: /feed.xml
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="{{ '/assets/xslt/rss.xslt' | absolute_url }}" ?>
+<?xml-stylesheet type="text/css" href="{{ '/assets/css/rss.css' | absolute_url }}" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>{{ site.title | xml_escape }}</title>
+		<description>{{ site.description | xml_escape }}</description>
+		<link>{{ '/' | absolute_url }}/</link>
+		<atom:link href="{{ page.url | absolute_url }}" rel="self" type="application/rss+xml" />
+		{% for post in site.posts limit:10 %}
+			<item>
+				<title>{{ post.title | xml_escape }}</title>
+				<link>{{ post.url | absolute_url }}</link>
+				<pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
+				<description>{{ post.content | xml_escape }}</description>
+				<guid isPermaLink="true">{{ post.url | absolute_url }}</guid>
+			</item>
+		{% endfor %}
+	</channel>
+</rss>

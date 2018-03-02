@@ -1,0 +1,45 @@
+/* Footer
+------------------------------------------------------------------- */
+
+#footer {
+  border-top: 1px solid $grey-color-light;
+  padding-bottom: 2em;
+  letter-spacing: 1px;
+  color: $footer-color;
+}
+#footer a {
+  border: 0;
+}
+#footer a:hover {
+    color: $ci-1;
+}
+footer p,
+footer ul
+ {
+  margin: 0.5em 0;
+}
+
+#subfooter {
+  margin-top: 2em;
+  padding: 1em 0 1.5em 0;
+  border-top: 1px solid $grey-color-light;
+  color: $footer-color;
+}
+#subfooter a {
+  color: $footer-color;
+}
+// Meta Information beneath article content
+article footer:before {
+    position: absolute;
+    content:'';
+    height: 1px;
+    width: 4em;
+    background-color: $footer-color;
+}
+article footer {
+    margin: 2em auto 3em auto;
+    color: $footer-color;
+}
+article footer p {
+    padding-top: .25em;
+}

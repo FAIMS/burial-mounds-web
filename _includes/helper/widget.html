@@ -1,0 +1,28 @@
+{% assign widget = include.widget %}
+{% assign container_class = include.container_class %}
+
+<div {% if container_class %}class="{{ container_class }}"{% endif %}>
+	{% if widget.has_video %}
+    {% assign modal_id = widget.title | slugify | prepend: "videoModal-" %}
+    <a title="{{ widget.title }}" href="{{ widget.video_path }}" data-reveal-id="{{ modal_id }}">
+      <img src="{% include relative_src src=widget.image %}" width="369" height="208" alt="Click to play video">
+    </a>
+    <div id="{{ modal_id }}" class="reveal-modal large" data-reveal="">
+      <div class="flex-video widescreen vimeo" style="display: block;">
+        <iframe width="1280" height="720" src="{{ widget.video_path }}" frameborder="0" allowfullscreen>
+          <p>Your browser does not support iframes.</p>
+        </iframe>
+      </div>
+      <a class="close-reveal-modal">&#215;</a>
+    </div>
+	{% else %}
+		<a title="{{ widget.title }}" href="{% include relative_src src=widget.link %}">
+			<img src="{% include relative_src src=widget.image %}" alt="{{ widget.title }}">
+		</a>
+	{% endif %}
+	<h2 class="font-size-h3 t10">{{ widget.title }}</h2>
+	{{ widget.blurb_markdown | markdownify }}
+	<p>
+    <a class="button tiny radius" href="{% include relative_src src=widget.link %}">{{ site.data.ui[site.lang].more }}</a>
+  </p>
+</div>

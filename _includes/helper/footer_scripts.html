@@ -1,0 +1,24 @@
+{% if page.mediaplayer == true %}
+<script>
+$('audio,video').mediaelementplayer();
+</script>
+{% endif %}
+
+<script src="{{ 'assets/js/javascript.js' | absolute_url }}"></script>
+<script src="{{ 'assets/js/site.js' | absolute_url }}"></script>
+<script src="{{ 'assets/js/jquery.backstretch.min.js' | absolute_url }}"></script>
+{% if page.header.image_fullwidth %}
+<script>
+    $("#masthead").backstretch("{{ site.urlimg }}{{ page.header.image_fullwidth }}", {fade: 700});
+    $("#masthead-with-text").backstretch("{{ site.urlimg }}{{ page.header.image_fullwidth }}", {fade: 700});
+</script>
+{% endif %}
+
+{% if site.google_analytics_tracking_id %}
+	{% include helper/google_analytics.html %}
+{% endif %}
+
+
+{% if site.tawkto_embed_uri and page.tawkto == true %}
+	{% include helper/tawk_to.html %}
+{% endif %}

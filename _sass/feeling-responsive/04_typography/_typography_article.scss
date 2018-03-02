@@ -1,0 +1,16 @@
+/* Typography for Articles
+------------------------------------------------------------------- */
+
+.subheadline {
+  font-family: $header-font-family;
+  text-transform: uppercase;
+  font-size: $font-size-small;
+  color: $grey-color;
+  margin: 0;
+}
+.teaser {
+	font-size: $font-size-h5;
+}
+article div.main-content > p:first-child {
+  font-weight: bold;
+}

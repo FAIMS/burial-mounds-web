@@ -1,0 +1,17 @@
+{% comment %}
+*
+*   This snippet includes the search form for lunr.js
+*
+*   More information in /pages/search.md
+*
+{% endcomment %}
+<form id="search-container" action="{{ "/search/" | absolute_url }}" method="get">
+<div class="row">
+<div class="small-12 medium-8 columns">
+  <input accesskey="4" tabindex="1" class="search-input" type="search" placeholder="{{ site.data.ui[site.lang].search_input_placeholder }}" id="search-box" name="query">
+</div>
+<div class="small-12 medium-4 columns">
+  <button class="button radius small" type="submit">{{ site.data.ui[site.lang].search }}</button>
+</div>
+</div>
+</form>

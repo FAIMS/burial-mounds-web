@@ -1,26 +1,23 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<title>{{ page.title }}</title>
-		<!-- link to main stylesheet -->
-		<link rel="stylesheet" type="text/css" href="/css/main.css">
-	</head>
-	<body>
-		<nav>
-			<ul>
-				<li><a href="/">Home</a></li>
-				<li><a href="/about">About</a></li>
-				<li><a href="/cv">CV</a></li>
-				<li><a href="/blog">Blog</a></li>
-			</ul>
-		</nav>
-		<div class="container">
-			{{ content }}
-		</div><!-- /.container -->
-		<footer>
-			<ul>
-				<li><a href="mailto:bui.terry@hotmail.com">email</a></li>
-			</ul>
-		</footer>
-	</body>
+---
+layout: compress
+---
+<!doctype html>
+<html class="no-js" lang="{{ site.lang | slice: 0,2 | default: "en" }}">
+<head>
+	{% include helper/head.html %}
+</head>
+<body id="top-of-page" class="{{ layout.format }}">
+	{% unless page.skip_boilerplate %}
+	{% include helper/navigation.html %}
+	{% endunless %}
+
+	{% include helper/masthead.html %}
+	{{ content }}
+
+	{% unless page.skip_boilerplate %}
+	{% include helper/footer.html %}
+	{% endunless %}
+
+	{% include helper/footer_scripts.html %}
+</body>
 </html>

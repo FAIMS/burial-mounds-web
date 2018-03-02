@@ -1,0 +1,102 @@
+---
+# Only the main Sass file needs front matter, rest is included from site.sass.sass_dir
+---
+@charset 'utf-8';
+
+//     ______      __
+//    / ____/___  / /___  __________
+//   / /   / __ \/ / __ \/ ___/ ___/
+//  / /___/ /_/ / / /_/ / /  (__  )
+//  \____/\____/_/\____/_/  /____/
+//
+//  Choose your favorite color scheme :)
+
+@import "feeling-responsive/01_colors/_color_scheme_{{ site.color_scheme }}";
+
+@import 'foundation-sites/scss/settings/settings',
+		'foundation-sites/scss/foundation',
+		'motion-ui/motion-ui';
+
+
+@include foundation-global-styles;
+@include foundation-grid;
+// @include foundation-flex-grid;
+// @include foundation-typography;
+// @include foundation-button;
+@include foundation-forms;
+// @include foundation-range-input;
+@include foundation-accordion;
+@include foundation-accordion-menu;
+@include foundation-badge;
+@include foundation-breadcrumbs;
+@include foundation-button-group;
+@include foundation-callout;
+@include foundation-close-button;
+@include foundation-menu;
+@include foundation-menu-icon;
+@include foundation-drilldown-menu;
+@include foundation-dropdown;
+@include foundation-dropdown-menu;
+@include foundation-flex-video;
+@include foundation-label;
+@include foundation-media-object;
+@include foundation-off-canvas;
+@include foundation-orbit;
+@include foundation-pagination;
+// @include foundation-progress-bar;
+// @include foundation-progress-element;
+// @include foundation-meter-element;
+// @include foundation-slider;
+@include foundation-sticky;
+@include foundation-reveal;
+// @include foundation-switch;
+@include foundation-table;
+@include foundation-tabs;
+@include foundation-thumbnail;
+@include foundation-title-bar;
+@include foundation-tooltip;
+@include foundation-top-bar;
+@include foundation-visibility-classes;
+@include foundation-float-classes;
+// @include foundation-flex-classes;
+
+@include motion-ui-transitions;
+@include motion-ui-animations;
+
+
+@import "custom_sass/tabs_width_even";
+
+
+/* Typography
+------------------------------------------------------------------- */
+
+$font-family-sans-serif:        {{ site.font.font-family-sans-serif }}
+$font-family-serif: 			{{ site.font.font-family-serif }}
+$font-family-monospace: 		{{ site.font.font-family-monospace }}
+$body-font-family: 				$font-family-serif;
+$header-font-family: 			$font-family-sans-serif;
+
+@import 'feeling-responsive/04_typography/_00_typography_settings',
+		'feeling-responsive/04_typography/general_typography',
+		'feeling-responsive/04_typography/typography_article',
+		'feeling-responsive/04_typography/typography_media_queries',
+		'feeling-responsive/04_typography/typography_css_elements',
+		'feeling-responsive/04_typography/syntax_highlighting',
+		'feeling-responsive/04_typography/links',
+		'feeling-responsive/04_typography/breadcrumb';
+
+
+
+/* Layout
+------------------------------------------------------------------- */
+@import 'feeling-responsive/05_layout/navigation',
+		'feeling-responsive/05_layout/layout_elements.scss',
+		'feeling-responsive/05_layout/search',
+		'feeling-responsive/05_layout/alerts',
+		'feeling-responsive/05_layout/meta',
+		'feeling-responsive/05_layout/masthead',
+		'feeling-responsive/05_layout/buttons',
+		'feeling-responsive/05_layout/social_media_icons',
+		'feeling-responsive/05_layout/footer',
+		'feeling-responsive/05_layout/side-nav',
+		'feeling-responsive/05_layout/jump_to_top';

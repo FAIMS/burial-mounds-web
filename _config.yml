@@ -1,0 +1,301 @@
+# ASCII-Font › http://patorjk.com/software/taag/#p=display&f=Slant&t=Phlow
+#
+#      _____ _ __          _____      __  __  _
+#     / ___/(_) /____     / ___/___  / /_/ /_(_)___  ____ ______
+#     \__ \/ / __/ _ \    \__ \/ _ \/ __/ __/ / __ \/ __ `/ ___/
+#    ___/ / / /_/  __/   ___/ /  __/ /_/ /_/ / / / / /_/ (__  )
+#   /____/_/\__/\___/   /____/\___/\__/\__/_/_/ /_/\__, /____/
+#                                                 /____/
+#
+# The language setting is used in /includes/helper/header.html for html-settings
+lang: 'en'
+
+# Title of your website
+title: 'Trap Burial Mounds'
+
+# The slogan describes your website and is used on homepage in <title> and other important places
+slogan: 'Beautiful Mounds'
+
+# The description is used on homepage and in the footer to quickly describe your website. Use a maximum of 150 characters for SEO-purposes.
+description: "A website to display TRAP Burial Mounds Kazanlak sample data"
+
+# The credits show up in the includes/_footer.html – It would be nice of you to leave a link to Phlow or Feeling Responsive as a thank you :)
+credits: '<p>Built on a theme by <a href="http://phlow.de/">Phlow</a> with <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> based on <a href="http://phlow.github.io/feeling-responsive/">Feeling Responsive</a>.</p>'
+
+# Main author of the website
+# See > authors.yml
+author: phlow
+
+# This URL is the main address for absolute links. Don't include a slash at the end.
+#
+url: ""
+baseurl: '/'
+
+# This is for the editing function in _/includes/helper/improve_content.html
+# Leave it empty if your site is not on GitHub/GitHub Pages
+improve_content: https://github.com/Phlow/feeling-responsive/edit/gh-pages
+
+
+# Logo size is 600x80 pixels
+logo: "logo.png"
+
+# Gems
+gems:
+    - jekyll-asciidoc
+    - jekyll-gist
+    - jekyll-paginate
+    - jekyll-sitemap
+
+
+#       ____              _             __  _
+#      / __ \____ _____ _(_)___  ____ _/ /_(_)___  ____
+#     / /_/ / __ `/ __ `/ / __ \/ __ `/ __/ / __ \/ __ \
+#    / ____/ /_/ / /_/ / / / / / /_/ / /_/ / /_/ / / / /
+#   /_/    \__,_/\__, /_/_/ /_/\__,_/\__/_/\____/_/ /_/
+#               /____/
+#
+paginate: 5                      # Paginates all X entries
+paginate_path: "blog/page:num"   # Pagination path › Important for blog page in /blog/ to work
+
+
+# Theme works best with Kramdown (using the table of contents function)
+markdown: kramdown
+permalink: /:categories/:title/
+highlight: rouge
+excerpt_separator: "<!--more-->"
+include: ['.htaccess']
+# Exclude these files from your production _site
+exclude:
+    - .sass-cache
+    - Gemfile
+    - Gemfile.lock
+    - LICENSE
+    - README.md
+    - INSTALL.md
+
+
+
+
+
+#      ______      __              _____      __
+#     / ____/___  / /___  _____   / ___/_____/ /_  ___  ____ ___  ___  _____
+#    / /   / __ \/ / __ \/ ___/   \__ \/ ___/ __ \/ _ \/ __ `__ \/ _ \/ ___/
+#   / /___/ /_/ / / /_/ / /      ___/ / /__/ / / /  __/ / / / / /  __(__  )
+#   \____/\____/_/\____/_/      /____/\___/_/ /_/\___/_/ /_/ /_/\___/____/
+#
+#   Choose one of the following color schemes.
+#   Or add your own color_scheme to /_sass/feeling-responsive/01_colors/
+#
+#  - feeling_responsive
+#  - gloom_contrast
+#  - glowfish
+#  - legacy
+#  - yule
+
+color_scheme: feeling_responsive
+
+
+#       ______            __
+#      / ____/___  ____  / /______
+#     / /_  / __ \/ __ \/ __/ ___/
+#    / __/ / /_/ / / / / /_(__  )
+#   /_/    \____/_/ /_/\__/____/
+#
+#   Choose one of the following font combinations:
+#
+#   import is necessary to import the font from google
+#   the settings for the fonts are used in /assets/css/simplicity.scss
+
+font:
+  import: 'Inconsolata:400,700|Open+Sans:400,400i,700,700i'
+#  import: 'Source+Code+Pro|Source+Sans+Pro:400,400italic,700,700italic'
+#  import: 'Titillium+Web:400,400italic,700,700italic'
+#  import: 'Roboto:400,400italic,700,700italic|Roboto+Mono'
+#  import: 'Merriweather:400,400italic,700,700italic'
+#  import: 'Arvo:400,400italic,700,700italic'
+#  import: 'Gentium+Basic:400,400italic,700,700italic'
+#  import: 'Fira+Sans:400,400italic,700,700italic|Fira+Mono'
+  font-family-serif:      'Georgia, "Times New Roman", serif;'
+  font-family-sans-serif: '"Open Sans", "Neue Helvetica", Arial, serif;'
+  base-font-family:       'Georgia, "Neue Helvetica", Arial, serif;'
+  font-family-monospace:  '"Inconsolata", "Courier New", Monaco, monospace;'
+  header-font-family:     '"Open Sans", "Neue Helvetica", Arial, serif;'
+
+
+
+
+# Used › default.html front-matter and compress.html
+# Options › http://jch.penibelst.de
+compress_html:
+  clippings: all
+  comments: ["<!-- ", " -->"]
+  endings: all
+  profile: false
+  ignore:
+    envs: [development]
+
+
+#
+#       ____       ____            ____
+#      / __ \___  / __/___ ___  __/ / /_
+#     / / / / _ \/ /_/ __ `/ / / / / __/
+#    / /_/ /  __/ __/ /_/ / /_/ / / /_
+#   /_____/\___/_/  \__,_/\__,_/_/\__/
+#
+# Default Settings
+
+defaults:
+  -
+    scope:
+      path: '' 				# an empty string here means all files in the project
+      type: 'pages'
+    values:
+      show_meta: false 	# Hide metadata for all pages
+      # sidebar:    		# Possible values › left, right › by default there will be no sidebar
+      comments: false
+      author: phlow     # Default author for pages
+  -
+    scope:
+      path: ''
+      type: 'posts'
+    values:
+      show_meta: true   # Show metadata for all posts
+      # sidebar:        # Possible values › left, right › by default there will be no sidebar
+      comments: false
+      author: phlow     # Default author for posts
+
+
+
+#       _   __            _             __  _
+#      / | / /___ __   __(_)___ _____ _/ /_(_)___  ____
+#     /  |/ / __ `/ | / / / __ `/ __ `/ __/ / __ \/ __ \
+#    / /|  / /_/ /| |/ / / /_/ / /_/ / /_/ / /_/ / / / /
+#   /_/ |_/\__,_/ |___/_/\__, /\__,_/\__/_/\____/_/ /_/
+#                       /____/
+#
+#  Open _data/navigation.yml to adjust the left and right topbar navigation
+#
+
+
+
+#     _____ __________
+#    / ___// ____/ __ \
+#    \__ \/ __/ / / / /
+#   ___/ / /___/ /_/ /
+#  /____/_____/\____/    Verify Website to Webmaster Tools
+
+google_author:             'https://plus.google.com/u/0/118311555303973066167'
+google_site_verification:  'Vk0IOJ2jwG_qEoG7fuEXYqv0m2rLa8P778Fi_GrsgEQ'
+bing_webmastertools_id:    '0FB4C028ABCF07C908C54386ABD2D97F'
+# alexa_verify_id:         ''
+
+
+
+#       ______                __                __
+#      / ____/___ _________  / /_  ____  ____  / /__
+#     / /_  / __ `/ ___/ _ \/ __ \/ __ \/ __ \/ //_/
+#    / __/ / /_/ / /__/  __/ /_/ / /_/ / /_/ / ,<
+#   /_/    \__,_/\___/\___/_.___/\____/\____/_/|_|      Facebook-Optimization › http://j.mp/fb_optimize
+
+og_image:                           'http://images.phlow.de/phlow/phlow_de-logo-512x.png'
+og_locale:                          'en_EN'
+og_type:                            'website'
+
+
+
+#    _____            _       __   __  ___         ___
+#   / ___/____  _____(_)___ _/ /  /  |/  /__  ____/ (_)___ _
+#   \__ \/ __ \/ ___/ / __ `/ /  / /|_/ / _ \/ __  / / __ `/
+#  ___/ / /_/ / /__/ / /_/ / /  / /  / /  __/ /_/ / / /_/ /
+# /____/\____/\___/_/\__,_/_/  /_/  /_/\___/\__,_/_/\__,_/
+#
+# If you have social media-profiles put your username here.
+# Facebook and Twitter will be used in includes/helper/head.html
+# To inject some meta-data other services will be used in
+# _/includes/helper/footer.html.
+
+socialmedia:
+    #youtube: PhlowMedia
+    #github: phlow
+    #twitter: phlow
+    #soundcloud: phlow
+    #instagram: phlowmedia
+    # facebook: phlow.media
+    # tumblr: motizen
+    # rss: # Full URL needed
+
+
+#        ____  _
+#       / __ \(_)________ ___  _______
+#      / / / / / ___/ __ `/ / / / ___/
+#     / /_/ / (__  ) /_/ / /_/ (__  )
+#    /_____/_/____/\__, /\__,_/____/
+#                    /_/
+#
+# used in _includes/comments
+
+disqus_shortname: feelingresponsive
+
+
+#      _____
+#     / ___/____ ___________
+#     \__ \/ __ `/ ___/ ___/
+#    ___/ / /_/ (__  |__  )     More › http://sass-lang.com/
+#   /____/\__,_/____/____/      More › http://jekyllrb.com/docs/assets/#sassscss
+#
+
+sass:
+    sass_dir: _sass
+    style: :compressed
+
+
+#       ___                __      __  _
+#      /   |  ____  ____ _/ /_  __/ /_(_)_________
+#     / /| | / __ \/ __ `/ / / / / __/ / ___/ ___/
+#    / ___ |/ / / / /_/ / / /_/ / /_/ / /__(__  )
+#   /_/  |_/_/ /_/\__,_/_/\__, /\__/_/\___/____/      https://www.google.com/analytics/
+#                        /____/
+#
+# used in _includes/footer_scripts
+
+google_analytics_tracking_id: UA-60112281-1
+
+
+
+#   _                 _     _
+#  | |_ __ ___      _| | __| |_ ___
+#  | __/ _` \ \ /\ / / |/ /| __/ _ \
+#  | || (_| |\ V  V /|   < | || (_) |
+#   \__\__,_| \_/\_/ |_|\_(_)__\___/     More › https://www.tawk.to/knowledgebase/
+#
+#  tawk.to is a free live chat app that lets you monitor and chat
+#  with visitors on your website or from a free customizable page
+#
+#  To load the script add tawkto: true in front matter of each page
+#
+# used in _includes/footer_scripts
+
+# tawkto_embed_uri:
+
+
+#     ___              _     __           __
+#    /   |  __________(_)___/ /___  _____/ /_____  _____
+#   / /| | / ___/ ___/ / __  / __ \/ ___/ __/ __ \/ ___/
+#  / ___ |(__  ) /__/ / /_/ / /_/ / /__/ /_/ /_/ / /
+# /_/  |_/____/\___/_/\__,_/\____/\___/\__/\____/_/
+#
+#  Asciidoctor is a fast text processor and publishing toolchain for converting
+#  AsciiDoc content to HTML5, DocBook 5 (or 4.5) and other formats.
+#
+#  https://github.com/asciidoctor/jekyll-asciidoc
+#  https://github.com/asciidoctor
+#
+#
+
+asciidoctor-enabled: false
+asciidoctor:
+  description: testtewtetrue
+  attributes:
+    source-highlighter: coderay
+    coderay-css: style
+    icons: font

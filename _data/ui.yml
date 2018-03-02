@@ -1,0 +1,114 @@
+#     __
+#    / /   ____ _____  ____ ___  ______ _____ ____
+#   / /   / __ `/ __ \/ __ `/ / / / __ `/ __ `/ _ \
+#  / /___/ /_/ / / / / /_/ / /_/ / /_/ / /_/ /  __/
+# /_____/\__,_/_/ /_/\__, /\__,_/\__,_/\__, /\___/
+#                   /____/            /____/
+#
+#   This is the language file of *Feeling Responsive*
+#   Add your translation and set the language in
+#   config.yml
+#
+#   Example for config.yml › lang: 'de'
+#
+#   To translate *Feeling Responsive* just edit the following data.
+#   The theme uses for example it like this:
+#
+#   {{ site.data.ui[site.lang].read_more | default: "Read More&nbsp;›" }}
+
+# English (default)
+# -----------------
+en: &DEFAULT_EN
+  info_website                             : 'About This Site'
+  archive                                  : 'Archive'
+  blog_archive                             : 'Blog Archive'
+  blog                                     : 'Blog'
+  comments_headline                        : 'Dialogue &amp; Discussion'
+  more                                     : 'More&nbsp;›'
+  more_articles                            : 'More Articles'
+  navigation_title                         : 'Navigation'
+  new_blog_entries                         : 'New Blog Articles'
+  next                                     : 'Next'
+  next_posts                               : 'Next Posts'
+  previous                                 : 'Previous'
+  previous_posts                           : 'Previous Posts'
+  read                                     : 'Read'
+  read_more                                : 'Read More&nbsp;›'
+  redirected_automatically                 : 'If you are not redirected automatically,'
+  click_here                               : 'click here'
+  redirecting                              : 'Redirecting…'
+  next_post_in                             : 'Next Post in'
+  previous_post_in                         : 'Previous Post in'
+  breadcrumb_start                         : 'Start'
+  edit                                     : 'Edit'
+  this_content_is_open_source              : 'This content is open source.'
+  help_improve_it                          : 'Help improve it'
+  enter_search_term                        : 'Enter search term and hit enter'
+  search_results                           : 'Search Results'
+  search                                   : 'Search ›'
+  search_input_placeholder                 : 'Search [Hit Tab and start writing]'
+  try_404                                  : 'Try…  '
+  no_problem_404                           : 'No Problem!'
+  start_over_404                           : '...to start over on the'
+  search_below_404                         : '...to **search** below  '
+  search_404                               : 'Search'
+  home_page_404                            : 'home page'
+  if_you_404                               : '…if you can&lsquo;t find it,  '
+  ask_about_404                            : 'ask about it'
+
+en-US:
+  <<: *DEFAULT_EN
+en-CA:
+  <<: *DEFAULT_EN
+en-GB:
+  <<: *DEFAULT_EN
+en-AU:
+  <<: *DEFAULT_EN
+
+
+
+# German / Deutsch
+# -----------------
+de: &DEFAULT_DE
+  info_website                             : 'Über diese Website'
+  archive                                  : 'Archiv'
+  blog_archive                             : 'Blog Archiv'
+  blog                                     : 'Blog'
+  comments_headline                        : 'Dialog &amp; Diskussion'
+  more                                     : 'Mehr&nbsp;›'
+  more_articles                            : 'Mehr Artikel'
+  navigation_title                         : 'Navigation'
+  new_blog_entries                         : 'Neue Blog Artikel'
+  next                                     : 'Nächste'
+  next_posts                               : 'Nächster Beitrag'
+  previous                                 : 'Vorherige'
+  previous_posts                           : 'Vorheriger Beitrag'
+  read                                     : 'Lesen'
+  read_more                                : 'Weiterlesen&nbsp;›'
+  if_you_are_not_redirected_automatically  : 'Wenn Du nicht automatisch weitergeleitet wirst,'
+  click_here                               : 'klick hier'
+  next_post_in                             : 'Nächster Beitrag in'
+  previous_post_in                         : 'Vorheriger Beitrag in'
+  breadcrumb_start                         : 'Start'
+  edit                                     : 'Editieren'
+  this_content_is_open_source              : 'Der Inhalt ist Open Source.'
+  help_improve_it                          : 'Hilf ihn zu verbessern'
+  enter_search_term                        : 'Suchbegriff eingeben und Eingabetaste drücken'
+  search_results                           : 'Suchergebnisse'
+  search                                   : 'Suchen&nbsp;›'
+  search_input_placeholder                 : 'Suchen [Drücke Tab und schreib los]'
+de-DE:
+  <<: *DEFAULT_DE
+de-AT:
+  <<: *DEFAULT_DE
+de-CH:
+  <<: *DEFAULT_DE
+de-BE:
+  <<: *DEFAULT_DE
+de-LI:
+  <<: *DEFAULT_DE
+de-LU:
+  <<: *DEFAULT_DE
+
+# Another locale
+# --------------

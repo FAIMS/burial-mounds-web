@@ -1,0 +1,33 @@
+/* Media Queries Layout
+------------------------------------------------------------------- */
+
+
+/* Small
+------------------------------------------------------------------- */
+@media (max-width: map-get($breakpoints, small) ) {
+
+
+}
+
+
+
+/* Medium
+------------------------------------------------------------------- */
+@media (min-width: map-get($breakpoints, small) + 1) and (max-width: map-get($breakpoints, medium)) {
+
+    body {
+        font-size: $base-font-size-medium-screen;
+    }
+}
+
+
+
+/* Large
+------------------------------------------------------------------- */
+
+@media (min-width: map-get($breakpoints, medium) + 1) {
+
+    body {
+        font-size: $base-font-size-large-screen;
+    }
+}

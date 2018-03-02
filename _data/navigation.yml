@@ -1,0 +1,11 @@
+- title: Home
+  url: "/"
+  side: left
+
+- title: About Us
+  url: "/info/"
+  side: left
+
+- title: "Collections"
+  url: "/collections/"
+  side: left
