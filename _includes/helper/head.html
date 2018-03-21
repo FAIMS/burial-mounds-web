@@ -20,6 +20,20 @@
 	<noscript>
 		<link href='https://fonts.googleapis.com/css?family={{ site.font.import }}' rel='stylesheet' type='text/css'>
 	</noscript>
+	<style>
+	      /* Always set the map height explicitly to define the size of the div
+	       * element that contains the map. */
+	      #map {
+	        height: 500px;
+					width: 100%;
+	      }
+	      /* Optional: Makes the sample page fill the window. */
+	      html, body {
+	        height: 100%;
+	        margin: 0;
+	        padding: 0;
+	      }
+	    </style>
 
 
 	{% include helper/seo.html %}
@@ -43,3 +57,6 @@
 	{% unless page.style == NULL %}
 	<style type="text/css">{{ page.style }}</style>
 	{% endunless %}
+
+	<link rel="stylesheet" href="{{ url }}/assets/slick/slick.css">
+	<link rel="stylesheet" href="{{ url }}/assets/slick/slick-theme.css">
