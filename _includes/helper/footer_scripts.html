@@ -39,6 +39,12 @@ $('audio,video').mediaelementplayer();
 		     center: {lat: 42.6285, lng: 25.2442},
 		     zoom: 8
 	     });
+	     
+	     var marker = new google.maps.Marker({
+		  position: {lat: 42.6285, lng: 25.2442},
+		  map: map,
+		  title: '{{ page.title}}'
+		});
      }
 
   </script>
