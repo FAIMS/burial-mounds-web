@@ -35,15 +35,15 @@ $('audio,video').mediaelementplayer();
   <script>
      function initMap() {
 	     console.log("hello");
-	     
+	     var latLon = {lat: parseFloat('{{ page.maps.lat }}'), lng: parseFloat('{{ page.maps.lon}}')};
 	     
 	     var map = new google.maps.Map(document.getElementById('map'),{
-		     center: {lat: parseInt('42.6285'), lng: parseInt('25.2442')},
+		     center: latLon,
 		     zoom: 8
 	     });
 	     
 	     var marker = new google.maps.Marker({
-		  position: {lat: 42.6285, lng: 25.2442},
+		  position: latLon,
 		  map: map,
 		  title: '{{ page.title}}'
 		});
