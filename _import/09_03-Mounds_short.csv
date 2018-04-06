@@ -1,0 +1,32 @@
+TRAP ID,Latitude,Longitude,Certainty,Elevation,Max diameter,Min diameter,Height,Size Category,Surrounding Land Use,Surface Condition,Land Use Source,Robbed,CRM Condition,CRM Intactness,Photo,Campaign,Source,Municipality,Locality,BG Code,AKB Code,Notes
+1001,42.627103,25.246605,Certain,370,15,15,0.5,Small,Annual Agriculture,Scrub|Tall Grass,Photo,Yes,5,5,Good,2009,Survey,Dolno Sahrane,,DS002,,Stones covering the surface of the flat mound.
+1002,42.626585,25.250297,Certain,363,25,25,4,Medium,Annual Agriculture,Scrub|Tall Grass,Photo,No,1,1,Poor,2009,Survey,Dolno Sahrane,,DS003,,Tree on the top.
+1003,42.625915,25.24947,Certain,371,18,18,4,Medium,Annual Agriculture,Scrub|Tall Grass,Photo,Yes,2,2,Poor,2009,Survey,Dolno Sahrane,,DS004,,Visible soil structure in large robbers' trench in the eastern part.
+1004,42.625383,25.248682,Certain,375,25,25,3,Medium,Annual Agriculture,Scrub|Tall Grass,Photo,Yes,2,1,Good,2009,Remote Sensing,Dolno Sahrane,,DS005,,Huge robbers' trench in the centre.
+1010,42.628303,25.284228,Certain,395,30,17,2,Medium,Annual Agriculture,Scrub|Tall Grass,Photo,No,3,2,Good,2009,Remote Sensing,Dunavtsi,,DUN011,,Small to middle size stones spread all over the surface.
+1011,42.626647,25.293209,Certain,376,35,35,3.5,Medium,Pasture,Scrub|Tall Grass,Photo,No,2,1,Good,2009,Remote Sensing,Dunavtsi,,DUN012,5500097,"Entirely overgrown, not accesible, destroyed by machine."
+1000,42.628486,25.244189,Certain,373,34,34,6,Large,Annual Agriculture,Scrub|Tall Grass,Photo,Yes,2,1,Good,2009,Survey,Dolno Sahrane,,DS001,,Visible soil structure in large robbers' trench on the top.
+1016,42.636998,25.277834,Certain,362,37,28,5,Medium,Pasture,Scrub|Tall Grass,Photo,Yes,2,1,Good,2009,Survey,Dunavtsi,,DUN002,5500099,
+1017,42.629079,25.280002,Certain,347,30,30,4,Medium,Forest,Scrub|Tall Grass,Photo,Yes,3,1,Good,2009,Remote Sensing,Dunavtsi,,DUN003,,"Very large stones in the profile, composed of yellow sandy soil. robbers' trench's from N to S."
+1018,42.626354,25.280477,Certain,352,20,15,2,Medium,Forest,Scrub|Tall Grass,Photo,Yes,2,1,Good,2009,Remote Sensing,Dunavtsi,,DUN004,,"Robbers' trench on the top, shallow but in the shape of grave."
+1019,42.623357,25.289673,Certain,402,28,27,6,Large,Forest,Scrub|Tall Grass,Photo,Yes,3,2,Good,2009,AKB,Dunavtsi,Trite Mogili,DUN006,5500094,
+1020,42.623433,25.290542,Certain,403,25,20,6,Large,Forest,Scrub|Tall Grass,Photo,Yes,4,3,Good,2009,AKB,Dunavtsi,Trite Mogili,DUN007,5500095,
+1021,42.623049,25.291653,Certain,395,33,30,3,Medium,Forest,Scrub|Tall Grass,Photo,Yes,3,1,Good,2009,AKB,Dunavtsi,Trite Mogili,DUN008,5500093,
+1022,42.62258,25.295608,Certain,375,25,16,3,Medium,Forest,Scrub|Tall Grass,Photo,No,1,1,Good,2009,AKB,Dunavtsi,,DUN009,5500096,
+1023,42.621049,25.297957,Certain,379,25,25,3,Medium,Scrub,Scrub|Tall Grass,Photo,Yes,2,1,Good,2009,AKB,Dunavtsi,,DUN010,5500100,
+2001,42.636378,25.31999,Certain,368,19,16,5,Medium,Annual Agriculture,Annual Agriculture|Ploughed,Photo,No,4,4,Good,2009,Survey,Koprinka,,KOOP001,,"Destroyed by plaughing, now overgrown."
+2002,42.625818,25.326059,Certain,405,40,30,15,Large,Pasture,Pasture,Photo,Yes,3,3,Good,2009,Survey,Koprinka,Golyamata Mogila,KOOP002,,
+2003,42.626399,25.328311,Certain,395,30,25,5,Medium,Pasture,Pasture,Photo,Yes,3,1,Good,2009,Survey,Koprinka,,KOOP003,,
+2004,42.626412,25.324036,Certain,397,28,28,2,Medium,Pasture,Pasture,Photo,No,3,1,Poor,2009,Survey,Koprinka,,KOOP004,,
+2005,42.626091,25.319479,Certain,390,41,35,7,Large,Pasture,Pasture,Photo,Yes,3,1,Good,2009,Survey,Koprinka,,KOOP005,,
+2006,42.626213,25.31907,Certain,388,22,15,4,Medium,Pasture,Pasture,Photo,Yes,3,1,Good,2009,Survey,Koprinka,,KOOP006,,
+2007,42.626925,25.31884,Certain,386,15,15,5,Medium,Pasture,Pasture,Photo,No,2,1,Good,2009,Survey,Koprinka,,KOOP007,,Covered with grass.
+2008,42.627886,25.317414,Certain,363,18,15,2,Medium,Pasture,Pasture,Photo,No,2,1,Poor,2009,Survey,Koprinka,,KOOP008,,
+2020,42.633216,25.320292,Certain,381,29,20,7,Large,Pasture,Pasture,Photo,Yes,3,2,Good,2009,Survey,Koprinka,,KOOP016,,Robbers' trench on the top.
+2021,42.633649,25.319406,Certain,368,15,10,1,Small,Pasture,Pasture,Photo,Yes,2,1,Good,2009,Survey,Koprinka,,KOOP017,,Robbers' trench on the S.
+2022,42.633562,25.318983,Certain,354,22,13,2,Medium,Pasture,Pasture,Photo,No,2,1,Good,2009,Survey,Koprinka,,KOOP018,,"Robbers' trench on the top, rectangular shape (1.6x2.2x1 m)."
+2023,42.633604,25.318296,Certain,348,29,22,5,Medium,Pasture,Pasture,Photo,Yes,2,1,Good,2009,Survey,Koprinka,,KOOP019,,Robbers' trench on the S (1.5x1.5).
+2027,42.617738,25.351372,Certain,347,20,20,1,Small,Annual Agriculture,Annual Agriculture|Ploughed,Photo,Yes,4,2,Good,2009,Survey,Kazanlak,,KAZ006,,
+2028,42.618843,25.356748,Certain,352,28,26,5,Medium,Annual Agriculture,Scrub|Tall Grass,Photo,No,2,1,Good,2009,Survey,Kazanlak,,KAZ007,,
+2029,42.618809,25.360435,Certain,341,41,28,2,Medium,Annual Agriculture,Scrub|Tall Grass,Photo,No,2,1,Good,2009,Survey,Kazanlak,,KAZ008,,
+2030,42.614987,25.360287,Certain,346,57,51,4,Medium,Annual Agriculture,Pasture,Photo,No,2,1,Good,2009,Survey,Kazanlak,Bikchiysuka Mogila,KAZ009,,
