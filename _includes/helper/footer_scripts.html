@@ -30,27 +30,26 @@ $('audio,video').mediaelementplayer();
 {% if page.id %}
   <script type="text/javascript" src="{{'assets/slick/slick.js' | absolute_url}}"></script>
   <script  src="{{'assets/js/index.js' | absolute_url}}"></script>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.js'></script>
   <script>
-     function initMap() {
-	     console.log("hello");
-	     var latLon = {lat: parseFloat('{{ page.maps.lat }}'), lng: parseFloat('{{ page.maps.lon}}')};
-	     
-	     var map = new google.maps.Map(document.getElementById('map'),{
-		     center: latLon,
-		     zoom: 8
-	     });
-	     
-	     var marker = new google.maps.Marker({
-		  position: latLon,
-		  map: map,
-		  title: '{{ page.title}}'
-		});
-     }
+    function initMap() {
+     console.log(parseFloat('{{ page.latitude }}'));
+     var latLon = {lat: parseFloat('{{ page.latitude }}'), lng: parseFloat('{{ page.longitude}}')};
+
+     var map = new google.maps.Map(document.getElementById('map'),{
+       center: latLon,
+       zoom: 8
+     });
+
+     var marker = new google.maps.Marker({
+        position: latLon,
+        map: map,
+        title: '{{ page.title}}'
+      });
+    }
 
   </script>
-
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD8ww2qdsoz0oXVdcmWcCfqczAjCPuhnSo&amp;callback=initMap"
       async defer></script>
 

@@ -9,7 +9,8 @@
  $('.slider-nav').slick({
    slidesToShow: 3,
    slidesToScroll: 3,
-   arrows: false,
+   arrows: true,
+
    asNavFor: '.slider-for',
 
    focusOnSelect: true,
@@ -21,7 +22,6 @@
         slidesToShow: 3,
         slidesToScroll: 3,
         infinite: true,
-        dots: true
       }
     },
     {

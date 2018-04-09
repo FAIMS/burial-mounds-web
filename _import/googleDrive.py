@@ -13,6 +13,8 @@ import re
 import fnmatch
 import glob
 
+import dumpYaml as DUMP
+
 SHEET = "BM-Pic.csv"
 DEST = "../_posts"
 
@@ -35,7 +37,6 @@ uuid = 'TRAP ID'
 keyforfirstimg = 'overview'
 keylen = 4
 folder = "../_posts/"
-a = 0
 
 remove = "https://drive.google.com/file/d/"
 
@@ -59,25 +60,18 @@ for row in objects:
         d[id].insert(0,entry)
     else:
         d[id].append(entry)
-print(d['1000'])
-
 
 if os.path.exists(folder):
-    print("exist")
     # For each Record Page in folder
     for file in os.listdir(folder):
-        print("exist")
         yaml = YAML()
         filename = os.fsdecode(file)
-        print(filename)
-        n = folder+filename
-        lines = open(n).readlines()
-        open(n, 'w').writelines(lines[1:-1])
-        with open(folder+filename) as recordpage:
-            print(recordpage)
+        recordpagepath = folder+filename
+        lines = open(recordpagepath).readlines()
+        open(recordpagepath, 'w').writelines(lines[1:-1])
+        with open(recordpagepath) as recordpage:
             objyaml=yaml.load(recordpage.read())
             recordid = objyaml[uuid.replace(" ", "_").lower()]
-            print(recordid)
             if 'images' not in objyaml:
                 objyaml['images'] = []
             if recordid in d:
@@ -87,9 +81,5 @@ if os.path.exists(folder):
 
             if len(objyaml['images']) == 0:
                 objyaml.pop('images', None)
-            objyaml['dummy'] = 15;
-            def startendlines(s):
-                return "---\n{0}---\n".format(s)
-            with open(folder+filename, 'w') as targetyamlfile:
-            	yaml.dump(objyaml, targetyamlfile, transform=startendlines)
+            DUMP.dump(recordpagepath,yaml,objyaml)
 print("finish")
