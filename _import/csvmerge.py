@@ -28,7 +28,14 @@ second = args['second']
 first_csv = pd.read_csv(first)
 second_csv = pd.read_csv(second)
 
-b = b.dropna(axis=1)
+second_csv =second_csv.dropna(axis=1)
+
+print(first_csv.head())
+print(second_csv.head())
+
+#Sanitize key, replace space with '_' and make it key lowercase
+#key = key.replace(' ','_').lower()
 
 merged = first_csv.merge(second_csv, on=key)
+print(merged.head())
 merged.to_csv(output,index=False)

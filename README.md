@@ -28,11 +28,21 @@ The \__config.yml_ file contains configuration options for the website. For basi
 8. Open \__data/authors.yml_ and edit author information and set default author in config.yml.
 
 
-* Addtion scss files can be made in the \__sass_ folder. You need then need to import the file in assets/css/styles_feeling_response.scss, for it to be included in the future build. For example, if you make a sass file called _tabs.scss_ in the \__sass_ folder then, inside the assets/css/styles_feeling_response.scss file, you would write 
+	* Addtion scss files can be made in the \__sass_ folder. You need then need to import the file in assets/css/styles_feeling_response.scss, for it to be included in the future build. For example, if you make a sass file called _tabs.scss_ in the \__sass_ folder then, inside the assets/css/styles_feeling_response.scss file, you would write 
 
 ```
 @import  
 ```
+
+## Merging two csv together
+A python script written in python3 have been provided to merge two csv file based on a key.
+
+## Auto-generate page for each row
+In the _\_import_ folder there is a script that have been provided. The purpose of the script is to generate a seperate yaml file for each row in the csv. Each column correspond to a _key:value_ pair in the yaml file, the key is name of the column with all space characters replaced with the '_' character and the characters are coverted to all lowercase.
+
+Dependencies required:
+ruamel.yaml
+
 
 
 

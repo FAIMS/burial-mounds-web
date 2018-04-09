@@ -13,6 +13,16 @@ import re
 import fnmatch
 import glob
 
+parser = argparse.ArgumentParser(description='')
+parser.add_argument('-s', '--sheet', help='Complete file path + name of csv file')
+parser.add_argument('-t', '--template', help='Complete file path + name of template yaml file for Records')
+parser.add_argument('-u', '--uuid', help='Column name of the uuid')
+parser.add_argument('-r', '--recordtitle', help='Generic title for each record page which will be prepend')
+#parser.add_argument('-h', '--subheadline', help='subheadline for record')
+#parser.add_argument('-c', '--collection', help='Name of the collection')
+
+# TODO: Assume Subheadline and collection is one of the coolumns
+
 SHEET = "09_03-Mounds_short.csv"
 TEMPLATE = "template.yaml"
 DEST = "../_posts"
