@@ -1,19 +1,9 @@
 ---
 layout: default
-format: record
+format: mound
 
 enable-slick: true
 ---
-<div row class="row">
-<div class="PageNavigation">
-  {% if page.previous.url %}
-    <a class="prev" href="{{page.previous.url}}">&laquo; {{page.previous.title}}</a>
-  {% endif %}
-  {% if page.next.url %}
-    <a class="next" href="{{page.next.url}}">{{page.next.title}} &raquo;</a>
-  {% endif %}
-</div>
-</div>
 <div class="row t30">
    <div class="medium-8 columns{% if page.sidebar == NULL %} medium-offset-2 end{% endif %}{% if page.sidebar == "left" %} medium-push-4{% endif %}">
    <article itemscope itemtype="http://schema.org/Article">
@@ -62,9 +52,9 @@ enable-slick: true
                   {% endif %}
                   {% if page.certainy %}
                   <tr>
-                     <td>    Certainy</td>
+                     <td>    Certainty of Identification</td>
                      <td>
-                        {{ page.certainy }}
+                        {{ page.certainty }}
                      </td>
                   </tr>
                   {% endif %}
@@ -197,47 +187,47 @@ enable-slick: true
             </button>
             </div>
             -->
-            <div class="small-12 large-6 columns">
-               <div class="row">
-                  <div class="main small-12 large-12 columns thumbnail" style="height:500px">
+         <div class="small-12 large-6 columns">
+            <div class="row">
+               <div class="main small-12 large-12 columns thumbnail" style="height:500px">
 
-                      <div class="slider slider-for" style="height:370px;">
-                         {% if page.images %}
-                            {% for img in page.images %}
-                            <div>
-                                <img style="height:370px; width:100%;" src="{{img.image_path}}" title="abc">
-                            </div>
-                            {% endfor %}
-                          {% else %}
-                            <div>
-                                <img style="height:150px; width:100%;" src="/assets/img/default_mound_img.png" title="abc">
-                            </div>
-                          {% endif %}
-                      </div>
+                   <div class="slider slider-for" style="height:370px;">
+                      {% if page.images %}
+                         {% for img in page.images %}
+                         <div>
+                             <img style="height:370px; width:100%;" src="{{img.image_path}}" title="abc">
+                         </div>
+                         {% endfor %}
+                       {% else %}
+                         <div>
+                             <img style="height:150px; width:100%;" src="/assets/img/default_mound_img.png" title="abc">
+                         </div>
+                       {% endif %}
+                   </div>
 
-                        <div class="slider slider-nav ">
-                          {% if page.images %}
-                            {% for img in page.images %}
-                            <div data-equalizer-watch>
-                                <img style = "width:100%; height:125px;" src="{{img.image_path}}">
-                            </div>
-                            {% endfor %}
-                            {% else %}
-                              <div data-equalizer-watch>
-                                  <img style="width:100%; height:125px;" src="/assets/img/default_mound_img.png" title="abc">
-                              </div>
-                           {% endif %}
-                        </div>
+                     <div class="slider slider-nav ">
+                       {% if page.images %}
+                         {% for img in page.images %}
+                         <div data-equalizer-watch>
+                             <img style = "width:100%; height:125px;" src="{{img.image_path}}">
+                         </div>
+                         {% endfor %}
+                         {% else %}
+                           <div data-equalizer-watch>
+                               <img style="width:100%; height:125px;" src="/assets/img/default_mound_img.png" title="abc">
+                           </div>
+                        {% endif %}
+                     </div>
 
-                  </div>
-
-
-                  <!--  -->
                </div>
 
 
-
+               <!--  -->
             </div>
+
+
+
+         </div>
 
             <div class="large-12 small-12 columns">
                <ul class="tabs" data-tabs id="example-tabs">

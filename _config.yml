@@ -299,3 +299,6 @@ asciidoctor:
     source-highlighter: coderay
     coderay-css: style
     icons: font
+
+
+google-map-marker: true
