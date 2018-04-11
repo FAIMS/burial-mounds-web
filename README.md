@@ -2,12 +2,21 @@
 This is a template that uses Jekyll and based off feeling-responsive theme by Phlow. To get the basic structure, please follow the steps in this README. It is assumed that the user have basic knowledge of jekyll, if not, please refer to https://jekyllrb.com/docs/home/ for more information. The purpose of this project is to generate a data-driven website from a CSV. For the purpose of this project, each row in the CSV will be considered a _record_ and a page for each record will be called a _Record Page_ and that a _post_ in jekyll is in our case a _Record Page_.
 
 ## Prerequisites
-Need to have Python installed to run the script and also have Jekyll installed to test the website locally.
+Need to have Python installed to run the script and also have Jekyll installed to test the website locally. It is also assume that you are using Ubuntu if you wish to test your website locally before uploading to Github Pages.
+
+## Running Jekyll locally
+Assuming jekyll is installed, to see your website locally, open up the terminal at the root of the folder of the project. Type in the following command then press center
+
+`bundle exec jekl serve --config _config.yml,_config_dev.yml`
 
 ## Configuration
 The \__config.yml_ file contains configuration options for the website. For basic configuration, do the following steps.
 
-1. Open the \__config.yml_ file and work through it. The main key:value pair to worry about for basic customisation is _title_, _slogan_, _descripton_, _credits_, _author_, _url_, _baseurl_. More details can be found on https://help.github.com/articles/configuring-jekyll/ and https://jekyllrb.com/docs/configuration/.
+1. Open the \__config.yml_ file and work through it. The main key:value pair for basic customisation is _title_, _slogan_, _descripton_, _credits_, _author_, _url_, _baseurl_. More details can be found on https://help.github.com/articles/configuring-jekyll/ and https://jekyllrb.com/docs/configuration/.
+	* *NOTE*: If you are running jekyll locally to see your changes, please stop the server then run it again to see changes made in your _\_config.yml_ file
+	* If the user wish to add more custom data that can be accessed throughout the site via the Liquid templating system, then rather adding it directly into \__config.yml_ file, users are recommended to add it into the _additional\_config.yml_ file which is located in the \__data directory.
+	* For example the variable _google-map-marker_ can be accessed via `site.data.additional_config.google-map-marker`.
+	* More information is contained here: https://jekyllrb.com/docs/datafiles/
 
 2. Add your _logo.png_ (if you have one) to _/assets/img/_.
 
@@ -40,16 +49,30 @@ A python script written in python3 have been provided to merge two csv file base
 ## Auto-generate page for each row
 In the _\_import_ folder there is a script that have been provided. The purpose of the script is to generate a seperate yaml file for each row in the csv. Each column correspond to a _key:value_ pair in the yaml file, the key is name of the column with all space characters replaced with the '\_' character and the characters are coverted to all lowercase.
 
+For example, in the csv there is 3 columns, '_TRAP ID_', '_Max diameter_', '_Surrounding Land Use_' and the values are, 1000, 34, Annual Agriculture for a row. then in the corresponding Record Page for that row, the Front Matter variable will be in the following format
+
+```
+trap_id: '1000'
+max_diameter: '34'
+surrounding_land_use: Annual Agriculture
+```
+
 Dependencies required:
 ruamel.yaml
 
 
-
-
 ## Map functionality
 The javascript required for the google map functionality for each Record page is located _\_includes/additional\_helper/additional\_footer.html_ file. It uses Liquid templating and only apply the javascript for Record Pages. In the front matter for the Record Pages, the way it does this that it uses liquid tags to see if the current page is a post.
-The default setting for the Map functionality is that it uses the _latitude_ and _longitude_ Front matter variable of the Record Page. So if users wish to have a map, the column name in the csv must also correspond to that name. NOTE: It is fine in the CSV to have the column name "Latitude" and "Longitude" because the script that generate a page for each row then converts the column names to lowercase when it passes it into the Front Matter for the Record Page.
-The format of the coordinates should also be in _decimal degrees_ which is what Google Map API uses. The _google-map-marker_ variable is in the _config.yml_ file and is used to determine whether to add a marker that points to the location of the record, if the user do not wish to have a Google Map marker then the user can edit the _google-map-marker_ variable and change the value from _true_ to _false_ and if they wish to have the marker back then they would reverse it, changing the value from _false_ to _true_. The _title_ variable is used as the title of the Google Map marker.
+
+The default setting for the Map functionality is that it uses the _latitude_ and _longitude_ Front matter variable of the Record Page. So if users wish to have a map, the column name in the csv must also correspond to that name.
+
+*NOTE*: It is fine in the CSV to have the column name "Latitude" and "Longitude" because the script that generate a page for each row then converts the column names to lowercase when it passes it into the Front Matter for the Record Page.
+The format of the coordinates should also be in _decimal degrees_ which is what Google Map API uses.
+
+The _google-map-marker_ variable is in the _config.yml_ file and is used to determine whether to add a marker that points to the location of the record, if the user do not wish to have a Google Map marker then the user can edit the _google-map-marker_ variable and change the value from _true_ to _false_ and if they wish to have the marker back then they would reverse it, changing the value from _false_ to _true_. The _title_ variable is used as the title of the Google Map marker.
+
+*NOTE*: If the user make changes to the
+
 If users do not wish to further customize the functionality, they can skip the rest of the section.
 
 The following code is the Javascript code to use Google Maps API
@@ -63,7 +86,7 @@ The following code is the Javascript code to use Google Maps API
 		 center: latLon,
 		 zoom: 8
 	 });
-	 if('{{ site.google-map-marker }}' == 'true'){
+	 if('{{ site.data.additional_config.google-map-marker }}' == 'true'){
 		 var marker = new google.maps.Marker({
 				position: latLon,
 				map: map,
@@ -100,7 +123,7 @@ For example the javascript code that uses Google Maps API to generate maps for r
 		 center: latLon,
 		 zoom: 8
 	 });
-	 if('{{ site.google-map-marker }}' == 'true'){
+	 if('{{ site.data.additional_config.google-map-marker }}' == 'true'){
 		 var marker = new google.maps.Marker({
 				position: latLon,
 				map: map,

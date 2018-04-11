@@ -12,7 +12,7 @@
        center: latLon,
        zoom: 8
      });
-     if('{{ site.google-map-marker }}' == 'true'){
+     if('{{ site.data.additional_config.google-map-marker }}' == 'true'){
        var marker = new google.maps.Marker({
           position: latLon,
           map: map,
