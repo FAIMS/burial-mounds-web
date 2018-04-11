@@ -76,7 +76,7 @@ if os.path.exists(folder):
                 objyaml['images'] = []
             if recordid in d:
                 for row in d[recordid]:
-                    print(row)
+                    #print(row)
                     objyaml['images'].append({'image_path': row['URL'], 'title': row['Name']})
 
             if len(objyaml['images']) == 0:

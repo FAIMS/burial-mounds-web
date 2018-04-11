@@ -210,7 +210,7 @@ enable-slick: true
                             {% endfor %}
                           {% else %}
                             <div>
-                                <img style="height:150px; width:100%;" src="/assets/img/default_mound_img.png" title="abc">
+                                <img style="padding-top: 30%; height:200px; width:100%;" src="/assets/img/default_mound_img.png" title="abc">
                             </div>
                           {% endif %}
                       </div>
@@ -219,12 +219,12 @@ enable-slick: true
                           {% if page.images %}
                             {% for img in page.images %}
                             <div data-equalizer-watch>
-                                <img style = "width:100%; height:125px;" src="{{img.image_path}}">
+                                <img style = " width:100%; height:125px;" src="{{img.image_path}}">
                             </div>
                             {% endfor %}
                             {% else %}
                               <div data-equalizer-watch>
-                                  <img style="width:100%; height:125px;" src="/assets/img/default_mound_img.png" title="abc">
+                                  <img style="padding-top: 35px;width:100%;height:90px" src="/assets/img/default_mound_img.png" title="abc">
                               </div>
                            {% endif %}
                         </div>
@@ -281,7 +281,7 @@ enable-slick: true
                   </div>
                   <div class="tabs-panel" id="panel3">
                      <h4>Cite this page</h4>
-                     {{page.muscollection}} ({{page.date | date: "%Y"}}). <i>{{page.title}}</i>, {{page.accession}}. {{page.url | absolute_url}} (accessed on: {{'now' | date: "%d %B %Y"}}).
+                     ({{page.date | date: "%Y"}}). <i>{{page.title}}</i>, {{page.accession}}. {{page.url | absolute_url}} (accessed on: {{'now' | date: "%d %B %Y"}}).
                      <h4>Rights &amp; Permissions</h4>
                      {%if page.rights == 'standard'%}
                      We support the <a href="http://opendefinition.org">open</a> release of data and information about our collections.

@@ -36,12 +36,20 @@ The \__config.yml_ file contains configuration options for the website. For basi
 
 8. Open \__data/authors.yml_ and edit author information and set default author in config.yml.
 
-
 	* Addtion scss files can be made in the \__sass_ folder. You need then need to import the file in assets/css/styles_feeling_response.scss, for it to be included in the future build. For example, if you make a sass file called _tabs.scss_ in the \__sass_ folder then, inside the assets/css/styles_feeling_response.scss file, you would write
 
 ```
 @import  
 ```
+
+# Preprocessing
+Before auto generating record pages, ensure your data is well-formed for minimal hassle. A record should have a column that contains the UUID (unique identifer) for that record.
+
+## Adding
+
+
+
+## Customization
 
 ## Merging two csv together
 A python script written in python3 have been provided to merge two csv file based on a key.
