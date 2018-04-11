@@ -1,0 +1,774 @@
+TRAP ID,Certainty,Elevation,Max diameter,Min diameter,Height,Size Category,Surrounding Land Use,Surface Condition,Land Use Source,Robbed,CRM Condition,CRM Intactness,Photo,Campaign,Source,Municipality,Locality,BG Code,AKB Code,Notes,Latitude,Longitude
+1000,Certain,373,34,34,6,Large,Annual Agriculture,Scrub|Tall Grass,Photo,Yes,2,1,Good,2009,Survey,Dolno Sahrane,,DS001,,Visible soil structure in large robbers' trench on the top.,42.628486,25.244189
+1001,Certain,370,15,15,0.5,Small,Annual Agriculture,Scrub|Tall Grass,Photo,Yes,5,5,Good,2009,Survey,Dolno Sahrane,,DS002,,Stones covering the surface of the flat mound.,42.627103,25.246605
+1002,Certain,363,25,25,4,Medium,Annual Agriculture,Scrub|Tall Grass,Photo,No,1,1,Poor,2009,Survey,Dolno Sahrane,,DS003,,Tree on the top.,42.626585,25.250297
+1003,Certain,371,18,18,4,Medium,Annual Agriculture,Scrub|Tall Grass,Photo,Yes,2,2,Poor,2009,Survey,Dolno Sahrane,,DS004,,Visible soil structure in large robbers' trench in the eastern part.,42.625915,25.24947
+1004,Certain,375,25,25,3,Medium,Annual Agriculture,Scrub|Tall Grass,Photo,Yes,2,1,Good,2009,Remote Sensing,Dolno Sahrane,,DS005,,Huge robbers' trench in the centre.,42.625383,25.248682
+1010,Certain,395,30,17,2,Medium,Annual Agriculture,Scrub|Tall Grass,Photo,No,3,2,Good,2009,Remote Sensing,Dunavtsi,,DUN011,,Small to middle size stones spread all over the surface.,42.628303,25.284228
+1011,Certain,376,35,35,3.5,Medium,Pasture,Scrub|Tall Grass,Photo,No,2,1,Good,2009,Remote Sensing,Dunavtsi,,DUN012,5500097,"Entirely overgrown, not accesible, destroyed by machine.",42.626647,25.293209
+1016,Certain,362,37,28,5,Medium,Pasture,Scrub|Tall Grass,Photo,Yes,2,1,Good,2009,Survey,Dunavtsi,,DUN002,5500099,,42.636998,25.277834
+1017,Certain,347,30,30,4,Medium,Forest,Scrub|Tall Grass,Photo,Yes,3,1,Good,2009,Remote Sensing,Dunavtsi,,DUN003,,"Very large stones in the profile, composed of yellow sandy soil. robbers' trench's from N to S.",42.629079,25.280002
+1018,Certain,352,20,15,2,Medium,Forest,Scrub|Tall Grass,Photo,Yes,2,1,Good,2009,Remote Sensing,Dunavtsi,,DUN004,,"Robbers' trench on the top, shallow but in the shape of grave.",42.626354,25.280477
+1019,Certain,402,28,27,6,Large,Forest,Scrub|Tall Grass,Photo,Yes,3,2,Good,2009,AKB,Dunavtsi,Trite Mogili,DUN006,5500094,,42.623357,25.289673
+1020,Certain,403,25,20,6,Large,Forest,Scrub|Tall Grass,Photo,Yes,4,3,Good,2009,AKB,Dunavtsi,Trite Mogili,DUN007,5500095,,42.623433,25.290542
+1021,Certain,395,33,30,3,Medium,Forest,Scrub|Tall Grass,Photo,Yes,3,1,Good,2009,AKB,Dunavtsi,Trite Mogili,DUN008,5500093,,42.623049,25.291653
+1022,Certain,375,25,16,3,Medium,Forest,Scrub|Tall Grass,Photo,No,1,1,Good,2009,AKB,Dunavtsi,,DUN009,5500096,,42.62258,25.295608
+1023,Certain,379,25,25,3,Medium,Scrub,Scrub|Tall Grass,Photo,Yes,2,1,Good,2009,AKB,Dunavtsi,,DUN010,5500100,,42.621049,25.297957
+1024,Uncertain,492,37,35,1,Small,Annual Agriculture,Annual Agriculture|Ploughed,Photo,No,5,5,Poor,2010,Survey,Kran,,KRAN 50,,On the photo it is the bad visible hill in the field - agricultured to death.,42.686737,25.373959
+1025,Certain,491,32,30,0.7,Small,Annual Agriculture,Annual Agriculture|Ploughed,Photo,No,4,4,Good,2010,Survey,Kran,,KRAN 52,,Concentration of stones on the surface.,42.688196,25.372955
+1026,Certain,491,25,25,8,Large,Annual Agriculture,Pasture,Photo,Yes,3,2,Good,2010,AKB,Kran,,KRAN 53,5500087,Southern part of the mound was taken by machine.,42.689354,25.371725
+1031,Certain,519,69,67,1,Small,Annual Agriculture,Annual Agriculture|Ploughed,Photo,Yes,4,4,Good,2010,Survey,Shipka,,SHIPKA 01,,"Excavated down the middle of the mound, now the middle is used as part of the field; was it done by TEMP (Kitov, Thracian Expedition for Tumular Investigations).",42.701337,25.353101
+1032,Certain,531,36,32,4,Medium,Pasture,Scrub|Tall Grass,Photo,Yes,2,1,Good,2010,Survey,Shipka,,SHIPKA 02,,Partially destroyed by robbers.,42.703133,25.351985
+1034,Certain,538,35,31,2,Medium,Pasture,Pasture,Photo,Yes,3,2,Good,2010,Survey,Shipka,,SHIPKA 05,,"Uneven surface of mound, earth has been pushed back into mound, previously excavated.",42.702655,25.347987
+1035,Certain,529,21,20,8,Large,Pasture,Pasture,Photo,Yes,3,2,Good,2010,Survey,Shipka,,SHIPKA 06,,"Digged through - E side steep and uneven/W side has even slope, possibly left unexcavated.",42.702357,25.347456
+1036,Certain,530,46,37,2,Medium,Pasture,Pasture,Survey,Yes,3,2,Good,2010,Survey,Shipka,,SHIPKA 07,,"Mound likely to be on the West side, earth from excavation moved to pile in the East, tree in the middle.",42.702723,25.347384
+1037,Certain,533,34,26,4,Medium,Pasture,Scrub|Tall Grass,Photo,Yes,3,2,Good,2010,Survey,Shipka,,SHIPKА 08,,"Located in private property, beehives and small house on it.",42.704853,25.348799
+1038,Certain,541,104,88,15,Large,Pasture,Scrub|Tall Grass,Photo,Yes,1,1,Poor,2010,Survey,Shipka,Shushmanets,SHIPKA 09,,"Excavated 1996, Tomb/Temple inside.",42.70713,25.348656
+1039,Certain,527,45,35,12,Large,Pasture,Scrub|Tall Grass,Photo,Yes,1,1,Good,2010,Survey,Shipka,Helvetsia,SHIPKA 10,,"Excavated 1996, Tomb inside.",42.705521,25.346335
+1040,Certain,530,36,32,10,Large,Pasture,Pasture,Photo,Yes,1,1,Good,2010,Survey,Shipka,Grifonite,SHIPKA 11,,"Excavated 1996, Tomb/Temple inside, nearby the factory.",42.705482,25.344657
+1041,Uncertain,537,42,34,3,Medium,Pasture,Pasture,Survey,Yes,2,1,None,2010,Survey,Shipka,,SHIPKA 12,,Probably digged through - mound surface very uneven.,42.706308,25.345734
+1042,Uncertain,502,10,8,2,Medium,Pasture,Pasture,Photo,No,3,1,Poor,2010,Survey,Shipka,,SHIPKA 03,,"Recent activity or ancient - modern monument on the top, staircase leading to it, marked on the map 1:25000.",42.700141,25.348373
+1046,Certain,367,35,35,3,Medium,Forest,Scrub|Tall Grass,Photo,Yes,2,1,Good,2009,AKB,Dunavtsi,,,5500098,Recent rubbish near 1 robbers' trench.,42.627816,25.294272
+1047,Certain,362,20,20,1.5,Medium,Forest,Scrub|Tall Grass,Photo,Yes,3,1,Good,2009,Survey,Dunavtsi,,,,"Overgrown with undefined boundaries, Very wide mound with spread out soil with 2 possible robbers' trench's. 2 very shallow trenches on South side.",42.627402,25.294759
+1048,Certain,368,35,20,2,Medium,Forest,Scrub|Tall Grass,Photo,Yes,3,1,Good,2009,Survey,Dunavtsi,,,,"Can see some stone in trench, overgrown with old robbers' trench, West side cut ; large furrough (assumed robbers' trench).",42.626192,25.295731
+1055,Certain,402,77,63,1.5,Medium,Annual Agriculture,Annual Agriculture|Ploughed,Survey,No,4,4,Good,2011,AKB,Sheynovo,,,5500062,Entirely destroyed by agriculture.,42.664873,25.30664
+1057,Certain,404,53,44,1,Small,Annual Agriculture,Annual Agriculture|Ploughed,Survey,No,4,5,None,2011,Survey,Sheynovo,,,,,42.66972,25.316935
+1059,Certain,444,26,25,5,Medium,Urban,Pasture,Survey,Yes,3,3,Good,2011,AKB,Sheynovo,Sheynovskata Mogila,,5500063,"Covered with plants, stairs going up to a comunist momument, earth is mixed, looks like it has been destroyed but replaced.",42.681548,25.325159
+1060,Certain,437,30,26,5,Medium,Pasture,Scrub|Tall Grass,Survey,Yes,3,3,Good,2011,AKB,Sheynovo,,,5500061,"Completely covered with plants/trees, etc. Top of the mound was removed by R.'s.",42.678813,25.316116
+1063,Certain,378,50,40,0.5,Small,Perennial Agriculture,Annual Agriculture|Ploughed,Survey,No,4,5,None,2011,Survey,Sheynovo,,,,,42.667452,25.322524
+1066,Uncertain,419,16,12,0.6,Small,Pasture,Pasture,Survey,No,4,4,None,2011,Survey,Golyamo Dryanovo,,,,"Defunct mound in a very disrupted environment; no obvious robbers' trenchs if any, they are old and lost in the general disuption of the mound and surrounding area.",42.673922,25.24526
+1067,Certain,433,22,18,0.5,Small,Pasture,Pasture,Survey,Yes,4,4,None,2011,Remote Sensing,Golyamo Dryanovo,,,,Mostly excavated defunct mound with large crater in the center and trench to the SW; large stone blocks (unworked) in trench; no ancient material visible.,42.670017,25.241125
+1068,Certain,434,22,18,5,Medium,Pasture,Pasture,Photo,Yes,2,2,Good,2011,Survey,Yasenovo Region,,,,"Fairly well preserved mound; W side cut away, two recent robbers' trenchs; perhaps some old robbers' trenchs on south.",42.680845,25.234487
+1069,Certain,441,22,22,0.5,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Survey,Yasenovo Region,,,,"Large but low mound, no obvious robbing.",42.681378,25.233672
+1070,Uncertain,436,18,13,0.8,Small,Pasture,Pasture,Photo,Yes,3,2,Good,2011,Survey,Yasenovo Region,,,,"Mound with flattened top, field stones piled on top and around; odd shape - squarish and flattened.",42.680225,25.233502
+1071,Certain,474,16,15,2,Medium,Forest,Forest,Photo,Yes,2,1,Good,2010,Survey,Gorno Sahrane,,GS 006-13,,"One robbers' trench, earth mound with large river stones in profile.",42.656307,25.21539
+2001,Certain,368,19,16,5,Medium,Annual Agriculture,Annual Agriculture|Ploughed,Photo,No,4,4,Good,2009,Survey,Koprinka,,KOOP001,,"Destroyed by plaughing, now overgrown.",42.636378,25.31999
+2002,Certain,405,40,30,15,Large,Pasture,Pasture,Photo,Yes,3,3,Good,2009,Survey,Koprinka,Golyamata Mogila,KOOP002,,,42.625818,25.326059
+2003,Certain,395,30,25,5,Medium,Pasture,Pasture,Photo,Yes,3,1,Good,2009,Survey,Koprinka,,KOOP003,,,42.626399,25.328311
+2004,Certain,397,28,28,2,Medium,Pasture,Pasture,Photo,No,3,1,Poor,2009,Survey,Koprinka,,KOOP004,,,42.626412,25.324036
+2005,Certain,390,41,35,7,Large,Pasture,Pasture,Photo,Yes,3,1,Good,2009,Survey,Koprinka,,KOOP005,,,42.626091,25.319479
+2006,Certain,388,22,15,4,Medium,Pasture,Pasture,Photo,Yes,3,1,Good,2009,Survey,Koprinka,,KOOP006,,,42.626213,25.31907
+2007,Certain,386,15,15,5,Medium,Pasture,Pasture,Photo,No,2,1,Good,2009,Survey,Koprinka,,KOOP007,,Covered with grass.,42.626925,25.31884
+2008,Certain,363,18,15,2,Medium,Pasture,Pasture,Photo,No,2,1,Poor,2009,Survey,Koprinka,,KOOP008,,,42.627886,25.317414
+2013,Certain,366,50,45,6,Large,Annual Agriculture,Scrub|Tall Grass,Photo,Yes,2,1,Good,2009,Survey,Koprinka,,KOOP009,,Roman/Thracian sherds found next to it - flat site.,42.623946,25.30949
+2014,Certain,357,20,15,6,Large,Pasture,Scrub|Tall Grass,Photo,Yes,3,1,Good,2009,Survey,Koprinka,Devette Mogili,KOOP010,,,42.620411,25.310659
+2015,Certain,376,25,20,2,Medium,Pasture,Scrub|Tall Grass,Photo,Yes,4,3,Good,2009,Survey,Koprinka,Devette Mogili,KOOP011,,,42.622895,25.311128
+2016,Uncertain,359,18,18,0.5,Small,Pasture,Pasture,Photo,No,5,5,Good,2009,Survey,Koprinka,Devette Mogili,KOOP012,,,42.626424,25.31247
+2017,Certain,370,24,24,3,Medium,Pasture,Pasture,Photo,Yes,2,1,Good,2009,Survey,Koprinka,Devette Mogili,KOOP013,,"Massive stones scattered all around and in the section, almost unrecognizable (vegetation).",42.627181,25.310993
+2018,Certain,360,14,12,8,Large,Pasture,Pasture,Photo,Yes,2,1,Good,2009,Survey,Koprinka,Devette Mogili,KOOP014,,,42.625423,25.308789
+2020,Certain,381,29,20,7,Large,Pasture,Pasture,Photo,Yes,3,2,Good,2009,Survey,Koprinka,,KOOP016,,Robbers' trench on the top.,42.633216,25.320292
+2021,Certain,368,15,10,1,Small,Pasture,Pasture,Photo,Yes,2,1,Good,2009,Survey,Koprinka,,KOOP017,,Robbers' trench on the S.,42.633649,25.319406
+2022,Certain,354,22,13,2,Medium,Pasture,Pasture,Photo,No,2,1,Good,2009,Survey,Koprinka,,KOOP018,,"Robbers' trench on the top, rectangular shape (1.6x2.2x1 m).",42.633562,25.318983
+2023,Certain,348,29,22,5,Medium,Pasture,Pasture,Photo,Yes,2,1,Good,2009,Survey,Koprinka,,KOOP019,,Robbers' trench on the S (1.5x1.5).,42.633604,25.318296
+2027,Certain,347,20,20,1,Small,Annual Agriculture,Annual Agriculture|Ploughed,Photo,Yes,4,2,Good,2009,Survey,Kazanlak,,KAZ006,,,42.617738,25.351372
+2028,Certain,352,28,26,5,Medium,Annual Agriculture,Scrub|Tall Grass,Photo,No,2,1,Good,2009,Survey,Kazanlak,,KAZ007,,,42.618843,25.356748
+2029,Certain,341,41,28,2,Medium,Annual Agriculture,Scrub|Tall Grass,Photo,No,2,1,Good,2009,Survey,Kazanlak,,KAZ008,,,42.618809,25.360435
+2030,Certain,346,57,51,4,Medium,Annual Agriculture,Pasture,Photo,No,2,1,Good,2009,Survey,Kazanlak,Bikchiysuka Mogila,KAZ009,,,42.614987,25.360287
+2033,Certain,338,70,50,1,Small,Annual Agriculture,Annual Agriculture|Ploughed,Photo,No,5,4,Good,2010,AKB,Kazanlak,,,,Destroyed by agriculture.,42.624334,25.358027
+2034,Certain,373,35,35,0.3,Small,Annual Agriculture,Annual Agriculture|Ploughed,Photo,No,5,5,Good,2010,AKB,Hadzhidimitrovo,,HadzXXXC197,5510249,"Destroyed by agriculture, mound and scatter.",42.642994,25.341803
+2041,Certain,374,40,33,1,Small,Annual Agriculture,Annual Agriculture|Ploughed,Photo,Yes,4,4,Good,2010,AKB,Kran,,Kran024,5510254,"Almost defunct mound, robber trench E side ( 2.8 length x 0.8 width x 0.8 depth), which has been buldozed off, W side ploughed out.",42.642268,25.359819
+2042,Certain,371,30,30,1,Small,Annual Agriculture,Annual Agriculture|Ploughed,Photo,Yes,4,3,Good,2010,Survey,Kazanlak,,,,"Destroyed by agriculture, huge robbers' trench in the middle, full of water, going to the bedrock.",42.636486,25.358835
+2043,Uncertain,374,50,44,1,Small,Annual Agriculture,Annual Agriculture|Ploughed,Photo,Yes,5,5,Good,2010,AKB,Hadzhidimitrovo,,Hadz001,5510255,Entirely destroyed by agriculture.,42.648103,25.341532
+2047,Uncertain,394,55,39,0.5,Small,Annual Agriculture,Annual Agriculture|Ploughed,Photo,No,5,5,Good,2010,AKB,Kran,,Kran026,5500101,"Mound, almost invisible, destroyed by agriculture.",42.658093,25.356051
+2050,Certain,637,9,5,2,Medium,Pasture,Pasture,Photo,No,2,1,Good,2010,AKB,Enina,Chelecheto|Chelyacheto,Enina011,5510258,Trees on the top.,42.673636,25.421432
+2052,Certain,347,30,27,4,Medium,Pasture,Pasture,Photo,Yes,3,2,Good,2010,AKB,Koprinka,,Kop021,5510262,"New treasure hunters big trench on the W side, new 3 holes - seems like garbage holes, modern debris on the surface, digged thtough? - uneven surface.",42.615424,25.348856
+2053,Certain,340,52,45,4,Medium,Annual Agriculture,Scrub|Tall Grass,Photo,Yes,2,1,Good,2010,AKB,Kazanlak,,Kaz010,5510263,"New robber trench on the S slope, deep inside (tunnel to the centre of the mound 220x170), overgrown with scrub, access easy, prehistoric shards in robbers' trench. Old trench on top 1.5mx1.5mx0.30m, bones in profile.",42.614311,25.347855
+2063,Uncertain,452,50,50,2,Medium,Pasture,Scrub|Tall Grass,Survey,No,4,5,None,2009,Remote Sensing,Hadzhidimitrovo,,,,,42.681116,25.34533
+2072,Uncertain,462,25,15,0.2,Small,Annual Agriculture,Annual Agriculture|Ploughed,Photo,Yes,4,3,Good,2009,Remote Sensing,Sheynovo,,,,Burial chamber from defunct mound - cut away by agriculture and robbed / or part of the house ?.,42.686287,25.336876
+2080,Uncertain,484,40,40,1,Small,Annual Agriculture,Annual Agriculture|Ploughed,Photo,No,4,4,Good,2011,Remote Sensing,Shipka,,,,"Heavily ploughed, rocky soil.",42.69169,25.352455
+2081,Certain,479,20,15,2.5,Medium,Annual Agriculture,Scrub|Tall Grass,Photo,Yes,3,2,Good,2011,Remote Sensing,Shipka ,,,,Old robbers' trench on the top.,42.699317,25.338995
+2082,Certain,451,35,35,6,Large,Pasture,Pasture,Photo,Yes,3,3,Good,2011,Remote Sensing,Gorno Sahrane necropolis,Atyuvska Mogila,,,"Robbed mound, robbers' trench on north side, stone ring around the mound, earth taken next to the mound.",42.670536,25.225552
+2083,Certain,451,10,10,0.3,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Remote Sensing,Gorno Sahrane necropolis,,,,Small stones on the surface of the mound.,42.663936,25.214335
+2084,Certain,452,10,10,0.4,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Remote Sensing,Gorno Sahrane necropolis,,,,Small stones on the surface.,42.663975,25.214065
+2085,Certain,449,7,7,0.3,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Remote Sensing,Gorno Sahrane necropolis,,,,Large stones on the surface of the mound.,42.664045,25.215549
+2086,Certain,448,15,15,0.5,Small,Pasture,Pasture,Photo,No,3,2,Good,2011,Remote Sensing,Gorno Sahrane necropolis,,,,Destroyed by a power lines tower; large stones encopass the mound area.,42.664017,25.216534
+2091,Certain,446,10,10,0.5,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Remote Sensing,Gorno Sahrane necropolis,,,,Destroyed by a water canal; overgrown.,42.662692,25.217693
+2092,Certain,404,10,10,0.4,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Remote Sensing,Gorno Sahrane necropolis,,,,Large stones on the surface of the mound.,42.66258,25.218558
+2093,Certain,437,5,5,0.3,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Remote Sensing,Gorno Sahrane necropolis,,,,Small stones on the surface.,42.663474,25.222389
+2094,Certain,440,10,10,0.3,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Remote Sensing,Gorno Sahrane necropolis,,,,Large stones on the surface of the mound.,42.663638,25.22064
+2097,Certain,450,16,8,0.8,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Remote Sensing,Gorno Sahrane necropolis,,,,Stones spread all over the surface.,42.663051,25.214101
+2098,Certain,444,20,18,1,Small,Perennial Agriculture,Scrub|Tall Grass,Photo,No,3,2,Good,2011,Remote Sensing,Gorno Sahrane necropolis,,,,"Flat, round mound, stony.",42.662431,25.214482
+2099,Certain,448,17,13,1,Small,Annual Agriculture,Scrub|Tall Grass,Photo,No,3,2,Good,2011,Remote Sensing,Gorno Sahrane necropolis,,,,"Low, covered with vegetation ovoid.",42.661516,25.215233
+2100,Uncertain,447,15,9,0.5,Small,Annual Agriculture,Scrub|Tall Grass,Photo,No,4,4,Good,2011,Remote Sensing,Gorno Sahrane necropolis,,,,Surface of the mound covered with lots of stones/either from the surrounding pasture or from the mound.,42.66162,25.215561
+2102,Certain,448,10,10,1,Small,Annual Agriculture,Scrub|Tall Grass,Photo,No,3,2,Good,2011,Remote Sensing,Gorno Sahrane necropolis,,,,Surface of the mound covered with lots of stones/either from the surrounding pasture or from the mound.,42.661005,25.215888
+2103,Uncertain,448,52,8,1.5,Medium,Annual Agriculture,Scrub|Tall Grass,Photo,Yes,4,3,Good,2010,Survey,Gorno Sahrane,,GS 006-3,,"Positive form, could be rest of the wall, modern debris, one large trench.",42.659839,25.21666
+2104,Uncertain,447,16,10,0.2,Small,Annual Agriculture,Scrub|Tall Grass,Photo,No,4,4,Good,2011,Remote Sensing,Gorno Sahrane necropolis,,,,Surface of the mound covered with lots of stones/either from the surrounding pasture or from the mound.,42.659617,25.216351
+2105,Certain,443,8,7,0.5,Small,Pasture,Pasture,Not recorded,No,2,1,None,2011,Survey,Gorno Sahrane necropolis,,,,Water drainage channel going through it.,42.659372,25.217076
+2106,Certain,443,15,12,1,Small,Annual Agriculture,Scrub|Tall Grass,Photo,Yes,3,2,Good,2011,Remote Sensing,Gorno Sahrane necropolis,,,,"Flat, stony, medium-large, ovoid, some vegetation.",42.659395,25.217374
+2108,Uncertain,432,22,22,0.3,Small,Pasture,Pasture,Photo,Yes,2,2,Good,2011,Remote Sensing,Gorno Sahrane necropolis,,,,"Round, flat mound, looks likes it's divided into two mounds but it is one mound.",42.658626,25.219685
+2109,Certain,432,15,14,0.5,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Remote Sensing,Gorno Sahrane necropolis,,,,"Medium sized stones, low flat mound.",42.658557,25.21987
+2110,Certain,432,17,14,0.6,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Remote Sensing,Gorno Sahrane necropolis,,,,"No trenches, small stones.",42.658287,25.219973
+2113,Certain,438,16,13,5,Medium,Annual Agriculture,Scrub|Tall Grass,Photo,Yes,3,2,Good,2011,Remote Sensing,Gorno Sahrane necropolis,,,,Surface of the mound covered with lots of stones/either from the surrounding pasture or from the mound.,42.659304,25.218797
+2115,Certain,442,24,16,0.2,Small,Annual Agriculture,Annual Agriculture|Ploughed,Photo,No,2,2,Good,2011,Remote Sensing,Gorno Sahrane necropolis,,,,"Very low, flat, long, grassy mound, some med-sized rocks.",42.660316,25.218237
+2116,Certain,444,15,11,0.7,Small,Annual Agriculture,Annual Agriculture|Ploughed,Photo,Yes,3,3,Good,2011,Remote Sensing,Gorno Sahrane necropolis,,,,"Large flat mound, some vegetation. Large stones, 2 trenches.",42.66124,25.216482
+2117,Certain,444,20,15,1,Small,Annual Agriculture,Annual Agriculture|Ploughed,Photo,No,2,2,Good,2011,Remote Sensing,Gorno Sahrane necropolis,,,,"Flat mound, pile of stones on the top, small size, no obvious robbers' trenchs.",42.66232,25.217223
+2118,Certain,444,21,20,0.5,Small,Annual Agriculture,Pasture,Photo,Yes,4,3,Good,2011,Remote Sensing,Gorno Sahrane necropolis,,,,"Large overgrown mound, one robbers' trench.",42.66229,25.215665
+2119,Certain,444,26,21,0.5,Small,Annual Agriculture,Scrub|Tall Grass,Photo,Yes,3,3,Good,2011,Remote Sensing,Gorno Sahrane necropolis,,,,Surface of the mound covered with lots of stones/either from the surrounding pasture or from the mound.,42.661645,25.216145
+2120,Certain,452,4,4,0.5,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Survey,Gorno Sahrane necropolis,,,,"Low, flat, round, some vegetation.",42.666846,25.217871
+2121,Certain,451,2,2,0.3,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Survey,Gorno Sahrane necropolis,,,,"Low, flat, possibly bulldozed.",42.667178,25.216963
+2123,Certain,436,3,2,0.3,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Survey,Gorno Sahrane necropolis,,,,Stones spread all over the surface.,42.665491,25.224563
+2124,Certain,436,5,3,0.6,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Survey,Gorno Sahrane necropolis,,,,"Small stones on top, some vegeation, larger stones loose on sides.",42.665931,25.225004
+2125,Certain,435,5,3,0.2,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Survey,Gorno Sahrane necropolis,,,,Stones spread all over the surface.,42.665243,25.22594
+2126,Uncertain,437,2,2,0.3,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Survey,Gorno Sahrane necropolis,,,,"Could be a dug out ditch (agricultural), few stones.",42.664382,25.227905
+2127,Certain,435,12,10,0.5,Small,Pasture,Pasture,Photo,Yes,4,3,Good,2011,Survey,Gorno Sahrane necropolis,,,,"Big pile of stones, freshly dug, enlarged from original robbers' trench, vegetation on the bottom of the mound; visible structure, looks like freshly and entirely robbed.",42.664676,25.228358
+2128,Certain,435,3,3,0.2,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Survey,Gorno Sahrane necropolis,,,,"Small stones on top, some vegeation, larger stones loose on sides.",42.665958,25.225831
+2129,Certain,436,4,3,0.4,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Survey,Gorno Sahrane necropolis,,,,"Few small stones on top, slight indent in the centre of mound.",42.667119,25.225586
+2130,Certain,437,14,12,0.5,Small,Pasture,Pasture,Photo,Yes,2,2,Good,2011,Survey,Gorno Sahrane necropolis,,,,"Round, fairly low, scattered med-large stones, very small hole.",42.666556,25.224954
+2131,Certain,437,5,4,0.3,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Survey,Gorno Sahrane necropolis,,,,"Long flat, oval shaped, some vegetation, very few stones (small).",42.667126,25.224549
+2132,Uncertain,458,3,2,0.2,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Survey,Gorno Sahrane necropolis,,,,"Almost flat, round, small.",42.668537,25.216911
+2134,Certain,466,21,7,0.7,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Survey,Gorno Sahrane necropolis,,,,"Two mounds close to each other, large and round, many small-medium sized stones on top, some vegetation.",42.668594,25.210662
+2135,Uncertain,466,10,9,0.5,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Survey,Gorno Sahrane necropolis,,,,"Vegetation, stones on top.",42.668747,25.211706
+2136,Certain,465,6,5,0.3,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Survey,Gorno Sahrane necropolis,,,,"Low, many small stones, two large rocks, vegetation.",42.668729,25.211953
+2137,Certain,467,9,9,0.5,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Survey,Gorno Sahrane necropolis,,,,Stones spread all over the surface.,42.669057,25.211669
+2139,Certain,470,20,4,0.5,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Survey,Gorno Sahrane necropolis,,,,"Long, many med-large size stones, vegetation.",42.669163,25.20959
+2140,Certain,469,3,2,0.5,Small,Pasture,Pasture,Photo,Yes,2,2,Good,2011,Survey,Skobelevo ,,,,"Small robbers' trench on top, many stones surrounding it and much vegetation.",42.669082,25.209379
+2141,Certain,469,10,9,0.4,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Survey,Skobelevo ,,,,"Very low, round.",42.668867,25.209511
+2142,Certain,469,3,2,0.5,Small,Pasture,Pasture,Photo,Yes,2,2,Good,2011,Survey,Skobelevo ,,,,Stones spread all over the surface.,42.669066,25.210104
+2143,Certain,467,10,5,0.5,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Survey,Skobelevo ,,,,Stones spread all over the surface.,42.668762,25.210203
+2144,Certain,469,8,5,0.5,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Survey,Skobelevo ,,,,"Worked stone in the middle, vegetation on top.",42.668955,25.208959
+2146,Certain,469,9,9,0.5,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Survey,Skobelevo ,,,,"Very few stones, lots of vegetation, one large stone.",42.669826,25.208677
+2147,Certain,469,8,7,0.5,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Survey,Skobelevo ,,,,"Large stones around the mound, round, low and flat.",42.669703,25.208347
+2148,Uncertain,471,10,8,0.2,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Survey,Skobelevo ,,,,"Barely visible, very overgrown with vegetation.",42.669494,25.209564
+2150,Certain,472,4,3,0.4,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Survey,Skobelevo ,,,,"Low, fla, long, small and medium sized stones.",42.669521,25.210341
+2151,Certain,473,8,8,0.5,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Survey,Skobelevo ,,,,"Round. Two large stones, many small rocks on top.",42.669839,25.210427
+2152,Certain,473,5,4,0.3,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Survey,Skobelevo ,,,,"Overgrown, barely visible, many stones, lots of vegetation.",42.669956,25.210391
+2153,Certain,473,7,7,0.5,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Remote Sensing,Skobelevo ,,,,"Barely visible, many stones, lots of vegetation.",42.670094,25.211061
+2154,Certain,466,7,6,0.5,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Survey,Gorno Sahrane necropolis,,,,"Small indent in the entre, vegetation.",42.669325,25.216556
+2158,Certain,460,16,8,0.8,Small,Pasture,Pasture,Photo,Yes,4,4,Good,2011,Remote Sensing,Gorno Sahrane necropolis,,,,"2robbers' trench-one on the top, one on the side.",42.66908,25.217868
+2159,Certain,458,6,6,0.4,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Survey,Gorno Sahrane necropolis,,,,"Barely visible, overgrown with vegetation.",42.668774,25.22025
+2161,Certain,436,3,3,0.2,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Survey,Gorno Sahrane necropolis,,,,"Very low, flat and circular, stones.",42.667506,25.22419
+2162,Certain,438,2,2,0.3,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Survey,Gorno Sahrane necropolis,,,,"Lots of vegetation, circular, low.",42.667893,25.225474
+2163,Certain,437,4,2,0.2,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Survey,Gorno Sahrane necropolis,,,,"Many small-md stones on side, vegetation.",42.667828,25.225681
+2164,Certain,437,3,3,0.3,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Survey,Gorno Sahrane necropolis,,,,"Circular, flat.",42.667951,25.225013
+2166,Certain,437,3,1,0.2,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Survey,Gorno Sahrane necropolis,,,,"Flat, long, almost invisible.",42.667331,25.227525
+2167,Uncertain,432,5,3,0.1,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Survey,Gorno Sahrane necropolis,,,,Very flat.,42.667298,25.227184
+2169,Certain,431,2,2,0.2,Small,Pasture,Pasture,Photo,Yes,4,4,Good,2011,Survey,Gorno Sahrane necropolis,,,,"Very small, lots of vegetation, large robbers' trench taking almost all the mound.",42.666569,25.22691
+2170,Uncertain,436,3,2,0.5,Small,Pasture,Scrub|Tall Grass,Survey,No,4,5,None,2011,Survey,Gorno Sahrane necropolis,,,,"Big pile of medium stones on top, one side surrounded by rose bushes.",42.665486,25.229501
+2171,Uncertain,435,6,5,0.1,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Survey,Gorno Sahrane necropolis,,,,"Some pottery (modern), overgrown, barely visible, long, flat, large stones and rose bushes. Worked stone?.",42.667455,25.229477
+2172,Certain,455,6,5,0.3,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Survey,Gorno Sahrane necropolis,,,,"Long, flat, lots of vegetation.",42.669379,25.221035
+2173,Certain,454,5,3,0.2,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Survey,Gorno Sahrane necropolis,,,,"Barely visible, long, oval shaped, vegetation, almost flat.",42.669832,25.220595
+2174,Certain,458,7,5,0.4,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Survey,Gorno Sahrane necropolis,,,,"No stones, vegetation, round, flat.",42.669892,25.219467
+2175,Certain,462,7,5,0.4,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Survey,Gorno Sahrane necropolis,,,,"Round, vegetation, medium stones.",42.669999,25.217956
+2176,Certain,456,15,10,0.5,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Survey,Gorno Sahrane necropolis,,,,"Long, flat, hardly any stones, some vegetation.",42.670388,25.220295
+2181,Certain,440,15,12,5,Medium,Pasture,Pasture,Photo,Yes,3,3,Good,2011,Remote Sensing,Gorno Sahrane necropolis,,,,"Several robbers' trench's, the largest one taking N side of the mound.",42.669573,25.227297
+2184,Certain,451,6,6,0.5,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Remote Sensing,Skobelevo ,,,,"Round, flat, low, medium stones on top.",42.672407,25.206533
+2186,Certain,483,8,7,0.3,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Survey,Skobelevo ,,,,"Long, flat, some large stones on top.",42.673583,25.209285
+2187,Certain,448,40,35,5,Medium,Pasture,Pasture,Photo,Yes,3,2,Good,2011,Survey,Skobelevo ,,,,"Indented on top, many large and medium stones surround the mound; digged through with soil returned, uneven surface.",42.674849,25.208881
+2191,Certain,477,6,4,0.4,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Survey,Skobelevo ,,,,Small hole near mound. Medium stones surrounding the mound.,42.671123,25.209256
+2192,Certain,477,5,3,0.2,Small,Pasture,Pasture,Photo,Yes,2,2,Good,2011,Survey,Skobelevo ,,,,One small old robbers trench.,42.672266,25.212
+2193,Certain,474,4,3,0.2,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Survey,Skobelevo ,,,,Medium stones on top.,42.671916,25.212404
+2194,Certain,477,7,3,0.2,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Survey,Skobelevo ,,,,"Very flat on top, many medium sized stones on top.",42.672625,25.214142
+2195,Certain,469,8,4,0.5,Small,Pasture,Pasture,Photo,Yes,2,2,Good,2011,Survey,Skobelevo ,,,,"Long, oval shaped, large stones.",42.672804,25.215802
+2196,Certain,475,4,4,0.3,Small,Pasture,Pasture,Photo,Yes,2,2,Good,2011,Survey,Skobelevo ,,,,One small robbers' trench.,42.672339,25.214926
+3000,Certain,379,30,20,4,Medium,Forest,Scrub|Tall Grass,Photo,Yes,3,2,Good,2009,Survey,Viden,Gichova Mogila,VID001,,According to informant I.Dechev there was a mound destroyed by robbers in 1990's.,42.612928,25.246917
+3001,Uncertain,367,40,20,5,Medium,Forest,Forest,Photo,Yes,4,4,Good,2009,Survey,Viden,,VID002,,Possibly only hill. Undefined boundaries.,42.614405,25.247261
+3009,Certain,383,15,15,5,Medium,Forest,Scrub|Tall Grass,Photo,No,2,1,Good,2009,Survey,Viden,,VID003,,Covered with vegetation.,42.609432,25.247477
+3011,Certain,448,15,15,2,Medium,Pasture,Scrub,Not recorded,Yes,4,3,None,2009,Survey,Vidin,,VID005,,Old robbers' trench's.,42.611554,25.251629
+3012,Certain,409,15,15,5,Medium,Forest,Scrub|Tall Grass,Photo,Yes,4,3,Good,2009,Survey,Viden,,VID052,,Small; hardly visible; next to a road which destroyed it;.,42.613244,25.251097
+3015,Certain,452,15,15,1,Small,Pasture,Pasture,Photo,No,3,2,Good,2009,Survey,Dolno Sahrane,,VID071,,"Large stones arranged in a circle along the E and N. The top is dug trough. GPS point 1 - 50 m to the E, another group of large stones. Lot of shallow old robbers' trenchs. Covered in vegetation.",42.609596,25.265373
+3020,Certain,449,25,25,2,Medium,Forest,Scrub|Tall Grass,Photo,Yes,2,1,Good,2009,Survey,Dolno Sahrane,,VID072,,"Covered in vegetation. Small shallow robbers' trenchs at the top, large stones covering the surface of the mound; Large stones encompassing the area of the mound.",42.610606,25.263576
+3024,Certain,460,20,20,0.5,Small,Forest,Scrub|Tall Grass,Photo,Yes,2,1,Good,2009,Survey,Viden,,VID009,,Completely destroyed;.,42.602768,25.26829
+3026,Certain,458,25,25,5,Medium,Forest,Scrub|Tall Grass,Photo,No,5,5,Good,2009,Survey,Gorno Cherkhovishte,,GCH051,,Undetermined boundaries. The mound is completely destroyed. Large stones encompass the area. 20 m (E direction) there is another stone circle.,42.6042,25.275148
+3032,Certain,410,20,20,2,Medium,Forest,Scrub|Tall Grass,Survey,Yes,2,2,None,2009,Survey,Gorno Cherkhovishte,,GCH056_01,,Old shallow robbers' trench (1.5x1.5x0.3).,42.602408,25.283478
+3033,Certain,411,17,17,3,Medium,Forest,Scrub|Tall Grass,Survey,Yes,2,2,None,2009,Survey,Gorno Cherkhovishte,,GCH056_02,,Old robbers' trench.,42.602558,25.28393
+3043,Certain,390,19,16,5,Medium,Forest,Scrub|Tall Grass,Photo,Yes,2,1,Good,2009,Survey,Viden,,VID012,,"Minimal, small old robbers' trench's. Few rocks.",42.61233,25.248048
+3046,Certain,432,20,20,5,Medium,Forest,Scrub|Tall Grass,Photo,No,2,1,Good,2009,Survey,Viden,,VID061,,3 old robbers' trenchs on top.,42.608484,25.252422
+3047,Certain,430,20,20,3,Medium,Forest,Scrub|Tall Grass,Photo,No,2,1,Good,2009,Survey,Viden,,VID062,,Old shallow robbers' trenchs on the top; large stones around the mound.,42.608208,25.25259
+3048,Certain,425,10,10,0.5,Small,Forest,Scrub|Tall Grass,Photo,No,2,1,Good,2009,Survey,Viden,,VID063,,Two old robbers' trenchs; bad visibility.,42.608265,25.252233
+3049,Certain,434,40,40,10,Large,Forest,Scrub|Tall Grass,Photo,Yes,3,2,Good,2009,Survey,Dolno Sahrane,,VID081,,"Enormous robbers' trench dug through the mound. Ongoing robbery. In the profile are visible layers small stones, chamber was made by large slab stones.",42.617752,25.265143
+3050,Certain,433,30,30,4,Medium,Forest,Scrub|Tall Grass,Photo,Yes,3,2,Good,2009,Survey,Dolno Sahrane,,VID082,,The central area is destroyed. Large stones encompass the mound. Visible soil structure in profile.,42.617677,25.264661
+3051,Certain,429,15,15,1,Small,Forest,Scrub|Tall Grass,Photo,Yes,3,2,Good,2009,Survey,Dolno Sahrane,,VID083,,The central area is destroyed. Large stones around the robbers' trench from the burial chamber.,42.618264,25.265088
+3054,Certain,401,30,25,3,Medium,Forest,Scrub|Tall Grass,Photo,Yes,3,3,Good,2009,Survey,Viden,,VID004,,The central area completely destroyed by robbers' trench.,42.610407,25.248686
+3061,Certain,468,27,20,3,Medium,Pasture,Stones,Photo,Yes,2,2,Good,2010,Survey,Yasenovo,,,,"Excavated by TEMP (Kitov, Thracian Expedition for Tumular Investigations).",42.68549,25.255875
+3064,Certain,449,10,6,5,Medium,Pasture,Scrub|Tall Grass,Photo,Yes,3,2,Good,2010,Survey,Yasenovo,,Yasn 007,,"Very demaged because of agricultural work, stones on top.",42.680264,25.244366
+3065,Certain,453,12,5,5,Medium,Pasture,Pasture,Photo,Yes,4,4,Good,2010,Survey,Yasenovo,,Yasn 007,,Described by Domaradski.,42.680939,25.243435
+3066,Certain,451,19,17,0.1,Large,Annual Agriculture,Annual Agriculture|Ploughed,Photo,No,5,5,Good,2010,Survey,Yasenovo,,Yasn 007,,Described by Domaradski.,42.682043,25.243627
+3067,Certain,440,8,8,0.5,Small,Pasture,Stones,Photo,Yes,4,5,Good,2010,Survey,Yasenovo,,Yasn 007,,Described by Domaradski.,42.679528,25.242969
+3068,Certain,432,11,11,1,Small,Pasture,Pasture,Photo,Yes,3,4,Good,2010,Survey,Yasenovo,,Yasn 007,,Described by Domaradski.,42.679084,25.242482
+3069,Certain,434,10,9,0.2,Small,Pasture,Pasture,Photo,Yes,5,5,Good,2010,Survey,Yasenovo,,Yasn 007,,Described by Domaradski.,42.679199,25.242319
+3070,Certain,427,16,12,2,Medium,Pasture,Pasture,Photo,Yes,3,2,Good,2010,Survey,Yasenovo,,Yasn 007,,Described by Domaradski; stone structure inside.,42.678824,25.244407
+3071,Certain,457,19,18,5,Medium,Pasture,Pasture,Photo,Yes,2,1,Good,2010,Survey,Yasenovo,,Yasn 007,,Described by Domaradski; at least 4 robbers' trenchs.,42.684908,25.24735
+3072,Certain,449,30,28,3,Medium,Pasture,Pasture,Photo,Yes,3,2,Good,2010,Survey,Yasenovo,,Yasn 007,,Described by Domaradski.,42.685029,25.242996
+3073,Certain,400,24,20,2,Medium,Pasture,Pasture,Photo,Yes,2,4,Good,2010,Survey,Yasenovo,Mogila Manda Tepe,Yasn 022,,,42.665202,25.264706
+3074,Certain,434,40,39,5,Medium,Pasture,Pasture,Photo,Yes,3,2,Good,2010,Survey,Yasenovo,Belichinova Mogila,Yasn 010,,"Excavated by TEMP (Kitov, Thracian Expedition for Tumular Investigations) in 2006.",42.674623,25.250847
+3075,Certain,492,30,26,3,Medium,Pasture,Pasture,Photo,Yes,3,2,Good,2010,Survey,Yasenovo,,,,"Excavated by TEMP (Kitov, Thracian Expedition for Tumular Investigations) in 1995.",42.688433,25.258307
+3076,Certain,492,24,18,2,Medium,Pasture,Pasture,Photo,Yes,4,3,Good,2010,Survey,Yasenovo,,,,"Excavated by TEMP (Kitov, Thracian Expedition for Tumular Investigations) in 1995.",42.688061,25.259876
+3077,Certain,485,22,16,5,Medium,Pasture,Pasture,Photo,Yes,4,5,Good,2010,Survey,Yasenovo,Dorina Mogila,,,"Excavated by TEMP (Kitov, Thracian Expedition for Tumular Investigations) in 1999, Tumulus with 4 graves.",42.687465,25.259373
+3081,Certain,423,30,30,4,Medium,Pasture,Pasture,Photo,Yes,2,2,Good,2010,Survey,Gorno Sahrane,,GS002_1,,"Old robbers' trench's, completely digged through.",42.653806,25.227902
+3082,Certain,424,23,20,4,Medium,Pasture,Pasture,Photo,Yes,2,1,Good,2010,Survey,Gorno Sahrane,,GS002_2,,,42.654231,25.227839
+3088,Certain,430,35,23,1,Small,Pasture,Pasture,Photo,Yes,3,3,Good,2010,Survey,Golyamo Dryano vo,,GD 008-1,,Heavily destructed by several robbers' trench's.,42.668299,25.24277
+3089,Certain,432,28,19,0.8,Small,Pasture,Pasture,Photo,Yes,3,3,Good,2010,Survey,Golyamo Dryano vo,,GD 008-2,,Many old small robbers' trench's.,42.668876,25.242351
+3090,Certain,418,20,16,0.5,Small,Pasture,Pasture,Survey,Yes,4,3,None,2010,Survey,Gorno Sahrane,,GS 003,,"Mound heavily distructed/spread around, stones spread all over the surface.",42.650886,25.233396
+3091,Certain,420,22,22,2,Medium,Pasture,Pasture,Survey,Yes,2,1,None,2010,Survey,Gorno Sahrane,,GS 004,,1 old and 1 fresh robbers' trench.,42.657013,25.235666
+3092,Uncertain,404,13,11,1.7,Medium,Pasture,Pasture,Survey,Yes,4,3,None,2010,Survey,Gorno Sahrane,,GS 005,,,42.652234,25.240986
+3093,Uncertain,427,11,7,0.4,Small,Pasture,Pasture,Survey,No,2,2,Good,2010,Survey,Gorno Sahrane,,GS 006-2,,"3 similar structures next to each other, maybe necopolis.",42.654293,25.222272
+3095,Certain,451,27,26,6,Large,Forest,Forest|Pasture,Photo,Yes,3,2,Good,2010,Survey,Gorno Sahrane,,GS 006-4,,"Tunnel going through the mound, stony structures to be seen in the profile.",42.659797,25.214092
+3096,Certain,447,20,15,1,Small,Pasture,Pasture,Photo,Yes,3,2,Good,2010,Survey,Gorno Sahrane,,GS 006-5,,Surface of the mound covered with lots of stones/either from the surrounding pasture or from the mound.,42.661536,25.212962
+3097,Certain,454,18,17,2,Medium,Forest,Forest,Photo,Yes,2,2,Good,2010,Survey,Gorno Sahrane,,GS 006-6,,"No stone structures, only earth to be seen in robbers trenches.",42.658463,25.213465
+3099,Certain,451,10,12,1,Small,Pasture,Pasture,Photo,No,4,1,Poor,2010,Survey,Gorno Sahrane,,GS 006-7,,Surface of the mound covered with lots of stones/either from the surrounding pasture or from the mound.,42.662752,25.211751
+3100,Certain,447,11,9,0.5,Small,Pasture,Pasture,Photo,Yes,4,5,Good,2010,Survey,Gorno Sahrane,,GS 006-8,,Surface of the mound covered with lots of stones/either from the surrounding pasture or from the mound.,42.661904,25.211992
+3101,Certain,449,16,13,1,Small,Pasture,Scrub,Photo,Yes,4,1,Good,2010,Survey,Gorno Sahrane,,GS 006-9,,Surface of the mound covered with lots of stones/either from the surrounding pasture or from the mound.,42.662944,25.20909
+3102,Certain,452,14,8,1,Small,Pasture,Pasture,Photo,Yes,4,5,Good,2010,Survey,Gorno Sahrane,,GS 006-10,,Surface of the mound covered with lots of stones/either from the surrounding pasture or from the mound.,42.662924,25.207868
+3103,Certain,448,12,9,1,Small,Pasture,Scrub,Photo,Yes,3,2,Poor,2010,Survey,Gorno Sahrane,,GS 006-11,,Surface of the mound covered with lots of stones/either from the surrounding pasture or from the mound.,42.662456,25.208443
+3104,Certain,447,25,25,5,Medium,Pasture,Pasture|Scrub,Photo,Yes,2,1,Good,2010,Survey,Gorno Sahrane,,GS 006-12,,"1 robbers' trench very deep, going to bedrock.",42.659175,25.208889
+3105,Uncertain,456,12,8,1.2,Medium,Forest,Forest,Not recorded,Yes,4,3,None,2010,Survey,Gorno Sahrane,,GS 006-3,,"Very destructed, maybe by army.",42.656539,25.210096
+3108,Certain,453,14,11,0.8,Small,Pasture,Scrub,Photo,Yes,4,2,Good,2010,Survey,Gorno Sahrane,,GS 006-14,,Surface of the mound covered with lots of stones/either from the surrounding pasture or from the mound.,42.661147,25.206098
+3109,Certain,454,9,9,1,Small,Pasture,Scrub,Photo,Yes,3,2,Good,2010,Survey,Gorno Sahrane,,GS 006-15,,Surface of the mound covered with lots of stones/either from the surrounding pasture or from the mound.,42.660835,25.20605
+3110,Certain,453,13,13,1,Small,Pasture,Pasture|Scrub,Photo,No,3,2,Good,2010,Survey,Gorno Sahrane,,GS 006-16,,Surface of the mound covered with lots of stones/either from the surrounding pasture or from the mound.,42.661102,25.206561
+3111,Certain,456,15,15,2,Medium,Forest,Forest,Photo,Yes,2,1,Good,2010,Survey,Gorno Sahrane,,GS 006-17,,"Robbers' trench made with machine 3m deep, destructed from the southern part.",42.659652,25.205177
+3112,Certain,459,7,10,0.5,Small,Forest,Forest,Photo,No,4,4,Good,2010,Survey,Gorno Sahrane,,GS 006-18,,Stone on the surface of destructed mound.,42.656658,25.207942
+3113,Certain,436,13,8.5,0.8,Small,Pasture,Pasture,Photo,Yes,3,3,Good,2010,Survey,Golyamo Dryano vo,,GD 010,,"Digged through, looks like already excavated - maybe Kitov ?.",42.671734,25.242546
+3114,Certain,419,30,25,2,Medium,Pasture,Pasture,Photo,Yes,3,2,Good,2010,Survey,Golyamo Dryano vo,,GD 011,,"Old robbers' trench going through the middle of the mound, several stones on the top, looks like already excavated - Kiotv?.",42.67463,25.2405
+3115,Uncertain,428,31,23,2,Medium,Pasture,Pasture,Photo,No,1,1,Good,2010,Survey,Yasenovo,,Yasn 024-1,,"Mound is very spread around, looks like already excavated - Kitov?.",42.677787,25.239754
+3116,Certain,429,19,13,5,Medium,Pasture,Pasture,Photo,No,1,1,Good,2010,Survey,Yasenovo,,Yasn 024-2,,Small stones on the surface.,42.677216,25.239089
+3117,Certain,430,16,10,1,Small,Annual Agriculture,Pasture,Photo,No,5,4,Good,2010,Survey,Yasenovo,,Skb 001 - 1,,Small stones on the surface.,42.673446,25.234968
+3118,Certain,432,17,13,5,Medium,Annual Agriculture,Pasture,Photo,No,2,1,Good,2010,Survey,Golyamo Dryano vo,,GD 007-2,,Small stones on the surface.,42.672053,25.234671
+3119,Certain,431,12,11,1,Small,Pasture,Pasture,Photo,No,2,1,Poor,2010,Survey,Golyamo Dryano vo,,GD 007-3,,Small stones on the surface.,42.671858,25.235065
+3120,Certain,429,19,13,1,Small,Annual Agriculture,Annual Agriculture|Ploughed,Photo,No,4,4,Good,2010,Survey,Golyamo Dryano vo,,GD 007-4,,"Stone structure on the top, spread around because of heavy agriculture activities.",42.67228,25.233637
+3123,Certain,430,10,10,1,Small,Annual Agriculture,Annual Agriculture|Ploughed,Photo,No,4,4,Good,2010,Survey,Golyamo Dryano vo,,GD 007-5,,"Stone structure on the top, part of tumulus necropolis.",42.671999,25.232979
+3125,Certain,454,19,14,2,Medium,Annual Agriculture,Scrub,Photo,No,3,1,Good,2010,Survey,Golyamo Dryanovo,,Skb 003-1,,"Ploughed stones all around top, flat top, stone and earth structure.",42.680493,25.225917
+3127,Certain,534,20,18,6,Large,Pasture,Pasture|Scrub,Photo,Yes,2,2,Good,2010,Survey,Yasenovo,,Yasn 020,,Northern part of the mound destroyed by the dirt road.,42.693399,25.260408
+3128,Certain,469,21,15,2.5,Medium,Pasture,Pasture|Scrub,Photo,Yes,3,2,Good,2010,Survey,Yasenovo,,YAS021_1,,"Many robbers' trench's on the surface, stone structure inside, stones on the surface.",42.682659,25.231543
+3129,Certain,461,30,30,4,Medium,Pasture,Scrub,Photo,Yes,3,2,Good,2010,Survey,Yasenovo,,YAS021_2,,"Many trenches of different sizes going to the base of mound, overgrown with trees and bushes, clusters of big stones.",42.684025,25.231543
+3131,Certain,480,18,13,2,Medium,Annual Agriculture,Pasture,Photo,Yes,2,1,Good,2010,Survey,Yasenovo,,YAS021_3,,"Earth structure to be seen, geographic point on top.",42.686431,25.228243
+3132,Certain,460,12,10,1,Small,Annual Agriculture,Pasture|Scrub,Photo,Yes,2,2,Good,2010,Survey,Golyamo Dryanovo,,YAS021_4,,"Earth and stone structure, geographic point on the top.",42.680988,25.224477
+3134,Certain,477,10,10,2,Medium,Pasture,Scrub|Tall Grass,Photo,Yes,3,2,Good,2010,Survey,Yasenovo,,Yasn 002,,"Stone and earth structure, mound registered by Domaradski in AKB.",42.688029,25.234871
+3136,Certain,475,21,20,2,Medium,Annual Agriculture,Pasture,Photo,Yes,3,2,Good,2010,Survey,Golyamo Dryanovo,,Skb 003-3,,"Stones on the surface, stone structure in the mouind - visible profile in robbers' trench.",42.685045,25.223059
+3137,Certain,466,32,20,2,Medium,Annual Agriculture,Pasture|Scrub,Photo,Yes,3,1,Good,2010,Survey,Golyamo Dryanovo,,Skb 003-4,,Surface of the mound covered with lots of stones/either from the surrounding pasture or from the mound.,42.683583,25.222922
+3138,Uncertain,463,60,60,0.2,Small,Annual Agriculture,Pasture,Photo,No,5,5,Good,2010,Survey,Golyamo Dryanovo,,Skb 003-5,,"Very destroyed, we recognized it by many stones on the field. Destructed by agricultural work.",42.683872,25.226868
+3139,Uncertain,459,25,20,1,Small,Pasture,Pasture,Photo,No,4,3,Poor,2010,Survey,Golyamo Dryanovo,,Skb 003-6,,"Heavily destroyed by agriculture, spread to the North.",42.683753,25.225566
+3140,Certain,465,27,26,3.5,Medium,Pasture,Pasture,Photo,Yes,2,1,Good,2010,Survey,Skobelevo,,Skb 003-7,,Large robbers' trench on the TOP.,42.680279,25.223931
+3141,Certain,468,15,12,1,Small,Pasture,Pasture,Photo,No,1,1,Good,2010,Survey,Skobelevo,,Skb 003-8,,,42.680343,25.221106
+3142,Certain,469,20,17,2,Medium,Pasture,Pasture,Photo,No,2,1,Good,2010,Survey,Skobelevo,,Skb 003-9,,"Uneven surface, looks like digged through and the earth then piled back to the shape of mound.",42.680972,25.221603
+3143,Certain,477,15,15,1.5,Medium,Pasture,Pasture,Photo,Yes,2,1,Good,2010,Survey,Skobelevo,,Skb 003-10,,1 old robbers' trench.,42.681148,25.22018
+3144,Certain,479,25,20,3,Medium,Pasture,Pasture,Photo,Yes,2,1,Good,2010,Survey,Skobelevo,,Skb 003-11,,1 old robbers' trench. Destroyed by army ? Stone structures.,42.681123,25.218674
+3145,Certain,482,20,20,3,Medium,Pasture,Pasture,Survey,Yes,3,2,Good,2010,Survey,Skobelevo,,Skb 003-12,,"Stone structure, some bones on the surface - large teeth cow/horse? 1 huge fresh trench on the top, 4x3, 2m deep/in 2011 another fresh robbers' trench.",42.680589,25.217516
+3146,Certain,470,30,30,5,Medium,Perennial Agriculture,Pasture|Scrub,Photo,Yes,3,3,Good,2010,Survey,Skobelevo,,Skb 003-13,,"Stones/earth structure, heavily destroyed with mounds of earth around, very spread to the south, around 15 m long and 20m wide.",42.68303,25.220906
+3147,Certain,493,17,15,1,Small,Perennial Agriculture,Scrub|Tall Grass,Photo,Yes,4,3,Good,2010,Survey,Skobelevo,,Skb 003-14,,Surface of the mound covered with lots of stones/either from the surrounding pasture or from the mound.,42.683729,25.218748
+3148,Certain,489,10,8,1.5,Medium,Perennial Agriculture,Scrub|Tall Grass,Photo,Yes,3,1,Good,2010,Survey,Skobelevo,,Skb 003-15,,Surface of the mound covered with lots of stones/either from the surrounding pasture or from the mound.,42.682701,25.216491
+3149,Certain,488,10,8,1,Small,Perennial Agriculture,Pasture|Scrub,Photo,No,3,1,Good,2010,Survey,Skobelevo,,Skb 003-16,,Surface of the mound covered with lots of stones/either from the surrounding pasture or from the mound.,42.68224,25.216998
+3150,Certain,484,13,10,1,Small,Perennial Agriculture,Pasture|Scrub,Photo,No,3,1,Good,2010,Survey,Skobelevo,,Skb 003-17,,Surface of the mound covered with lots of stones/either from the surrounding pasture or from the mound.,42.681951,25.2163
+3151,Certain,482,11,11,1,Small,Perennial Agriculture,Scrub|Tall Grass,Photo,No,3,1,Poor,2010,Survey,Skobelevo,,Skb 003-18,,Surface of the mound covered with lots of stones/either from the surrounding pasture or from the mound.,42.681814,25.216375
+3153,Certain,487,9,7,0.5,Small,Perennial Agriculture,Scrub,Photo,No,4,4,Good,2010,Survey,Skobelevo,,Skb 003-20,,Surface of the mound covered with lots of stones/either from the surrounding pasture or from the mound.,42.682849,25.218204
+3154,Certain,471,12,10,1,Small,Perennial Agriculture,Scrub,Photo,No,3,1,Good,2010,Survey,Skobelevo,,Skb 003-21,,Surface of the mound covered with ca 0.5m layer of stones/either from the surrounding pasture or from the mound.,42.683405,25.220424
+3155,Certain,486,10,8,5,Medium,Perennial Agriculture,Pasture,Photo,No,4,3,Good,2010,Survey,Skobelevo,,Skb 003-22,,Surface of the mound covered with lots of stones/either from the surrounding pasture or from the mound.,42.683408,25.21953
+3156,Certain,478,8,6,1,Small,Perennial Agriculture,Scrub,Photo,No,3,1,Good,2010,Survey,Skobelevo,,Skb 003-23,,Surface of the mound covered with ca 0.5m layer of stones/either from the surrounding pasture or from the mound.,42.683037,25.220223
+3157,Certain,483,8,7,1,Small,Perennial Agriculture,Scrub,Photo,No,3,1,Good,2010,Survey,Skobelevo,,Skb 003-24,,Surface of the mound covered with lots of stones/either from the surrounding pasture or from the mound.,42.681339,25.217118
+3158,Certain,483,10,10,0.5,Small,Perennial Agriculture,Scrub,Photo,No,4,2,Good,2010,Survey,Skobelevo,,Skb 003-25,,Surface of the mound covered with lots of stones/either from the surrounding pasture or from the mound.,42.681527,25.216924
+3159,Certain,484,16,11,0.5,Small,Perennial Agriculture,Scrub,Photo,No,4,4,Good,2010,Survey,Skobelevo,,Skb 003-26,5500092,Surface of the mound covered with lots of stones/either from the surrounding pasture or from the mound.,42.681567,25.217276
+3160,Certain,483,11,10,1,Small,Perennial Agriculture,Scrub,Photo,No,3,1,Good,2010,Survey,Skobelevo,,Skb 003-27,,Surface of the mound covered with lots of stones/either from the surrounding pasture or from the mound.,42.681226,25.217686
+3161,Certain,480,13,9,1.5,Medium,Perennial Agriculture,Scrub,Photo,No,3,2,Good,2010,Survey,Skobelevo,,Skb 003-28,5500067,Surface of the mound covered with lots of stones/either from the surrounding pasture or from the mound.,42.682114,25.217825
+3162,Certain,476,9,7,0.5,Small,Perennial Agriculture,Scrub,Photo,No,3,2,Good,2010,Survey,Skobelevo,,Skb 003-29,5500078,Surface of the mound covered with lots of stones/either from the surrounding pasture or from the mound.,42.682156,25.218295
+3163,Certain,473,12,7,0.2,Small,Perennial Agriculture,Scrub,Photo,Yes,4,4,Good,2010,Survey,Skobelevo,,Skb 003-30,,"Heavily destructed by machines from the west, mound is negative, by the mound are piles of stones and earth originally from the mound.",42.681985,25.218488
+3164,Certain,476,13,12,1,Small,Perennial Agriculture,Scrub,Photo,No,3,1,Good,2010,Survey,Skobelevo,,Skb 003-31,,Surface of the mound covered with lots of stones/either from the surrounding pasture or from the mound.,42.681465,25.218821
+3165,Certain,473,27,12,2,Medium,Perennial Agriculture,Scrub,Photo,No,3,1,Good,2010,Survey,Skobelevo,,Skb 003-32,,Surface of the mound covered with lots of stones/either from the surrounding pasture or from the mound.,42.682507,25.219054
+3166,Certain,475,8,7,0.5,Small,Perennial Agriculture,Scrub,Photo,No,4,1,Good,2010,Survey,Skobelevo,,Skb 003-33,,Surface of the mound covered with lots of stones/either from the surrounding pasture or from the mound.,42.682041,25.219664
+3167,Certain,475,9,8,1,Small,Perennial Agriculture,Scrub,Photo,No,4,3,Good,2010,Survey,Skobelevo,,Skb 003-34,,Distracted by agriculture activities.,42.682155,25.220161
+3168,Certain,486,20,15,5,Medium,Pasture,Scrub,Photo,No,3,2,Good,2010,Survey,Skobelevo,,Skb 003-35,,Surface of the mound covered with lots of stones/either from the surrounding pasture or from the mound.,42.682142,25.214819
+3170,Uncertain,504,30,20,2,Medium,Forest,Scrub,Photo,Yes,4,3,Good,2010,Survey,Skobelevo,,,,Hidden in the forest.,42.683197,25.206992
+3171,Certain,502,24,20,3,Medium,Forest,Scrub,Photo,Yes,3,2,Good,2010,Remote Sensing,Skobelevo,,,,"1 old robbers' trench 2.5 diameter, 1 m deep. Stone piled ontop of mound, scrub.",42.682754,25.206351
+3172,Uncertain,505,13,10,5,Medium,Forest,Scrub,Photo,Yes,3,2,Good,2010,Survey,Skobelevo,,,,Military entrenchment.,42.682989,25.207626
+3173,Uncertain,505,10,8,1,Small,Forest,Scrub,Photo,No,3,2,Good,2010,Survey,Skobelevo,,,,"Scrub, military entrenchment.",42.683037,25.207763
+3174,Uncertain,506,18,14,1.5,Medium,Forest,Scrub,Photo,No,2,1,Good,2010,Survey,Skobelevo,,,,Surface of the mound covered with lots of stones.,42.683277,25.207577
+3175,Uncertain,506,11,10,1,Small,Forest,Scrub,Photo,Yes,3,2,Good,2010,Survey,Skobelevo,,,,"1 old robbers' trench, 1 tree on top.",42.683357,25.207737
+3176,Certain,505,16,13,1.2,Medium,Forest,Scrub,Photo,No,4,2,Good,2010,Survey,Skobelevo,,,,Large stones on outside - krepis?.,42.683514,25.207983
+3177,Certain,505,20,20,6,Large,Forest,Scrub,Survey,No,2,2,None,2010,Survey,Skobelevo,,,,"Pile of stones on south side, 1m thick, dense scrub.",42.683654,25.208157
+3178,Certain,504,20,20,1.5,Medium,Forest,Scrub,Photo,No,3,2,Good,2010,Survey,Skobelevo,,,,"Surface of the mound covered with lots of stones, connected with previous object, part of military structure?.",42.683699,25.208632
+3179,Uncertain,506,30,20,1,Small,Forest,Scrub,Photo,Yes,2,1,Good,2010,Survey,Skobelevo,,,,Mound or military structure?.,42.683388,25.208914
+3180,Uncertain,503,3,3,0,Small,Pasture,Pasture,Photo,Yes,5,5,Good,2010,Survey,Skobelevo,,,,"Defunct mound, hole around 3m diameter, 1m deep.",42.684664,25.209557
+3182,Certain,499,20,20,2,Medium,Forest,Pasture,Photo,No,3,2,Poor,2010,Survey,Skobelevo,,,,Mound used for military purposes.,42.683328,25.210249
+3183,Certain,491,25,20,2,Medium,Pasture,Pasture,Not recorded,Yes,4,4,None,2010,Survey,Skobelevo,,,,"Mound spread to the south, earth from mound been removed, southern part of mound is 10 meters of earth.",42.683364,25.211208
+3184,Certain,490,20,20,4,Medium,Pasture,Scrub,Photo,Yes,3,3,Good,2010,Survey,Skobelevo,,,,"1 huge robbers' trench 5m diameter 2 m deep, lot of stones, some bricks and tiles.",42.68384,25.211906
+3185,Certain,490,15,10,1,Small,Pasture,Scrub,Photo,No,4,3,Poor,2010,Survey,Skobelevo,,,,Heavily distracted by agriculture.,42.683752,25.212496
+3186,Certain,488,20,20,1,Small,Pasture,Scrub,Photo,Yes,4,3,Poor,2010,Survey,Skobelevo,,,,2 old small robbers' trench.,42.683636,25.212711
+3187,Certain,490,10,10,0.5,Small,Pasture,Scrub,Photo,No,3,2,Good,2010,Remote Sensing,Skobelevo,,,,Surface of the mound covered with lots of stones/either from the surrounding pasture or from the mound.,42.683105,25.212195
+3189,Uncertain,490,20,10,1,Small,Pasture,Scrub,Photo,No,3,3,Good,2010,Remote Sensing,Skobelevo,,,,Uneven shape.,42.682777,25.212728
+3190,Uncertain,489,20,10,0.5,Small,Pasture,Pasture,Photo,No,4,4,Good,2010,Remote Sensing,Skobelevo,,,,Several stones on the surface.,42.682642,25.212309
+3191,Uncertain,487,18,15,0.6,Small,Pasture,Pasture,Photo,No,4,4,Good,2010,Remote Sensing,Skobelevo,,,,Several stones on the surface.,42.68239,25.212078
+3192,Uncertain,489,18,16,2,Medium,Pasture,Pasture|Scrub,Photo,Yes,4,3,Good,2010,Remote Sensing,Skobelevo,,,,Surface of the mound covered with lots of stones (20x20x30cm)/either from the surrounding pasture or from the mound.,42.682634,25.211184
+3193,Uncertain,486,14,12,1,Small,Pasture,Pasture|Scrub,Photo,Yes,4,4,Good,2010,Survey,Skobelevo,,,,Low mound with low robbers' trench full of stones.,42.682091,25.211901
+3194,Uncertain,487,25,12,0.8,Small,Forest,Scrub,Photo,Yes,4,3,Good,2010,Survey,Skobelevo,,,,Mound secondary used by military?.,42.681815,25.212409
+3195,Uncertain,490,20,12,0.6,Small,Forest,Scrub,Survey,No,3,2,None,2010,Survey,Skobelevo,,,,"Lot of small stones on surface, used by military/military structure?.",42.681957,25.213117
+3196,Uncertain,481,11,10,0.8,Small,Pasture,Scrub,Photo,No,4,4,Good,2010,Survey,Skobelevo,,,,Destroyed by machine.,42.683056,25.214104
+3197,Uncertain,488,9,6,0.5,Small,Pasture,Scrub,Photo,No,4,4,Good,2010,Remote Sensing,Skobelevo,,,,Surface of the mound covered with lots of stones/either from the surrounding pasture or from the mound.,42.682973,25.213273
+3198,Uncertain,486,10,10,0.5,Small,Pasture,Scrub,Photo,No,3,2,Good,2010,Remote Sensing,Skobelevo,,,,Surface of the mound covered with lots of stones/either from the surrounding pasture or from the mound.,42.683273,25.213235
+3199,Certain,482,14,12,1,Small,Pasture,Pasture,Photo,No,3,2,Good,2010,Remote Sensing,Skobelevo,,,,Surface of the mound covered with lots of stones/either from the surrounding pasture or from the mound.,42.683682,25.213446
+3200,Uncertain,489,25,17,1,Small,Pasture,Pasture,Photo,Yes,3,3,Good,2010,Remote Sensing,Skobelevo,,,,"Defunct mound, almost destroyed, middle is carved out, military purpose ?.",42.684045,25.213105
+3201,Certain,490,20,15,1,Small,Pasture,Scrub,Photo,Yes,3,3,Good,2010,Remote Sensing,Skobelevo,,,,Large robbers' trench on south side.,42.684445,25.216152
+3203,Certain,477,30,30,4,Medium,Pasture,Pasture,Photo,Yes,3,2,Good,2010,Remote Sensing,Sheynovo,,,,Mound secondary used by army? Piles of earth from the mound spread around. Very destructed.,42.696919,25.294196
+3204,Certain,489,15,12,1,Small,Pasture,Pasture,Photo,Yes,3,2,Good,2010,Remote Sensing,Sheynovo,,,,Destructed and spread around.,42.702194,25.292735
+3205,Certain,485,20,20,2,Medium,Pasture,Pasture,Photo,Yes,3,2,Good,2010,Remote Sensing,Sheynovo,,,,Stone and earth structure.Pile of earth north of mound.,42.701604,25.293082
+3206,Uncertain,487,10,8,1.5,Medium,Pasture,Pasture,Photo,Yes,3,3,Good,2010,Remote Sensing,Sheynovo,,,,Robbers' trench is from West.,42.702316,25.290846
+3207,Certain,482,35,35,5,Medium,Pasture,Pasture,Photo,Yes,3,2,Good,2010,Remote Sensing,Sheynovo,,,,On the top geodetic point PT 23. In the profile of robbers' trench very fine soil with small stones.,42.697804,25.300364
+3208,Certain,476,35,30,4.5,Medium,Pasture,Pasture,Photo,Yes,3,2,Good,2010,Remote Sensing,Sheynovo,,,,"Very destructed from the southern part by robbers. Earth mixed up, looks like it was digged throught and put back.",42.695353,25.303629
+3209,Certain,479,35,30,4,Medium,Pasture,Pasture,Photo,Yes,3,2,Good,2010,Remote Sensing,Sheynovo,,,,Pile of earth next to the mound- on the west side.,42.696671,25.306476
+3210,Certain,497,60,60,7,Large,Pasture,Pasture,Photo,Yes,3,1,Good,2010,Remote Sensing,Sheynovo,Golyama Arzenalka,,,"Excavated by TEMP (Kitov, Thracian Expedition for Tumular Investigations). Tomb inside. Outside Sarcophagus brought from Malkata mogila. On the top geodetic point PT 3.",42.699616,25.309359
+3211,Certain,500,30,30,5,Medium,Pasture,Pasture,Photo,Yes,3,2,Good,2010,Remote Sensing,Sheynovo,,,,On the top geodetic point PT 21.Very destructed and spread around.,42.701412,25.311391
+3212,Certain,502,26,26,6,Large,Perennial Agriculture,Scrub,Photo,Yes,3,2,Good,2010,Remote Sensing,Sheynovo,,,,One big mound with 2 big piles of earth on the sides.Mound already excavated or secondary used.,42.70455,25.29733
+3213,Uncertain,504,17,17,2,Medium,Pasture,Scrub,Photo,Yes,3,2,Good,2010,Remote Sensing,Shipka,,,,Looks like it was digged through and soil put back.,42.705211,25.297882
+3214,Uncertain,529,70,50,4,Medium,Pasture,Scrub,Photo,Yes,3,2,Good,2010,Remote Sensing,Shipka,Ilyevata Mogila,,,"Destroyed by machines, road going through the middle, excavated by Kitov ?.",42.708263,25.299372
+3215,Certain,499,25,25,4,Medium,Pasture,Pasture,Photo,Yes,4,3,Good,2010,Remote Sensing,Shipka,,,,"Robbers' trench took Northern part, geodetic point on top TP2.",42.701414,25.310081
+3216,Uncertain,509,25,25,0.8,Small,Pasture,Pasture,Photo,Yes,4,4,Good,2010,Remote Sensing,Shipka,,,,"Ploughed out and destroyed, many small robbers' trench's after work with metal detector.",42.702021,25.308025
+3217,Uncertain,503,15,3,1.5,Medium,Annual Agriculture,Scrub,Photo,Yes,4,3,Good,2010,Remote Sensing,Shipka,,,,Half of the mound in the N missing.,42.705518,25.310526
+3218,Certain,516,50,50,10,Large,Annual Agriculture,Scrub,Photo,Yes,1,1,Good,2010,Remote Sensing,Shipka,Donkova Mogila,,,"Excavated by TEMP (Kitov, Thracian Expedition for Tumular Investigations). Large stone structure on the top - temple. Pithoi found in the mound.",42.706581,25.312197
+3219,Certain,516,20,20,2,Medium,Annual Agriculture,Scrub,Photo,Yes,3,2,Good,2010,Remote Sensing,Shipka,,,,Pile of earth on the South side of the mound.,42.707503,25.314021
+3220,Certain,513,40,40,8,Large,Pasture,Scrub,Photo,Yes,3,3,Good,2010,Remote Sensing,Shipka,,,,"Heavily destroyed by machine, robber's trench 3-4m deep going through the middle of the mound.",42.708585,25.313143
+3221,Certain,517,20,20,3.5,Medium,Pasture,Scrub,Photo,Yes,4,3,Good,2010,Remote Sensing,Shipka,,,,"Twice crossed by machine, very heavily destroyed.",42.709127,25.312682
+3222,Certain,530,35,35,4,Medium,Pasture,Scrub,Photo,Yes,3,2,Good,2010,Remote Sensing,Shipka,,,,"Buldozed, 1 old robbers' trench made by machine from the North.",42.710333,25.312807
+3223,Certain,495,30,20,3,Medium,Annual Agriculture,Pasture,Photo,Yes,3,2,Good,2010,Remote Sensing,Shipka,,,,"Old robbers' trench on the West side, 2 brand new (2011) small test trenches on E side.",42.701003,25.314608
+3224,Certain,472,15,15,2,Medium,Perennial Agriculture,Pasture,Photo,No,2,1,Good,2010,Remote Sensing,Yasenovo,,,,"Well preserved, guardspot on top.",42.693764,25.282935
+3242,Certain,442,30,30,3,Medium,Annual Agriculture,Pasture,Photo,Yes,2,1,Good,2011,Remote Sensing,Gorno Sahrane necropolis,,,,Very good condition. Few robbers' trench's (old). Scattered medium-sized stones. High priority conservation recommended.,42.662238,25.21871
+3243,Certain,442,26,26,1,Small,Pasture,Pasture,Photo,Yes,2,2,Good,2011,Remote Sensing,Gorno Sahrane necropolis,,,,Old shallow robbers' trench's. Good conditions.,42.662075,25.219388
+3244,Certain,455,25,25,4,Medium,Pasture,Pasture,Photo,Yes,3,2,Good,2011,Remote Sensing,Gorno Sahrane,Gashtova Mogila,,,Old robbers' trench on top I middle. Smaller mound next to the main robbers' trench on the south side. Side of mound taken off on western side.,42.663762,25.211882
+3250,Certain,490,36,31,4,Medium,Annual Agriculture,Scrub|Tall Grass,Photo,No,1,1,Good,2011,Survey,Shipka,,,,"No obvious robbers trenches, scrap bushes everywhere, medium size stones, Ottomanic green pottery.",42.69519,25.348785
+3251,Certain,488,40,40,10,Large,Annual Agriculture,Scrub|Tall Grass,Photo,Yes,1,1,Good,2011,Survey,Kran,Svetica,,,"Excavated by TEMP (Kitov, Thracian Expedition for Tumular Investigations) in 2004, museum inside.",42.68805,25.368876
+3252,Certain,496,33,15,5,Medium,Annual Agriculture,Scrub|Tall Grass,Photo,Yes,4,3,Good,2011,Survey,Shipka,,,,"Appears to be a mound that has been completely destroyed in the middle. Surrounded by a lot of stones, covered in bush.",42.699617,25.342905
+3254,Certain,472,85,60,20,Large,Annual Agriculture,Pasture,Photo,Yes,1,1,Good,2011,Survey,Shipka,Ostrusha,,,"Excavated by TEMP (Kitov, Thracian Expedition for Tumular Investigations). Flat top, dug out.",42.68955,25.350896
+3255,Certain,478,40,40,8,Large,Annual Agriculture,Scrub,Photo,No,2,1,Good,2011,Survey,Shipka,,,,"Flat top, 1877 Russian memorial at the top.",42.689877,25.353063
+3256,Certain,482,15,15,2.5,Medium,Annual Agriculture,Scrub|Tall Grass,Photo,Yes,3,1,Good,2011,Survey,Shipka,,,,Multiple robbers trenches all over the surface.,42.689993,25.354208
+3257,Certain,479,35,32,8,Large,Annual Agriculture,Scrub,Photo,Yes,3,2,Good,2011,Survey,Shipka,,,,"Large robbers' trench on S side, flattened top.",42.690977,25.350862
+3258,Certain,482,37,36,5,Medium,Annual Agriculture,Scrub|Tall Grass,Photo,Yes,3,2,Good,2011,Survey,Shipka,,,,"Flat top, small monument with cross on the top.",42.691665,25.353927
+3259,Certain,386,35,25,8,Large,Annual Agriculture,Scrub|Tall Grass,Photo,Yes,3,1,Good,2011,Survey,Shipka,,,,Dug out mound with pile of soil next to it.,42.691933,25.35129
+3260,Certain,491,130,130,20,Large,Pasture,Pasture,Photo,No,1,1,Good,2011,Survey,Shipka,Golyama Kosmatka,,,"Excavated by TEMP (Kitov, Thracian Expedition for Tumular Investigations) 2004, Museum inside.",42.700135,25.33359
+3261,Certain,495,72,65,10,Large,Pasture,Scrub|Tall Grass,Photo,Yes,3,2,Good,2011,Survey,Shipka,Malka Kosmatka,,,"Partly excavated by TEMP (Kitov, Thracian Expedition for Tumular Investigations). Southern part of the mound was taken by machine (1/3 of the mound).",42.700042,25.335543
+3262,Certain,489,32,29,4,Medium,Pasture,Scrub|Tall Grass,Photo,Yes,2,1,Good,2011,Survey,Shipka,,,,Robbers' trench on the top (1x2x0.5).,42.699613,25.331497
+3263,Certain,494,40,31,4,Medium,Pasture,Scrub|Tall Grass,Photo,Yes,3,2,Good,2011,Survey,Shipka,,,,"Many old trenches, flat on top.",42.699598,25.330465
+3264,Certain,488,36,32,5,Medium,Pasture,Scrub|Tall Grass,Photo,Yes,3,2,Good,2011,Survey,Shipka,,,,Huge robbers' trench on S.,42.701042,25.331444
+3266,Certain,458,25,25,1,Small,Annual Agriculture,Annual Agriculture|Ploughed,Photo,No,5,5,Good,2011,Survey,Sheynovo,,,,"Heavily destroyed by agriculture, harrowed and ploughed, stones scattered around, medium to small.",42.688913,25.302192
+3267,Certain,454,25,24,3,Medium,Annual Agriculture,Scrub|Tall Grass,Photo,Yes,3,2,Good,2011,Survey,Sheynovo,,,,"Robbers' trench on the top and fom the N side, old shallow robbers' trench's, animal burrows on S side.",42.688621,25.302239
+3269,Certain,452,25,20,0.5,Small,Annual Agriculture,Annual Agriculture|Ploughed,Photo,No,5,5,Good,2011,Survey,Sheynovo,,,,"Destroyed by agriculture, lots of stones of medium sizes spread around.",42.688243,25.30234
+3270,Certain,468,30,30,4,Medium,Annual Agriculture,Scrub|Tall Grass,Photo,Yes,2,1,Good,2011,Survey,Sheynovo,,,,"Flat top=probably excavated-robbed, smaller all over the top 5x shallow, old vegetation grass.",42.692511,25.307265
+3271,Certain,472,25,19,5,Medium,Annual Agriculture,Scrub|Tall Grass,Photo,Yes,4,2,Good,2011,Survey,Sheynovo,,,,"Mound next to the factory=GUN factory, robbers' trench with concrete, tiles, burnt wood (rebuilt into toilet), excavated by Kitov.",42.694621,25.309826
+3272,Certain,470,37,33,2,Medium,Annual Agriculture,Scrub|Tall Grass,Photo,Yes,4,2,Good,2011,Survey,Sheynovo,,,,"Excavated by Kitov, not originally preserved, soil put back, data told by Nikolay - excvavated with Kitov.",42.69267,25.310036
+3273,Certain,476,40,30,2,Medium,Annual Agriculture,Scrub|Tall Grass,Photo,Yes,2,2,Good,2011,Survey,Shipka,,,,"Low spread mound, no obvious robbers' trenchs BUT highly probable that N part was disturbed by robbers.",42.694007,25.340106
+3275,Certain,407,15,15,1,Small,Beach,Scrub,Photo,No,4,4,Good,2011,Survey,Dolno Sahrane,,,,"Flat mound, scattered stones of medium size.",42.626116,25.270679
+3276,Certain,405,30,20,3,Medium,Beach,Stones,Photo,Yes,2,1,Good,2011,Survey,Dolno Sahrane,,,,Stony huge mound on the beach of Koprinka.,42.625356,25.276198
+3277,Certain,455,10,10,0.6,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Survey,Gorno Sahrane necropolis,,,,Tyre tracks through the middle and side of the mound.,42.666412,25.213284
+3278,Certain,455,12,12,0.5,Small,Pasture,Pasture,Not recorded,No,2,2,None,2011,Survey,Gorno Sahrane necropolis,,,,No robbers' trenchs or stones on surface.,42.666463,25.213716
+3279,Certain,453,6,6,0.3,Small,Pasture,Pasture,Photo,No,4,5,Good,2011,Survey,Gorno Sahrane necropolis,,,,"No robbers' trench, very low.",42.665468,25.213453
+3280,Certain,453,8,8,0.3,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Survey,Gorno Sahrane necropolis,,,,Only a couple of stones on surface.,42.66566,25.214249
+3281,Certain,453,15,15,0.5,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Survey,Gorno Sahrane necropolis,,,,Very shallow depression at the top.,42.665901,25.21488
+3283,Certain,449,8,6,0.3,Small,Pasture,Pasture,Photo,Yes,3,3,Good,2011,Survey,Gorno Sahrane necropolis,,,,"Boundaries undefinable, most of the mound taken out (robbers' trench in the middle).",42.665408,25.216713
+3284,Certain,445,8,8,0.2,Small,Pasture,Pasture,Photo,No,2,4,Good,2011,Survey,Gorno Sahrane necropolis,,,,Some stones (big) on surface.,42.665057,25.218375
+3286,Certain,446,8,7,0.2,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Survey,Gorno Sahrane necropolis,,,,"Several stones on the top, undefinable boundaries.",42.665324,25.218445
+3287,Certain,446,4,4,0.2,Small,Pasture,Pasture,Photo,Yes,3,3,Good,2011,Survey,Gorno Sahrane necropolis,,,,Robbers' trench taken to alternate side (w) of mound and sol deposited on east side.,42.6654,25.218797
+3288,Certain,444,6,6,0.4,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Survey,Gorno Sahrane necropolis,,,,Several stones on the top.,42.664986,25.219667
+3289,Certain,442,8,8,0.5,Small,Pasture,Pasture,Photo,Yes,2,2,Good,2011,Survey,Gorno Sahrane necropolis,,,,"Some stones on surface, eneven suface, shallow and old robbers' trench on side.",42.66462,25.220298
+3291,Certain,439,4,4,0.3,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Survey,Gorno Sahrane necropolis,,,,Some small stones on surface.,42.66425,25.22149
+3293,Certain,437,23,14,1,Small,Pasture,Pasture,Photo,Yes,3,2,Good,2011,Survey,Gorno Sahrane necropolis,,,,"Possibly military use , many stones.",42.664151,25.223338
+3294,Certain,432,15,15,1,Small,Pasture,Pasture,Photo,No,1,1,Good,2011,Survey,Gorno Sahrane necropolis,,,,Few stones on surface.,42.663299,25.225526
+3296,Certain,438,10,10,0.3,Small,Pasture,Pasture,Photo,No,1,1,Good,2011,Survey,Gorno Sahrane necropolis,,,,On edge of ploughed feld with many stones.,42.663629,25.227517
+3297,Certain,437,10,8,0.3,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Survey,Gorno Sahrane necropolis,,,,"Low mound barely viible, no stones on the surface.",42.663802,25.227399
+3299,Certain,442,15,15,1,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Remote Sensing,Gorno Sahrane necropolis,,,,Many stones found spread all over the surface.,42.664949,25.221071
+3301,Certain,448,10,10,0.5,Small,Pasture,Pasture,Photo,Yes,2,2,Good,2011,Survey,Gorno Sahrane necropolis,,,,"Small/shallow pit on east side, no stones.",42.66613,25.218613
+3302,Certain,449,10,10,0.3,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Survey,Gorno Sahrane necropolis,,,,No stones or visible robbers' trenchs.,42.66655,25.21695
+3303,Certain,448,4,4,0.2,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Survey,Gorno Sahrane necropolis,,,,"Barely visible, no stones, undefined boundaries.",42.666289,25.217242
+3304,Certain,451,6,6,0.3,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Survey,Gorno Sahrane necropolis,,,,No stones or robbers' trenchs.,42.666964,25.216528
+3305,Certain,457,6,6,0.2,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Survey,Gorno Sahrane necropolis,,,,"Barely visible, no stones, undefined boundaries.",42.666906,25.214292
+3307,Certain,455,10,10,0.4,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Survey,Gorno Sahrane necropolis,,,,No trench or stones.,42.666608,25.213082
+3308,Certain,456,6,5,0.2,Small,Pasture,Pasture,Photo,Yes,4,4,Good,2011,Survey,Gorno Sahrane necropolis,,,,"Robbers' trench on top took whole mound, deposit on side.",42.66714,25.213379
+3309,Certain,454,8,6,0.3,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Survey,Gorno Sahrane necropolis,,,,"Barely visible, no stones or obvious robbers' trenchs.",42.666396,25.212449
+3310,Certain,458,11,5,0.5,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Survey,Gorno Sahrane necropolis,,,,No stones or robbers' trenchs on surface.,42.666636,25.211737
+3311,Certain,462,8,8,0.5,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Survey,Gorno Sahrane necropolis,,,,Stones spread all over the surface.,42.666836,25.211497
+3312,Certain,463,22,4,3,Medium,Pasture,Pasture,Photo,Yes,4,3,Good,2011,Survey,Gorno Sahrane necropolis,,,,"Only large trench left (15x2x1m), pile of soil on N side, stones in robbers' trench.",42.667205,25.211422
+3315,Certain,425,23,20,2,Medium,Pasture,Pasture,Photo,Yes,3,2,Good,2011,Remote Sensing,Gorno Sahrane necropolis,,,,"Scatter of medium-sized stones. Bulldozed extensively on western side. North-eastern side taken off in past (but is uniform in removal of earth, showing possible excavation work). Many old robbers' trench's. New robbers' trench on top (robbers' trench3).",42.659087,25.225923
+3316,Certain,436,11,11,0.9,Small,Pasture,Pasture,Photo,No,4,2,Good,2011,Survey,Gorno Sahrane necropolis,,,,Scatter of medium-sized stones. Old robbers' trench on top.,42.660077,25.223237
+3317,Certain,435,13,13,0.5,Small,Pasture,Pasture,Photo,Yes,2,2,Good,2011,Remote Sensing,Gorno Sahrane necropolis,,,,Old robbers' trench. Flattened on top.,42.660763,25.22168
+3318,Certain,436,17,15,0.5,Small,Pasture,Pasture,Photo,Yes,2,2,Good,2011,Remote Sensing,Gorno Sahrane necropolis,,,,Scatter of medium-sized rocks. One old crater (robbers' trench1) on top.,42.660625,25.220637
+3319,Certain,435,18,18,0.5,Small,Pasture,Pasture,Photo,Yes,2,2,Good,2011,Remote Sensing,Gorno Sahrane necropolis,,,,Old robbers' trench's (very shallow). Scatter of medium-sized stones.,42.659625,25.223353
+3320,Certain,426,10,8,0.5,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Remote Sensing,Gorno Sahrane necropolis,,,,Scatter of medium-sized stones. No obvious robbers' trench's.,42.658823,25.226322
+3321,Certain,425,10,10,0.4,Small,Pasture,Pasture,Photo,Yes,2,2,Good,2011,Remote Sensing,Gorno Sahrane necropolis,,,,Top cut off. Old robbers' trench.,42.658988,25.226258
+3322,Certain,426,17,17,0.6,Small,Pasture,Pasture,Photo,Yes,2,2,Good,2011,Remote Sensing,Gorno Sahrane necropolis,,,,Scatter of medium-sized stones. robbers' trench1 almost taken off top.,42.65844,25.225767
+3323,Certain,427,10,10,0.4,Small,Pasture,Pasture,Photo,Yes,2,2,Good,2011,Remote Sensing,Gorno Sahrane necropolis,,,,"Old, shallow robbers' trench's. Scatter of medium-sized stones.",42.658265,25.226772
+3324,Certain,427,15,15,0.5,Small,Pasture,Pasture,Photo,Yes,2,2,Good,2011,Remote Sensing,Gorno Sahrane necropolis,,,,"Scatter of medium-sized stones. Old damage on south and east side, nothing fresh however.",42.659368,25.225343
+3325,Certain,432,8,8,0.5,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Remote Sensing,Gorno Sahrane necropolis,,,,Overgrown; small stones on the surface.,42.661121,25.224621
+3326,Certain,437,10,10,1,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Remote Sensing,Gorno Sahrane necropolis,,,,Large stones covering the surface.,42.661711,25.223734
+3327,Certain,428,15,15,0.5,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Remote Sensing,Gorno Sahrane necropolis,,,,Scatter of medium-sized stones. No obvious robbers' trench's.,42.655483,25.224087
+3328,Certain,427,17,13,0.7,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Remote Sensing,Gorno Sahrane necropolis,,,,Scatter of medium-sized stones. Recent geodetic marker placed on top of mound (origin-2008). Built on natural slope-hard to determine some aspects. No obvious robbers' trench's.,42.65583,25.223475
+3329,Certain,428,6,6,0.5,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Remote Sensing,Gorno Sahrane necropolis,,,,Scatter of medium-sized stones. No obvious robbers' trench's.,42.656137,25.22299
+3331,Certain,458,6,6,0.2,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Survey,Gorno Sahrane necropolis,,,,Vey few small stones.,42.667447,25.213657
+3332,Certain,458,8,8,0.3,Small,Pasture,Pasture,Photo,Yes,3,2,Good,2011,Survey,Gorno Sahrane necropolis,,,,2 stones on top ver shalow ad over grown ditch (robbers' trench?) on top and east.,42.667542,25.213573
+3334,Certain,453,23,23,2,Medium,Pasture,Pasture,Photo,Yes,3,2,Good,2011,Survey,Gorno Sahrane,,,,Only a small/shallow/old trench on west side.,42.667577,25.216613
+3336,Certain,454,9,7,1,Small,Pasture,Pasture,Photo,Yes,4,2,Good,2011,Survey,Gorno Sahrane necropolis,,,,Many stones.,42.667511,25.216044
+3337,Certain,433,7,7,0.3,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Remote Sensing,Gorno Sahrane necropolis,,,,Scatter of medium-sized rocks. No obvious robbers' trench's.,42.656133,25.220722
+3338,Certain,431,16,15,0.7,Small,Pasture,Pasture,Photo,No,4,2,Good,2011,Survey,Gorno Sahrane necropolis,,,,"Scatter of medium-sized stones. Large, round mound. Old robbers' trench's.",42.656568,25.221222
+3339,Certain,431,14,14,1,Small,Pasture,Pasture,Photo,Yes,2,2,Good,2011,Remote Sensing,Gorno Sahrane necropolis,,,,"Scatter of medium-sized rocks. 2 small, shallow robbers' trench's).",42.656893,25.221753
+3340,Certain,431,10,8,0.9,Small,Pasture,Pasture,Photo,Yes,2,2,Good,2011,Remote Sensing,Gorno Sahrane necropolis,,,,"Scatter of medium-sized stones. 2 old, shallow robbers' trench's.",42.657543,25.222688
+3341,Certain,429,15,15,0.8,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Remote Sensing,Gorno Sahrane necropolis,,,,Scatter of medium-sized stones. No obvious robbers' trench's. Slightly taprs off on north side.,42.65775,25.223572
+3342,Certain,437,13,10,0.7,Small,Pasture,Pasture,Photo,Yes,3,2,Good,2011,Remote Sensing,Gorno Sahrane necropolis,,,,"Scatter of medium-sized rocks. Small, old robbers' trench on east side. Reasonable good condition.",42.657442,25.220505
+3343,Certain,436,14,13,0.5,Small,Pasture,Pasture,Photo,Yes,2,2,Good,2011,Survey,Gorno Sahrane necropolis,,,,Scatter of medium-sized rocks all over the surface.,42.657142,25.22076
+3344,Certain,436,12,4,0.5,Small,Pasture,Pasture,Photo,Yes,2,2,Good,2011,Remote Sensing,Gorno Sahrane necropolis,,,,"Scatter of medium-sized stones. Lots of old, scattered robbers' trench's.",42.65693,25.220975
+3345,Certain,431,9,9,0.5,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Remote Sensing,Gorno Sahrane necropolis,,,,Scatter of medium-sized stones. No obvious robbers' trench's.,42.658257,25.222192
+3346,Certain,433,6,6,0.2,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Survey,Gorno Sahrane necropolis,,,,Scattered medium-sized rocks. Custer of four mounds close together. Very small mound conjoined with 2 other nearby mounds.,42.655422,25.220892
+3347,Certain,433,9,9,0.4,Small,Pasture,Pasture,Photo,Yes,2,2,Good,2011,Survey,Gorno Sahrane necropolis,,,,Scatter of medium-sized stones. 1 old robbers' trench on top. Joined with smaller mound on south side.,42.661392,25.222188
+3349,Certain,422,10,10,0.4,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Remote Sensing,Gorno Sahrane necropolis,,,,"Small stones on the surface, partially destroyed by agriculture.",42.659537,25.226274
+3350,Certain,424,15,15,0.5,Small,Pasture,Pasture,Photo,No,4,3,Good,2011,Remote Sensing,Gorno Sahrane necropolis,,,,Defunct mound. Scatter of medium-sized rocks. Canal cut straight through middle (running north-south).,42.659365,25.22606
+3351,Certain,443,15,7,0.5,Small,Pasture,Pasture,Photo,No,3,2,Good,2011,Remote Sensing,Gorno Sahrane necropolis,,,,Canal cut through (running N-S).,42.662322,25.218957
+3352,Certain,436,5,5,0.3,Small,Pasture,Pasture,Photo,Yes,2,2,Good,2011,Remote Sensing,Gorno Sahrane necropolis,,,,Scatter of medium-sized stones. Extremely small robbers' trench (old).,42.660682,25.222972
+3353,Certain,421,8,8,0.5,Small,Annual Agriculture,Pasture|Ploughed,Photo,No,2,2,Good,2011,Remote Sensing,Gorno Sahrane necropolis,,,,Partially destroyed by agriculture.,42.660009,25.225934
+3354,Uncertain,430,7,5,0.5,Small,Pasture,Pasture|Scrub,Photo,Yes,1,1,Good,2011,Survey,Gorno Cherkhovishte,,,,Low and almost invisible mound.,42.583161,25.271235
+3355,Certain,422,15,13,0.3,Small,Perennial Agriculture,Annual Agriculture|Ploughed,Photo,No,3,3,Good,2011,Survey,Gorno Sahrane necropolis,,,,Almost invisible due to agriculture work.,42.653322,25.223002
+3356,Certain,424,9,9,0.4,Small,Perennial Agriculture,Perennial Agriculture,Photo,No,5,5,Good,2011,Remote Sensing,Gorno Sahrane necropolis,,,,"Situated in lavender field. Scatter of medium-sized rocks. Defunct mound, ploughed up completely. No obvious robbers' trench's.",42.653453,25.222637
+3359,Certain,380,25,25,5,Medium,Pasture,Pasture,Photo,Yes,2,1,Good,2011,AKB,Dunavzi,Mogila Drenaka,,5500092,Small stones on the surface and in the robbers' trench. Thracian? Elevation marker on the top.,42.65246,25.278871
+3361,Certain,383,32,30,5,Medium,Annual Agriculture,Scrub|Tall Grass,Photo,Yes,3,2,Good,2011,AKB,Golyamo Dryanovo,,,5500067,"Animal intrusions, robbers' trench from S.",42.654924,25.273325
+3367,Certain,433,15,8,1,Small,Pasture,Pasture,Photo,Yes,4,4,Good,2011,Remote Sensing,Gorno Sahrane necropolis,,,,Defunct mound. Extremely bad condition. Has been bulldozed (possible excavation work).,42.655562,25.220912
+3368,Certain,437,18,11,1,Small,Pasture,Pasture,Photo,Yes,4,4,Good,2011,Remote Sensing,Gorno Sahrane necropolis,,,,Dufunct mound. Bulldozed (possible excavation work).,42.656917,25.220362
+3375,Certain,437,12,10,0.5,Small,Pasture,Pasture,Photo,Yes,3,3,Good,2011,Remote Sensing,Gorno Sahrane necropolis,,,,Large robbers' trench destroyed the southern and central areas of the mound.,42.661585,25.223832
+3391,Certain,311,35,35,4,Medium,Annual Agriculture,Scrub|Tall Grass,Photo,Yes,3,2,Good,2011,Survey,Rozovo,,,5500071,Mound is digged trough; exposed burial chamber made of bricks.,42.58822,25.406874
+3394,Certain,322,10,10,2,Medium,Pasture,Scrub|Tall Grass,Photo,Yes,2,1,Good,2011,Survey,Rozovo,,,5500074,Overgrown with rose bushes; 1 robbers' trench visible (south) Stones from the burial chamber are visible on the surface;.,42.557681,25.422366
+3395,Certain,320,20,20,5,Medium,Forest,Scrub|Tall Grass,Photo,Yes,2,1,Poor,2011,Survey,Rozovo,,,5500075,Large stones covering the surface. One deep old robbers' trench at the top with several holes at the bottom of the trench (consequently made).,42.558193,25.424228
+3396,Certain,316,50,50,5,Medium,Forest,Scrub|Tall Grass,Photo,Yes,3,2,Good,2011,Survey,Rozovo,,,5500076,"Hardly accessible; overgrow; S side take with machine; top looks intact with several test-pits, but locals told us that the chamber used to be exposed and then covered with soil again by the municipality (several years ago).",42.55676,25.43078
+3397,Certain,322,25,25,4,Medium,Annual Agriculture,Scrub|Tall Grass,Photo,Yes,3,2,Good,2011,Survey,Rozovo,,,5500072,Hardly accessible. Two fresh robbers' trenchs. Large stones at the bottom (probably from the chamber).,42.555956,25.430317
+3398,Certain,315,50,50,6,Large,Forest,Scrub|Tall Grass,Photo,Yes,3,2,Good,2011,Survey,Rozovo,,,5500073,"Several big robbers' trenchs at the top; 1 going to the bedrock, stones from the chamber are visible on the surface; According to the land owner a copper axe has been found approx. 10 years ago. In the nearby rose fields ceramic shreds have been found (uknown period); nothing visible on the surface at the moment;.",42.556503,25.432051
+3400,Certain,481,10,10,1,Small,Pasture,Pasture,Photo,Yes,4,2,Good,2011,Survey,Gorno Cherkhovishte,,,,"Central area completely destroyed by robbers' trench 1, small rocks and sandy soil on surface.",42.550885,25.311543
+3406,Uncertain,432,30,20,2,Medium,Pasture,Pasture|Scrub,Photo,Yes,3,2,Good,2011,Survey,Gorno Cherkhovishte,,,,Modern concrete structure/ cistern - reused mound ?.,42.583466,25.271304
+3407,Certain,428,12,12,1,Small,Pasture,Pasture,Photo,Yes,2,1,Good,2011,Survey,Gorno Cherkhovishte,,,,1 old robbers' trench on the top.,42.582964,25.271255
+3408,Certain,428,30,30,2,Medium,Pasture,Pasture,Photo,Yes,2,1,Good,2011,Survey,Gorno Cherkhovishte,,,,Top was taken.,42.582823,25.271196
+3409,Certain,410,12,12,5,Medium,Pasture,Pasture,Photo,Yes,2,1,Good,2011,Survey,Gorno Cherkhovishte,,,,1 old robbers' trench (2x2x0.5).,42.583379,25.274337
+3410,Certain,411,35,35,4,Medium,Pasture,Forest,Photo,Yes,3,2,Good,2011,Survey,Gorno Cherkhovishte,,,,Overgrown with pine forest; central area is entirely destroyed by large robbers' trench (12x20x3); sandy soil and small stones on top;.,42.583049,25.274857
+3417,Certain,454,30,30,4,Medium,Pasture,Pasture|Scrub,Photo,Yes,3,1,Good,2011,Survey,Gorno Cherkhovishte,,,,Next to a plaughed field; S part two robbers' trenchs; 1 going to bedrock.,42.591297,25.265278
+3418,Certain,435,32,32,4,Medium,Pasture,Scrub|Tall Grass,Photo,Yes,3,1,Good,2011,Survey,Viden,,,,Deep robbers' trench on the top (1.5x2x3).,42.597591,25.258182
+3419,Certain,454,20,20,5,Medium,Pasture,Scrub|Tall Grass,Photo,Yes,3,3,Good,2011,Survey,Viden,,,,Dugged through; sandy redish soil with small stones on the surface.,42.589929,25.259989
+3420,Certain,453,12,10,1.5,Medium,Annual Agriculture,Scrub|Tall Grass,Photo,No,4,3,Good,2011,Survey,Viden,,,,"Entirely overgrown with thorny bushes, destructed by ploughing of surrounding field.",42.589709,25.260401
+3421,Certain,455,20,20,2.5,Medium,Pasture,Scrub|Tall Grass,Photo,No,2,1,Good,2011,Survey,Viden,,,,Not accessible.,42.587977,25.260772
+3422,Certain,427,24,18,0.9,Small,Pasture,Pasture,Photo,Yes,2,2,Good,2011,Remote Sensing,Gorno Sahrane necropolis,,,,Scatter of medium-sized stones. Geodetic marker (old) on top of mound. North side of mound ploughed away at past point. 1 old robbers' trench on top of existing mound.,42.655722,25.225643
+3423,Certain,428,8,5,0.5,Small,Pasture,Pasture,Photo,Yes,2,2,Good,2011,Remote Sensing,Gorno Sahrane necropolis,,,,"Scatter of medium-sized rocks. robbers' trench running E-W, tapers off mound at E side.",42.655102,25.222017
+3424,Certain,433,15,7,0.4,Small,Pasture,Pasture,Photo,Yes,2,2,Good,2011,Remote Sensing,Gorno Sahrane necropolis,,,,Scatter of medium-sized rocks. Defunct mound. Dissassembled into various piles.,42.656728,25.221108
+3426,Certain,437,6,5,0.3,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Remote Sensing,Gorno Sahrane necropolis,,,,Scatter of medium-sized stones. No obvious robbers' trench's.,42.659827,25.222902
+3428,Certain,435,12,12,0.1,Small,Pasture,Pasture,Photo,Yes,3,2,Good,2011,Remote Sensing,Gorno Sahrane necropolis,,,,"Defunct mound. High concentration of stones (large as well) are indicative of former presence of larger mound. Also some robbers' trench's confirming this, bu still hard to determine whether site is truly a mound or not.",42.656017,25.220447
+3429,Certain,433,10,10,0.3,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Survey,Gorno Sahrane necropolis,,,,Scatter of medium-sized rocks. No obvious robbers' trench's. Surrounded by 3 other mounds.,42.655483,25.220955
+3432,Certain,432,12,10,0.3,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Remote Sensing,Gorno Sahrane necropolis,,,,Scatter of medium-sized rocks. Road cuts through part of western side. No obvious robbers' trench's.,42.659237,25.221343
+3433,Certain,436,16,15,0.5,Small,Pasture,Pasture,Photo,Yes,2,2,Good,2011,Survey,Gorno Sahrane necropolis,,,,Scatter of medium-sized stones. 1 old robbers' trench.,42.661057,25.221072
+3434,Certain,437,10,10,0.5,Small,Pasture,Pasture,Photo,Yes,2,2,Good,2011,Remote Sensing,Gorno Sahrane necropolis,,,,"Very shallow, old robbers' trench. Scatter of medium-sized stones.",42.660107,25.22282
+3435,Certain,435,10,10,0.4,Small,Pasture,Pasture,Photo,Yes,2,2,Good,2011,Remote Sensing,Gorno Sahrane necropolis,,,,Scatter of medium-sized stones. 1 old robbers' trench.,42.65995,25.222715
+3437,Certain,432,9,6,0.4,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Remote Sensing,Gorno Sahrane necropolis,,,,Scatter of medium-sized rocks. No obvious robbers' trench's.,42.658292,25.221022
+3438,Certain,430,15,10,0.5,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Remote Sensing,Gorno Sahrane necropolis,,,,Scatter of small stones on the surface.,42.66082,25.225134
+3439,Certain,446,12,10,0.5,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Remote Sensing,Gorno Sahrane necropolis,,,,Small stones on the surface of the mound;.,42.66335,25.21847
+3440,Certain,444,10,10,0.5,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Survey,Gorno Sahrane necropolis,,,,Scatter of small stones all over the surface.,42.663945,25.218558
+3441,Certain,444,12,12,1,Small,Pasture,Pasture,Photo,No,4,2,Good,2011,Survey,Gorno Sahrane necropolis,,,,"Some stones on top, uneven surface, small/ very shalow dips on top.",42.664748,25.219043
+3442,Certain,448,15,11,0.4,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Survey,Gorno Sahrane necropolis,,,,Overgrown; large stones on the surface.,42.663398,25.217846
+3443,Certain,448,15,10,0.5,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Remote Sensing,Gorno Sahrane necropolis,,,,"Overgrown, grass; small stones on the surface.",42.663479,25.217025
+3444,Certain,448,8,8,0.4,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Remote Sensing,Gorno Sahrane necropolis,,,,Overgrown; small stones on the surface.,42.663725,25.216963
+3445,Certain,447,8,8,0.5,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Remote Sensing,Gorno Sahrane,,,,Large stones on the surface of the mound.,42.663893,25.216888
+3446,Certain,448,10,10,0.5,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Survey,Gorno Sahrane necropolis,,,,"Overgrown, grass.",42.663342,25.216702
+3447,Certain,448,8,8,0.3,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Survey,Gorno Sahrane necropolis,,,,Small stones on the surface.,42.663462,25.21629
+3448,Certain,450,10,10,0.5,Small,Pasture,Scrub|Tall Grass,Photo,Yes,3,1,Good,2011,Remote Sensing,Gorno Sahrane,,,,Stones on the surface of robbers' trench.,42.659325,25.210008
+3449,Certain,454,15,8,0.8,Small,Pasture,Scrub|Tall Grass,Photo,No,3,1,Good,2011,Remote Sensing,Gorno Sahrane,,,,Stones on the surface.,42.66032,25.207001
+3450,Certain,447,8,5,0.3,Small,Annual Agriculture,Annual Agriculture|Ploughed,Not recorded,No,4,2,None,2011,Remote Sensing,Gorno Sahrane,,,,No obvious robbers' trench's. Pile of stones on top of mound dumped by farmers from surrounding fields.,42.660387,25.214588
+3452,Certain,449,8,8,0.4,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Remote Sensing,Gorno Sahrane,,,,Stones on the surface of the mound.,42.66352,25.2148
+3453,Certain,451,9,8,0.3,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Survey,Gorno Sahrane necropolis,,,,Partially destroyed by a nearby road; small stones on the surface.,42.663703,25.214376
+3454,Certain,454,12,10,0.5,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Remote Sensing,Gorno Sahrane necropolis,,,,Stones on the surface of the mound.,42.663957,25.212905
+3455,Certain,430,6,6,0.4,Small,Pasture,Pasture,Photo,No,4,2,Good,2011,Remote Sensing,Gorno Sahrane necropolis,,,,Scatter of medium-sized stones. No obvious robbers' trench's.,42.659555,25.224072
+3461,Certain,433,7,5,0.2,Small,Pasture,Pasture,Photo,Yes,5,5,Good,2011,Survey,Gorno Sahrane necropolis,,,,Almost defunct - the middle part taken by robbers' trench and test robbers' trench's around the mound.,42.659055,25.220853
+3500,Certain,451,25,10,2.5,Medium,Annual Agriculture,Scrub|Tall Grass,Photo,Yes,3,2,Good,2011,Remote Sensing,Gorno Sahrane,,,,"Mound cut in half by road. Long robbers' trench on intact (eastern) side of mound, but overgrown with brambles (hard to accurately determine dimesions/take photos).",42.662907,25.2123
+3501,Certain,454,13,6,0.5,Small,Annual Agriculture,Annual Agriculture|Ploughed,Photo,No,5,5,Good,2011,Remote Sensing,Gorno Sahrane,,,,Completely destroyed (ploughed over repeatedly). Large stones on mound and immediate surrounds.,42.663553,25.213
+3502,Certain,450,10,5,1.5,Medium,Pasture,Scrub|Tall Grass,Photo,No,4,2,Good,2011,Remote Sensing,Gorno Sahrane,,,,Scattered large rocks.,42.662653,25.212487
+3503,Certain,450,10,5,0.2,Small,Annual Agriculture,Annual Agriculture|Ploughed,Photo,Yes,4,5,Good,2011,Remote Sensing,Gorno Sahrane,,,,"Drainage ditch on immediate eastern side, road on immediate western side and old robbers' trench on south side of mound.",42.662525,25.212575
+3504,Certain,449,20,20,1.2,Medium,Scrub,Scrub|Tall Grass,Photo,No,4,5,Good,2011,Remote Sensing,Gorno Sahrane,,,,"Defunct mound. Road built down middle of original mound, remains of mound split into 2 small mounds of on either side of road. Completely destroyed. Length best estimate to pre-destruction length.",42.660268,25.21403
+3505,Certain,447,8,4,0.5,Small,Annual Agriculture,Annual Agriculture|Ploughed,Photo,No,5,5,Good,2011,Remote Sensing,Gorno Sahrane,,,,Ploughed into a lozenge shape. Overgrown with brambles.,42.66093,25.214102
+3506,Certain,451,10,8,0.5,Small,Annual Agriculture,Scrub|Tall Grass,Photo,No,4,5,Good,2011,Remote Sensing,Gorno Sahrane,,,,Long grass and scatteed large stones.,42.65977,25.21413
+3507,Certain,447,45,45,7,Large,Annual Agriculture,Scrub|Tall Grass,Photo,Yes,3,2,Good,2011,Remote Sensing,Gorno Sahrane,,,,"Robbers' trench's almost broken into burial chamber. Fresh litter in and around robbers' trench's. Many exensive robbers' trench's (fresh, ~1 year old for 2 on side of mound). Urgent preservation needed, recent robbries.",42.661513,25.212983
+3509,Uncertain,456,10,5,0.6,Small,Pasture,Pasture|Scrub,Photo,Yes,5,5,Good,2011,Remote Sensing,Gorno Sahrane,,,,Defunct mound. Destroyed by construction of roads and drainage ditch. Pile of rocks on top. No robbers' trench's.,42.665522,25.21118
+3510,Certain,461,7,5,1,Small,Annual Agriculture,Annual Agriculture|Ploughed,Survey,Yes,4,3,None,2011,Survey,Gorno Sahrane necropolis,,,,Middle taken out of sides were mound earth.,42.666228,25.210239
+3511,Certain,461,8,8,1,Small,Pasture,Pasture,Photo,Yes,4,3,Good,2011,Survey,Gorno Sahrane necropolis,,,,"Stones on top, trench through middle, earth moved to the side.",42.666337,25.210189
+3512,Certain,455,17,17,0.3,Small,Pasture,Pasture,Photo,No,3,2,Good,2011,Survey,Gorno Sahrane necropolis,,,,"Flat top, no visible robbers' trenchs on side of trench.",42.666104,25.211998
+3513,Certain,454,10,10,0.5,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Survey,Gorno Sahrane necropolis,,,,No stones or robbers' trenchs.,42.666043,25.212731
+3514,Uncertain,453,10,7,0.5,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Survey,Gorno Sahrane necropolis,,,,Robbers' trench neary takes up whole mound. The moved arth was deposited to the east.,42.665904,25.213024
+3515,Certain,454,13,7,0.3,Small,Pasture,Pasture,Photo,No,4,2,Good,2011,Survey,Gorno Sahrane necropolis,,,,Uneven surface.,42.665772,25.213157
+3516,Certain,463,2,2,0.1,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Survey,Gorno Sahrane necropolis,,,,Mound was barely visible.,42.666747,25.211238
+3517,Certain,463,2,2,0.2,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Survey,Gorno Sahrane necropolis,,,,Mound was barely visible.,42.666897,25.210148
+3518,Certain,460,6,6,0.2,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Survey,Gorno Sahrane necropolis,,,,"No robbers' trenchs, barey visible, bundaries not completely clear.",42.667588,25.213048
+3519,Certain,428,10,8,0.3,Small,Pasture,Pasture,Photo,Yes,2,2,Good,2011,Survey,Gorno Sahrane necropolis,,,,Defunct mound. Cut through by drainage ditch. Scatter of medium-sized rocks.,42.654203,25.22205
+3520,Certain,426,5,5,0.4,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Remote Sensing,Gorno Sahrane necropolis,,,,No obvious robbers' trench's. Scatter of medium-sized rocks.,42.654957,25.222503
+3521,Certain,428,9,8,0.4,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Survey,Gorno Sahrane necropolis,,,,Badly eroded.,42.654795,25.22211
+3522,Certain,425,30,30,2,Medium,Pasture,Pasture,Photo,Yes,3,3,Good,2011,Remote Sensing,Gorno Sahrane necropolis,,,,Scatter of medium-sized rocks. West side recently (~1 yr ago) bulldozed. Large hole filled with rubbish on N side and some old robbers' trench's. Urgent conservation recommended.,42.654185,25.222778
+3523,Certain,429,20,20,0.7,Small,Pasture,Pasture,Photo,Yes,3,2,Good,2011,Survey,Gorno Sahrane necropolis,,,,Thoroughly robbed with multiple robbers' trench's. Mostly old robbers' trench's.,42.654577,25.221827
+3524,Certain,432,15,15,0.9,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Remote Sensing,Gorno Sahrane necropolis,,,,Scatter of medium-sized rocks. In good condition apart from drainage ditch just touching NE side. No obvious robbers' trench's.,42.655135,25.220805
+3525,Certain,433,21,21,5,Medium,Pasture,Pasture,Photo,Yes,2,2,Good,2011,Survey,Gorno Sahrane necropolis,,,,Cluster of four mounds close together.,42.655388,25.221035
+3526,Certain,432,14,14,0.6,Small,Pasture,Pasture,Photo,Yes,2,2,Good,2011,Remote Sensing,Gorno Sahrane necropolis,,,,"Scattered medium-sized rocks. More robbers' trench's present other than robbers' trench1, but impossible to determine borders of said robbers' trench's.",42.655863,25.220748
+3527,Certain,427,20,10,0.7,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Survey,Gorno Sahrane necropolis,,,,Defunct mound. Scatter of medium-sized rocks. W side taken away in past. No obvious robbers' trench's.,42.65397,25.221935
+3528,Certain,440,10,10,0.5,Small,Pasture,Pasture,Photo,Yes,4,3,Good,2011,Remote Sensing,Gorno Sahrane necropolis,,,,Defunct mound. Scatter of medium-sized rocks around base. Pile of large stones in robbers' trench1. Prior to destruction-0.8-0.9m tall. robbers' trench1 completely hollowed out mound.,42.661622,25.220078
+3529,Certain,432,10,9,0.5,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Remote Sensing,Gorno Sahrane necropolis,,,,Scatter of mediumsized rocks. No obvious or new robbers' trench's. Road cuts off part of west side.,42.657415,25.221692
+3530,Certain,436,4,4,0.2,Small,Pasture,Pasture,Photo,Yes,2,2,Good,2011,Survey,Gorno Sahrane necropolis,,,,Defunct mound. Very small-low profile.,42.65942,25.220302
+3531,Certain,430,7,7,0.2,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Remote Sensing,Gorno Sahrane necropolis,,,,Defunct mound. No robbers' trench's.,42.656757,25.22269
+3532,Certain,428,7,6,0.3,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Survey,Gorno Sahrane necropolis,,,,Defunct mound.,42.656333,25.222887
+3533,Certain,443,20,15,1,Small,Pasture,Pasture,Photo,Yes,4,3,Good,2011,Survey,Gorno Sahrane necropolis,,,,Defunct mound. Cut through by canal (running east-west. Scatter of medium-sized stones.,42.662075,25.22012
+3534,Certain,439,7,6,0.5,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Survey,Gorno Sahrane necropolis,,,,Attached to the side of another larger mound (on northern side).,42.661303,25.222277
+3535,Certain,427,9,9,0.4,Small,Pasture,Pasture,Photo,Yes,2,2,Good,2011,Remote Sensing,Gorno Sahrane necropolis,,,,"N edge cut by old drainage ditch, old robbers' trench.",42.658887,25.225057
+3536,Certain,430,6,6,0.2,Small,Pasture,Pasture,Photo,Yes,2,2,Good,2011,Survey,Gorno Sahrane necropolis,,,,Multiple old robbers' trench's. Next to larer mound (on northern side).,42.660753,25.225258
+3537,Certain,473,10,10,0.3,Small,Pasture,Pasture,Photo,Yes,2,2,Good,2011,Survey,Skobelevo,,,,Defunct mound. Light scatter of medium-sized stones. Completely ploughed over.Very hard to determine if robbers' trench's are really robbers' trench's or remnants from past agricultural activity. Severely dame=aged from agricultural activity.,42.668547,25.207025
+3538,Certain,472,6,6,0.3,Small,Pasture,Pasture,Photo,Yes,2,2,Good,2011,Survey,Skobelevo,,,,Defunct mound. Canal cut through middle. Scatter of medium-sized stones.,42.66845,25.207437
+3539,Certain,472,6,6,0.2,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Survey,Skobelevo,,,,Defunct mound. No obvious robbers' trench's. Light scatter of medium-sized stones. Severely damaged by agricultural activity.,42.668407,25.206563
+3540,Certain,468,12,12,0.5,Small,Pasture,Pasture,Photo,Yes,2,2,Good,2011,Survey,Skobelevo,,,,Defunct mound. Recent ploughing along eastern edge. Severely damaged by agricultural activity.,42.667867,25.204692
+3541,Certain,468,8,8,0.4,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Survey,Skobelevo,,,,Scatter of medium-sized stones. No obvious robbers' trench's. Slightly tapers off on east side.,42.66717,25.203205
+3542,Certain,468,9,7,0.4,Small,Pasture,Pasture,Photo,Yes,2,2,Good,2011,Survey,Skobelevo,,,,Defunct mound. Severely damaged from plowing. Light scatter of small stones.,42.667288,25.203327
+3543,Certain,466,19,19,1,Small,Pasture,Pasture,Photo,Yes,2,2,Good,2011,Survey,Skobelevo,,,,Light scatter of medium-sized stones. Few scattered large rocks. Possible excavation carried out on western side (old excavation work). Uniform earth displacement from mound suggests this excavation. Almost completely dug out side.,42.667058,25.20366
+3544,Certain,468,10,8,0.3,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Survey,Skobelevo,,,,Defunct mound. Overgrown. No obvious robbers' trench's. Scatter of various large stones.,42.66764,25.203532
+3545,Certain,467,14,14,0.6,Small,Pasture,Pasture,Photo,Yes,2,2,Good,2011,Survey,Skobelevo,,,,Scatter of medium-sized stones. Drainage ditch running close to south-west side. Damaged by agricultual activity.,42.667458,25.203983
+3546,Certain,466,17,15,0.5,Small,Pasture,Pasture,Photo,Yes,2,2,Good,2011,Survey,Skobelevo,,,,Defunct mound. Severely damaged from plowing/flattening. Number of old robbers' trench's. Scatter of medium-sized stones.,42.667048,25.204227
+3547,Certain,466,13,13,0.3,Small,Pasture,Pasture,Photo,Yes,2,2,Good,2011,Survey,Skobelevo,,,,Defunct mound. Scatter of medium-sized stones. Severely damaged by agricultural activity and looting.,42.667098,25.204618
+3548,Certain,466,11,11,0.3,Small,Pasture,Pasture,Photo,Yes,2,2,Good,2011,Survey,Skobelevo,,,,Defunct mound. Scatter of medium-sized stones. Some larger rocks. Severely damaged by agricultural activity.,42.667307,25.20457
+3549,Certain,467,7,7,0.2,Small,Pasture,Pasture,Photo,Yes,2,2,Good,2011,Survey,Skobelevo,,,,Defunct mound. Severely damaged from agricultural activity. Scatter of medium-sized stones.,42.667497,25.204415
+3550,Certain,465,10,10,0.4,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Survey,Skobelevo,,,,"Scatter of medium-sized stones. No obvious robbers' trench's. Damaged by agricultural activity. Close to village, so may be somewhat disrupted.",42.66644,25.20341
+3551,Certain,464,16,16,0.6,Small,Pasture,Pasture,Photo,Yes,2,2,Good,2011,Survey,Gorno Sahrane necropolis,,,,North-west corner cut off by road. Damaged by agricultural activity. Scatter of medium-sized stones.,42.66622,25.203288
+3552,Certain,463,10,8,0.4,Small,Pasture,Pasture,Photo,Yes,2,2,Good,2011,Survey,Gorno Sahrane necropolis,,,,Old robbers' trench's (very shallow). Plowed away on eastern side. Scatter of medium-sized stones.,42.665758,25.204278
+3553,Certain,463,7,7,0.4,Small,Pasture,Pasture,Photo,Yes,2,2,Good,2011,Survey,Gorno Sahrane necropolis,,,,"Scatter of medium-sized stones. 1 very small, old robbers' trench. Damaged by agricultural activity.",42.665733,25.204107
+3554,Certain,463,6,6,0.3,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Survey,Gorno Sahrane necropolis,,,,"No obvious robbers' trench's. Scatter of medium-sized stones. Damaged by agricultural activity. Built on partial slope, west side higher than east.",42.665677,25.203907
+3555,Certain,463,7,6,0.3,Small,Pasture,Pasture,Photo,Yes,2,2,Good,2011,Survey,Gorno Sahrane necropolis,,,,Large mound joined to TRAP #3556 (southern mound). Scatter of medium-sized stones.,42.665857,25.203908
+3556,Certain,463,8,7,0.4,Small,Pasture,Pasture,Photo,Yes,2,2,Good,2011,Survey,Gorno Sahrane necropolis,,,,Large mound joined to TRAP #3555 (northern mound). Scatter of medium-sized stones.,42.665915,25.203897
+3557,Certain,463,9,9,0.4,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Survey,Gorno Sahrane necropolis,,,,"No obvious robbers' trench's. Scatter of medium-sized stones. Damaged by agricultural activity. Built on partial slope, west side sloped down.",42.666035,25.203887
+3558,Certain,464,5,5,0.2,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Survey,Gorno Sahrane necropolis,,,,No obvious robbers' trench's Scatter of medium-sized stones. Plouhed over. Damaged by agricultural activity.,42.666105,25.203832
+3559,Certain,463,5,5,0.2,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Survey,Gorno Sahrane necropolis,,,,Defunct mound. Heavily damaged by agricultural activity. Drainage ditch starting on western side. No obvious robbers' trench's.,42.665985,25.203587
+3560,Certain,464,10,10,0.2,Small,Pasture,Pasture,Photo,Yes,4,3,Good,2011,Survey,Gorno Sahrane necropolis,,,,Defunct mound. Heavily robbed with huge crater in middle.,42.666087,25.203465
+3561,Certain,464,9,9,0.4,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Survey,Gorno Sahrane necropolis,,,,Damaged by agicultural activity. No obvious robbers' trench's. Scatter of medium-sized stones.,42.66627,25.203992
+3562,Certain,465,6,5,0.3,Small,Pasture,Pasture,Photo,Yes,2,2,Good,2011,Survey,Gorno Sahrane necropolis,,,,Low visibility for robbers' trench's. Slightly cut by road (IMG 0243). Scatter of medium-sized stones.,42.666372,25.203962
+3563,Certain,465,7,7,0.3,Small,Pasture,Pasture,Photo,Yes,2,2,Good,2011,Survey,Skobelevo,,,,Defunct mound. Damaged heavily by agricultural activity. Road scirts around (almost slightly touching) west and south-west sides.,42.666487,25.203938
+3564,Certain,466,5,5,0.3,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Survey,Skobelevo,,,,Defunct mound. Cut through by 2 roads on north-west and north-east sides. Heavily damaged by agricultural activity and r]construction of roads. No obvious robbers' trench's.,42.666642,25.20339
+3565,Certain,464,7,7,0.4,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Survey,Gorno Sahrane necropolis,,,,No visible robbers' trench's. Better preserved than most mounds of this side.,42.665825,25.203303
+3566,Certain,463,9,7,0.3,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Survey,Gorno Sahrane necropolis,,,,Defunct mound. Cut through by road on east side. Scatter of medium-sized stones. No obvious robbers' trench's.,42.665727,25.203122
+3567,Certain,463,15,15,0.5,Small,Pasture,Pasture,Photo,Yes,2,2,Good,2011,Survey,Gorno Sahrane necropolis,,,,Scatter of medium-sized stones. Some old robbers' trench's. Road on edge of western side (but does not cut through mound however).,42.665615,25.203233
+3568,Certain,463,8,8,0.4,Small,Pasture,Pasture,Photo,Yes,2,2,Good,2011,Survey,Gorno Sahrane necropolis,,,,Defunct mound. Canal cut through north-western side.,42.665667,25.203418
+3569,Certain,464,18,16,0.6,Small,Pasture,Pasture,Photo,Yes,4,3,Good,2011,Survey,Gorno Sahrane necropolis,,,,"Damaged by agriculture-old looting, no robbers' trench. Some vegetation, 3-5 giant rocks, many small-med. Stones scattered around. Next to road (2m cut by road).",42.666195,25.204538
+3570,Certain,463,6,6,0.3,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Survey,Gorno Sahrane necropolis,,,,"No obvious robbers' trench-round, low, small-med. Stones scattered on top. Some damage by agricultural activity.",42.665945,25.204443
+3571,Certain,465,6,5,0.2,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Survey,Skobelevo,,,,"Small defunct mound, large stone in centre, stony centre, damaged by agricultural acitivity. No visible robbers' trenchs.",42.666807,25.20409
+3572,Certain,462,10,7,0.2,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Survey,Gorno Sahrane necropolis,,,,"Defunct mound, stony surface, canal running through (N-S), west side taken away, large stones around.",42.665322,25.202695
+3573,Certain,462,10,10,0.4,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Survey,Gorno Sahrane necropolis,,,,"No new robbers' trenchs, damaged by agricultural activity/robbing, uneven surface.",42.665472,25.202903
+3574,Certain,464,8,8,0.4,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Survey,Gorno Sahrane necropolis,,,,"Round, slope (east to west), damaged by agricultural activity.",42.665902,25.2029
+3575,Certain,465,10,6,0.4,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Survey,Gorno Sahrane necropolis,,,,"Elongated (E-W), disturbed by modern activity. Original centre at west end, concentration of stones, severaly worn, unevem.",42.666052,25.202775
+3576,Certain,465,8,8,0.2,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Survey,Skobelevo,,,,"Round, N-side slightly cut off, med. Stones on top.",42.666218,25.202528
+3577,Certain,465,8,7,0.2,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Survey,Skobelevo,,,,"Overgrown, round, small stones gathered, low and flat.",42.666442,25.202657
+3578,Certain,467,14,13,0.1,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Survey,Skobelevo,,,,"Large stones on top, few rose bushes, flat.",42.66668,25.202517
+3579,Certain,467,11,10,0.5,Small,Pasture,Pasture,Photo,Yes,2,2,Good,2011,Survey,Skobelevo,,,,"Severly worn (graze/burn), old robbing but uncertain where. Burnt.",42.666978,25.202037
+3580,Uncertain,470,7,6,0.2,Small,Pasture,Pasture,Photo,No,4,5,Good,2011,Survey,Skobelevo,,,,"E-side overgrown, w-side burnt surface, defunct mound.",42.667193,25.202657
+3581,Certain,467,10,10,0.4,Small,Pasture,Pasture,Photo,No,3,3,Good,2011,Survey,Skobelevo,,,,"Partly burnt, light stone scatter. Largely disrupted by modern activity. No visible robbers' trench.",42.666825,25.202203
+3582,Certain,468,12,10,0.2,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Survey,Skobelevo,,,,"Overgrown-lots of vegetation, few large stones on S-side.",42.666978,25.202548
+3583,Uncertain,467,13,13,0.6,Small,Pasture,Pasture,Photo,No,3,2,Good,2011,Survey,Skobelevo,,,,"No recent robbers' trench-modern damage, damaged with modern earthwork extending south, pile of large stones on W-side.",42.666702,25.202308
+3584,Certain,462,8,8,0.3,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Survey,Gorno Sahrane necropolis,,,,Heavily disrupted by modern use. No rrecent robbers' trench. Old agricultural activity and robbing. No visible robbers' trench.,42.665362,25.20307
+3585,Certain,461,11,10,0.3,Small,Pasture,Pasture,Photo,Yes,3,2,Good,2011,Remote Sensing,Gorno Sahrane necropolis,,,,"Badly eroded (agricultural), defunct-middle taken out, dirt trown NE, robbers' trench shallow, stony surface, group of very large stones.",42.665218,25.203812
+3586,Certain,461,9,8,0.4,Small,Pasture,Pasture,Photo,Yes,4,3,Good,2011,Survey,Gorno Sahrane necropolis,,,,"Old robbers' trench in centre and SE east, large stones scattered. No new robbers' trenchs.",42.664883,25.203807
+3587,Certain,462,9,7,0.2,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Remote Sensing,Gorno Sahrane necropolis,,,,"Stony surface, one large stone in centre, roud, no robbers' trench.",42.665502,25.203798
+3588,Certain,461,7,6,0.2,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Remote Sensing,Gorno Sahrane necropolis,,,,"Few stones on surface, round, low, flat.",42.664802,25.204195
+3589,Certain,462,9,8,0.4,Small,Pasture,Pasture,Photo,Yes,3,2,Good,2011,Remote Sensing,Gorno Sahrane necropolis,,,,"Stony surface, large stones aound mound (assist in identifying mound), no recent robbers' trench (all old) badly worn away.",42.665517,25.204125
+3590,Certain,461,14,14,0.5,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Survey,Gorno Sahrane necropolis,,,,"Very flat, less stony than average, large stone in centre. Ploughed over, badly eroded.",42.665132,25.204245
+3591,Certain,461,10,8,0.1,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Survey,Gorno Sahrane necropolis,,,,Small stones on surface relatively flat and round.,42.664928,25.204372
+3592,Certain,462,7,7,0.2,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Remote Sensing,Gorno Sahrane necropolis,,,,"Defunct, round, few stones on top, barely visible, one large stone on top, badly damaged (agricultural activity).",42.665367,25.204493
+3593,Certain,463,10,10,0.3,Small,Pasture,Pasture,Photo,Yes,2,2,Good,2011,Remote Sensing,Gorno Sahrane necropolis,,,,"Large stones on surface, damaged by agriculture.",42.665628,25.204423
+3594,Certain,461,5,5,0.2,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Survey,Gorno Sahrane necropolis,,,,"Round, very flat, few stones on top, heavily damaged by agricultural activity.",42.665217,25.204867
+3595,Certain,462,7,7,0.3,Small,Pasture,Pasture,Photo,Yes,2,2,Good,2011,Remote Sensing,Gorno Sahrane necropolis,,,,"Uneven surface, stony surface, round, on slight slope.",42.665815,25.204762
+3596,Uncertain,461,6,6,0.3,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Survey,Gorno Sahrane necropolis,,,,End of terrain wave. Badly damaged by agriculture. No visible robbers' trenchs.,42.665843,25.205065
+3597,Certain,462,8,8,0.1,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Remote Sensing,Gorno Sahrane necropolis,,,,"Very flat, round, uneven surface, heavily damaged (agriculture activity).",42.665593,25.205033
+3598,Uncertain,461,5,5,0.1,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Survey,Gorno Sahrane necropolis,,,,"Round, very flat, barely visible, stony surface.",42.665368,25.205323
+3599,Certain,460,12,12,0.2,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Survey,Gorno Sahrane necropolis,,,,"Flattened by agriculture, no visible robbers' trenchs.",42.66555,25.205643
+3600,Certain,462,20,20,2,Medium,Pasture,Pasture,Photo,Yes,4,3,Good,2011,Remote Sensing,Gorno Sahrane necropolis,,,,"Excavated mound, bulldozed.",42.665893,25.20672
+3601,Certain,460,16,16,0.8,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Survey,Gorno Sahrane necropolis,,,,"Damaged by the roads cutting through it. NE-cut by road, overgrown with vegetation, 2 roads on NW side, one road on SE side with no recent robbers' trench.",42.665753,25.206445
+3602,Certain,464,17,15,1.5,Medium,Pasture,Pasture,Photo,Yes,4,4,Good,2011,Survey,Gorno Sahrane necropolis,,,,"Damage near mound, deep trench on top, large pile of stones near bottom.",42.666168,25.20709
+3603,Uncertain,464,5,5,0.2,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Survey,Gorno Sahrane necropolis,,,,"Stones on surface in overgrown field, defunct, difficult to see, badly damaged by agricultural activity.",42.66637,25.207952
+3604,Certain,464,10,8,0.4,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Survey,Gorno Sahrane necropolis,,,,"Overgrown with vegetation, round, damaged from agricultural activity.",42.666693,25.208955
+3605,Uncertain,447,13,10,0.8,Small,Pasture,Scrub|Tall Grass,Photo,No,3,3,Good,2011,Survey,Yasenovo Region,,,,"Uncertain, possibly a ottoman structure, medium sized field stones piled on top, flattened on top. No obvious rts.",42.682245,25.234317
+3606,Uncertain,444,10,10,0.8,Small,Pasture,Scrub|Tall Grass,Photo,No,3,2,Good,2011,Survey,Yasenovo Region,,,,"Field Stones piled on top. No obvious robbers trenches overgrown, sceptical should be investigated.",42.682553,25.235165
+3607,Certain,453,10,10,0.4,Small,Pasture,Pasture,Photo,Yes,2,2,Good,2011,Survey,Yasenovo Region,,,,Field stones piled on top mostly overgrown. Large stones embedded in centre.,42.68305,25.234265
+3608,Certain,454,8,8,0.4,Small,Pasture,Pasture,Photo,Yes,2,2,Good,2011,Survey,Yasenovo Region,,,,More certain. One old rt. Damaged by agricultural activity.,42.683395,25.234255
+3609,Uncertain,444,12,11,0.7,Small,Pasture,Pasture,Photo,Yes,4,3,Good,2011,Remote Sensing,Yasenovo Region,,,,"Flattened on top. Piled with field stones. Possibly ottoman, quite steep.",42.68198,25.234838
+3610,Certain,446,9,9,0.5,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Survey,Yasenovo Region,,,,"Large stones and field stones, unveven surface due to agricultural activity.",42.681755,25.234317
+3611,Uncertain,445,8,7,0.4,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Survey,Yasenovo Region,,,,"Unusually steep. Light covering with field stones. Large stones on top. Surface uneven, no visible robbers trenches.",42.681403,25.234232
+3612,Uncertain,444,11,11,1,Small,Pasture,Pasture,Photo,Yes,2,2,Good,2011,Survey,Yasenovo Region,,,,Uncertain due to unusual height field stones piled on.,42.681188,25.235352
+3613,Uncertain,440,8,6,0.5,Small,Pasture,Pasture,Photo,Yes,2,2,Good,2011,Survey,Yasenovo Region,,,,Unusually steep. Light scatter of embedded stones. Damage on sides from agriculture.,42.681035,25.235415
+3614,Uncertain,441,12,11,0.5,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Survey,Yasenovo Region,,,,"Highly disturbed, most of south side removed. Overgrown, covered with field stone, no obvious robbers trenches.",42.680967,25.23528
+3615,Uncertain,436,8,8,0.5,Small,Pasture,Scrub|Tall Grass,Photo,No,3,2,Good,2011,Survey,Yasenovo Region,,,,Field stones dumped. Overgrown. Unusually high for mound.,42.680858,25.235413
+3616,Uncertain,426,7,7,0.4,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Survey,Yasenovo Region,,,,"Partly overgrown, piled with field stones. No obvious robbers trenches, damaged by agriculture unusually steep.",42.679945,25.23556
+3617,Certain,426,10,8,0.5,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Survey,Yasenovo Region,,,,"Unusually steep for size, west side cut away, uneven surface from agriculture.",42.679838,25.235572
+3618,Uncertain,433,10,9,3,Medium,Pasture,Pasture,Photo,No,2,2,Good,2011,Survey,Yasenovo Region,,,,"Uneven surface. Possible artificial build up. Large stones, south east side cut away. No obvious robbers trench. Unusually steep.",42.6795,25.234945
+3619,Certain,429,11,11,0.8,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Survey,Yasenovo Region,,,,"Covered Field Stones, Uneven due to terrain wave.",42.679097,25.235128
+3620,Certain,436,9,8,0.5,Small,Pasture,Pasture,Photo,Yes,2,2,Good,2011,Survey,Yasenovo Region,,,,Damage on SW side.,42.678985,25.234687
+3621,Uncertain,418,7,5,0.2,Small,Pasture,Pasture,Photo,No,2,4,Good,2011,Survey,Yasenovo Region,,,,Defunct Mound of low confidence. Severely damaged by agricultural activity.,42.678292,25.236415
+3622,Uncertain,421,7,6,0.9,Small,Pasture,Pasture,Photo,Yes,2,2,Good,2011,Survey,Golyamo Dryanovo,,,,"Unusually steep. Light scattering of stones. Damage from agriculture, uneven surface.",42.674482,25.236742
+3623,Uncertain,422,12,11,0.6,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Survey,Golyamo Dryanovo,,,,Part of a long southern terrain wave. Extensions to south and east. Light stone scatter. No obvious robbers trenches.,42.674942,25.235947
+3624,Certain,430,11,11,0.5,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Survey,Yasenovo Region,,,,"Stony Surface, some wear from agricultural activity.",42.677498,25.23354
+3625,Uncertain,431,8,8,0.4,Small,Pasture,Pasture,Photo,Yes,2,2,Good,2011,Survey,Yasenovo Region,,,,Large robbers trench in the centre filled with stones on slope facing south east.,42.677735,25.233975
+3626,Uncertain,433,10,10,0.6,Small,Pasture,Pasture,Photo,Yes,2,2,Good,2011,Survey,Yasenovo Region,,,,Flattened on top. Built on gentle slope to the SW. Top scattered with stones.,42.678688,25.234603
+3627,Uncertain,433,14,13,1,Small,Pasture,Pasture,Photo,Yes,3,2,Good,2011,Survey,Yasenovo Region,,,,Robbers trench filled in with field stones and is overgrown.,42.678448,25.234642
+3628,Uncertain,434,10,10,0.8,Small,Pasture,Scrub,Photo,Yes,3,2,Good,2011,Survey,Yasenovo Region,,,,Built into gentle slope (W-E) Robbers trench buried by field stones and partly overgrown.,42.679757,25.234033
+3629,Uncertain,437,9,8,0.7,Small,Pasture,Scrub,Photo,Yes,3,2,Good,2011,Survey,Yasenovo Region,,,,"Possible mound (uncertain) South side of mound has been largely dug away, partly overgrown.",42.679472,25.233538
+3630,Uncertain,438,7,5,0.3,Small,Pasture,Pasture,Photo,Yes,3,2,Good,2011,Survey,Yasenovo Region,,,,"Possible defunct mound, south half robbed away.",42.680128,25.232838
+3631,Certain,439,11,10,1,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Survey,Yasenovo Region,,,,No recent robbers trench. Stony Surfaced. Worn by agriculture.,42.680498,25.23237
+3632,Uncertain,453,13,10,0.5,Small,Pasture,Pasture,Photo,Yes,2,2,Good,2011,Survey,Yasenovo Region,,,,Possible defunct mound.,42.682028,25.232055
+3633,Uncertain,467,10,10,0.4,Small,Pasture,Pasture|Scrub,Photo,Yes,2,2,Good,2011,Survey,Yasenovo Region,,,,"Road cuts off west side of mound, old robbers trench.",42.682222,25.230878
+3634,Uncertain,437,12,12,1,Small,Pasture,Pasture,Photo,Yes,3,2,Good,2011,Survey,Yasenovo Region,,,,"Almost fully excavated, large stones in and around the mound.",42.680083,25.231365
+3635,Certain,443,12,12,1,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Survey,Yasenovo Region,,,,"No obvious robbers trench. Overgrown, covered with field stones. Purple survey mark on top.",42.677808,25.2322
+3636,Uncertain,438,12,12,0.7,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Survey,Yasenovo Region,,,,"Worn surface from agricultural activity, covered in field stones.",42.679598,25.231595
+3637,Uncertain,438,11,10,0.5,Small,Pasture,Pasture,Photo,Yes,2,2,Good,2011,Survey,Yasenovo Region,,,,"Covered in field stones, partly overgrown, height is uncertain.",42.677333,25.232822
+3638,Certain,459,6,6,0.2,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Survey,Gorno Sahrane necropolis,,,,"No robbers trenches. Eroded by agricultural activity, thinly vegetated.",42.666033,25.209888
+3639,Certain,460,5,5,0.2,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Survey,Gorno Sahrane necropolis,,,,"Stony surface, thin vegetation. Severely damaged by agriculture. No Visibile robbers' trench's.",42.666088,25.209578
+3640,Uncertain,461,5,5,0.1,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Survey,Gorno Sahrane necropolis,,,,"Unhealthy vegetation, stony surface. Small defunct mound.",42.665937,25.209172
+3641,Certain,463,5,5,0.1,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Survey,Gorno Sahrane necropolis,,,,"Stony surface, thin vegetation. Damaged by agriculture and erosion no visible robbers trenches.",42.666113,25.209055
+3642,Uncertain,463,5,5,0.1,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Survey,Gorno Sahrane necropolis,,,,"Thin vegetation, stoney surface. No visible Robbers Trench. Damage by agriculture.",42.666265,25.209253
+3643,Uncertain,463,5,5,0.1,Small,Pasture,Pasture,Photo,No,4,2,Good,2011,Survey,Gorno Sahrane necropolis,,,,Possible defunct mound.,42.666378,25.209215
+3644,Certain,463,7,4,0.3,Small,Pasture,Pasture,Photo,Yes,2,2,Good,2011,Survey,Gorno Sahrane necropolis,,,,"Damage by agriculture. Thin vegetation, stoney surface.",42.665965,25.208843
+3645,Certain,461,5,5,0.2,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Survey,Gorno Sahrane necropolis,,,,"Stony Surface, little vegetation.",42.665863,25.208937
+3646,Certain,458,6,6,0.2,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Survey,Gorno Sahrane necropolis,,,,"Stoney surface, thin vegetation. No visible robbers trenches, agricultural damage.",42.665483,25.208908
+3647,Uncertain,463,5,5,0.2,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Survey,Gorno Sahrane necropolis,,,,"Stoney Surface, thin vegetation.",42.666043,25.208433
+3648,Certain,463,5,4,0.1,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Survey,Gorno Sahrane necropolis,,,,"Flattened by agriculture, severely damaged. No visible robbers trenches.",42.666002,25.20815
+3649,Uncertain,462,6,6,0.2,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Survey,Gorno Sahrane necropolis,,,,Worn by agricultural activity possibly old robbing.,42.66572,25.207728
+3650,Certain,461,5,5,0.2,Small,Pasture,Pasture,Photo,No,3,3,Good,2011,Survey,Gorno Sahrane necropolis,,,,Beside a dirt road. Stoney surface thin vegetation. Damage by modern activity. No visible robbers trenchs.,42.665413,25.2078
+3651,Certain,462,5,4,0.1,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Survey,Gorno Sahrane necropolis,,,,"Heavily disturbed by modern activity. Cut in several places by old ploughing stoney surface, thin vegetation. No visible robbers trenches.",42.665585,25.207327
+3652,Certain,461,4,4,0.1,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Survey,Gorno Sahrane necropolis,,,,"Defunct mound, stony no vegetation.",42.665333,25.207442
+3653,Certain,460,16,16,0.3,Small,Pasture,Pasture,Photo,Yes,2,2,Good,2011,Survey,Gorno Sahrane necropolis,,,,"Beside a dirt road, highly disturbed.",42.664808,25.205045
+3654,Certain,461,15,15,0.6,Small,Pasture,Pasture,Photo,Yes,2,2,Good,2011,Remote Sensing,Gorno Sahrane necropolis,,,,"Stony surface, poor vegeation growth, west side of mound disturbed by old robbers trench.",42.66517,25.202957
+3655,Certain,454,10,10,0.3,Small,Pasture,Pasture,Photo,Yes,2,2,Good,2011,Remote Sensing,Gorno Sahrane necropolis,,,,"Severely damaged by old agriculture, possibly old robbing. Stoney, poor vegetation. Mostley flattened.",42.663898,25.203355
+3656,Uncertain,454,4,4,0.1,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Survey,Gorno Sahrane necropolis,,,,Severely damaged by agricultural activity. Stoney surface. Defunct mound.,42.66395,25.203585
+3657,Uncertain,454,10,10,0.3,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Survey,Gorno Sahrane necropolis,,,,"Uncertain, possible defunct mound. Highly disturbed area near intersection of road and ravine Badly damaged.",42.663637,25.203332
+3658,Certain,453,10,10,0.2,Small,Pasture,Pasture,Photo,Yes,2,2,Good,2011,Survey,Gorno Sahrane necropolis,,,,Natural terrain wave present. Agricultural damage.,42.663407,25.204063
+3659,Certain,456,12,12,0.5,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Remote Sensing,Gorno Sahrane necropolis,,,,"Stoney surface, no recent robbers trenches. Damaged by agricultural activity.",42.663528,25.205033
+3660,Certain,457,18,15,0.4,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Survey,Gorno Sahrane necropolis,,,,"Light stone scatter, some large stones. In a highly disrupted area. Several old robbers trenches.",42.663827,25.205155
+3661,Uncertain,457,14,14,0.4,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Remote Sensing,Gorno Sahrane necropolis,,,,"Stoney surface, poor vegetation.",42.663528,25.205427
+3662,Uncertain,456,20,18,1,Small,Pasture,Pasture,Photo,Yes,3,2,Good,2011,Survey,Gorno Sahrane necropolis,,,,A military earthwork ploughed into the south east quadrant of mound.,42.664562,25.207933
+3663,Certain,456,7,5,0.2,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Survey,Gorno Sahrane necropolis,,,,Badly damaged by agriculture. No visible robbers trenches. Overgrown.,42.664315,25.208197
+3664,Certain,456,10,9,0.4,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Remote Sensing,Gorno Sahrane necropolis,,,,On south facing slope worn from agriculture. No visible robbers trenches.,42.66479,25.20836
+3665,Uncertain,456,5,5,0.2,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Survey,Gorno Sahrane necropolis,,,,Possible defunct mound.,42.664842,25.208718
+3666,Uncertain,456,7,6,0.2,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Survey,Gorno Sahrane necropolis,,,,Bady damaged by agricultural activity and possible old robbing.,42.664587,25.2089
+3667,Uncertain,456,5,5,0.2,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Survey,Gorno Sahrane necropolis,,,,Possible defunct mound.,42.664835,25.209013
+3668,Certain,456,5,5,0.1,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Survey,Gorno Sahrane necropolis,,,,No visible robbers trenches. Severe damage by agriculture. Overgrown by dead grass.,42.664727,25.208972
+3669,Uncertain,456,20,20,0.4,Small,Pasture,Pasture,Photo,Yes,2,2,Good,2011,Survey,Gorno Sahrane necropolis,,,,Large mound destroyed by agricultural activity. Not identified as modern due to origin of soil.,42.665085,25.209317
+3670,Uncertain,456,5,5,0.2,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Survey,Gorno Sahrane necropolis,,,,"Damaged by agricultural activity, stony surface.",42.665443,25.209748
+3671,Uncertain,457,6,6,0.2,Small,Pasture,Pasture,Photo,No,4,2,Good,2011,Survey,Gorno Sahrane necropolis,,,,"Probable defunct mound, less stony than normal. Roads close by mound but have not damaged mound.",42.665843,25.209835
+3672,Certain,458,6,6,0.4,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Remote Sensing,Gorno Sahrane necropolis,,,,"Heavy scatter of stones on surface, thin vegetation. Damaged by agriculture. No visible robbers trenches.",42.665677,25.2097
+3673,Uncertain,458,5,5,0.2,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Survey,Gorno Sahrane necropolis,,,,"Stony surface, sparse vegetation.",42.665763,25.209448
+3674,Certain,459,6,5,0.2,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Survey,Gorno Sahrane necropolis,,,,Badly damaged by agriculture. No visible robbers trenches. Light stone scatter.,42.665608,25.209435
+3675,Uncertain,458,5,5,0.2,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Survey,Gorno Sahrane necropolis,,,,"Stony surface, sparse vegetation.",42.665232,25.208678
+3676,Uncertain,459,8,6,0.1,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Survey,Gorno Sahrane necropolis,,,,Old wagon trail cuts through North and south edge(2m). Damage by modern activity. No visible robbers trenches.,42.665492,25.208362
+3677,Uncertain,458,5,5,0.2,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Survey,Gorno Sahrane necropolis,,,,"Possible defunct mound, stoney surface, sparse vegetation.",42.665225,25.208243
+3678,Certain,457,10,10,0.3,Small,Forest,Forest,Photo,No,2,2,Good,2011,Survey,Gorno Sahrane necropolis,,,,"Defunct mound, very stoney, considerably damaged by forrest planting.",42.663795,25.207512
+3679,Certain,457,8,8,0.3,Small,Forest,Forest|Pasture,Photo,No,2,2,Good,2011,Survey,Gorno Sahrane necropolis,,,,Stonier than surronding areas.,42.663908,25.207338
+3680,Certain,458,20,12,1,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Survey,Skobelevo ,,,,"Damaged by road and drainage canal. Stoney, thinly vegetated.",42.67322,25.22111
+3681,Uncertain,458,5,5,0.1,Small,Pasture,Pasture,Photo,Yes,2,2,Good,2011,Survey,Skobelevo ,,,,"Thinly vegetation , nearly destroyed by agriculture. Slightly rocky. Possibly defunct mound. Appears to be an old robbers trench.",42.671023,25.216573
+3682,Certain,447,10,10,1,Small,Pasture,Pasture,Photo,Yes,2,2,Good,2011,Remote Sensing,Golyamo Dryanovo,,,,Mound consists of large to medium field stones and compact earth. Similar vegetation to surrounding areas.,42.673728,25.229377
+3683,Uncertain,450,20,20,0.3,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Survey,Golyamo Dryanovo,,,,"Unusually flat for its size, very symetrical, though severly damaged/flattened by agriculture. No visible robbers' trenchs.",42.67369,25.228063
+3684,Uncertain,458,13,11,0.2,Small,Forest,Forest,Photo,No,2,2,Good,2011,Survey,Gorno Sahrane necropolis,,,,Possibly defunct mound. Badly damaged by tree planting.,42.663157,25.206477
+3685,Uncertain,458,10,10,0.3,Small,Forest,Forest,Photo,No,2,2,Good,2011,Survey,Gorno Sahrane necropolis,,,,Highly disturbed. Stoney surface. Damaged by tree planting. No visible robbers trenches.,42.663167,25.206368
+3686,Certain,456,14,12,0.5,Small,Forest,Forest,Photo,No,2,2,Good,2011,Survey,Gorno Sahrane necropolis,,,,"Forested area, disturbed by plantation planting.",42.662922,25.205495
+3687,Certain,451,16,17,1,Small,Pasture,Pasture|Scrub,Photo,Yes,2,1,Good,2011,Survey,Gorno Sahrane necropolis,,,,"Forested area, some field stones. Light vegetation.",42.662153,25.204287
+3688,Uncertain,452,20,17,1,Small,Pasture,Pasture|Scrub,Photo,Yes,2,1,Good,2011,Survey,Gorno Sahrane necropolis,,,,Some large and small stones. Discarded by bulldozing or roadworks.,42.661335,25.204052
+3689,Certain,453,8,9,0.3,Small,Pasture,Stones,Not recorded,Not recorded,4,3,None,2011,Survey,Asen  ,,,,Site found during extensive ground control; identified as mound but not fully registered.,42.660978,25.201163
+3690,Uncertain,453,8,8,0.1,Small,Beach,Stones,Not recorded,Not recorded,4,3,None,2011,Survey,Asen  ,,,,Site found during extensive ground control; identified as mound but not fully registered.,42.660765,25.200453
+3691,Certain,453,8,8,0.3,Small,Beach,Stones,Not recorded,Not recorded,5,5,None,2011,Survey,Asen  ,,,,Defunct mound; site found during extensive ground control; identified as mound but not fully registered; Height extrapolated not documented.,42.66083,25.20025
+3692,Certain,453,8,8,0.2,Small,Beach,Stones,Not recorded,Not recorded,4,3,None,2011,Survey,Asen  ,,,,Site found during extensive ground control; identified as mound but not fully registered.,42.660937,25.200298
+3693,Certain,453,8,6,0.3,Small,Pasture,Stones,Not recorded,Not recorded,4,3,None,2011,Survey,Asen  ,,,,Site found during extensive ground control; identified as mound but not fully registered.,42.661055,25.200118
+3694,Certain,453,7,7,0.3,Small,Pasture,Stones,Not recorded,Not recorded,5,5,None,2011,Survey,Asen  ,,,,Defunct mound. Site found during extensive ground control; identified as mound but not fully registeredHeight extrapolated not documented.,42.661178,25.200122
+3695,Uncertain,453,10,10,0.3,Small,Pasture,Stones,Not recorded,Not recorded,4,3,None,2011,Survey,Asen  ,,,,Site found during extensive ground control; identified as mound but not fully registered; Height extrapolated not documented.,42.661235,25.200228
+3696,Uncertain,454,8,8,0.3,Small,Pasture,Stones,Not recorded,Not recorded,4,3,None,2011,Survey,Asen  ,,,,Site found during extensive ground control; identified as mound but not fully registered.,42.661317,25.20002
+3697,Uncertain,453,16,13,0.2,Small,Pasture,Stones,Not recorded,Not recorded,5,5,None,2011,Survey,Asen  ,,,,Defunct mound. Site found during extensive ground control; identified as mound but not fully registered.,42.662058,25.20067
+3698,Uncertain,459,16,17,0.4,Small,Pasture,Stones,Not recorded,Not recorded,4,3,None,2011,Survey,Asen  ,,,,Possible defunct mound. Site found during extensive ground control; identified as mound but not fully registered.,42.663073,25.200727
+3699,Certain,459,9,9,0.4,Small,Pasture,Stones,Not recorded,Not recorded,4,3,None,2011,Survey,Asen  ,,,,Site found during extensive ground control; identified as earthwork but not fully registered.,42.6634,25.200423
+3700,Uncertain,460,12,12,0.3,Small,Pasture,Stones,Not recorded,Not recorded,4,3,None,2011,Survey,Asen  ,,,,Site found during extensive ground control; identified as earthwork but not fully registered; Height extrapolated not documented.,42.663878,25.200237
+3701,Certain,428,15,15,5,Medium,Pasture,Scrub|Tall Grass,Photo,No,1,1,Good,2011,Survey,Gorno Cherkhovishte,,,,Overgrown; hardly accessible.,42.583265,25.26997
+3702,Certain,431,15,10,4,Medium,Pasture,Pasture,Photo,Yes,2,1,Good,2011,Survey,Gorno Cherkhovishte,,,,Old small robbers' trench's.,42.583362,25.270741
+3703,Certain,431,15,15,3,Medium,Pasture,Pasture,Photo,Yes,2,1,Good,2011,Survey,Gorno Cherkhovishte,,,,1 old robbers' trench in the top.,42.583312,25.271576
+3704,Certain,415,8,8,6,Large,Pasture,Pasture,Photo,Yes,3,1,Good,2011,Survey,Gorno Cherkhovishte,,,,Dug trough; old small robbers' trenchs on top; ovrgrown;.,42.580933,25.272059
+3707,Certain,464,6,6,0.2,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Survey,Gorno Sahrane,,,,Some rocks on surface some track/tyre works on top? Small long depressions.,42.667532,25.21083
+3709,Certain,463,8,8,0.3,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Survey,Gorno Sahrane,,,,No stones or robbers' trenchs.,42.667717,25.210005
+3711,Certain,464,10,8,1,Small,Pasture,Pasture|Scrub,Photo,No,1,1,Good,2011,Survey,Gorno Sahrane necropolis,,,,"Many stones spread all over the surface, medium pine trees on top.",42.668218,25.211912
+3712,Certain,464,7,7,0.5,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Survey,Gorno Sahrane necropolis,,,,No stones or robbers' trenchs.,42.668237,25.211527
+3713,Certain,464,6,6,0.5,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Survey,Gorno Sahrane necropolis,,,,"Only a few stones/ over grown, shalow indent on east top.",42.66807,25.211253
+3714,Certain,464,8,8,0.3,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Survey,Gorno Sahrane necropolis,,,,"Some smal stones on east side, no robbers' trenchs.",42.668237,25.210868
+3716,Certain,463,6,6,0.1,Small,Pasture,Pasture,Photo,Yes,3,2,Good,2011,Survey,Gorno Sahrane necropolis,,,,Some large stones in robbers' trench base.,42.668113,25.212795
+3717,Certain,462,6,6,0.2,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Survey,Gorno Sahrane necropolis,,,,"Barely visble, no robbers' trenchs or stones.",42.667893,25.213287
+3718,Certain,462,6,6,0.2,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Survey,Gorno Sahrane necropolis,,,,One stone on top/middle.,42.667973,25.21319
+3719,Certain,488,15,12,0.3,Small,Annual Agriculture,Perennial Agriculture,Photo,No,4,4,Good,2011,Survey,Kran,,,,Almost entirely destroyed by agriculture.,42.689035,25.370388
+3720,Certain,485,25,25,0.5,Small,Annual Agriculture,Scrub|Tall Grass,Photo,No,4,3,Good,2011,Survey,Kran,,,,Stones spread all over the surface.,42.689415,25.368942
+3721,Certain,326,16,6,0.2,Small,Annual Agriculture,Annual Agriculture|Ploughed,Survey,Yes,5,5,Good,2011,Survey,Hadzhidimitrovo,,,,Almost entirely destroyed by agriculture.,42.681669,25.354268
+3722,Certain,458,25,25,2,Medium,Annual Agriculture,Scrub|Tall Grass,Photo,Yes,3,1,Good,2011,Survey,Viden,,,,1 old robbers' trench on the top.,42.590222,25.260639
+3723,Certain,446,18,7,1,Small,Pasture,Scrub|Tall Grass,Photo,No,3,2,Good,2011,Survey,Gorno Sahrane necropolis,,,,"Pile of rocks on the top, probably digged through.",42.662397,25.210159
+3725,Certain,425,4,4,0.2,Small,Pasture,Pasture,Photo,No,2,2,Good,2011,Survey,Gorno Sahrane necropolis,,,,"Defunct mound. Trenches to old to accurately determine dimensions. Almost completely flat, minimal profile.",42.659093,25.226125
+3726,Certain,426,9,7,0.2,Small,Pasture,Pasture,Photo,Yes,2,2,Good,2011,Survey,Gorno Sahrane necropolis,,,,"Old shallow robbers' trench's, defunct mound, light rock scatter.",42.658592,25.22637
+3728,Certain,427,22,20,0.8,Small,Annual Agriculture,Perennial Agriculture,Not recorded,No,5,5,None,2011,Survey,Gorno Sahrane,,,,Ploughed over but not robbed - mature lavender field ploughed between rows of plants.,42.658277,25.227315
+3729,Certain,387,16,16,0.3,Small,Pasture,Scrub|Tall Grass,Photo,No,3,2,Good,2011,Survey,Gorno Sahrane,,,,"Rubbish, overgrown, stones on the surface.",42.658001,25.21016
+4002,Certain,396,14,10,7,Large,Forest,Scrub|Tall Grass,Photo,Yes,2,1,Good,2009,Survey,Gorno Cherkhovishte,,GCH002,5510054,Rocky soil.,42.60574,25.295417
+4003,Certain,381,18,18,5,Medium,Forest,Scrub|Tall Grass,Photo,Yes,3,1,Good,2009,Survey,Gorno Cherkhovishte,,GCH003,5510055,"Part of the hill, trees on the top, robbers' trench full of rubish on the top.",42.609068,25.306925
+4004,Certain,367,50,50,6,Large,Forest,Scrub|Tall Grass,Photo,No,1,1,Good,2009,Survey,Koprinka,,КОР041,5510084,"No major robbers' trench's, integrated part of the hill, mnd is unidentifiable.",42.610898,25.308405
+4005,Certain,370,25,25,4,Medium,Forest,Scrub|Tall Grass,Photo,Yes,3,1,Good,2009,Survey,Koprinka,Mogilata Gyurlya,КОР042,5510085,"Visible from the dirt road, robbers' trench on top going to bedrock.",42.61203,25.308003
+4006,Certain,372,10,10,5,Medium,Forest,Forest,Photo,No,2,1,Good,2009,Survey,Koprinka,,КОР043,5510086,Trees all over the surface.,42.6127,25.309028
+4007,Certain,372,8,8,2,Medium,Forest,Beach,Photo,No,3,2,Good,2009,Survey,Koprinka,,КОР044,5510087,"Close to the beach, fire place on the top, pine trees on the surface.",42.612818,25.309342
+4008,Certain,388,32,32,5,Medium,Pasture,Scrub|Tall Grass,Photo,Yes,3,2,Good,2009,Survey,Gorno Cherkhovishte,,GCH005,5510058,"Massive stones in the robbers' trench, digged throught.",42.60453,25.307815
+4009,Certain,395,25,25,2,Medium,Pasture,Scrub|Tall Grass,Photo,Yes,3,1,Good,2009,Survey,Gorno Cherkhovishte,,GCH006,5510059,"Overgrown robbers' trench's, large stone on the surface.",42.603221,25.308271
+4010,Certain,365,20,20,1,Small,Forest,Scrub|Tall Grass,Photo,Yes,2,1,Good,2009,Survey,Gorno Cherkhovishte,,GCH011,5510066,At the top of a hill.,42.591729,25.346848
+4011,Certain,366,8,8,2,Medium,Forest,Scrub|Tall Grass,Photo,No,2,2,Good,2009,Survey,Koprinka,,КОР045,5510088,"Extremly bushy, close to the road but almost indistinguishable.",42.61229,25.307378
+4012,Certain,379,15,15,5,Medium,Forest,Scrub|Tall Grass,Photo,No,2,1,Good,2009,Survey,Koprinka,,КОР046,5510089,"No robbers' trench's visible on the surface, very overgrown, bushy.",42.61093,25.31302
+4013,Certain,373,5,5,0.5,Small,Forest,Scrub|Tall Grass,Photo,Yes,3,1,Good,2009,Survey,Koprinka,,КОР047,5510091,"Almost invisible in the forest, 2 big pine trees on the top.",42.611412,25.31054
+4014,Certain,374,24,24,2,Medium,Forest,Forest,Photo,Yes,2,1,Good,2009,Survey,Koprinka,,КОР048,5510092,"Old robbers' trench's, rich vegetation.",42.611132,25.31074
+4015,Certain,383,12,12,4,Medium,Forest,Scrub|Tall Grass,Photo,Yes,3,1,Good,2009,Survey,Koprinka,,КОР049,5510093,"Very old robbers' trench's, 2 trees on the top - between them robbers' trench.",42.610713,25.310917
+4016,Certain,382,9,9,0.8,Small,Forest,Scrub|Tall Grass,Photo,Yes,3,1,Good,2009,Survey,Koprinka,,КОР050,5510094,"Almost invisible, rich vegetation.",42.61057,25.310933
+4017,Certain,409,20,20,4,Medium,Forest,Scrub|Tall Grass,Photo,No,1,1,Good,2009,Survey,Gorno Cherkhovishte,,GCH012,5510067,Covered with vegetation.,42.592421,25.32146
+4018,Certain,404,20,20,1.5,Medium,Forest,Scrub|Tall Grass,Photo,No,1,1,Good,2009,Survey,Gorno Cherkhovishte,,GCH017,5510065,Hardly visible; 10 m (NE) from the original point taken by theBG team.,42.595913,25.321602
+4019,Certain,393,10,12,7,Large,Pasture,Pasture,Photo,Yes,3,2,Good,2009,Survey,Gorno Cherkhovishte,,GCH022,5510079,Shallow trench connecting robbers' trench1 and robbers' trench2. Possibly ploughed over.,42.598313,25.294527
+4020,Certain,395,15,15,5,Medium,Pasture,Pasture,Photo,Yes,2,1,Good,2009,Survey,Gorno Cherkhovishte,,GCH023,5510080,Large stones scattered on the S side.,42.598866,25.294826
+4021,Certain,388,20,15,2,Medium,Annual Agriculture,Pasture,Photo,Yes,3,4,Good,2009,Survey,Gorno Cherkhovishte,,GCH026,5510082,"Top cut off, and looks like about 2/3rds of the mound missing due to sides being cut away.",42.572554,25.304566
+4022,Certain,370,20,20,3,Medium,Pasture,Pasture,Photo,Yes,2,1,Good,2009,Survey,Gorno Cherkhovishte,,GCH027,5510082,"In rubbish tip, top completely cut off, elevation mark on top, old undifined trenches.",42.575335,25.304978
+4023,Uncertain,369,18,16,5,Medium,Annual Agriculture,Pasture,Photo,Yes,4,5,Good,2009,AKB,Gorno Cherkhovishte,,GCH028,5510082,"Unable to tell boundries, rubbish all over, very flat top. Possible trenches., maybe just rubbish holes which are surrounding the mound.",42.576318,25.303585
+4024,Certain,375,23,23,2.5,Medium,Pasture,Scrub|Tall Grass,Photo,Yes,3,1,Good,2009,Survey,Gorno Cherkhovishte,,GCH004,5510057,"Digged throught (tunnel), visible soil structure in robbers' trench.",42.606332,25.3084
+4025,Certain,361,20,19,1,Small,Forest,Forest,Photo,No,2,2,Good,2009,Survey,Koprinka,,КОР063,5510155,Surface disturbances and some soil elevations (roots of pine trees).,42.615196,25.330526
+4026,Certain,369,16,16,1,Small,Pasture,Pasture,Photo,No,2,2,Good,2009,Survey,Koprinka,,КОР064,5510157,Covered with dense grass.,42.615931,25.335391
+4027,Certain,371,14,12,0.6,Small,Pasture,Pasture,Photo,Yes,2,1,Good,2009,Survey,Koprinka,,КОР065,5510158,Extensive robbers' trench with vague margins.,42.615966,25.33577
+4028,Certain,345,24,24,3,Medium,Forest,Forest,Photo,Yes,3,2,Good,2009,Survey,Koprinka,,КОР066,5510160,"From the S almost invisible (integrated part of a hill), large robbers' trench's distracting the mound.",42.614036,25.337444
+4052,Certain,394,30,30,4,Medium,Forest,Scrub|Tall Grass,Photo,No,2,1,Good,2009,Survey,Gorno Cherkhovishte,,GCH007,5510022,Hidden deep in the forest.,42.600548,25.318685
+4053,Certain,403,15,15,0.5,Small,Forest,Scrub|Tall Grass,Photo,No,2,1,Good,2009,Survey,Gorno Cherkhovishte,,GCH008,5510062,Hidden deep in the forest.,42.596468,25.321153
+4054,Certain,402,30,30,5,Medium,Forest,Scrub|Tall Grass,Photo,Yes,2,1,Good,2009,Survey,Gorno Cherkhovishte,,GCH009,5510063,"Next to a marked tourist trail; hardly visible, covered with vegetation, robbers' trench going to the bedrock.",42.59624,25.322973
+4055,Certain,399,20,20,1,Small,Forest,Scrub|Tall Grass,Photo,No,1,1,Good,2009,Survey,Gorno Cherkhovishte,,GCH010,5510064,Hardy visible and accessible.,42.596057,25.323822
+4056,Certain,443,21,21,2,Medium,Forest,Scrub|Tall Grass,Photo,Yes,3,1,Good,2009,Survey,Gorno Cherkhovishte,,GCH013_М01,5510069,Elevation marker on top.,42.588392,25.309375
+4057,Certain,441,23,20,3,Medium,Forest,Forest|Pasture,Photo,Yes,3,1,Good,2009,Survey,Gorno Cherkhovishte,,GCH014_М02,5510070,Tall trees on the top.,42.588002,25.310273
+4058,Certain,442,28,28,5,Medium,Forest,Scrub|Tall Grass,Photo,Yes,2,1,Good,2009,Survey,Gorno Cherkhovishte,,GCH015_М03,5510071,Robbers' trench on top.,42.587725,25.310293
+4059,Certain,441,25,22,5,Medium,Pasture,Stones,Not recorded,Not recorded,3,,None,2009,Survey,Gorno Cherkhovishte,,GCH016_М04,5510072,,42.587565,25.310437
+4060,Certain,374,20,20,4,Medium,Pasture,Pasture|Scrub,Photo,Yes,2,1,Good,2009,Survey,Gorno Cherkhovishte,,GCH018,5510074,,42.580293,25.305247
+4061,Certain,370,35,35,0.3,Small,Annual Agriculture,Annual Agriculture|Ploughed,Photo,No,5,5,Good,2009,Survey,Gorno Cherkhovishte,,GCH019,5510075,Almost completely ploughed over and very little left.,42.580542,25.304663
+4062,Certain,378,15,15,2,Medium,Pasture,Pasture,Photo,Yes,3,2,Good,2009,Survey,Gorno Cherkhovishte,,GCH020,5510076,"Possibly bulldozed over, edges cut away on the W side.",42.592022,25.295938
+4063,Certain,405,12,12,2,Medium,Pasture,Pasture,Photo,Yes,4,2,Good,2009,Survey,Gorno Cherkhovishte,,GCH021,5510077,"Very slight depression, undifined on north. Possible robbers' trench or erosion.",42.593318,25.297637
+4064,Certain,384,25,25,5,Medium,Forest,Scrub|Tall Grass,Photo,Yes,4,3,Good,2009,Survey,Koprinka,,GCH024,5510060,"Difficult to determine boundaries, robbers' trench on top.",42.604687,25.309682
+4066,Certain,466,15,15,5,Medium,Pasture,Pasture,Photo,Yes,3,2,Good,2009,Survey,Gorno Cherkhovishte,,GCH029,5510099,"Central area completely destroyed by robbers' trench 1, small rocks and sandy soil on surface.",42.557368,25.305522
+4067,Certain,439,20,20,2,Medium,Pasture,Pasture,Photo,Yes,2,1,Good,2009,Survey,Gorno Cherkhovishte,,GCH030,5510102,Robbers' trench 1 was fresh.,42.562293,25.312088
+4068,Certain,439,25,25,5,Medium,Pasture,Pasture|Scrub,Photo,Yes,2,1,Good,2009,Survey,Gorno Cherkhovishte,,GCH031,5510101,Several small old robbers' trench's on top.,42.562285,25.312773
+4069,Certain,425,10,10,1.5,Medium,Pasture,Pasture,Photo,Yes,2,1,Good,2009,Survey,Gorno Cherkhovishte,,GCH032,5510103,"Small stones on the surface, reddish soil.",42.564337,25.310422
+4070,Certain,426,20,20,3,Medium,Pasture,Pasture,Photo,Yes,2,1,Good,2009,Survey,Gorno Cherkhovishte,,GCH033,5510104,"Small stones on the surface, top has been taken.",42.564728,25.310325
+4071,Certain,423,20,20,1.5,Medium,Pasture,Pasture,Photo,Yes,3,2,Good,2009,Survey,Gorno Cherkhovishte,,GCH034,5510105,"Top, S and E sides were dugged through, small stones on the surface, old robbers' trench's.",42.56499,25.309807
+4072,Certain,412,20,14,5,Medium,Pasture,Pasture,Photo,Yes,2,2,Good,2009,Survey,Gorno Cherkhovishte,,GCH035,5510106,Western side taken by bulldozer.,42.563203,25.317302
+4073,Certain,408,20,15,4,Medium,Annual Agriculture,Scrub|Tall Grass,Photo,Yes,2,1,Good,2009,Survey,Gorno Cherkhovishte,,GCH036,5510107,Covered in vegetation. Robber's trenches made by bulldozer.,42.56588,25.31699
+4074,Certain,394,30,25,3,Medium,Pasture,Pasture,Photo,Yes,3,1,Good,2009,Survey,Gorno Cherkhovishte,,GCH037,5510109,"Ploughed through the top, Robber's trench removed from N and top; benchmark GT596.",42.567017,25.317323
+4075,Certain,390,20,20,1,Small,Pasture,Pasture,Photo,Yes,3,2,Good,2009,Survey,Gorno Cherkhovishte,,GCH038,5510110,Earth taken from the top.,42.567347,25.31719
+4076,Certain,388,20,15,1,Small,Pasture,Pasture,Photo,Yes,2,1,Good,2009,Survey,Gorno Cherkhovishte,,GCH039,5510111,All robbers' trench's are old.,42.567802,25.316752
+4077,Certain,384,20,20,2,Medium,Pasture,Pasture,Photo,Yes,3,2,Good,2009,Survey,Gorno Cherkhovishte,,GCH040,5510112,"Next to the gipsy quater, top was taken.",42.568121,25.316502
+4078,Certain,358,25,25,5,Medium,Forest,Pasture|Scrub,Photo,Yes,2,2,Good,2009,Survey,Koprinka,,КОР051,5510095,"Flat-topped, concrete structures on the top and slopes (sewerage), cutting in N slope.",42.613357,25.324677
+4079,Certain,350,22,22,3.5,Medium,Forest,Pasture,Photo,Yes,2,1,Good,2009,Survey,Koprinka,,КОР052,5510096,"High kota on the top, many shallow surface disturbances, bushy, cutting on the NE side - modern concrete building.",42.612435,25.324415
+4080,Certain,349,19,19,1.8,Medium,Forest,Forest,Photo,No,2,1,Good,2009,Survey,Koprinka,,КОР053,5510097,"Hardly many shadeterminable borders, low surface disturbances, very bushy.",42.612257,25.324297
+4081,Certain,339,30,25,5,Medium,Forest,Scrub|Tall Grass,Photo,Yes,2,1,Good,2009,Survey,Gorno Cherkhovishte,,GCH041,5510098,Next to some houses; covered in vegetation; benchmark.,42.598592,25.331773
+4084,Certain,332,24,24,3,Medium,Pasture,Pasture|Scrub,Photo,Yes,2,1,Good,2009,Survey,Buzovgrad,,BUZ002,5510114,Fireplace on the top.,42.587513,25.363218
+4085,Certain,386,20,18,1,Small,Forest,Forest,Photo,No,2,1,Good,2009,Survey,Koprinka,,КОР054,5510148,"Low, irregular shape, covered with trees and bushes.",42.621193,25.331898
+4086,Certain,393,12,12,1,Small,Forest,Forest,Photo,Yes,2,1,Good,2009,Survey,Koprinka,,КОР055,5510147,A lot of robbers' trench.,42.621428,25.331513
+4087,Certain,396,15,15,1,Small,Forest,Forest,Photo,Yes,2,1,Good,2009,Survey,Koprinka,,КОР056,5510146,"Old robbers' trench's, irregualr shape, no surface material.",42.621575,25.331222
+4088,Certain,366,27,26,3,Medium,Forest,Forest,Photo,Yes,2,1,Good,2009,Survey,Koprinka,,КОР057,5510149,"Scattered stones, high number of robbers' trenchs.",42.616607,25.340783
+4089,Certain,367,20,15,5,Medium,Forest,Scrub|Tall Grass,Photo,Yes,2,1,Good,2009,Survey,Koprinka,,KOP058M1,5510150,"Small, irregular shape.",42.620345,25.338298
+4090,Certain,371,20,15,1,Small,Forest,Scrub|Tall Grass,Photo,Yes,2,1,Good,2009,Survey,Koprinka,,KOP059M1,5510150,"Irregular shape, low visibility.",42.620385,25.338022
+4091,Certain,380,18,15,1,Small,Pasture,Pasture,Photo,Yes,1,1,Good,2009,Survey,Koprinka,,КОР060,5510152,"Red soil, small stones covering the surface, next to the village graveyard.",42.6223,25.335955
+4092,Certain,379,15,15,5,Medium,Pasture,Pasture,Photo,Yes,2,1,Good,2009,Survey,Koprinka,,КОР061,5510153,Uneven surface.,42.623838,25.335333
+4093,Certain,371,20,20,2,Medium,Pasture,Pasture,Photo,Yes,1,1,Good,2009,Survey,Koprinka,,КОР062,5510154,"Red soil, small stones covering the surface, and part taken by the road.",42.623792,25.336595
+4094,Certain,386,17,16,5,Medium,Pasture,Pasture,Photo,Yes,3,1,Good,2009,Survey,Koprinka,,КОР067,5510161,"Dug through, next to village.",42.631313,25.331055
+4095,Certain,370,18,14,1,Small,Pasture,Forest,Photo,Yes,2,1,Good,2009,Survey,Koprinka,,КОР068,5510159,"Almost invisible robbers' trench (blur margins), some shallow surface disturbances.",42.616477,25.335128
+4096,Certain,386,40,40,5,Medium,Pasture,Pasture,Photo,Yes,1,1,Good,2009,Survey,Koprinka,,КОР069,5510162,Overgrown; next to agr fields; several old shallow test trenches.,42.610327,25.330732
+4100,Certain,454,31,31,2,Medium,Pasture,Pasture,Survey,Yes,1,1,Good,2010,AKB,Enina,Shipchenska Mogila,ENIM01,5510244,"Lot of garbage around, very near to Enina village (land fill of Enina).",42.671656,25.397651
+4101,Certain,440,10,10,4,Medium,Perennial Agriculture,Pasture,Survey,Yes,2,1,Good,2010,AKB,Kran,Mogila Razluovec,ENIM02,5510245,"Stones and 3 m wide trench on the top, lot of garbage (land fill of Enina), in triangle of 3 roads.",42.674214,25.390252
+4102,Certain,451,27,25,3,Medium,Annual Agriculture,Pasture,Survey,Yes,2,1,Good,2010,AKB,Enina,Tumbova Cheshma Ii|Malkata Mogila,ENIM03,5510246,"In 3m circle around mound many IA sherds, highly fragmentated, Southern of mound 3 big stones.",42.671422,25.393554
+4103,Certain,450,6,4,0.5,Small,Annual Agriculture,Annual Agriculture|Ploughed,Survey,Yes,4,4,Good,2010,AKB,Enina,,ENIM04,5510247,"Destroyed by agriculture, huge stone in the middle (1x1m).",42.67075,25.395737
+4104,Certain,442,43,30,6,Large,Pasture,Pasture,Photo,Yes,2,1,Good,2010,AKB,Enina,Slivova Mogila,ENIM05,5510040,,42.669278,25.394788
+4105,Certain,378,20,20,5,Medium,Pasture,Pasture,Survey,Yes,4,3,None,2010,AKB,Enina,Gardova Mogila|Trite Mogili,ENINA 010,5510251,"On the borders of Kran and Enina, land fill, destroyed by robbers' trench's, looks like there was a grave, now entirely gone.",42.644327,25.392389
+4107,Certain,466,32,22,1.5,Medium,Pasture,Pasture,Photo,Yes,2,2,Good,2010,AKB,Kran,,KRAN03,5500083,"2 robbers' trenches, 1 large next to the mound.",42.679359,25.381412
+4108,Certain,461,24,22,0.9,Small,Pasture,Pasture,Photo,Yes,3,2,Good,2010,AKB,Kran,,KRAN04,5510257,Robbers' trench in the middle took most of the mound.,42.678234,25.375166
+4109,Certain,473,30,29,3,Medium,Pasture,Pasture,Photo,Yes,4,2,Good,2010,AKB,Kran,,KRAN05,5500085,"Excavated by Kitov, surface very uneven.",42.682264,25.375607
+4110,Certain,492,30,27,4,Medium,Pasture,Pasture,Photo,Yes,3,2,Good,2010,AKB,Kran,,KRAN06,5500089,"Excavated by Kitov, surface very uneven.",42.685586,25.37428
+4111,Certain,450,20,16,6,Large,Pasture,Pasture,Photo,Yes,2,1,Good,2010,AKB,Kran,Kran Ii|Sarafova Mogila,KRAN_Grobnica2,5500086,"Excavated in 1995 by TEMP (Kitov, Thracian Expedition for Tumular Investigations), tomb with frescos inside.",42.675605,25.381437
+4129,Certain,377,30,30,0.5,Small,Annual Agriculture,Annual Agriculture|Ploughed,Photo,No,5,5,Good,2011,Survey,Sheynovo,Fidankos,,,Entirely destroyed by agriculture.,42.654338,25.322032
+4133,Certain,376,30,30,0.5,Small,Annual Agriculture,Annual Agriculture|Ploughed,Photo,No,5,5,Good,2011,Survey,Kazanlak,,,,Entirely destroyed by agriculture.,42.657378,25.323907
+4134,Uncertain,405,8,8,0.2,Small,Pasture,Pasture,Photo,Yes,4,4,Good,2011,AKB,Hadzhidimitrovo,,,5500102,Large fresh robbers' trench took the middle part of the mound.,42.661367,25.347352
+5001,Certain,365,5,5,0.2,Small,Annual Agriculture,Annual Agriculture|Ploughed,Photo,Yes,5,5,Good,2009,Survey,Dolno Sahrane,,,,"Entirely looted grave encircled by stones, 1.5m deep, 2.1x2.85m, around the grave several large stones (ca 15 m circle around), soil from grave around.",42.635825,25.264336
+5002,Uncertain,385,5,5,0.5,Small,Annual Agriculture,Scrub|Tall Grass,Photo,No,5,5,Good,2009,Survey,Dolno Sahrane,,,,Entirely destroyed by agriculture.,42.637956,25.2647
+5003,Certain,365,20,20,1.5,Medium,Annual Agriculture,Scrub|Tall Grass,Photo,Yes,3,2,Good,2009,Survey,Dolno Sahrane,,,,,42.630915,25.270015
+5004,Certain,365,8,8,0.8,Small,Annual Agriculture,Scrub|Tall Grass,Photo,Yes,4,4,Good,2009,Survey,Dolno Sahrane,,,,,42.63109,25.269872
+5007,Certain,365,30,20,1.5,Medium,Annual Agriculture,Annual Agriculture|Ploughed,Photo,Yes,4,3,Good,2009,Survey,Dolno Sahrane,,,,"Oval-shaped mound, North side plowed over, rest of mound pasture with undefined boundaries.",42.630023,25.270207
+5008,Certain,366,30,30,4,Medium,Annual Agriculture,Scrub|Tall Grass,Photo,Yes,2,1,Good,2009,Survey,Dolno Sahrane,,,,Many robbers' trench's and test holes. Also many animal burrows.,42.630505,25.2701
+3152,Certain,484,12,10,1.5,Medium,Perennial Agriculture,Scrub,Photo,No,2,1,Good,2010,Survey,Skobelevo,,Skb 003-19,,Surface of the mound covered with ca 0.5m layer of stones/either from the surrounding pasture or from the mound.,42.68226,25.216056

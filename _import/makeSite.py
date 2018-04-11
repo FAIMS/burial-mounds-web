@@ -14,7 +14,7 @@ import fnmatch
 import glob
 
 import dumpYaml as DUMP
-SHEET = "09_03-Mounds.csv"
+SHEET = "MergeCSV.csv"
 TEMPLATE = "template.yaml"
 DEST = "../_posts"
 
