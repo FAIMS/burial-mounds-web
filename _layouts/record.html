@@ -241,27 +241,68 @@ enable-slick: true
 
             <div class="large-12 small-12 columns">
                <ul class="tabs" data-tabs id="example-tabs">
-                  <li class="tabs-title is-active"><a href="#panel1" aria-selected="true">Information</a></li>
+                 {% if page.maps %}
+                 <li class="tabs-title is-active"><a data-tabs-target="#panel1" href="#panel1" aria-selected="true">Map</a></li>
+                 {% endif %}
+
+                 {% if page.notes %}
+                 <li class="tabs-title"><a data-tabs-target="#panel2" href="#panel2">Notes</a></li>
+                 {% endif %}
+
+                 <li class="tabs-title"><a data-tabs-target="#panel3" href="#panel3">Sharing</a></li>
+
+                 <li class="tabs-title"><a href="#panel4" href="#panel4">Information</a></li>
+
                   {% if page.resources %}
-                  <li class="tabs-title"><a data-tabs-target="#panel2" href="#panel2">Resources</a></li>
+                  <li class="tabs-title"><a data-tabs-target="#panel5" href="#panel5">Resources</a></li>
                   {% endif %}
-                  <li class="tabs-title"><a data-tabs-target="#panel3" href="#panel3">Sharing</a></li>
+
                   {% if page.related %}
-                  <li class="tabs-title"><a data-tabs-target="#panel4" href="#panel4">Related Material</a></li>
+                  <li class="tabs-title"><a data-tabs-target="#panel6" href="#panel6">Related Material</a></li>
                   {% endif %}
-                  {% if page.maps %}
-                  <li class="tabs-title"><a data-tabs-target="#panel5" href="#panel5">Map</a></li>
-                  {% endif %}
-                  {% if page.notes %}
-                  <li class="tabs-title"><a data-tabs-target="#panel6" href="#panel6">Notes</a></li>
-                  {% endif %}
+
 
                </ul>
                <div class="tabs-content" data-tabs-content="example-tabs">
-                  <div class="tabs-panel is-active" id="panel1">
+                 <div class="tabs-panel is-active" id="panel1">
+                   <div id="map"></div>
+                 </div>
+                 <div class="tabs-panel" id="panel2">
+                    {{ page.notes | newline_to_br}}
+                 </div>
+                 <div class="tabs-panel" id="panel3">
+                    <h4>Cite this page</h4>
+                    ({{page.date | date: "%Y"}}). <i>{{page.title}}</i>, {{page.accession}}. {{page.url | absolute_url}} (accessed on: {{'now' | date: "%d %B %Y"}}).
+                    <h4>Rights &amp; Permissions</h4>
+                    {%if page.rights == 'standard'%}
+                    We support the <a href="http://opendefinition.org">open</a> release of data and information about our collections.
+                    <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"></a> This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>. <br/>
+                    <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a>
+                    {%else%}
+                    <p>{{page.rights}}</p>
+                    {%endif%}
+                    <h4>Share us</h4>
+                    <div>
+                       <div>
+                          <a class="twitter-share-button"
+                             href="https://twitter.com/share"
+                             data-size="large"
+                             data-text="Check out this #3d {{page.title}} at the {{page.muscollection}}"
+                             data-url="{{page.url | absolute_url}}"
+                             data-hashtags="Museum">
+                          Tweet</a>
+                       </div>
+                       <div style="vertical-align:top;zoom:1;*display:inline"
+                          class="fb-share-button" data-href="{{page.url | absolute_url}}" data-layout="button" data-size="large" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u={{page.url | absolute_url}}">Share</a></div>
+                    </div>
+                    </p>
+                 </div>
+
+                  <div class="tabs-panel" id="panel4">
                      {{ page.information | newline_to_br}}
                   </div>
-                  <div class="tabs-panel" id="panel2">
+
+                  <div class="tabs-panel" id="panel5">
                      <ul class="accordion" data-accordion>
                         {% for item in page.resources %}
                         <li class="accordion-item" data-accordion-item>
@@ -279,34 +320,9 @@ enable-slick: true
                         {% endfor %}
                      </ul>
                   </div>
-                  <div class="tabs-panel" id="panel3">
-                     <h4>Cite this page</h4>
-                     ({{page.date | date: "%Y"}}). <i>{{page.title}}</i>, {{page.accession}}. {{page.url | absolute_url}} (accessed on: {{'now' | date: "%d %B %Y"}}).
-                     <h4>Rights &amp; Permissions</h4>
-                     {%if page.rights == 'standard'%}
-                     We support the <a href="http://opendefinition.org">open</a> release of data and information about our collections.
-                     <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"></a> This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>. <br/>
-                     <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a>
-                     {%else%}
-                     <p>{{page.rights}}</p>
-                     {%endif%}
-                     <h4>Share us</h4>
-                     <div>
-                        <div>
-                           <a class="twitter-share-button"
-                              href="https://twitter.com/share"
-                              data-size="large"
-                              data-text="Check out this #3d {{page.title}} at the {{page.muscollection}}"
-                              data-url="{{page.url | absolute_url}}"
-                              data-hashtags="Museum">
-                           Tweet</a>
-                        </div>
-                        <div style="vertical-align:top;zoom:1;*display:inline"
-                           class="fb-share-button" data-href="{{page.url | absolute_url}}" data-layout="button" data-size="large" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u={{page.url | absolute_url}}">Share</a></div>
-                     </div>
-                     </p>
-                  </div>
-                  <div class="tabs-panel" id="panel4">
+
+
+                  <div class="tabs-panel" id="panel6">
                      <ul class="accordion" data-accordion>
                         {% for item in page.related %}
                         <li class="accordion-item" data-accordion-item>
@@ -322,12 +338,9 @@ enable-slick: true
                         {% endfor %}
                      </ul>
                   </div>
-                  <div class="tabs-panel" id="panel5">
-                    <div id="map"></div>
-                  </div>
-                  <div class="tabs-panel" id="panel6">
-                     {{ page.notes | newline_to_br}}
-                  </div>
+
+
+
 
                </div>
             </div>
