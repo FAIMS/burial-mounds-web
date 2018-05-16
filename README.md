@@ -38,18 +38,17 @@ The \__config.yml_ file contains configuration options for the website. For basi
 
 	* Addtion scss files can be made in the \__sass_ folder. You need then need to import the file in assets/css/styles_feeling_response.scss, for it to be included in the future build. For example, if you make a sass file called _tabs.scss_ in the \__sass_ folder then, inside the assets/css/styles_feeling_response.scss file, you would write
 
-```
-@import  
-```
+9. Open _\_layout/record.html_ and customize the template, which will be used for the Record pages.
+
 
 # Preprocessing
 Before auto generating record pages, ensure your data is well-formed for minimal hassle. A record should have a column that contains the UUID (unique identifer) for that record.
 
-## Adding
+# Customization
+Before auto generating record pages, the user can customize the site. This section will discuss some customisations available to the user.
 
-
-
-## Customization
+## Editing Record pages template
+The record pages uses _\_layout/record.html_ as the template, to modify the template, please see the [Components of the Record page template section](#components-of-the-record-page-template) first.
 
 ## Merging two csv together
 A python script written in python3 have been provided to merge two csv file based on a key.
@@ -143,6 +142,13 @@ For example the javascript code that uses Google Maps API to generate maps for r
 ```
 The Front Matter variables are _page.title_, _page.latitude_, _page.longitude_ and these variables for the Page. So each Page front matter will have variables with that name but possibly different value. For example, the Mound with TRAP ID 1001 have a latitude of 42.627103 and 25.246605 while the Mound with id 1002 have latitude 42.626585 and longitude 25.250297. So the _latitude_ value will be 42.627103 on the page for Mound with id 1001 and the _latitude_ value will be 42.626585 for the Mound with id 1002
 
+## Recompile changes
+Because this is a static website, everytime users wish to make push their changes (assuming the website is on Github):
+
+1. Delete the _\_posts_ folder
+2. Recompile the record pages by running the _makeSite.py_ Python script and additional scripts if needed
+3. git add then commit then push it to the remote repo
+
 # Important Pages
 
 ## Collections
@@ -155,3 +161,7 @@ If user wish to change the content of the page, they can edit _\_pages/pages-roo
 
 The yaml template for Record pages is the _\_import/template.yaml_ file. The auto generate script will use that as a template for the Record pages.
 The layout file that _\_import/template.yaml_ uses is the _\_layout/record.html_ file.
+
+### Components of the Record page template
+
+![Overview of record page](README_screenshots/record_page_overview.png)
