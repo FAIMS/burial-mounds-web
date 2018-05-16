@@ -125,7 +125,7 @@ For example the javascript code that uses Google Maps API to generate maps for r
 ```javascript
 <script>
 	function initMap() {
-	 var latLon = {lat: parseFloat('{{ page.latitude }}'), lng: parseFloat('{{ page.longitude}}')};
+	 var latLon = {lat: parseFloat('{{ page.latitude }}'), lng: parseFloat('{{ page.longitude }}')};
 
 	 var map = new google.maps.Map(document.getElementById('map'),{
 		 center: latLon,
@@ -142,3 +142,16 @@ For example the javascript code that uses Google Maps API to generate maps for r
 </script>
 ```
 The Front Matter variables are _page.title_, _page.latitude_, _page.longitude_ and these variables for the Page. So each Page front matter will have variables with that name but possibly different value. For example, the Mound with TRAP ID 1001 have a latitude of 42.627103 and 25.246605 while the Mound with id 1002 have latitude 42.626585 and longitude 25.250297. So the _latitude_ value will be 42.627103 on the page for Mound with id 1001 and the _latitude_ value will be 42.626585 for the Mound with id 1002
+
+# Important Pages
+
+## Collections
+
+The _\_pages/pages-root-folder/collections.md_ is the web page that is used to display the links to all the record pages. The organization of the pages is grouped by *categories* where one tab correspond to a category. A record page can appear in one or more category. To add a record page to belong to a category, add the name of the category in the YAML list for that record page under the _categories_ key.
+
+If user wish to change the content of the page, they can edit _\_pages/pages-root-folder/collections.md_.
+
+## Templates of Record Pages
+
+The yaml template for Record pages is the _\_import/template.yaml_ file. The auto generate script will use that as a template for the Record pages.
+The layout file that _\_import/template.yaml_ uses is the _\_layout/record.html_ file.
