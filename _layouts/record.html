@@ -5,15 +5,19 @@ format: record
 enable-slick: true
 ---
 <div row class="row">
-<div class="PageNavigation">
-  {% if page.previous.url %}
-    <a class="prev" href="{{page.previous.url}}">&laquo; {{page.previous.title}}</a>
-  {% endif %}
-  {% if page.next.url %}
-    <a class="next" href="{{page.next.url}}">{{page.next.title}} &raquo;</a>
-  {% endif %}
+  <!--Link to next/previous Record page-->
+  <div class="PageNavigation">
+    {% if page.previous.url %}
+      <a class="prev" href="{{page.previous.url}}">&laquo; {{page.previous.title}}</a>
+    {% endif %}
+    {% if page.next.url %}
+      <a class="next" href="{{page.next.url}}">{{page.next.title}} &raquo;</a>
+    {% endif %}
+  </div>
 </div>
-</div>
+
+
+<!--Title and subheadline-->
 <div class="row t30">
    <div class="medium-8 columns{% if page.sidebar == NULL %} medium-offset-2 end{% endif %}{% if page.sidebar == "left" %} medium-push-4{% endif %}">
    <article itemscope itemtype="http://schema.org/Article">
@@ -39,17 +43,30 @@ enable-slick: true
             <h1>{{ page.title }}</h1>
          </div>
       </header>
+      <!--
       {% if page.teaser %}
       <p class="teaser" itemprop="description">
          {{ page.teaser }}
       </p>
       {% endif %}
+      -->
       <div itemprop="articleSection">
          {{ content }}
       </div>
 
       <div class="row">
          <div class="small-12 large-6 columns">
+           <!--TABLE: This is the table that is to the left of the picture gallery
+                The table below can be edited according to user requirements.
+                Each row in the table correspond to a variable in the front matter for
+                a Record page, because this layout is specifically for Record pages, the page variable
+                refers to a Record page and the variables of a page is the variables of that Record pages
+
+                For example,
+                page.x is refering to a x front matter variable that is for that page, because it is incorrect to attempt
+                to access a variable if it does not exist we must check if it exist first, this is done by using the if statement
+                via Liquid templating
+          -->
             <div class="table-scroll" id="artefactData" style="height: 500px; width:100%">
                <table>
                   {% if page.trap_id  %}
@@ -197,10 +214,12 @@ enable-slick: true
             </button>
             </div>
             -->
+
+            <!--PICTURE GALLERY: This is the picture gallery-->
             <div class="small-12 large-6 columns">
                <div class="row">
                   <div class="main small-12 large-12 columns thumbnail" style="height:500px">
-
+                      <!--HTML Elements for the big image-->
                       <div class="slider slider-for" style="height:370px;">
                          {% if page.images %}
                             {% for img in page.images %}
@@ -214,7 +233,7 @@ enable-slick: true
                             </div>
                           {% endif %}
                       </div>
-
+                      <!--HTML Elements for the slider-->
                         <div class="slider slider-nav ">
                           {% if page.images %}
                             {% for img in page.images %}
@@ -230,8 +249,6 @@ enable-slick: true
                         </div>
 
                   </div>
-
-
                   <!--  -->
                </div>
 
@@ -240,6 +257,7 @@ enable-slick: true
             </div>
 
             <div class="large-12 small-12 columns">
+              <!--These are the tabs, the tabs and the tab content must be aligned-->
                <ul class="tabs" data-tabs id="example-tabs">
                  {% if page.maps %}
                  <li class="tabs-title is-active"><a data-tabs-target="#panel1" href="#panel1" aria-selected="true">Map</a></li>
@@ -260,9 +278,9 @@ enable-slick: true
                   {% if page.related %}
                   <li class="tabs-title"><a data-tabs-target="#panel6" href="#panel6">Related Material</a></li>
                   {% endif %}
-
-
                </ul>
+
+               <!--These are the content of the tabs, the tabs content should be aligned with the tabs-->
                <div class="tabs-content" data-tabs-content="example-tabs">
                  <div class="tabs-panel is-active" id="panel1">
                    <div id="map"></div>
@@ -346,6 +364,7 @@ enable-slick: true
             </div>
 
    </article>
+   <!--PLEASE DO NOT MODIFY-->
    </div><!-- /.medium-8.columns -->
    {% if page.sidebar == "left" %}
    <div class="medium-4 columns medium-pull-8">
