@@ -9,3 +9,7 @@
 - title: "Collections"
   url: "/collections/"
   side: left
+
+- title: "Search"
+  url: "/search/"
+  side: right

@@ -45,7 +45,7 @@ os.makedirs('../_posts/', exist_ok=True)
 
 #if uuid in headers:
 #    headers.remove(uuid)
-
+print("Generating Record Pages")
 for obj in objects:
     id = obj[uuid].strip()
     target = os.path.join(DEST, "{0}-{1}.md".format(datetime.date.today(), 'TRAP'+id))
@@ -56,7 +56,19 @@ for obj in objects:
             objyaml['subheadline'] = "Collection: TRAP Mounds"
         if 'Tag' in obj:
             objyaml['tags'] = obj['Tags'].split(' | ')
-        objyaml['categories'] = [collectionname]
+        categories = [collectionname]
+        if int(id) in range(1000,2000):
+            categories.append("1000-1999")
+        elif int(id) in range(2000,3000):
+            categories.append("2000-2999")
+        elif int(id) in range(3000,4000):
+            categories.append("3000-3999")
+        elif int(id) in range(4000,5000):
+            categories.append("4000-4999")
+        elif int(id) in range(5000,6000):
+            categories.append("5000-5999")
+
+        objyaml['categories'] = categories
         objyaml['date'] = datetime.date.today()
         for k in headers:
             k_with_no_space = k.replace(" ", "_").lower()
@@ -68,3 +80,6 @@ for obj in objects:
             objyaml.pop('images', None)
         #objyaml['trap_id'] = id
         DUMP.dump(target,yaml,objyaml)
+
+
+print("FINISHED")

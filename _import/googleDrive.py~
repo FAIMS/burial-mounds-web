@@ -19,6 +19,7 @@ SHEET = "BM-Pic.csv"
 DEST = "../_posts"
 
 # Name of the collection of the Records Pages
+# TODO: If th
 collectionname = "TRAP Mounds"
 
 objects = []
@@ -41,7 +42,7 @@ remove = "https://drive.google.com/file/d/"
 
 prepend_link = "https://drive.google.com/uc?id="
 
-print("APPENDING")
+print("append")
 for row in objects:
     name = row['Name']
     # Get the uuid that correspond for that image
@@ -81,4 +82,4 @@ if os.path.exists(folder):
             if len(objyaml['images']) == 0:
                 objyaml.pop('images', None)
             DUMP.dump(recordpagepath,yaml,objyaml)
-print("FINISH")
+print("finish")
