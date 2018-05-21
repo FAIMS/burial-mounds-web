@@ -25,35 +25,36 @@ header:
 #  style: alert
 permalink: /collections/
 ---
-
-
-
-
-
-
 <ul class="tabs" data-tabs id="category-tabs">
-
-{% for category in site.categories %}
-    {% capture category_name %}{{ category | first }}{% endcapture %}
-
-
-<li class="tabs-title {% if forloop.first %} is-active {% endif %}" ><a data-tabs-target="panel{{forloop.index}}" href="#panel{{ forloop.index }}" {% if forloop.first %} aria-selected="true" {% endif %}>{{ category_name }}</a></li>
-{% endfor %}
+ <li class="tabs-title is-active"><a data-tabs-target="#panel1" href="#panel1" aria-selected="true">Map</a></li>
+ {% for category in site.categories %}
+ {% capture category_name %}{{category | first}}{% endcapture%}
+ {% assign index = {{forloop.index}} %}
+ {% capture index %}{{index | plus:1}}{% endcapture %}
+  <li class="tabs-title ">
+    <a data-tabs-target="panel{{index}}" href="#panel{{index}}"> {{ category_name }} </a>
+  </li>
+ {% endfor %}
 </ul>
-
 <div class="tabs-content" data-tabs-content="category-tabs">
-{% for category in site.categories %}
-    {% capture category_name %}{{ category | first }}{% endcapture %}
-<div class="tabs-panel {% if forloop.first %} is-active {% endif %}" id="panel{{ forloop.index }}">
-<!-- <img style="width:100%" src="/images/collection{{forloop.index}}.jpg"/> -->
-<ul>
-	{% for post in site.categories[category_name] %}
-    <article class="archive-item">
 
+  <div class="tabs-panel is-active" id="panel1">
+    <div id="homepagemap"></div>
+  </div>
+{% for category in site.categories %}
+ {% capture category_name %}{{category | first}}{% endcapture%}
+ {% assign index = {{forloop.index}} %}
+ {% capture index %}{{index | plus:1}}{% endcapture %}
+
+  <div class="tabs-panel"  id="panel{{index}}">
+  <!-- <img style="width:100%" src="/images/collection{{forloop.index}}.jpg"/> -->
+  <ul>
+	 {% for post in site.categories[category_name] %}
+    <article class="archive-item">
       <li><a href="{{ post.url }}">{{post.title}}</a></li>
-</article>
-    {% endfor %}
-</ul>    
+    </article>
+  {% endfor %}
+  </ul>    
 </div>
 {% endfor %}
 </div>
