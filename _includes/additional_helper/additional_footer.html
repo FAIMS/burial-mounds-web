@@ -54,7 +54,7 @@ function initHomePageMap() {
   {% endfor %}
   ]
   {% endcapture %}
-  var markers = {{markers | strip_newlines}}
+  var markers = {{markers | strip_newlines}};
   for(var i = 0; i < markers.length; i++){
     var latLng = new google.maps.LatLng(markers[i].latitude, markers[i].longitude);
     var marker = new google.maps.Marker({
