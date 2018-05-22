@@ -9,6 +9,8 @@ header:
   image_fullwidth: /images/mq_banner/mqBanner.png
   background-color: #EFC94C
 
+collection_page: true
+
 #
 # Use the call for action to show a button on the frontpage
 #

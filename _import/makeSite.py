@@ -56,7 +56,7 @@ for obj in objects:
             objyaml['subheadline'] = "Collection: TRAP Mounds"
         if 'Tag' in obj:
             objyaml['tags'] = obj['Tags'].split(' | ')
-        categories = [collectionname]
+        categories = []
         if int(id) in range(1000,2000):
             categories.append("1000-1999")
         elif int(id) in range(2000,3000):

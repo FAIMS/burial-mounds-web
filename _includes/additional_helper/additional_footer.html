@@ -25,8 +25,9 @@
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD8ww2qdsoz0oXVdcmWcCfqczAjCPuhnSo&amp;callback=initMap"
       async defer></script>
 
-{% endif%}
+{% endif %}
 
+{% if page.collection_page %}
 <script>
 function initHomePageMap() {
 
@@ -59,12 +60,10 @@ function initHomePageMap() {
     var latLng = new google.maps.LatLng(markers[i].latitude, markers[i].longitude);
     var marker = new google.maps.Marker({
       position: latLng,
-      title: markers[i].trap_id
+      title: 'TRAP Mound - ' + markers[i].trap_id
     });
     marker.setMap(map);
   }
-
-  console.log(markers);
 
   var cityCircle = new google.maps.Circle({
       strokeColor: '#FF0000',
@@ -83,3 +82,4 @@ function initHomePageMap() {
 
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD8ww2qdsoz0oXVdcmWcCfqczAjCPuhnSo&amp;callback=initHomePageMap"
       async defer></script>
+{% endif %}
