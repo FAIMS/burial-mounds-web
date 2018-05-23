@@ -41,7 +41,7 @@ permalink: /collections/
 <div class="tabs-content" data-tabs-content="category-tabs">
 
   <div class="tabs-panel is-active" id="panel1">
-    <div id="homepagemap"></div>
+    <div id="home_page_map"></div>
   </div>
 {% for category in site.categories %}
  {% capture category_name %}{{category | first}}{% endcapture%}

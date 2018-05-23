@@ -15,8 +15,6 @@ enable-slick: true
     {% endif %}
   </div>
 </div>
-
-
 <!--Title and subheadline-->
 <div class="row t30">
    <div class="medium-8 columns{% if page.sidebar == NULL %} medium-offset-2 end{% endif %}{% if page.sidebar == "left" %} medium-push-4{% endif %}">
@@ -43,30 +41,27 @@ enable-slick: true
             <h1>{{ page.title }}</h1>
          </div>
       </header>
-      <!--
       {% if page.teaser %}
       <p class="teaser" itemprop="description">
          {{ page.teaser }}
       </p>
       {% endif %}
-      -->
       <div itemprop="articleSection">
          {{ content }}
       </div>
 
       <div class="row">
-         <div class="small-12 large-6 columns">
            <!--TABLE: This is the table that is to the left of the picture gallery
                 The table below can be edited according to user requirements.
                 Each row in the table correspond to a variable in the front matter for
                 a Record page, because this layout is specifically for Record pages, the page variable
                 refers to a Record page and the variables of a page is the variables of that Record pages
-
                 For example,
                 page.x is refering to a x front matter variable that is for that page, because it is incorrect to attempt
                 to access a variable if it does not exist we must check if it exist first, this is done by using the if statement
                 via Liquid templating
           -->
+         <div class="small-12 large-6 columns">
             <div class="table-scroll" id="artefactData" style="height: 500px; width:100%">
                <table>
                   {% if page.trap_id  %}
@@ -214,7 +209,6 @@ enable-slick: true
             </button>
             </div>
             -->
-
             <!--PICTURE GALLERY: This is the picture gallery-->
             <div class="small-12 large-6 columns">
                <div class="row">
@@ -247,9 +241,7 @@ enable-slick: true
                               </div>
                            {% endif %}
                         </div>
-
                   </div>
-                  <!--  -->
                </div>
 
 
@@ -278,12 +270,18 @@ enable-slick: true
                   {% if page.related %}
                   <li class="tabs-title"><a data-tabs-target="#panel6" href="#panel6">Related Material</a></li>
                   {% endif %}
-               </ul>
 
-               <!--These are the content of the tabs, the tabs content should be aligned with the tabs-->
+
+               </ul>
+              <!--These are the content of the tabs, the tabs content should be aligned with the tabs-->
                <div class="tabs-content" data-tabs-content="example-tabs">
+
                  <div class="tabs-panel is-active" id="panel1">
-                   <div id="map"></div>
+                   <!--HTML MAP ELEMENT FOR RECORD: The title of the record is stored in the record-title attribute because it stores the YAML title variable of the page
+                   and that value is the title of the record, the latitude of the record is stored in the record-lat attribute, the longitude of the record is stored in
+                   the record-lng attribute
+                      -->
+                   <div id="record_map" record-title='{{ page.title}}' record-lat='{{ page.latitude }}' record-lng='{{ page.longitude }}'></div>
                  </div>
                  <div class="tabs-panel" id="panel2">
                     {{ page.notes | newline_to_br}}
@@ -364,7 +362,6 @@ enable-slick: true
             </div>
 
    </article>
-   <!--PLEASE DO NOT MODIFY-->
    </div><!-- /.medium-8.columns -->
    {% if page.sidebar == "left" %}
    <div class="medium-4 columns medium-pull-8">
