@@ -10,7 +10,8 @@ header:
   background-color: #EFC94C
 
 collection_page: true
-
+#xclude_from_search: true
+#search: false
 #
 # Use the call for action to show a button on the frontpage
 #

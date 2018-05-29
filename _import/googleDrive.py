@@ -70,7 +70,7 @@ if os.path.exists(folder):
         open(recordpagepath, 'w').writelines(lines[1:-1])
         with open(recordpagepath) as recordpage:
             objyaml=yaml.load(recordpage.read())
-            recordid = objyaml[uuid.replace(" ", "_").lower()]
+            recordid = objyaml['uuid']
             if 'images' not in objyaml:
                 objyaml['images'] = []
             if recordid in d:

@@ -4,12 +4,13 @@
 #   lunr.js which is perfect for small sites or use the
 #   search include for google search
 #
-#   {% include google_search %}
+# {% include google_search %}
 #
 #
 permalink: /search/
 layout: page
 title: "Search"
+
 sitemap: false
 ---
 {% include search %}
@@ -19,15 +20,19 @@ sitemap: false
 <script>
   window.store = {
     {% for post in site.posts %}
+    {% if post.exclude_from_lunr != true %}
       "{{ post.url | slugify }}": {
         "title": "{{ post.title | xml_escape }}",
         "author": "{{ post.author | xml_escape }}",
         "category": "{{ post.category | xml_escape }}",
         "content": {{ post.content | strip_html | strip_newlines | jsonify }},
+
         "url": "{{ post.url | xml_escape | absolute_url }}"
       },
+    {% endif %}
     {% endfor %}
-    {% for page in site.pages %}
+    {% for page in site.pages  %}
+      {% if page.exclude_from_lunr != true %}
       "{{ page.url | slugify }}": {
         "title": "{{ page.title | xml_escape }}",
         "author": "{{ page.author | xml_escape }}",
@@ -36,6 +41,7 @@ sitemap: false
         "url": "{{ page.url | xml_escape | absolute_url }}"
       }
       {% unless forloop.last %},{% endunless %}
+      {% endif %}
     {% endfor %}
   };
 </script>

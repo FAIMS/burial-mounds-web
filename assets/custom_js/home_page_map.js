@@ -1,4 +1,5 @@
 ---
+exclude_from_lunr: true
 ---
 function initHomePageMap() {
 
@@ -17,12 +18,8 @@ function initHomePageMap() {
   {% capture markers %}
   [
   {% for post in site.posts %}
-  {
-  "trap_id" : "{{ post.trap_id }}",
-  "latitude"    : "{{ post.latitude}}",
-  "longitude"      : "{{ post.longitude }}",
-
-  } {% if forloop.last %}{% else %},{% endif %}
+  {"title" : "{{ post.title }}", "latitude" : "{{ post.latitude}}", "longitude" : "{{ post.longitude }}"}
+  {% if forloop.last %}{% else %},{% endif %}
   {% endfor %}
   ]
   {% endcapture %}
@@ -31,7 +28,7 @@ function initHomePageMap() {
     var latLng = new google.maps.LatLng(markers[i].latitude, markers[i].longitude);
     var marker = new google.maps.Marker({
       position: latLng,
-      title: 'TRAP Mound - ' + markers[i].trap_id
+      title: markers[i].title
     });
     marker.setMap(map);
   }

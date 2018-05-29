@@ -68,11 +68,14 @@ for obj in objects:
         elif int(id) in range(5000,6000):
             categories.append("5000-5999")
 
+        objyaml['uuid'] = id
+
         objyaml['categories'] = categories
         objyaml['date'] = datetime.date.today()
         for k in headers:
             k_with_no_space = k.replace(" ", "_").lower()
-            objyaml[k_with_no_space] = obj[k]
+            if k != uuid:
+                objyaml[k_with_no_space] = obj[k]
         objyaml['title'] =  title + id
 
         objyaml['images'] = []
