@@ -1,4 +1,5 @@
 ---
+exclude_from_lunr: true
 ---
 'use strict';
 function initMap() {
