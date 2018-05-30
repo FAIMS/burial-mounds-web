@@ -52,7 +52,7 @@ permalink: /collections/
   <div class="tabs-panel"  id="panel{{index}}">
   <!-- <img style="width:100%" src="/images/collection{{forloop.index}}.jpg"/> -->
   <ul>
-	 {% for post in site.categories[category_name] %}
+	 {% for post in site.categories[category_name] reversed %}
     <article class="archive-item">
       <li><a href="{{ post.url }}">{{post.title}}</a></li>
     </article>
