@@ -6,6 +6,6 @@
   url: "/info/"
   side: left
 
-- title: "Collections"
-  url: "/collections/"
+- title: "Collection"
+  url: "/collection/"
   side: left

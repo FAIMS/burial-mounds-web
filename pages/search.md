@@ -26,7 +26,7 @@ sitemap: false
         "author": "{{ post.author | xml_escape }}",
         "category": "{{ post.category | xml_escape }}",
         "content": {{ post.content | strip_html | strip_newlines | jsonify }},
-
+        "tags": "{{ post.tags | escape }}",
         "url": "{{ post.url | xml_escape | absolute_url }}"
       },
     {% endif %}

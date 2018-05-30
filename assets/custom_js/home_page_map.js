@@ -9,12 +9,6 @@ function initHomePageMap() {
    center: latLon,
    zoom: 11
  });
-
- var centroidMarker = new google.maps.Marker({
-    position: latLon,
-    map: map,
-    title: "Centroid"
-  });
   {% capture markers %}
   [
   {% for post in site.posts %}

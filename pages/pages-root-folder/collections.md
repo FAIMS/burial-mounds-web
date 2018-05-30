@@ -4,7 +4,7 @@
 # this work, you have to use › layout: frontpage
 #
 layout: page
-title: Collections
+title: Collection
 header:
   image_fullwidth: /images/mq_banner/mqBanner.png
   background-color: #EFC94C
@@ -26,7 +26,7 @@ collection_page: true
 #  url: https://tinyletter.com/feeling-responsive
 #  text: Inform me about new updates and features ›
 #  style: alert
-permalink: /collections/
+permalink: /collection/
 ---
 <ul class="tabs" data-tabs id="category-tabs">
  <li class="tabs-title is-active"><a data-tabs-target="#panel1" href="#panel1" aria-selected="true">Map</a></li>

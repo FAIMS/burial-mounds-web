@@ -43,7 +43,7 @@
       this.field('author');
       this.field('category');
       this.field('content');
-  //  this.field('tags');
+      this.field('tags');
   //  this.field('uuid', { boost: 15 });
     });
 
@@ -54,7 +54,7 @@
         'author': window.store[key].author,
         'category': window.store[key].category,
         'content': window.store[key].content,
-    //  'tags': window.store[key].tags,
+        'tags': window.store[key].tags,
     //  'uuid': window.store[key].tags
       });
 

@@ -6,7 +6,7 @@ This section will briefly discuss the important steps required to use this proje
 
 1. Configuring the project such as the title of the project, the logo, navigation bar that appears at the top of the page. Refer to [Configuration](#Configuration)
 2. Using the _\_layouts/record.html_ as a template, work through the file and change it according to your requirements.
-3.
+3. Auto generate Record pages using the script provided.
 
 ## Prerequisites
 Need to have `Python 3.5.2` installed to run the script and also have `Jekyll` installed to test the website locally. It is also assume that you are using Ubuntu if you wish to test your website locally before uploading to Github Pages.
@@ -50,10 +50,22 @@ The \__config.yml_ file contains configuration options for the website. For basi
 
 	* Addtion scss files can be made in the \__sass_ folder. You need then need to import the file in assets/css/styles_feeling_response.scss, for it to be included in the future build. For example, if you make a sass file called _tabs.scss_ in the \__sass_ folder then, inside the assets/css/styles_feeling_response.scss file.
 
+## Adding categories
+The `categories` front matter variable is used to group Records by tabs in the Collections page.
+
+
 # Structure of the project
 This section will explain the structure of the project and decribe the top-level folders for the project
 
-The _assets_ folder contain the
+_assets_ folder contain the CSS, Javascript used in the project and also images that is used for the site such as the logo and default images for Records.
+_\_data_ contains the configuration YAML files for the project.
+_images_ folder contains the images used in the site.
+_\_import_ contains scripts to auto generate Record Pages from a CSV.
+_\_includes_ contains content that can included into files.
+_pages_ contains pages of the website
+_\_posts_ contains the YML files for the Record Pages
+_\_sass_ contains sass partials of our project.
+_\_site_ contains the generated site that Jekyll outputs. This folder is added into `.gitignore`.
 
 
 # Preprocessing
@@ -143,6 +155,13 @@ To explicitly exclude a page from search result. Please add `exclude_from_lunr` 
 
 * _pages/search.md_ is the file which contains the search data.
 * _assets/js/search.js_ is the file which contains the Javascript logic to perform the search.
+
+## Photo Gallery for records
+The photo gallery is implementing using ![slick](http://kenwheeler.github.io/slick/). There is two photo gallery in a Record Page, one is photo gallery used to display photos for that Record and the second photo gallery is used as a navigation. The implmenetation is split into three parts:
+
+1. The HTML structure is defined in the template html for the Records, which by default is in _\_layouts/record.html_.
+2. The CSS that is used to style the photo gallery such as the the navigation buttons for the photo gallery is in _assets/slick/slick-theme.css_.
+3. The Javascript is used to defined the logic of the photo gallery is in _assets/custom_js/slick-settings.js_.
 
 ## Recompile changes
 Because this is a static website, everytime users wish to make push their changes (assuming the website is on Github):

@@ -215,6 +215,7 @@ enable-slick: true
                   <div class="main small-12 large-12 columns thumbnail" style="height:500px">
                       <!--HTML Elements for the big image-->
                       <div class="slider slider-for" style="height:370px;">
+                        <!-- -->
                          {% if page.images %}
                             {% for img in page.images %}
                             <div>
@@ -314,6 +315,7 @@ enable-slick: true
                     </p>
                  </div>
 
+                 <!-- This is the tab content for the 'Information' tab -->
                   <div class="tabs-panel" id="panel4">
                      {{ page.information | newline_to_br}}
                   </div>
@@ -354,13 +356,9 @@ enable-slick: true
                         {% endfor %}
                      </ul>
                   </div>
-
-
-
-
                </div>
             </div>
-
+  <!-- PLEASE DO NOT DELETE THE SECTION BELOW -->
    </article>
    </div><!-- /.medium-8.columns -->
    {% if page.sidebar == "left" %}
