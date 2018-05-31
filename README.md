@@ -11,13 +11,15 @@ This section will briefly discuss the important steps required to use this proje
 ## Prerequisites
 Need to have `Python 3.5.2` installed to run the script and also have `Jekyll` installed to test the website locally. It is also assume that you are using Ubuntu if you wish to test your website locally before uploading to Github Pages.
 
+*NOTE*: If users do not have required Python Modules and attempt to run the Python scripts provided, they will receive errors, please install the required Python modules that are missing. Please refer to https://docs.python.org/3/installing/index.html if you need more information.
+
 ### Installing Jekyll
 Please refer to ![Jekyll offical documentation](https://jekyllrb.com/docs/installation/) for instructions to install Jekyll on your system.
 
 If you are using a Windows system, please refer to page regarding Jekyll on Windows https://jekyllrb.com/docs/installation/.
 
 ## Running Jekyll locally
-Assuming jekyll is installed, to see your website locally, open up the terminal at the root of the folder of the project. Type in the following command then press center
+Assuming jekyll is installed, to see your website locally, open up the terminal at the root of the folder of the project. Type in the following command then press enter
 
 `bundle exec jekyll serve --config _config.yml,_config_dev.yml`
 
@@ -118,13 +120,13 @@ The _google-map-marker_ variable is in the _config.yml_ file and is used to dete
 
 ## Adding additional stylesheet
 In the _\_includes/helper_ directory, there is a html file called _head.html_, this contains all the default information about the page inside the <head> tags, another file named _additional\_head.html_ file which is located in the _\_includes/addition\_helper_ directory.
-If  user wish to add a additional css spreadsheet or other additional information that they wish to enclose inside the <head> tag of the website, it is recommended to add it into the _additional\_head.html_ file so there is no confusion between the default metadata for the template and the new metadata defined by the user, the additional metadata added will be after the default metadata because we are using jekyll `include` tag to include the content from _additional\_head.html_ in the _head.html_ file.
+If  user wish to add a additional css or other additional information that they wish to enclose inside the <head> tag of the website, it is recommended to add it into the _additional\_head.html_ file so there is no confusion between the default metadata for the template and the new metadata defined by the user, the additional metadata added will be after the default metadata because we are using jekyll `include` tag to include the content from _additional\_head.html_ in the _head.html_ file.
 The user is also free to modify the _head.html_ file. Users wishing to add more _Javascript_ should refer to the *Adding additional Javascript* section in this README.
 
 ## Adding additional Javascript
 In the _\_includes/helper_ directory, there is a html file called _additional\_footer.html_, users are recommended to put additional javascript in this file. If users wish to add _Javascript_ that uses liquid tags then please add the _Javascript_ inside the file, enclosed within _script_ tags.
 
-For example the javascript code that uses Google Maps API to generate maps for record for the Burial Mounds website which uses liquid tags to access *Front Matter* variables.
+For example the Javascript code that uses Google Maps API to generate maps for record for the Burial Mounds website which uses Javascript to get the the values of the attributes `record-lat` and `record-lng` for the HTML element `record_map`. The values of these element is the latitude and longitude value for that particular Record.
 
 ```javascript
 <script>
@@ -146,7 +148,14 @@ For example the javascript code that uses Google Maps API to generate maps for r
 	}
 </script>
 ```
-The Front Matter variables are _page.title_, _page.latitude_, _page.longitude_ and these variables for the Page. So each Page front matter will have variables with that name but possibly different value. For example, the Mound with TRAP ID 1001 have a latitude of 42.627103 and 25.246605 while the Mound with id 1002 have latitude 42.626585 and longitude 25.250297. So the _latitude_ value will be 42.627103 on the page for Mound with id 1001 and the _latitude_ value will be 42.626585 for the Mound with id 1002
+
+The HTML code before is the `div` element for the map and is located in _\_layouts/records.html_ file.
+
+```html
+<div id="record_map" record-title='{{ page.title}}' record-lat='{{ page.latitude }}' record-lng='{{ page.longitude }}'></div>
+```
+
+The `div` have three attributes, namely, `record-title`, `record-lat` and `record-lng`, these store the front matter variables _page.title_, _page.latitude_, _page.longitude_ which are the title, latitude and longitude for that Record. Each page front matter will have variables with that name but possibly different value. For example, the Mound with TRAP ID 1001 have a latitude of 42.627103 and 25.246605 while the Mound with id 1002 have latitude 42.626585 and longitude 25.250297. So the _latitude_ value will be 42.627103 on the page for Mound with id 1001 and the _latitude_ value will be 42.626585 for the Mound with id 1002.
 
 ## Search functionality
 The current search function allows the user to search Records by `title` and `uuid` variables. If users wish to customize their search, please read https://learn.cloudcannon.com/jekyll/jekyll-search-using-lunr-js/ which is used as a template for our project.
@@ -168,7 +177,7 @@ Because this is a static website, everytime users wish to make push their change
 
 1. Delete the _\_posts_ folder
 2. Recompile the record pages by running the _makeSite.py_ Python script and additional scripts if needed
-3. git add then commit then push it to the remote repo
+3. `git add` then `git commit` then `git push` to the remote repo
 
 # Important Pages
 
