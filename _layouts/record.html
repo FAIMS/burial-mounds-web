@@ -1,3 +1,4 @@
+
 ---
 layout: default
 format: record
@@ -212,10 +213,13 @@ enable-slick: true
             <!--PICTURE GALLERY: This is the picture gallery-->
             <div class="small-12 large-6 columns">
                <div class="row">
+                 <!--The next div contains two div element, the first one is the HTML elements for the big image slider and the second one is the navigation for the big one.
+                  The Liquid if-else statements inside each div checks if the record have front matter 'images' variable, else display default image. the reason for that is by convetion, if there is no
+		     images for that record then it have no images variable because the scripts used to extract image links will remove that variable if it could no extract any links -->
+
                   <div class="main small-12 large-12 columns thumbnail" style="height:500px">
                       <!--HTML Elements for the big image-->
                       <div class="slider slider-for" style="height:370px;">
-                        <!-- -->
                          {% if page.images %}
                             {% for img in page.images %}
                             <div>
