@@ -54,7 +54,7 @@ permalink: /collection/
   <ul>
 	 {% for post in site.categories[category_name] reversed %}
     <article class="archive-item">
-      <li><a href="{{ post.url }}">{{post.title}}</a></li>
+      <li><a href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a></li>
     </article>
   {% endfor %}
   </ul>    
