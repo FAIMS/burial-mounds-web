@@ -13,8 +13,11 @@ Need to have `Python 3.5.2` installed to run the script and also have `Jekyll` i
 
 *NOTE*: If users do not have required Python Modules and attempt to run the Python scripts provided, they will receive errors, please install the required Python modules that are missing. Please refer to https://docs.python.org/3/installing/index.html if you need more information.
 
+### Required Python modules
+The required modules to run the script in the `requirements.txt` file. Please download the modules listed in that file.
+
 ### Installing Jekyll
-Please refer to ![Jekyll offical documentation](https://jekyllrb.com/docs/installation/) for instructions to install Jekyll on your system.
+Please refer to [Jekyll offical documentation](https://jekyllrb.com/docs/installation/) for instructions to install Jekyll on your system.
 
 If you are using a Windows system, please refer to page regarding Jekyll on Windows https://jekyllrb.com/docs/installation/.
 
@@ -166,7 +169,7 @@ To explicitly exclude a page from search result. Please add `exclude_from_lunr` 
 * _assets/js/search.js_ is the file which contains the Javascript logic to perform the search.
 
 ## Photo Gallery for records
-The photo gallery is implementing using ![slick](http://kenwheeler.github.io/slick/). There is two photo gallery in a Record Page, one is photo gallery used to display photos for that Record and the second photo gallery is used as a navigation. The implmenetation is split into three parts:
+The photo gallery is implementing using [slick](http://kenwheeler.github.io/slick/). There is two photo gallery in a Record Page, one is photo gallery used to display photos for that Record and the second photo gallery is used as a navigation. The implmenetation is split into three parts:
 
 1. The HTML structure is defined in the template html for the Records, which by default is in _\_layouts/record.html_.
 2. The CSS that is used to style the photo gallery such as the the navigation buttons for the photo gallery is in _assets/slick/slick-theme.css_.
