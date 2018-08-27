@@ -7,12 +7,12 @@ enable-slick: true
 <div row class="row">
   <!--Link to next/previous Record page-->
   <div class="PageNavigation">
-    {% if page.previous.url %}
-      <a class="prev" href="{{ site.baseurl }}{{page.previous.url}}">&laquo; {{page.previous.title}}</a>
-    {% endif %}
-    {% if page.next.url %}
-      <a class="next" href="{{ site.baseurl }}{{page.next.url}}">{{page.next.title}} &raquo;</a>
-    {% endif %}
+    {%- if page.previous.url -%}
+      <a class="prev" href="{{ site.baseurl }}{{page.previous.url}}">&laquo; {{ page.previous.title }}</a>
+    {%- endif -%}
+    {%- if page.next.url -%}
+      <a class="next" href="{{ site.baseurl }}{{page.next.url}}">{{ page.next.title }} &raquo;</a>
+    {%- endif -%}
   </div>
 </div>
 <!--Title and subheadline-->
@@ -20,38 +20,39 @@ enable-slick: true
    <div class="medium-8 columns{% if page.sidebar == NULL %} medium-offset-2 end{% endif %}{% if page.sidebar == "left" %} medium-push-4{% endif %}">
    <article itemscope itemtype="http://schema.org/Article">
       <header>
-         {% if page.image.title %}
+         {%- if page.image.title -%}
          <figure>
             <img src="{{ '/images/' | absolute_url }}{{ page.image.title }}" width="970" alt="{{ page.title | escape_once }}" itemprop="image">
-            {% if page.image.caption_url and page.image.caption %}
+            {%- if page.image.caption_url and page.image.caption -%}
             <figcaption class="text-right">
                <a href="{{ page.image.caption_url }}">{{ page.image.caption }}</a>
             </figcaption>
-            {% elsif page.image.caption %}
+            {%- elsif page.image.caption -%}
             <figcaption class="text-right">
                {{ page.image.caption }}
             </figcaption>
-            {% endif %}
+            {% endif -%}
          </figure>
-         {% endif %}
+         {%- endif -%}
          <div itemprop="name">
-            {% if page.subheadline %}
+            {%- if page.subheadline -%}
             <p class="subheadline">{{ page.subheadline }}</p>
-            {% endif %}
+            {%- endif -%}
             <h1>{{ page.title }}</h1>
          </div>
       </header>
-      {% if page.teaser %}
+      {%- if page.teaser -%}
       <p class="teaser" itemprop="description">
          {{ page.teaser }}
       </p>
-      {% endif %}
+      {%- endif -%}
       <div itemprop="articleSection">
          {{ content }}
       </div>
 
       <div class="row">
-           <!--TABLE: This is the table that is to the left of the picture gallery
+          {%- comment -%}
+           TABLE: This is the table that is to the left of the picture gallery
                 The table below can be edited according to user requirements.
                 Each row in the table correspond to a variable in the front matter for
                 a Record page, because this layout is specifically for Record pages, the page variable
@@ -60,98 +61,98 @@ enable-slick: true
                 page.x is refering to a x front matter variable that is for that page, because it is incorrect to attempt
                 to access a variable if it does not exist we must check if it exist first, this is done by using the if statement
                 via Liquid templating
-          -->
+          {%- endcomment -%}
          <div class="small-12 large-6 columns">
             <div class="table-scroll" id="artefactData" style="height: 500px; width:100%">
                <table>
-                  {% if page.uuid  %}
+                  {%- if page.uuid  -%}
                   <tr>
                      <td>    TRAP ID #
                      </td>
                      <td> {{ page.uuid }}
                      </td>
                   </tr>
-                  {% endif %}
-                  {% if page.certainy %}
+                  {%- endif -%}
+                  {%- if page.certainy -%}
                   <tr>
                      <td>    Certainy</td>
                      <td>
                         {{ page.certainy }}
                      </td>
                   </tr>
-                  {% endif %}
-                  {% if page.elevation %}
+                  {%- endif -%}
+                  {%- if page.elevation -%}
                   <tr>
                      <td>    Elevation</td>
                      <td>
                         {{ page.elevation }}
                      </td>
                   </tr>
-                  {% endif %}
-                  {% if page.max_diameter  %}
+                  {%- endif -%}
+                  {%- if page.max_diameter  -%}
                   <tr>
                      <td>    Max diameter</td>
                      <td>
                         {{ page.max_diameter }}
                      </td>
                   </tr>
-                  {% endif %}
-                  {% if page.min_diameter  %}
+                  {%- endif -%}
+                  {%- if page.min_diameter  -%}
                   <tr>
                      <td>    Min diameter</td>
                      <td>
                         {{ page.min_diameter }}
                      </td>
                   </tr>
-                  {% endif %}
-                  {% if page.height  %}
+                  {%- endif -%}
+                  {%- if page.height  -%}
                   <tr>
                      <td>    Height</td>
                      <td>
                         {{ page.height }}
                      </td>
                   </tr>
-                  {% endif %}
-                  {% if page.size_category  %}
+                  {%- endif -%}
+                  {%- if page.size_category -%}
                   <tr>
                      <td>    Size Category</td>
                      <td>
                         {{ page.size_category }}
                      </td>
                   </tr>
-                  {% endif %}
-                  {% if page.surrounding_land_use  %}
+                  {%- endif -%}
+                  {%- if page.surrounding_land_use  -%}
                   <tr>
                      <td>    Surrounding Land Use</td>
                      <td>
                         {{ page.surrounding_land_use }}
                      </td>
                   </tr>
-                  {% endif %}
-                  {% if page.surface_condition  %}
+                  {%- endif -%}
+                  {%- if page.surface_condition  -%}
                   <tr>
                      <td>    Surface Condition</td>
                      <td>
                         {{ page.surface_condition }}
                      </td>
                   </tr>
-                  {% endif %}
-                  {% if page.robbed  %}
+                  {%- endif -%}
+                  {%- if page.robbed  -%}
                   <tr>
                      <td>    Robbed</td>
                      <td>
                         {{ page.robbed }}
                      </td>
                   </tr>
-                  {% endif %}
-                  {% if page.crm_condition  %}
+                  {%- endif -%}
+                  {%- if page.crm_condition  -%}
                   <tr>
                      <td>    CRM Condition</td>
                      <td>
                         {{ page.crm_condition }}
                      </td>
                   </tr>
-                  {% endif %}
+                  {%- endif -%}
                   {% if page.crm_intactness  %}
                   <tr>
                      <td>    CRM Intactness</td>
@@ -159,23 +160,23 @@ enable-slick: true
                         {{ page.crm_intactness }}
                      </td>
                   </tr>
-                  {% endif %}
-                  {% if page.campaign  %}
+                  {%- endif -%}
+                  {%- if page.campaign  -%}
                   <tr>
                      <td>    Campaign</td>
                      <td>
                         {{ page.campaign }}
                      </td>
                   </tr>
-                  {% endif %}
-                  {% if page.source  %}
+                  {%- endif -%}
+                  {%- if page.source  -%}
                   <tr>
                      <td>    Source</td>
                      <td>
                         {{ page.source }}
                      </td>
                   </tr>
-                  {% endif %}
+                  {%- endif -%}
                   {% if page.municipality  %}
                   <tr>
                      <td>    Municipality</td>
@@ -183,23 +184,23 @@ enable-slick: true
                         {{ page.municipality }}
                      </td>
                   </tr>
-                  {% endif %}
-                  {% if page.locality  %}
+                  {%- endif -%}
+                  {%- if page.locality  -%}
                   <tr>
                      <td>    Locality</td>
                      <td>
                         {{ page.locality }}
                      </td>
                   </tr>
-                  {% endif %}
-                  {% if page.bgcode  %}
+                  {%- endif -%}
+                  {%- if page.bgcode  -%}
                   <tr>
                      <td>    BG Code</td>
                      <td>
                         {{ page.bgcode }}
                      </td>
                   </tr>
-                  {% endif %}
+                  {%- endif -%}
                </table>
             </div>
          </div>
@@ -209,41 +210,45 @@ enable-slick: true
             </button>
             </div>
             -->
-            <!--PICTURE GALLERY: This is the picture gallery-->
+            {%- comment -%}
+            PICTURE GALLERY: This is the picture gallery
+            {%- endcomment -%}
             <div class="small-12 large-6 columns">
                <div class="row">
-                 <!--The next div contains two div element, the first one is the HTML elements for the big image slider and the second one is the navigation for the big one.
+                   {%- comment -%}
+                   The next div contains two div element, the first one is the HTML elements for the big image slider and the second one is the navigation for the big one.
                   The Liquid if-else statements inside each div checks if the record have front matter 'images' variable, else display default image. the reason for that is by convetion, if there is no
-		     images for that record then it have no images variable because the scripts used to extract image links will remove that variable if it could no extract any links -->
+		     images for that record then it have no images variable because the scripts used to extract image links will remove that variable if it could no extract any links
+                    {%- endcomment -%}
 
                   <div class="main small-12 large-12 columns thumbnail" style="height:500px">
                       <!--HTML Elements for the big image-->
                       <div class="slider slider-for" style="height:370px;">
-                         {% if page.images %}
-                            {% for img in page.images %}
+                         {%- if page.images -%}
+                            {%- for img in page.images -%}
                             <div>
                                 <img style="height:370px; width:100%;" src="{{img.image_path}}" title="{{img.title}}">
                             </div>
-                            {% endfor %}
-                          {% else %}
+                            {%- endfor -%}
+                          {%- else -%}
                             <div>
                                 <img style="padding-top: 30%; height:200px; width:100%;" src="/assets/img/default_mound_img.png" title="default">
                             </div>
-                          {% endif %}
+                          {%- endif -%}
                       </div>
                       <!--HTML Elements for the slider-->
                         <div class="slider slider-nav ">
-                          {% if page.images %}
-                            {% for img in page.images %}
+                          {%- if page.images -%}
+                            {%- for img in page.images -%}
                             <div data-equalizer-watch>
                                 <img style = " width:100%; height:125px;" src="{{img.image_path}}">
                             </div>
-                            {% endfor %}
-                            {% else %}
+                            {%- endfor -%}
+                            {%- else -%}
                               <div data-equalizer-watch>
                                   <img style="padding-top: 35px;width:100%;height:90px" src="/assets/img/default_mound_img.png" title="default">
                               </div>
-                           {% endif %}
+                           {%- endif -%}
                         </div>
                   </div>
                </div>
@@ -255,25 +260,25 @@ enable-slick: true
             <div class="large-12 small-12 columns">
               <!--These are the tabs, the tabs and the tab content must be aligned-->
                <ul class="tabs" data-tabs id="example-tabs">
-                 {% if page.maps %}
+                 {%- if page.maps -%}
                  <li class="tabs-title is-active"><a data-tabs-target="#panel1" href="#panel1" aria-selected="true">Map</a></li>
-                 {% endif %}
+                 {%- endif -%}
 
-                 {% if page.notes %}
+                 {%- if page.notes -%}
                  <li class="tabs-title"><a data-tabs-target="#panel2" href="#panel2">Notes</a></li>
-                 {% endif %}
+                 {%- endif -%}
 
                  <li class="tabs-title"><a data-tabs-target="#panel3" href="#panel3">Sharing</a></li>
 
                  <li class="tabs-title"><a href="#panel4" href="#panel4">Information</a></li>
 
-                  {% if page.resources %}
+                  {%- if page.resources -%}
                   <li class="tabs-title"><a data-tabs-target="#panel5" href="#panel5">Resources</a></li>
-                  {% endif %}
+                  {%- endif -%}
 
-                  {% if page.related %}
+                  {%- if page.related -%}
                   <li class="tabs-title"><a data-tabs-target="#panel6" href="#panel6">Related Material</a></li>
-                  {% endif %}
+                  {%- endif -%}
 
 
                </ul>
@@ -294,13 +299,13 @@ enable-slick: true
                     <h4>Cite this page</h4>
                     ({{page.date | date: "%Y"}}). <i>{{page.title}}</i>, {{page.accession}}. {{page.url | absolute_url}} (accessed on: {{'now' | date: "%d %B %Y"}}).
                     <h4>Rights &amp; Permissions</h4>
-                    {%if page.rights == 'standard'%}
+                    {%- if page.rights == 'standard' -%}
                     We support the <a href="http://opendefinition.org">open</a> release of data and information about our collections.
                     <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"></a> This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>. <br/>
                     <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a>
-                    {%else%}
+                    {%- else -%}
                     <p>{{page.rights}}</p>
-                    {%endif%}
+                    {% endif -%}
                     <h4>Share us</h4>
                     <div>
                        <div>
@@ -325,38 +330,38 @@ enable-slick: true
 
                   <div class="tabs-panel" id="panel5">
                      <ul class="accordion" data-accordion>
-                        {% for item in page.resources %}
+                        {%- for item in page.resources -%}
                         <li class="accordion-item" data-accordion-item>
                            <a href="#" class="accordion-title">{{ item.resource.title }}</a>
                            <div class="accordion-content" data-tab-content>
                               <ul>
-                                 {% for link in item.resource.links %}
-                                 {% for hash in link %}
-                                 <li><a href="{{ hash[1] }}">{{hash[0]}} </a></li>
-                                 {% endfor %}
-                                 {% endfor %}
+                                 {%- for link in item.resource.links -%}
+                                 {%- for hash in link -%}
+                                 <li><a href="{{ hash[1] }}">{{ hash[0] }} </a></li>
+                                 {%- endfor -%}
+                                 {%- endfor -%}
                               </ul>
                            </div>
                         </li>
-                        {% endfor %}
+                        {%- endfor -%}
                      </ul>
                   </div>
 
 
                   <div class="tabs-panel" id="panel6">
                      <ul class="accordion" data-accordion>
-                        {% for item in page.related %}
+                        {%- for item in page.related -%}
                         <li class="accordion-item" data-accordion-item>
                            <a href="#" class="accordion-title">{{ item.resource.title }}</a>
                            <div class="accordion-content" data-tab-content>
                               <ul>
-                                 {% for bullet in item.resource.bullets %}
+                                 {%- for bullet in item.resource.bullets -%}
                                  <li> {{bullet}}</li>
-                                 {% endfor %}
+                                 {%- endfor -%}
                               </ul>
                            </div>
                         </li>
-                        {% endfor %}
+                        {%- endfor -%}
                      </ul>
                   </div>
                </div>
@@ -364,17 +369,17 @@ enable-slick: true
   <!-- PLEASE DO NOT DELETE THE SECTION BELOW -->
    </article>
    </div><!-- /.medium-8.columns -->
-   {% if page.sidebar == "left" %}
+   {%- if page.sidebar == "left" -%}
    <div class="medium-4 columns medium-pull-8">
-      {% include helper/sidebar.html %}
+      {%- include helper/sidebar.html -%}
    </div>
    <!-- /.medium-4.columns -->
-   {% endif %}
-   {% if page.sidebar == "right" %}
+   {%- endif -%}
+   {%- if page.sidebar == "right" -%}
    <div class="medium-4 columns">
-      {% include helper/sidebar.html %}
+      {%- include helper/sidebar.html -%}
    </div>
    <!-- /.medium-4.columns -->
-   {% endif %}
+   {%- endif -%}
 </div>
 <!-- /.row -->

@@ -30,34 +30,34 @@ permalink: /collection/
 ---
 <ul class="tabs" data-tabs id="category-tabs">
  <li class="tabs-title is-active"><a data-tabs-target="#panel1" href="#panel1" aria-selected="true">Map</a></li>
- {% for category in site.categories %}
- {% capture category_name %}{{category | first}}{% endcapture%}
- {% assign index = {{forloop.index}} %}
- {% capture index %}{{index | plus:1}}{% endcapture %}
+ {%- for category in site.categories -%}
+ {%- capture category_name -%}{{ category | first }}{%- endcapture-%}
+ {%- assign index = forloop.index -%}
+ {%- capture index -%}{{index | plus:1}}{%- endcapture -%}
   <li class="tabs-title ">
-    <a data-tabs-target="panel{{index}}" href="#panel{{index}}"> {{ category_name }} </a>
+    <a data-tabs-target="panel{{ index }}" href="#panel{{ index }}"> {{ category_name }} </a>
   </li>
- {% endfor %}
+ {%- endfor -%}
 </ul>
 <div class="tabs-content" data-tabs-content="category-tabs">
 
   <div class="tabs-panel is-active" id="panel1">
     <div id="home_page_map"></div>
   </div>
-{% for category in site.categories %}
- {% capture category_name %}{{category | first}}{% endcapture%}
- {% assign index = {{forloop.index}} %}
- {% capture index %}{{index | plus:1}}{% endcapture %}
+{%- for category in site.categories -%}
+ {%- capture category_name -%}{{ category | first }}{%- endcapture-%}
+ {%- assign index = forloop.index -%}
+ {%- capture index -%}{{index | plus:1}}{%- endcapture -%}
 
-  <div class="tabs-panel"  id="panel{{index}}">
+  <div class="tabs-panel"  id="panel{{ index }}">
   <!-- <img style="width:100%" src="/images/collection{{forloop.index}}.jpg"/> -->
   <ul>
-	 {% for post in site.categories[category_name] reversed %}
+	 {%- for post in site.categories[category_name] reversed -%}
     <article class="archive-item">
-      <li><a href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a></li>
+      <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
     </article>
-  {% endfor %}
+  {%- endfor -%}
   </ul>    
 </div>
-{% endfor %}
+{%- endfor -%}
 </div>

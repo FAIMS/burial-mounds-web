@@ -40,7 +40,7 @@ improve_content: https://github.com/Phlow/feeling-responsive/edit/gh-pages
 logo: "logo.png"
 
 # Gems
-gems:
+plugins:
     - jekyll-asciidoc
     - jekyll-gist
     - jekyll-paginate

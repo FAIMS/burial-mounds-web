@@ -4,7 +4,7 @@
 #   lunr.js which is perfect for small sites or use the
 #   search include for google search
 #
-# {% include google_search %}
+# {%- include google_search -%}
 #
 #
 permalink: /search/
@@ -13,14 +13,14 @@ title: "Search"
 
 sitemap: false
 ---
-{% include search %}
+{%- include search -%}
 
 <ul id="search-results" class="side-nav"></ul>
 
 <script>
   window.store = {
-    {% for post in site.posts %}
-    {% if post.exclude_from_lunr != true %}
+    {%- for post in site.posts -%}
+    {%- if post.exclude_from_lunr != true -%}
       "{{ post.url | slugify }}": {
         "title": "{{ post.title | xml_escape }}",
         "author": "{{ post.author | xml_escape }}",
@@ -28,10 +28,10 @@ sitemap: false
         "content": {{ post.content | strip_html | strip_newlines | jsonify }},
         "url": "{{ post.url | xml_escape | absolute_url }}"
       },
-    {% endif %}
-    {% endfor %}
-    {% for page in site.pages  %}
-      {% if page.exclude_from_lunr != true %}
+    {%- endif -%}
+    {%- endfor -%}
+    {%- for page in site.pages  -%}
+      {%- if page.exclude_from_lunr != true -%}
       "{{ page.url | slugify }}": {
         "title": "{{ page.title | xml_escape }}",
         "author": "{{ page.author | xml_escape }}",
@@ -39,9 +39,9 @@ sitemap: false
         "content": {{ page.content | strip_html | strip_newlines | jsonify }},
         "url": "{{ page.url | xml_escape | absolute_url }}"
       }
-      {% unless forloop.last %},{% endunless %}
-      {% endif %}
-    {% endfor %}
+      {%- unless forloop.last -%},{%- endunless -%}
+      {%- endif -%}
+    {%- endfor -%}
   };
 </script>
 <script src="{{ "/assets/js/lunr.min.js" | absolute_url }}"></script>
