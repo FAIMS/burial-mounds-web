@@ -31,7 +31,7 @@ with open(SHEET, newline='') as csvfile:
         objects.append(row)
 
 # Name of the column for the uuid
-uuid = 'TRAP ID'
+uuid = 'uuid'
 keyforfirstimg = 'overview'
 keylen = 4
 folder = "../_posts/"
@@ -41,22 +41,23 @@ if os.path.exists(folder):
     for file in os.listdir(folder):
         yaml = YAML()
         filename = os.fsdecode(file)
-        recordpagepath = folder+filename
+        recordpagepath = folder + filename
         lines = open(recordpagepath).readlines()
         open(recordpagepath, 'w').writelines(lines[1:-1])
         with open(recordpagepath) as recordpage:
-            objyaml=yaml.load(recordpage.read())
+            objyaml = yaml.load(recordpage.read())
             recordid = objyaml[uuid.replace(" ", "_").lower()]
             if 'images' not in objyaml:
                 objyaml['images'] = []
-            default_img_path = "/images/"  + recordid
-            if os.path.exists(".."+ default_img_path):
+            default_img_path = "/images/" + recordid
+            if os.path.exists(".." + default_img_path):
                 print("exist")
-                for file in os.listdir(".."+default_img_path):
+                for file in os.listdir(".." + default_img_path):
                     filename = os.fsdecode(file)
                     print(default_img_path + filename)
-                    objyaml['images'].append({'image_path': default_img_path +'/'+ filename, 'title': filename})
+                    objyaml['images'].append(
+                        {'image_path': default_img_path + '/' + filename, 'title': filename})
             if len(objyaml['images']) == 0:
                 objyaml.pop('images', None)
-            DUMP.dump(recordpagepath,yaml,objyaml)
+            DUMP.dump(recordpagepath, yaml, objyaml)
 print("finish")
