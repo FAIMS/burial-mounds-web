@@ -50,10 +50,11 @@ for row in OBJECTS:
     entry = {'Name': image_name, 'URL': url}
     # If there is Overview in the image name then place it at the front of the list
     # for the record with id record_id
-    if KEY_FOR_FIRST_IMG in image_name:
-        RECORD_DICT[record_id].insert(0, entry)
-    else:
-        RECORD_DICT[record_id].append(entry)
+    insert_image_link_into_list(
+        RECORD_DICT[record_id],
+        entry,
+        image_name,
+        KEY_FOR_FIRST_IMG)
 
 if os.path.exists(FOLDER):
     # For each Record Page in folder
@@ -70,9 +71,8 @@ if os.path.exists(FOLDER):
                 objyaml['images'] = []
             if record_id in RECORD_DICT:
                 for row in RECORD_DICT[record_id]:
-                    item = {'image_path': row['URL'], 'title': row['Name']}
-                    UTIL.insert_image_link_into_list(
-                        objyaml['images'], item, row['Name'], KEY_FOR_FIRST_IMG)
+                    objyaml['images'].append(
+                        {'image_path': row['URL'], 'title': row['Name']})
             if not objyaml['images']:
                 objyaml.pop('images', None)
             UTIL.dump(record_page_path, yaml, objyaml)
