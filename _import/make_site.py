@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
+"""Module that makes the record pages."""
 
 import csv
 import os
 import datetime
 from ruamel.yaml import YAML
-import dumpYaml as DUMP
+import dump_yaml as DUMP
 
 SHEET = "MergeCSV.csv"
 TEMPLATE = "template.yaml"
@@ -19,12 +20,12 @@ OBJECTS = []  # PLEASE DO NOT MODIFY
 # The list that will be used to hold the column names of the csv
 CSV_HEADINGS = []  # PLEASE DO NOT MODIFY
 
-# Name of the column for the uuid
-UUID_COLUMN_NAME = 'TRAP ID'
+# Name of the column for the record id
+RECORD_ID_COLUMN_NAME = 'TRAP ID'
 
 
 # A generic title for each Record Page which will be concatenated with the
-# uuid of each Record
+# id of each Record
 TITLE = "TRAP Mound - "
 
 # Creates a list of dictionary where each dict correspond to a row in the csv,
@@ -44,11 +45,11 @@ print("Generating Record Pages")
 # Loop through objects list, each item in objects is a record
 # create a corresponding page for that record with its front matter variables
 for obj in OBJECTS:
-    # record_id stores the uuid of the record, the strip() method removes leading or
+    # record_id stores the id of the record, the strip() method removes leading or
     # trailing characters refer to
     # https://docs.python.org/3/library/stdtypes.html#str.strip for
     # more information
-    record_id = obj[UUID_COLUMN_NAME].strip()  # PLEASE DO NOT MODIFY
+    record_id = obj[RECORD_ID_COLUMN_NAME].strip()  # PLEASE DO NOT MODIFY
 
     # target is the path of where the file for the Record will be made
     # this is done by joining the destination with the filename
@@ -67,8 +68,8 @@ for obj in OBJECTS:
             # Collection: Another type of collection
             objyaml['subheadline'] = "Collection: TRAP Mounds"
 
-        # Assign the id of the record into the uuid front matter variable
-        objyaml['uuid'] = record_id
+        # Assign the id of the record into the id front matter variable
+        objyaml['record_id'] = record_id
 
         if 'Tag' in obj:
             objyaml['tags'] = obj['Tags'].split(' | ')
@@ -97,12 +98,12 @@ for obj in OBJECTS:
 
         # Add key:value pairs to the front matter, where each key correspond to a column
         # and the value is the value of the column for that row
-        for k in CSV_HEADINGS:
-            k_with_no_space = k.replace(" ", "_").lower()
-            # Exclude adding the key:value pair for the column that is the uuid
-            # that is because, we have it in the front matter variable uuid
-            if k != UUID_COLUMN_NAME:
-                objyaml[k_with_no_space] = obj[k]
+        for heading in CSV_HEADINGS:
+            heading_with_no_space = heading.replace(" ", "_").lower()
+            # Exclude adding the key:value pair for the column that is the id
+            # that is because, we have it in the front matter variable record_id
+            if heading != RECORD_ID_COLUMN_NAME:
+                objyaml[heading_with_no_space] = obj[heading]
 
         # Assign value to the front matter variable title
         objyaml['title'] = TITLE + record_id

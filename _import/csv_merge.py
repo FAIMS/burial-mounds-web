@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
-
+"""Module that merge two csv on a key and output a new csv."""
 import argparse
 import pandas as pd
 
 PARSER = argparse.ArgumentParser(
     description='A program that takes two csv and merge the two csv with the \
-     column name passed as the key. It returns a new csv with supplied name')
+    column name passed as the key. It returns a new csv with supplied name')
 PARSER.add_argument('-k', '--key', help='Key to merge on')
 PARSER.add_argument('-o', '--output', help='Name of output file')
 PARSER.add_argument('-f', '--first', help='Name of first file')

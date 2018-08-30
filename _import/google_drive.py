@@ -1,84 +1,79 @@
 #!/usr/bin/env python3
+"""This module reads from a csv that contains url to images located on
+Google Drive. and stores the urls on the respective record list variable
+`images`."""
 
 import csv
 import os
-import sys
-from pprint import pprint
-import ruamel.yaml
 from ruamel.yaml import YAML
-import shutil
-from pathlib import Path
-import datetime
-import re
-import fnmatch
-import glob
 
-import dumpYaml as DUMP
+import dump_yaml as DUMP
+from consts import FOLDER, ID_FRONT_MATTER_VARIABLE_NAME, KEY_FOR_FIRST_IMG
 
 SHEET = "BM-Pic.csv"
 DEST = "../_posts"
 
 # Name of the collection of the Records Pages
-collectionname = "TRAP Mounds"
+COLLECTION_NAME = "TRAP Mounds"
 
-objects = []
-headers = []
-d = {}
+# Objects is the list of rows from the csv that contains the url of the images
+OBJECTS = []
+CSV_HEADINGS = []
+RECORD_DICT = {}
 with open(SHEET, newline='') as csvfile:
-    sheetreader = csv.DictReader(csvfile)
-    headers = sheetreader.fieldnames
-    for row in sheetreader:
-        objects.append(row)
+    SHEETREADER = csv.DictReader(csvfile)
+    CSV_HEADINGS = SHEETREADER.fieldnames
+    for row in SHEETREADER:
+        OBJECTS.append(row)
 
+# Length of the uuid
+KEY_LEN = 4
 
-# Name of the column for the uuid
-uuid = 'TRAP ID'
-keyforfirstimg = 'overview'
-keylen = 4
-folder = "../_posts/"
+STR_TO_REMOVE = "https://drive.google.com/file/d/"
 
-remove = "https://drive.google.com/file/d/"
-
-prepend_link = "https://drive.google.com/uc?id="
+PREPEND_LINK = "https://drive.google.com/uc?id="
 
 print("APPENDING")
-for row in objects:
-    name = row['Name']
+for row in OBJECTS:
+    image_name = row['Name']
     # Get the uuid that correspond for that image
-    id = name[:keylen]
+    record_id = image_name[:KEY_LEN]
     # Preprocessing
-    s = row['URL'].replace(remove,"")
-    s = s.replace("/view?usp=drivesdk", "")
+    # url is the string that is the url to the image
+    url = row['URL'].replace(STR_TO_REMOVE, "")
+    url = url.replace("/view?usp=drivesdk", "")
     # If first image then create a empty list first
-    if id not in d:
-        d[id] = []
-    # url
-    s = prepend_link + s
-    entry = {'Name': name, 'URL': s}
-    if 'Overview' in name:
-        d[id].insert(0,entry)
-    else:
-        d[id].append(entry)
+    if record_id not in RECORD_DICT:
+        RECORD_DICT[record_id] = []
 
-if os.path.exists(folder):
+    url = PREPEND_LINK + url
+    entry = {'Name': image_name, 'URL': url}
+    # If there is Overview in the image name then place it at the front of the list
+    # for the record with id record_id
+    if KEY_FOR_FIRST_IMG in image_name:
+        RECORD_DICT[record_id].insert(0, entry)
+    else:
+        RECORD_DICT[record_id].append(entry)
+
+if os.path.exists(FOLDER):
     # For each Record Page in folder
-    for file in os.listdir(folder):
+    for file in os.listdir(FOLDER):
         yaml = YAML()
-        filename = os.fsdecode(file)
-        recordpagepath = folder+filename
-        lines = open(recordpagepath).readlines()
-        open(recordpagepath, 'w').writelines(lines[1:-1])
-        with open(recordpagepath) as recordpage:
-            objyaml=yaml.load(recordpage.read())
-            recordid = objyaml['uuid']
+        file_name = os.fsdecode(file)
+        record_page_path = FOLDER + file_name
+        record_page_lines = open(record_page_path).readlines()
+        open(record_page_path, 'w').writelines(record_page_lines[1:-1])
+        with open(record_page_path) as record_page:
+            objyaml = yaml.load(record_page.read())
+            record_id = objyaml[ID_FRONT_MATTER_VARIABLE_NAME]
             if 'images' not in objyaml:
                 objyaml['images'] = []
-            if recordid in d:
-                for row in d[recordid]:
-                    #print(row)
-                    objyaml['images'].append({'image_path': row['URL'], 'title': row['Name']})
-
-            if len(objyaml['images']) == 0:
+            if record_id in RECORD_DICT:
+                for row in RECORD_DICT[record_id]:
+                    # print(row)
+                    objyaml['images'].append(
+                        {'image_path': row['URL'], 'title': row['Name']})
+            if not objyaml['images']:
                 objyaml.pop('images', None)
-            DUMP.dump(recordpagepath,yaml,objyaml)
+            DUMP.dump(record_page_path, yaml, objyaml)
 print("FINISH")
