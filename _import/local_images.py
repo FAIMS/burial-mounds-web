@@ -4,7 +4,7 @@ relative to the project inside the images folder"""
 import os
 from ruamel.yaml import YAML
 
-import dump_yaml as DUMP
+import util as UTIL
 from consts import FOLDER, ID_FRONT_MATTER_VARIABLE_NAME, KEY_FOR_FIRST_IMG
 
 if os.path.exists(FOLDER):
@@ -25,14 +25,10 @@ if os.path.exists(FOLDER):
                 for image in os.listdir(".." + default_img_path):
                     file_name = os.fsdecode(image)
                     image_path = default_img_path + '/' + file_name
-                    print(image_path)
-                    if KEY_FOR_FIRST_IMG.lower() in file_name.lower():
-                        objyaml['images'].insert(0, {'image_path': image_path,
-                                                     'title': file_name})
-                    else:
-                        objyaml['images'].append(
-                            {'image_path': image_path, 'title': file_name})
+                    item = {'image_path': image_path, 'title': file_name}
+                    UTIL.insert_image_link_into_list(
+                        objyaml['images'], item, file_name, KEY_FOR_FIRST_IMG)
             if not objyaml['images']:
                 objyaml.pop('images', None)
-            DUMP.dump(record_page_path, yaml, objyaml)
+            UTIL.dump(record_page_path, yaml, objyaml)
 print("FINISH")

@@ -5,7 +5,7 @@ import csv
 import os
 import datetime
 from ruamel.yaml import YAML
-import dump_yaml as DUMP
+import util as UTIL
 
 SHEET = "MergeCSV.csv"
 TEMPLATE = "template.yaml"
@@ -101,7 +101,8 @@ for obj in OBJECTS:
         for heading in CSV_HEADINGS:
             heading_with_no_space = heading.replace(" ", "_").lower()
             # Exclude adding the key:value pair for the column that is the id
-            # that is because, we have it in the front matter variable record_id
+            # that is because, we have it in the front matter variable
+            # record_id
             if heading != RECORD_ID_COLUMN_NAME:
                 objyaml[heading_with_no_space] = obj[heading]
 
@@ -116,7 +117,7 @@ for obj in OBJECTS:
 
         # This will write the value of objyaml which contains the front matter variable
         # into the target file
-        DUMP.dump(target, yaml, objyaml)
+        UTIL.dump(target, yaml, objyaml)
 
 
 print("FINISHED")

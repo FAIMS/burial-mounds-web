@@ -7,7 +7,7 @@ import csv
 import os
 from ruamel.yaml import YAML
 
-import dump_yaml as DUMP
+import util as UTIL
 from consts import FOLDER, ID_FRONT_MATTER_VARIABLE_NAME, KEY_FOR_FIRST_IMG
 
 SHEET = "BM-Pic.csv"
@@ -70,10 +70,10 @@ if os.path.exists(FOLDER):
                 objyaml['images'] = []
             if record_id in RECORD_DICT:
                 for row in RECORD_DICT[record_id]:
-                    # print(row)
-                    objyaml['images'].append(
-                        {'image_path': row['URL'], 'title': row['Name']})
+                    item = {'image_path': row['URL'], 'title': row['Name']}
+                    UTIL.insert_image_link_into_list(
+                        objyaml['images'], item, row['Name'], KEY_FOR_FIRST_IMG)
             if not objyaml['images']:
                 objyaml.pop('images', None)
-            DUMP.dump(record_page_path, yaml, objyaml)
+            UTIL.dump(record_page_path, yaml, objyaml)
 print("FINISH")
