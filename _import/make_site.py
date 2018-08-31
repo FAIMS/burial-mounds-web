@@ -5,7 +5,9 @@ import csv
 import os
 import datetime
 from ruamel.yaml import YAML
+
 import util as UTIL
+from consts import ID_FRONT_MATTER_VARIABLE_NAME, IMAGES_FRONT_MATTER_VARIABLE_NAME
 
 SHEET = "MergeCSV.csv"
 TEMPLATE = "template.yaml"
@@ -50,12 +52,15 @@ for obj in OBJECTS:
     # https://docs.python.org/3/library/stdtypes.html#str.strip for
     # more information
     record_id = obj[RECORD_ID_COLUMN_NAME].strip()  # PLEASE DO NOT MODIFY
+    # Store the date at the time of running this module
+    today_date = datetime.date.today()  # PLEASE DO NOT MODIFY
 
     # target is the path of where the file for the Record will be made
-    # this is done by joining the destination with the filename
+    # this is done by joining the destination with the file name
+    record_page_file_name = "{0}-{1}.md".format(today_date,
+                                                'TRAP' + record_id)
     target = os.path.join(DEST,
-                          "{0}-{1}.md".format(datetime.date.today(),
-                                              'TRAP' + record_id))  # PLEASE DO NOT MODIFY
+                          record_page_file_name)  # PLEASE DO NOT MODIFY
     yaml = YAML()  # PLEASE DO NOT MODIFY
     with open(TEMPLATE) as templatefile:  # PLEASE DO NOT
         objyaml = yaml.load(templatefile.read())
@@ -69,7 +74,7 @@ for obj in OBJECTS:
             objyaml['subheadline'] = "Collection: TRAP Mounds"
 
         # Assign the id of the record into the id front matter variable
-        objyaml['record_id'] = record_id
+        objyaml[ID_FRONT_MATTER_VARIABLE_NAME] = record_id
 
         if 'Tag' in obj:
             objyaml['tags'] = obj['Tags'].split(' | ')
@@ -94,7 +99,7 @@ for obj in OBJECTS:
         # END PROCESS OF ADDING CATEGORIES FOR A RECORD
 
         # Assign the current data into the front matter variable date
-        objyaml['date'] = datetime.date.today()
+        objyaml['date'] = today_date
 
         # Add key:value pairs to the front matter, where each key correspond to a column
         # and the value is the value of the column for that row
@@ -112,9 +117,8 @@ for obj in OBJECTS:
         # If there are no images then remove the images front matter for that Record
         # so that the Record photo gallery will display default image instead
         objyaml['images'] = []
-        if not objyaml['images']:
-            objyaml.pop('images', None)
-
+        UTIL.delete_key_from_dict_if_value_falsy(
+            objyaml, IMAGES_FRONT_MATTER_VARIABLE_NAME)
         # This will write the value of objyaml which contains the front matter variable
         # into the target file
         UTIL.dump(target, yaml, objyaml)

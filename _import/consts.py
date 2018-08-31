@@ -4,6 +4,8 @@
 COLLECTION_NAME = "TRAP Mounds"
 # Name of the front matter variable for the record id
 ID_FRONT_MATTER_VARIABLE_NAME = 'record_id'
+# Name of the front matter variable for the image_list
+IMAGES_FRONT_MATTER_VARIABLE_NAME = 'images'
 # Keyword that identify the first image for a record
 KEY_FOR_FIRST_IMG = 'Overview'
 # Length of the uuid
