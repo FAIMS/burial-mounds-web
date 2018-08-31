@@ -1,63 +1,38 @@
 #!/usr/bin/env python3
-
-import csv
+"""This module extract the path of images for a record for images stored locally
+relative to the project inside the images folder"""
 import os
-import sys
-from pprint import pprint
-import ruamel.yaml
 from ruamel.yaml import YAML
-import shutil
-from pathlib import Path
-import datetime
-import re
-import fnmatch
-import glob
 
-import dumpYaml as DUMP
+import util as UTIL
+from consts import FOLDER, ID_FRONT_MATTER_VARIABLE_NAME, KEY_FOR_FIRST_IMG
 
-SHEET = "BM-Pic.csv"
-DEST = "../_posts"
-
-# Name of the collection of the Records Pages
-collectionname = "TRAP Mounds"
-
-objects = []
-headers = []
-d = {}
-with open(SHEET, newline='') as csvfile:
-    sheetreader = csv.DictReader(csvfile)
-    headers = sheetreader.fieldnames
-    for row in sheetreader:
-        objects.append(row)
-
-# Name of the column for the uuid
-uuid = 'uuid'
-keyforfirstimg = 'overview'
-keylen = 4
-folder = "../_posts/"
-
-if os.path.exists(folder):
+if os.path.exists(FOLDER):
     # For each Record Page in folder
-    for file in os.listdir(folder):
+    for file in os.listdir(FOLDER):
         yaml = YAML()
-        filename = os.fsdecode(file)
-        recordpagepath = folder + filename
-        lines = open(recordpagepath).readlines()
-        open(recordpagepath, 'w').writelines(lines[1:-1])
-        with open(recordpagepath) as recordpage:
-            objyaml = yaml.load(recordpage.read())
-            recordid = objyaml[uuid.replace(" ", "_").lower()]
+        file_name = os.fsdecode(file)
+        # Relative path to record page
+        record_page_path = FOLDER + file_name
+        UTIL.remove_first_and_last_line(record_page_path)
+        # Open record page and write
+        with open(record_page_path) as record_page:
+            objyaml = yaml.load(record_page.read())
+            record_id = objyaml[ID_FRONT_MATTER_VARIABLE_NAME]
+            # If there is no front matter variable called 'images'
+            # then create it and make it a empty list
             if 'images' not in objyaml:
                 objyaml['images'] = []
-            default_img_path = "/images/" + recordid
+            default_img_path = "/images/" + record_id
             if os.path.exists(".." + default_img_path):
-                print("exist")
-                for file in os.listdir(".." + default_img_path):
-                    filename = os.fsdecode(file)
-                    print(default_img_path + filename)
-                    objyaml['images'].append(
-                        {'image_path': default_img_path + '/' + filename, 'title': filename})
-            if len(objyaml['images']) == 0:
-                objyaml.pop('images', None)
-            DUMP.dump(recordpagepath, yaml, objyaml)
-print("finish")
+                # Insert key value pair into 'images' list
+                for image in os.listdir(".." + default_img_path):
+                    file_name = os.fsdecode(image)
+                    image_path = default_img_path + '/' + file_name
+                    item = {'image_path': image_path, 'title': file_name}
+                    UTIL.insert_image_link_into_list(
+                        objyaml['images'], item, file_name, KEY_FOR_FIRST_IMG)
+            UTIL.delete_key_from_dict_if_value_falsy(
+                objyaml, IMAGES_FRONT_MATTER_VARIABLE_NAME)
+            UTIL.dump(record_page_path, yaml, objyaml)
+print("FINISH")
