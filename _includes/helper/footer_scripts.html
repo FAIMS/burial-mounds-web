@@ -9,8 +9,8 @@ $('audio,video').mediaelementplayer();
 <script src="{{ 'assets/js/jquery.backstretch.min.js' | absolute_url }}"></script>
 {% if page.header.image_fullwidth %}
 <script>
-    $("#masthead").backstretch("{{ site.urlimg }}{{ page.header.image_fullwidth }}", {fade: 700});
-    $("#masthead-with-text").backstretch("{{ site.urlimg }}{{ page.header.image_fullwidth }}", {fade: 700});
+    $("#masthead").backstretch("{{ page.header.image_fullwidth | relative_url }}", {fade: 700});
+    $("#masthead-with-text").backstretch("{{ page.header.image_fullwidth | relative_url }}", {fade: 700});
 </script>
 {% endif %}
 
