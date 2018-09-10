@@ -1,7 +1,6 @@
 ---
 exclude_from_lunr: true
 # Only the main Sass file needs front matter, rest is included from site.sass.sass_dir
-
 ---
 @charset 'utf-8';
 
@@ -65,10 +64,6 @@ exclude_from_lunr: true
 @include motion-ui-transitions;
 @include motion-ui-animations;
 
-
-@import "custom_sass/tabs_width_even";
-@import "custom_sass/_post_nav";
-@import "custom_sass/_google_maps";
 /* Typography
 ------------------------------------------------------------------- */
 
