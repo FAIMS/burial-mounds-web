@@ -1,16 +1,21 @@
-{% if page.id %}
+{%- if page.id -%}
   <script type="text/javascript" src="{{'assets/slick/slick.min.js' | absolute_url}}"></script>
   <script type="text/javascript" src="{{'assets/custom_js/slick-settings.js' | absolute_url}}"></script>
   <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.js'></script>
+  {%- comment -%}
+  Creating a map for record pages.
+  {%- endcomment -%}
   <script type="text/javascript" src="{{'assets/custom_js/record_pages_map.js' | absolute_url}}"></script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD8ww2qdsoz0oXVdcmWcCfqczAjCPuhnSo&amp;callback=initMap"
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD8ww2qdsoz0oXVdcmWcCfqczAjCPuhnSo&amp;callback=initRecordMap"
       async defer></script>
+{%- endif -%}
 
-{% endif %}
-
-{% if page.collection_page %}
+{%- comment -%}
+Creating the google map for the collection page.
+{%- endcomment -%}
+{%- if page.collection_page -%}
   <script type="text/javascript" src="{{'assets/custom_js/home_page_map.js' | absolute_url}}"></script>
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD8ww2qdsoz0oXVdcmWcCfqczAjCPuhnSo&amp;callback=initHomePageMap"
       async defer></script>
-{% endif %}
+{%- endif -%}
