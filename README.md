@@ -1,12 +1,12 @@
 # Introduction
-This is a template that uses _Jekyll_ and based off [feeling-responsive](https://github.com/Phlow/feeling-responsive-v2) theme by Phlow. To get the basic structure, please follow the steps in this README. It is assumed that the user have basic knowledge of _Jekyll_ if not, please refer to https://jekyllrb.com/docs/home/ for more information.
+This is a template that uses [_Jekyll_](https://jekyllrb.com/) and based off [feeling-responsive](https://github.com/Phlow/feeling-responsive-v2) theme by Phlow. To get the basic structure, please follow the steps in this README. It is assumed that the user have basic knowledge of _Jekyll_ if not, please refer to https://jekyllrb.com/docs/home/ for more information.
 
-The purpose of this project is to generate a data-driven website from a CSV. For the purpose of this project, each row in the CSV will be considered a `record`, and a page for each record will be called a `record page` and that a [post](https://jekyllrb.com/docs/posts/) in Jekyll is in our case a `record page`. The columns of the csv will each be refered to as a `attribute`.
+The purpose of this project is to generate a data-driven website from a CSV. For the purpose of this project, each row in the CSV will be considered a `record`, and a page for each record will be called a `record page` and that a [_post_](https://jekyllrb.com/docs/posts/) in Jekyll is in our case a `record page`. The columns of the csv will each be refered to as a `attribute`.
 
 # Overview
 This section will briefly discuss the important steps required to use this project to create a website.
 
-1. Configuring the project such as the title of the project, the logo, navigation bar that appears at the top of the page. Refer to [Configuration](#configuration)
+1. Configuring the project such as the title of the project, the logo, navigation bar that appears at the top of the page. Refer to [configuration](#configuration) section for more information.
 2. Using the _record.html_ located inside the _\_layouts_ as a template, work through the file and change it according to your requirements.
 3. Auto generate Record pages using the script provided.
 
@@ -16,7 +16,7 @@ Need to have `Python 3.5.2` installed to run the script and also have `Jekyll` i
 *NOTE*: If users do not have required Python Modules and attempt to run the Python scripts provided, they will receive errors, please install the required Python modules that are missing. Please refer to https://docs.python.org/3/installing/index.html if you need more information.
 
 ### Required Python modules
-The required modules to run the script in the `requirements.txt` file. Please download the modules listed in that file.
+The required modules to run the script is in the `requirements.txt` file. Please download the modules listed in that file.
 
 ### Installing Jekyll
 Please refer to [Jekyll offical documentation](https://jekyllrb.com/docs/installation/) for instructions to install Jekyll on your system.
@@ -33,7 +33,16 @@ Another option is to run the shell script _local_jekyll_build.sh_ located at the
 ## Configuration
 The \__config.yml_ file contains configuration options for the website. For basic configuration, do the following steps.
 
-1. Open the \__config.yml_ file and work through it. The main front matter variables for basic customisation is _title_, _slogan_, _descripton_, _credits_, _author_, _url_, _baseurl_. More details can be found on https://help.github.com/articles/configuring-jekyll/ and https://jekyllrb.com/docs/configuration/.
+1. Open the \__config.yml_ file and work through it.
+    * The main front matter variables for basic customisation is:
+        * _title_
+        *  _slogan_
+        *  _descripton_
+        *  _credits_
+        *  _author_
+        *  _url_
+        *  _baseurl_.
+More details can be found on https://help.github.com/articles/configuring-jekyll/ and https://jekyllrb.com/docs/configuration/.
 	* *NOTE*: If you are running jekyll locally to see your changes, please stop the server then run it again to see changes made in your _\_config.yml_ file
 	* If the user wish to add more custom data that can be accessed throughout the site via the Liquid templating system, then rather adding it directly into \__config.yml_ file, users are recommended to add it into the _additional\_config.yml_ file which is located in the \__data directory.
 	* For example the variable _google-map-marker_ can be accessed via `site.data.additional_config.google-map-marker`.
@@ -118,16 +127,26 @@ The format of the coordinates should also be in _decimal degrees_ which is what 
 ### Markers for Record maps
 The _google-map-marker_ variable is in the _config.yml_ file and is used to determine whether to add a marker that points to the location of the record, if the user do not wish to have a Google Map marker then the user can edit the _google-map-marker_ variable and change the value from _true_ to _false_ and if they wish to have the marker back then they would reverse it, changing the value from _false_ to _true_. The _title_ variable is used as the title of the Google Map marker.
 
+## Adding additional metadata inside <head>
+In the _\_includes/helper_ directory, there is a HTML file called _head.html_, this contains all the default information about the page inside the <head> tags, another file named _additional\_head.html_ file which is located in the _\_includes/addition\_helper_ directory.
 
-## Adding additional stylesheet
-In the _\_includes/helper_ directory, there is a html file called _head.html_, this contains all the default information about the page inside the <head> tags, another file named _additional\_head.html_ file which is located in the _\_includes/addition\_helper_ directory.
-If  user wish to add a additional css or other additional information that they wish to enclose inside the <head> tag of the website, it is recommended to add it into the _additional\_head.html_ file so there is no confusion between the default metadata for the template and the new metadata defined by the user, the additional metadata added will be after the default metadata because we are using jekyll `include` tag to include the content from _additional\_head.html_ in the _head.html_ file.
-The user is also free to modify the _head.html_ file. Users wishing to add more _Javascript_ should refer to the [Adding additional Javascript](#adding-additional-javascript) section in this README.
+If the user want to add additional information that they want enclosed inside the `<head>` tag of the website, it is recommended to add it into the _additional\_head.html_ file so there is no confusion between the default metadata for the template and the new metadata defined by the user, the additional metadata added will be after the default metadata because we are using jekyll `include` tag to include the content from _additional\_head.html_ into the _head.html_ file. The user is also free to modify the _head.html_ file.
 
-## Adding additional Javascript
+## Adding additional stylesheet or Javascript
+Users wishing to add more additional styling to their website, please refer to the [adding additional stylesheet](#adding-additional-stylesheet) section. Users that wish to add more _Javascript_ should refer to the [adding additional Javascript](#adding-additional-javascript) section in this README.
+
+### Adding additional stylesheet
+If users wish to add additional stylesheets, it is recommended that they create the css file in the _\_assets/custom_css_ folder and link the stylesheet in the _additional\_head.html_ file.
+
+#### Adding additional sass
+If you are using sass, you can create scss files in the _\_sass_ folder and then import the file in _assets/custom_css/custom_css.scss_. No additional linking other than importing it in is needed because the css generated from the sass file is already linked.
+
+Please refer to https://jekyllrb.com/docs/assets/#sassscss for more information.
+
+### Adding additional Javascript
 In the _\_includes/helper_ directory, there is a html file called _additional\_footer.html_, users are recommended to put additional javascript in this file. If users wish to add _Javascript_ that uses liquid tags then please add the _Javascript_ inside the file, enclosed within _script_ tags.
 
-For example the Javascript code that uses Google Maps API to generate maps for record for the Burial Mounds website which uses Javascript to get the the values of the attributes `record-lat` and `record-lng` for the HTML element `record_map`. The values of these element is the latitude and longitude value for that particular Record.
+For example the Javascript code that uses Google Maps API to generate maps for record for the Burial Mounds website which uses Javascript to get the values of the attributes `record-lat` and `record-lng` for the HTML element `record_map`. The values of these element is the latitude and longitude value for that particular Record.
 
 ```javascript
 // Create a map for the record and generate a marker if the google-map-marker
@@ -164,7 +183,7 @@ function initRecordMap() {
 The HTML code before is the `div` element for the map and is located in _\_layouts/records.html_ file.
 
 ```html
-<div id="record_map" record-title='{{ page.title}}' record-lat='{{ page.latitude }}' record-lng='{{ page.longitude }}'></div>
+<div id="record_map" record-title='{{ page.title }}' record-lat='{{ page.latitude }}' record-lng='{{ page.longitude }}'></div>
 ```
 
 The `div` have three attributes, namely, `record-title`, `record-lat` and `record-lng`, these store the front matter variables _page.title_, _page.latitude_, _page.longitude_ which are the title, latitude and longitude for that Record. Each page front matter will have variables with that name but possibly different value. For example, the Mound with TRAP ID 1001 have a latitude of 42.627103 and 25.246605 while the Mound with id 1002 have latitude 42.626585 and longitude 25.250297. So the _latitude_ value will be 42.627103 on the page for Mound with id 1001 and the _latitude_ value will be 42.626585 for the Mound with id 1002.

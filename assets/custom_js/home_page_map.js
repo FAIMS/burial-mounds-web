@@ -7,7 +7,7 @@ exclude_from_lunr: true
 // record, where each marker represent the location of that record
 function initHomePageMap() {
   // The centre point
-  var centreLatLng = {lat: 42.6169, lng: 25.2848 };
+  var centreLatLng = {lat: 42.6169, lng: 25.2848};
   // HTML element for which the map will be generated under.
   var homePageMapHTMLElement = document.getElementById('home_page_map');
   // Create a new map inside the homePageMapHTMLElement.
