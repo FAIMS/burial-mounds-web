@@ -127,7 +127,7 @@ The format of the coordinates should also be in _decimal degrees_ which is what 
 ### Markers for Record maps
 The _google-map-marker_ variable is in the _config.yml_ file and is used to determine whether to add a marker that points to the location of the record, if the user do not wish to have a Google Map marker then the user can edit the _google-map-marker_ variable and change the value from _true_ to _false_ and if they wish to have the marker back then they would reverse it, changing the value from _false_ to _true_. The _title_ variable is used as the title of the Google Map marker.
 
-## Adding additional metadata inside the "<head>" tag
+## Adding additional metadata inside the &lt;head&gt; tag
 In the _\_includes/helper_ directory, there is a HTML file called _head.html_, this contains all the default information about the page inside the <head> tags, another file named _additional\_head.html_ file which is located in the _\_includes/addition\_helper_ directory.
 
 If the user want to add additional information that they want enclosed inside the `<head>` tag of the website, it is recommended to add it into the _additional\_head.html_ file so there is no confusion between the default metadata for the template and the new metadata defined by the user, the additional metadata added will be after the default metadata because we are using jekyll `include` tag to include the content from _additional\_head.html_ into the _head.html_ file. The user is also free to modify the _head.html_ file.
