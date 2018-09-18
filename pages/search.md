@@ -13,6 +13,7 @@ title: "Search"
 
 sitemap: false
 ---
+
 {%- include search -%}
 
 <ul id="search-results" class="side-nav"></ul>

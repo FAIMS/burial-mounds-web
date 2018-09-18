@@ -7,30 +7,32 @@ The purpose of this project is to generate a data-driven website from a CSV. For
 This section will briefly discuss the important steps required to use this project to create a website.
 
 1. Configuring the project such as the title of the project, the logo, navigation bar that appears at the top of the page. Refer to [configuration](#configuration) section for more information.
-2. Using the _record.html_ located inside the _\_layouts_ as a template, work through the file and change it according to your requirements.
-3. Auto generate Record pages using the script provided.
+2. Using the _record.html_ located inside the \__layouts_ folder as a template, work through the file and change it according to your requirements.
+3. Auto generate Record pages using the script provided. Refer to the [auto generate page for each row](#auto-generate-page-for-each-row) section for more information.
 
-## Prerequisites
+# Prerequisites
 Need to have `Python 3.5.2` installed to run the script and also have `Jekyll` installed to test the website locally. It is also assume that you are using Ubuntu if you wish to test your website locally before uploading to Github Pages.
 
-*NOTE*: If users do not have required Python Modules and attempt to run the Python scripts provided, they will receive errors, please install the required Python modules that are missing. Please refer to https://docs.python.org/3/installing/index.html if you need more information.
+**NOTE**: If users do not have required Python Modules and attempt to run the Python scripts provided, they will receive errors, please install the required Python modules that are missing. Please refer to the [required Python module](#required-python-modules) section in regards to which modules is needed for the Python scripts provided.
 
-### Required Python modules
-The required modules to run the script is in the `requirements.txt` file. Please download the modules listed in that file.
+Please refer to https://docs.python.org/3/installing/index.html if you need more information on Python modules and how to install Python modules.
 
-### Installing Jekyll
+## Required Python modules
+The required modules to run the Python scripts in \__import_ folder is in the `requirements.txt` file. Please download the modules listed in that file.
+
+## Installing Jekyll
 Please refer to [Jekyll offical documentation](https://jekyllrb.com/docs/installation/) for instructions to install Jekyll on your system.
 
 If you are using a Windows system, please refer to the page regarding installing [Jekyll on Windows](https://jekyllrb.com/docs/installation/windows/).
 
-## Running Jekyll locally
+### Running Jekyll locally
 Assuming jekyll is installed, to see your website locally, open up the terminal at the root of the folder of the project. Type in the following command then press enter
 
 `bundle exec jekyll serve --config _config.yml,_config_dev.yml`
 
 Another option is to run the shell script _local_jekyll_build.sh_ located at the root path of this project.
 
-## Configuration
+# Configuration
 The \__config.yml_ file contains configuration options for the website. For basic configuration, do the following steps.
 
 1. Open the \__config.yml_ file and work through it.
@@ -41,10 +43,11 @@ The \__config.yml_ file contains configuration options for the website. For basi
         *  _credits_
         *  _author_
         *  _url_
-        *  _baseurl_.
-More details can be found on https://help.github.com/articles/configuring-jekyll/ and https://jekyllrb.com/docs/configuration/.
-	* *NOTE*: If you are running jekyll locally to see your changes, please stop the server then run it again to see changes made in your _\_config.yml_ file
-	* If the user wish to add more custom data that can be accessed throughout the site via the Liquid templating system, then rather adding it directly into \__config.yml_ file, users are recommended to add it into the _additional\_config.yml_ file which is located in the \__data directory.
+        *  _baseurl_
+        * More details can be found on https://help.github.com/articles/configuring-jekyll/ and https://jekyllrb.com/docs/configuration/.
+
+	* **NOTE**: If you are running jekyll locally to see your changes, please stop the server then run it again to see changes made in your _\_config.yml_ file
+	* If the user wish to add more custom data that can be accessed throughout the site via the Liquid templating system, then rather adding it directly into \__config.yml_ file, users are recommended to add it into the _additional\_config.yml_ file which is located in the \__data folder.
 	* For example the variable _google-map-marker_ can be accessed via `site.data.additional_config.google-map-marker`.
 	* More information is contained here: https://jekyllrb.com/docs/datafiles/
 
@@ -66,24 +69,22 @@ More details can be found on https://help.github.com/articles/configuring-jekyll
 
 8. Open \__data/authors.yml_ and edit author information and set default author in config.yml.
 
-	* Addtion scss files can be made in the \__sass_ folder. You need then need to import the file in assets/css/styles_feeling_response.scss, for it to be included in the future build. For example, if you make a sass file called _tabs.scss_ in the \__sass_ folder then, inside the assets/css/styles_feeling_response.scss file.
-
 ## Adding categories
 The `categories` front matter variable is used to group Records by tabs in the Collections page.
 
 
 # Structure of the project
-This section will explain the structure of the project and decribe the top-level folders for the project
+This section will explain the structure of the project and decribe the top-level folders for the project:
 
-_assets_ folder contain the CSS, Javascript used in the project and also images that is used for the site such as the logo and default images for Records.
-_\_data_ contains the configuration YAML files for the project.
-_images_ folder contains the images used in the site.
-_\_import_ contains scripts to auto generate Record Pages from a CSV.
-_\_includes_ contains content that can included into files.
-_pages_ contains pages of the website
-_\_posts_ contains the YML files for the Record Pages
-_\_sass_ contains sass partials of our project.
-_\_site_ contains the generated site that Jekyll outputs. This folder is added into `.gitignore`.
+* _assets_ folder contain the CSS, Javascript used in the project and also images that is used for the site such as the logo and default images for Records.
+* \__data_ contains the configuration YAML files for the project.
+* _images_ folder contains the images used in the site.
+* _\_import_ contains scripts to auto generate Record Pages from a CSV.
+* _\_includes_ contains content that can included into files.
+* _pages_ contains pages of the website
+* _\_posts_ contains the YML files for the Record Pages
+* _\_sass_ contains sass partials of our project.
+* _\_site_ contains the generated site that Jekyll outputs. This folder is added into `.gitignore`.
 
 
 # Preprocessing
@@ -102,11 +103,11 @@ A python script written in python3 have been provided to merge two csv file base
 ## Auto-generate page for each row
 In the _\_import_ folder there is a Python script named _makeSite.py_. The purpose of the script is to generate a seperate yaml file for each row in the csv. Each column correspond to a _key:value_ pair in the yaml file, the key is name of the column with all space characters replaced with the '\_' character and the characters are coverted to all lowercase.
 
-*NOTE*: The unique identifier will be stored into the front matter variable `record_id`. You would need to provide the column name (case-sensitive) so that the script can extract the id for the Record.
+**NOTE**: The unique identifier will be stored into the front matter variable `record_id`. You would need to provide the column name (case-sensitive) so that the script can extract the id for the Record.
 
 For example, in the csv there is 3 columns, '_TRAP ID_', '_Max diameter_', '_Surrounding Land Use_' and the values are, 1000, 34, Annual Agriculture for a row. then in the corresponding Record Page for that row, the Front Matter variable will be in the following format and the `record_id` is '_TRAP ID_'
 
-```
+```yml
 record_id: '1000'
 max_diameter: '34'
 surrounding_land_use: Annual Agriculture
@@ -121,14 +122,14 @@ The map functionality for records is split into several components:
 
 The default setting for the Map functionality is that it uses the _latitude_ and _longitude_ Front matter variable of the Record Page. So if users wish to have a map, the column name in the csv must also correspond to that name.
 
-*NOTE*: It is fine in the CSV to have the column name "Latitude" and "Longitude" because the script that generate a page for each row then converts the column names to lowercase when it passes it into the Front Matter for the Record Page.
+**NOTE**: It is fine in the CSV to have the column name "Latitude" and "Longitude" because the script that generate a page for each row then converts the column names to lowercase when it passes it into the Front Matter for the Record Page.
 The format of the coordinates should also be in _decimal degrees_ which is what Google Map API uses.
 
 ### Markers for Record maps
 The _google-map-marker_ variable is in the _config.yml_ file and is used to determine whether to add a marker that points to the location of the record, if the user do not wish to have a Google Map marker then the user can edit the _google-map-marker_ variable and change the value from _true_ to _false_ and if they wish to have the marker back then they would reverse it, changing the value from _false_ to _true_. The _title_ variable is used as the title of the Google Map marker.
 
 ## Adding additional metadata inside the &lt;head&gt; tag
-In the _\_includes/helper_ directory, there is a HTML file called _head.html_, this contains all the default information about the page inside the <head> tags, another file named _additional\_head.html_ file which is located in the _\_includes/addition\_helper_ directory.
+In the _\_includes/helper_ folder, there is a HTML file called _head.html_, this contains all the default information about the page inside the <head> tags, another file named _additional\_head.html_ file which is located in the _\_includes/addition\_helper_ folder.
 
 If the user want to add additional information that they want enclosed inside the `<head>` tag of the website, it is recommended to add it into the _additional\_head.html_ file so there is no confusion between the default metadata for the template and the new metadata defined by the user, the additional metadata added will be after the default metadata because we are using jekyll `include` tag to include the content from _additional\_head.html_ into the _head.html_ file. The user is also free to modify the _head.html_ file.
 
@@ -144,7 +145,7 @@ If you are using sass, you can create scss files in the _\_sass_ folder and then
 Please refer to https://jekyllrb.com/docs/assets/#sassscss for more information.
 
 ### Adding additional Javascript
-In the _\_includes/helper_ directory, there is a html file called _additional\_footer.html_, users are recommended to put additional javascript in this file. If users wish to add _Javascript_ that uses liquid tags then please add the _Javascript_ inside the file, enclosed within _script_ tags.
+In the _\_includes/helper_ folder, there is a html file called _additional\_footer.html_, users are recommended to put additional javascript in this file. If users wish to add _Javascript_ that uses liquid tags then please add the _Javascript_ inside the file, enclosed within _script_ tags.
 
 For example the Javascript code that uses Google Maps API to generate maps for record for the Burial Mounds website which uses Javascript to get the values of the attributes `record-lat` and `record-lng` for the HTML element `record_map`. The values of these element is the latitude and longitude value for that particular Record.
 
@@ -191,10 +192,18 @@ The `div` have three attributes, namely, `record-title`, `record-lat` and `recor
 ## Search functionality
 The current search function allows the user to search Records by `title` and `record_id` variables. If users wish to customize their search, please read https://learn.cloudcannon.com/jekyll/jekyll-search-using-lunr-js/ which is used as a template for our project.
 
-To explicitly exclude a page from search result. Please add `exclude_from_lunr` variable to the page YAML front matter and set that to `true` with no surrounding quotes, that means, `"true"` or `'true'` is not correct.
-
 * _pages/search.md_ is the file which contains the search data.
 * _assets/js/search.js_ is the file which contains the Javascript logic to perform the search.
+
+## Excluding files from search
+
+To explicitly exclude a page from search result. Please add `exclude_from_lunr` variable to the page YAML front matter and set that to `true` with no surrounding quotes, that means, `"true"` or `'true'` is not correct.
+
+**Example**
+
+```yml
+exclude_from_lunr: true
+```
 
 ## Photo Gallery for records
 The photo gallery is implementing using [slick](http://kenwheeler.github.io/slick/). There is two photo gallery in a Record Page, one is photo gallery used to display photos for that Record and the second photo gallery is used as a navigation. The implmenetation is split into three parts:

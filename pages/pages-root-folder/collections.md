@@ -28,6 +28,7 @@ collection_page: true
 #  style: alert
 permalink: /collection/
 ---
+
 <ul class="tabs" data-tabs id="category-tabs">
  <li class="tabs-title is-active"><a data-tabs-target="#panel1" href="#panel1" aria-selected="true">Map</a></li>
  {%- for category in site.categories -%}
@@ -57,7 +58,7 @@ permalink: /collection/
       <li><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
     </article>
   {%- endfor -%}
-  </ul>    
+  </ul>
 </div>
 {%- endfor -%}
 </div>
