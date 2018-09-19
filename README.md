@@ -7,11 +7,13 @@ The purpose of this project is to generate a data-driven website from a CSV. For
 This section will briefly discuss the important steps required to use this project to create a website.
 
 1. Configuring the project such as the title of the project, the logo, navigation bar that appears at the top of the page. Refer to [configuration](#configuration) section for more information.
-2. Using the *record.html* located inside the *\_layouts* folder as a template, work through the file and change it according to your requirements.
-3. Auto generate record pages using the script provided. Refer to the [auto generate page for each row](#auto-generate-page-for-each-row) section for more information.
+2. Using the *record.html* located inside the *\_layouts* folder as a template, work through the file and change it according to your requirements. Refer to the [record page template](#record-page-template) section for more information.
+3. Auto generate record pages using the script provided. Refer to the [generating record pages](#generating-record-pages) section for more information.
 
-# Prerequisites
-Need to have `Python 3.5.2` installed to run the script and also have `Jekyll` installed to test the website locally. It is also assumed that you are using Ubuntu if you wish to test your website locally before uploading to Github Pages.
+# Software prerequisites
+To run the python scripts provided in the *\_import* folder, the user will need to have `Python 3.5.2` installed.
+
+To test the website locally, the user will need to have `Jekyll` installed. It is also assumed that you are using `Ubuntu` operating system if you wish to test your website locally before uploading to Github Pages.
 
 **NOTE**: If users do not have required Python Modules and attempt to run the Python scripts provided, they will receive errors, please install the required Python modules that are missing. Please refer to the [required Python module](#required-python-modules) section in regards to which modules is needed for the Python scripts provided.
 
@@ -100,7 +102,7 @@ The record pages uses *\_layout/record.html* as the template, to modify the temp
 ## Merging two csv together
 A python script written in Python3 have been provided to merge two csv file based on a key.
 
-## Auto-generate page for each row
+## Generating record pages
 In the *\_import* folder there is a Python script named *makeSite.py*. The purpose of the script is to generate a seperate yaml file for each row in the csv. Each column corresponds to a front matter variable in the yaml file. The variable will be the name of the column with all space characters replaced with the '\_' character and the characters are coverted to all lowercase (**EXCEPT** the unique identifer) .
 
 **NOTE**: The unique identifier will be stored into the front matter variable `record_id`. You would need to provide the column name (case-sensitive) so that the script can extract the id for the record.
@@ -260,9 +262,9 @@ The *\_pages/pages-root-folder/collections.md* is the web page that is used to d
 
 If user wish to change the content of the page, they can edit *\_pages/pages-root-folder/collections.md*.
 
-## Templates of record Pages
+## Record page template
 
-The yaml template for record pages is the *\_import/template.yaml* file. The auto generate script will use that as a template for the record pages.
+The yaml template for record pages is the *\_import/template.yaml* file. The script that will generate record pages will use that as a template for the record pages.
 The layout file that *\_import/template.yaml* uses is the *\_layout/record.html* file.
 
 ### Components of the record page template
