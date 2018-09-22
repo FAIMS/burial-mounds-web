@@ -1,10 +1,11 @@
 # Introduction
 This is a template that uses [*Jekyll*](https://jekyllrb.com/) and based off [feeling-responsive](https://github.com/Phlow/feeling-responsive-v2) theme by Phlow. To get the basic structure, please follow the steps in this README. It is assumed that the user have basic knowledge of *Jekyll* if not, please refer to https://jekyllrb.com/docs/home/ for more information.
 
-The purpose of this project is to generate a data-driven website from a CSV. For the purpose of this project, each row in the CSV will be considered a `record`, and a page for each record will be called a `record page` and that a [*post*](https://jekyllrb.com/docs/posts/) in Jekyll is in our case a `record page`. The columns of the csv will each be refered to as a `attribute`.
+The purpose of this project is to generate a data-driven website from a CSV. For the purpose of this project, each row in the CSV will be considered a `record`, and a page for each record will be called a `record page` and that a [*post*](https://jekyllrb.com/docs/posts/) in Jekyll is in our case a `record page`. The columns in the csv will be referred to as a `attribute`.
 
 # Overview
-This section will briefly discuss the important steps required to use this project to create a website.
+
+This section will give a brief overview of the process required to use this project to create a website.
 
 1. Configuring the project such as the title of the project, the logo, navigation bar that appears at the top of the page. Refer to [configuration](#configuration) section for more information.
 2. Using the *record.html* located inside the *\_layouts* folder as a template, work through the file and change it according to your requirements. Refer to the [record page template](#record-page-template) section for more information.
@@ -30,7 +31,9 @@ If you are using a Windows system, please refer to the page regarding installing
 ### Running Jekyll locally
 Assuming jekyll is installed, to see your website locally, open up the terminal at the root of the folder of the project. Type in the following command then press enter
 
-`bundle exec jekyll serve --config _config.yml,_config_dev.yml`
+```
+bundle exec jekyll serve --config _config.yml,_config_dev.yml
+```
 
 Another option is to run the shell script *local\_jekyll\_build.sh* located at the root path of this project.
 
@@ -102,21 +105,6 @@ The record pages uses *\_layout/record.html* as the template, to modify the temp
 ## Merging two csv together
 A python script written in Python3 have been provided to merge two csv file based on a key.
 
-## Generating record pages
-In the *\_import* folder there is a Python script named *makeSite.py*. The purpose of the script is to generate a seperate yaml file for each row in the csv. Each column corresponds to a front matter variable in the yaml file. The variable will be the name of the column with all space characters replaced with the '\_' character and the characters are coverted to all lowercase (**EXCEPT** the unique identifer) .
-
-**NOTE**: The unique identifier will be stored into the front matter variable `record_id`. You would need to provide the column name (case-sensitive) so that the script can extract the id for the record.
-
-**Example**
-
-In a csv file with 3 columns, '_TRAP ID_', '_Max diameter_', '_Surrounding Land Use_' and the values are, 1000, 34, "Annual Agriculture" for a row. then in the corresponding record page for that row, the front matter variable will be in the following format and we choose '_TRAP ID_' as the `record_id`, then the following code snippet will be the result.
-
-```yml
-record_id: '1000'
-max_diameter: '34'
-surrounding_land_use: Annual Agriculture
-```
-
 ## Map functionality for records
 The map functionality for records is split into several components:
 
@@ -137,7 +125,7 @@ The `google-map-marker` variable is in the *additional\_config.yml* file and is 
 The `title` front matter variable in the record page is used as the title of the Google Map marker.
 
 ## Adding additional metadata inside the &lt;head&gt; tag
-In the *\_includes/helper* folder, there is a HTML file called *head.html*, this contains all the default information about the page inside the <head> tags, another file named *additional\_head.html* file which is located in the *\_includes/addition\_helper* folder.
+In the *\_includes/helper* folder, there is a HTML file called *head.html*, this contains all the default information about the page inside the `<head>` tags, another file named *additional\_head.html* file which is located in the *\_includes/addition\_helper* folder.
 
 If the user want to add additional information that they want enclosed inside the `<head>` tag of the website, it is recommended to add it into the *additional\_head.html* file so that there is no confusion between the default metadata for the template and the new metadata defined by the user, the additional metadata added will be after the default metadata because we are using jekyll `include` tag to include the content from *additional\_head.html* into the *head.html* file. However, the user is free to modify the *head.html* file.
 
@@ -224,13 +212,13 @@ The current search function allows the user to search records by `title` and `re
 
 To explicitly exclude a page from search result. Please add `exclude_from_lunr` variable to the page YAML front matter and set that to `true` with no surrounding quotes, that means, `"true"` or `'true'` is not correct.
 
-**Example: Correct**
+**Example: Correct value**
 
 ```yml
 exclude_from_lunr: true
 ```
 
-**Example: Incorrect**
+**Example: Incorrect values**
 
 ```yml
 exclude_from_lunr: "true"
@@ -254,6 +242,7 @@ Because this is a static website, everytime users wish to make push their change
 2. Recompile the record pages by running the *makeSite.py* Python script and additional scripts if needed
 3. `git add` then `git commit` then `git push` to the remote repo
 
+
 # Important Pages
 
 ## Collections
@@ -270,3 +259,20 @@ The layout file that *\_import/template.yaml* uses is the *\_layout/record.html*
 ### Components of the record page template
 
 ![Overview of record page](README_screenshots/record_page_overview.png)
+
+
+
+# Generating record pages
+In the *\_import* folder there is a Python script named *makeSite.py*. The purpose of the script is to generate a seperate yaml file for each row in the csv. Each column corresponds to a front matter variable in the yaml file. The variable will be the name of the column with all space characters replaced with the '\_' character and the characters are coverted to all lowercase (**EXCEPT** the unique identifer) .
+
+**NOTE**: The unique identifier will be stored into the front matter variable `record_id`. You would need to provide the column name (case-sensitive) so that the script can extract the id for the record.
+
+**Example**
+
+In a csv file with 3 columns, '_TRAP ID_', '_Max diameter_', '_Surrounding Land Use_' and the values are, 1000, 34, "Annual Agriculture" for a row. then in the corresponding record page for that row, the front matter variable will be in the following format and we choose '_TRAP ID_' as the `record_id`, then the following code snippet will be the result.
+
+```yml
+record_id: '1000'
+max_diameter: '34'
+surrounding_land_use: Annual Agriculture
+```
