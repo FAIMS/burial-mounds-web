@@ -1,15 +1,18 @@
 # Introduction
-This is a template that uses [*Jekyll*](https://jekyllrb.com/) and based off [feeling-responsive](https://github.com/Phlow/feeling-responsive-v2) theme by Phlow. To get the basic structure, please follow the steps in this README. It is assumed that the user have basic knowledge of *Jekyll* if not, please refer to https://jekyllrb.com/docs/home/ for more information.
+This is a template that uses [*Jekyll*](https://jekyllrb.com/) and based off [feeling-responsive](https://github.com/Phlow/feeling-responsive-v2) theme by Phlow.
 
 The purpose of this project is to generate a data-driven website from a CSV. For the purpose of this project, each row in the CSV will be considered a `record`, and a page for each record will be called a `record page` and that a [*post*](https://jekyllrb.com/docs/posts/) in Jekyll is in our case a `record page`. The columns in the csv will be referred to as a `attribute`.
 
-# Overview
+To get the basic structure, please follow the steps in this README. It is assumed that the user have basic knowledge of *Jekyll* if not, please refer to https://jekyllrb.com/docs/home/ for more information.
 
-This section will give a brief overview of the process required to use this project to create a website.
+# Getting started
+
+This section will briefly discuss the process required to use this project to create a website.
 
 1. Configuring the project such as the title of the project, the logo, navigation bar that appears at the top of the page. Refer to [configuration](#configuration) section for more information.
 2. Using the *record.html* located inside the *\_layouts* folder as a template, work through the file and change it according to your requirements. Refer to the [record page template](#record-page-template) section for more information.
 3. Auto generate record pages using the script provided. Refer to the [generating record pages](#generating-record-pages) section for more information.
+
 
 # Software prerequisites
 To run the python scripts provided in the *\_import* folder, the user will need to have `Python 3.5.2` installed.
