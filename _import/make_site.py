@@ -7,6 +7,7 @@ import datetime
 from ruamel.yaml import YAML
 
 import util as UTIL
+from category_generation import generate_category
 from consts import ID_FRONT_MATTER_VARIABLE_NAME, IMAGES_FRONT_MATTER_VARIABLE_NAME, \
     RECORD_ID_COLUMN_NAME, CSV_FILE_NAME, TEMPLATE_FILE_NAME, GENERIC_RECORD_PAGE_TITLE
 
@@ -35,7 +36,7 @@ with open(SHEET, newline='') as csv_file:
         OBJECTS.append(row)
 
 # Make the directory where the all the Record Pages will be created in
-os.makedirs('../_posts/', exist_ok=True)
+os.makedirs(DEST, exist_ok=True)
 
 print("Generating Record Pages")
 
@@ -66,7 +67,7 @@ for obj in OBJECTS:
             # objyaml['subheadline'] = "Collection: Another type of collection"
             # will change the subheadline front matter variables of a Record to
             # Collection: Another type of collection
-            objyaml['subheadline'] = "Collection: TRAP Mounds"
+            objyaml['subheadline'] = 'Collection: TRAP Mounds'
 
         # Assign the id of the record into the id front matter variable
         objyaml[ID_FRONT_MATTER_VARIABLE_NAME] = record_id
@@ -77,18 +78,8 @@ for obj in OBJECTS:
         # START PROCESS OF ADDING CATEGORIES FOR A RECORD
         # Creates a list to hold the categories for a record
         categories = []
-        # Change the following if and else if statements according to your
-        # needs
-        if int(record_id) in range(1000, 2000):
-            categories.append("1000-1999")
-        elif int(record_id) in range(2000, 3000):
-            categories.append("2000-2999")
-        elif int(record_id) in range(3000, 4000):
-            categories.append("3000-3999")
-        elif int(record_id) in range(4000, 5000):
-            categories.append("4000-4999")
-        elif int(record_id) in range(5000, 6000):
-            categories.append("5000-5999")
+
+        generate_category(record_id, categories)
 
         objyaml['categories'] = categories
         # END PROCESS OF ADDING CATEGORIES FOR A RECORD
