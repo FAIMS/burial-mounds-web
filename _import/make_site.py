@@ -7,14 +7,13 @@ import datetime
 from ruamel.yaml import YAML
 
 import util as UTIL
-from consts import ID_FRONT_MATTER_VARIABLE_NAME, IMAGES_FRONT_MATTER_VARIABLE_NAME
+from consts import ID_FRONT_MATTER_VARIABLE_NAME, IMAGES_FRONT_MATTER_VARIABLE_NAME, \
+    RECORD_ID_COLUMN_NAME, CSV_FILE_NAME, TEMPLATE_FILE_NAME, GENERIC_RECORD_PAGE_TITLE
 
-SHEET = "MergeCSV.csv"
-TEMPLATE = "template.yaml"
-DEST = "../_posts"
 
-# Name of the collection of the Records Pages
-COLLECTION_NAME = "TRAP Mounds"
+SHEET = CSV_FILE_NAME
+TEMPLATE = TEMPLATE_FILE_NAME
+DEST = '../_posts'
 
 # The list that will be used to hold dictonaries where each dictionary
 # correspond to a row in the csv
@@ -22,19 +21,15 @@ OBJECTS = []  # PLEASE DO NOT MODIFY
 # The list that will be used to hold the column names of the csv
 CSV_HEADINGS = []  # PLEASE DO NOT MODIFY
 
-# Name of the column for the record id
-RECORD_ID_COLUMN_NAME = 'TRAP ID'
-
-
 # A generic title for each Record Page which will be concatenated with the
 # id of each Record
-TITLE = "TRAP Mound - "
+TITLE = GENERIC_RECORD_PAGE_TITLE
 
 # Creates a list of dictionary where each dict correspond to a row in the csv,
 # each key correspond to the column names and store that into the list objects
 # PLEASE DO NOT MODIFY THE NEXT 5 LINES OF CODE
-with open(SHEET, newline='') as csvfile:
-    SHEET_READER = csv.DictReader(csvfile)
+with open(SHEET, newline='') as csv_file:
+    SHEET_READER = csv.DictReader(csv_file)
     CSV_HEADINGS = SHEET_READER.fieldnames
     for row in SHEET_READER:
         OBJECTS.append(row)
@@ -62,8 +57,8 @@ for obj in OBJECTS:
     target = os.path.join(DEST,
                           record_page_file_name)  # PLEASE DO NOT MODIFY
     yaml = YAML()  # PLEASE DO NOT MODIFY
-    with open(TEMPLATE) as templatefile:  # PLEASE DO NOT
-        objyaml = yaml.load(templatefile.read())
+    with open(TEMPLATE) as template_file:  # PLEASE DO NOT MODIFY
+        objyaml = yaml.load(template_file.read())
         if 'subheadline' in objyaml:
             # Change the assigned value of objyaml['subheadline']
             # to your needs,for example, changing
