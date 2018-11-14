@@ -1,0 +1,20 @@
+# This file contain the variables that will be need to be defined for the
+# customisation of their website. The variables in this file will be used
+# by the Pytohn scripts.
+
+# Name of the CSV file that contains the data, please include the .csv extension.
+csv_file_name: "MergeCSV.csv"
+# File name of the yaml template used to generate the record page.
+template_file_name: "template.yaml"
+# Column name in the CSV that contains the unique identifier
+record_id_column_name: "TRAP ID"
+# Length of the unique identifier. For example, if the unique identifers are length
+# 3 such as 001 or 412 then you would assign the value 3.
+key_len: 4
+# Name of the collection.
+collection_name: "TRAP Mounds"
+# Keyword that identify the first image for a record
+key_for_first_img: "Overview"
+# A generic title for each Record Page which will be concatenated with the
+# id of each Record
+generic_record_page_title: "TRAP Mound - "

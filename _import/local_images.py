@@ -5,7 +5,8 @@ import os
 from ruamel.yaml import YAML
 
 import util as UTIL
-from consts import FOLDER, ID_FRONT_MATTER_VARIABLE_NAME, KEY_FOR_FIRST_IMG
+from consts import FOLDER, ID_FRONT_MATTER_VARIABLE_NAME, \
+    KEY_FOR_FIRST_IMG, IMAGES_FRONT_MATTER_VARIABLE_NAME
 
 if os.path.exists(FOLDER):
     # For each Record Page in folder

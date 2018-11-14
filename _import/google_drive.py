@@ -9,7 +9,7 @@ from ruamel.yaml import YAML
 
 import util as UTIL
 from consts import FOLDER, ID_FRONT_MATTER_VARIABLE_NAME, KEY_FOR_FIRST_IMG, \
-    IMAGES_FRONT_MATTER_VARIABLE_NAME
+    IMAGES_FRONT_MATTER_VARIABLE_NAME, KEY_LEN
 
 SHEET = "BM-Pic.csv"
 DEST = "../_posts"
@@ -20,20 +20,24 @@ COLLECTION_NAME = "TRAP Mounds"
 # Objects is the list of rows from the csv that contains the url of the images
 OBJECTS = []
 CSV_HEADINGS = []
+# Dictionary that maps a record id to a list of dict, where each dict contains
+# the name of the image and the Google Drive link.
 RECORD_DICT = {}
+# Read the CSV file that contains the links and store that into OBJECTS
 with open(SHEET, newline='') as csvfile:
     SHEETREADER = csv.DictReader(csvfile)
     CSV_HEADINGS = SHEETREADER.fieldnames
     for row in SHEETREADER:
         OBJECTS.append(row)
 
-# Length of the uuid
-KEY_LEN = 4
-
+# Strings to be removed, and replaced with the url so that it can be
+# linked via a website.
 GOOGLE_DRIVE_VIEW_FILE_STR = "https://drive.google.com/file/d/"
 GOOGLE_DRIVE_VIEW_SDK_STR = "/view?usp=drivesdk"
 
 print("APPENDING")
+
+# Iterate through OBJECTS and populate RECORD_DICT.
 for row in OBJECTS:
     view_link = "https://drive.google.com/uc?id={file_id}"
     image_name = row['Name']
@@ -61,7 +65,8 @@ for row in OBJECTS:
         KEY_FOR_FIRST_IMG)
 
 if os.path.exists(FOLDER):
-    # For each Record Page in folder
+    # For each Record Page in folder, populate the front matter variable
+    # IMAGES_FRONT_MATTER_VARIABLE_NAME with the url of the Googe Drive images.
     for file in os.listdir(FOLDER):
         yaml = YAML()
         file_name = os.fsdecode(file)
