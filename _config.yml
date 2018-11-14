@@ -72,6 +72,7 @@ exclude:
     - LICENSE
     - README.md
     - INSTALL.md
+    - _import/
 
 
 
@@ -299,6 +300,3 @@ asciidoctor:
     source-highlighter: coderay
     coderay-css: style
     icons: font
-
-
-
