@@ -235,7 +235,7 @@ exclude_from_lunr: 'true'
 ```
 
 ## Adding Images for a Record Page
-It is possible to link images to a associated Record Page. 
+It is possible to link images to a associated Record Page.
 
 
 ## Photo Gallery for Records

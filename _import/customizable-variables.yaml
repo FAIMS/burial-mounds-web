@@ -10,6 +10,7 @@ template_file_name: "template.yaml"
 record_id_column_name: "TRAP ID"
 # Length of the unique identifier. For example, if the unique identifers are length
 # 3 such as 001 or 412 then you would assign the value 3.
+# Only needed if you are going to use google_drive.py
 key_len: 4
 # Name of the collection.
 collection_name: "TRAP Mounds"
