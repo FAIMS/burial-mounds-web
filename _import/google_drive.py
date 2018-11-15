@@ -14,10 +14,10 @@ from consts import FOLDER, ID_FRONT_MATTER_VARIABLE_NAME, KEY_FOR_FIRST_IMG, \
 SHEET = "BM-Pic.csv"
 DEST = "../_posts"
 
-# Name of the collection of the Records Pages
+# Name of the collection of the Records Pages.
 COLLECTION_NAME = "TRAP Mounds"
 
-# Objects is the list of rows from the csv that contains the url of the images
+# Objects is the list of rows from the csv that contains the url of the images.
 OBJECTS = []
 CSV_HEADINGS = []
 # Dictionary that maps a record id to a list of dict, where each dict contains
@@ -80,15 +80,11 @@ if os.path.exists(FOLDER):
         with open(record_page_path) as record_page:
             objyaml = yaml.load(record_page.read())
             record_id = objyaml[ID_FRONT_MATTER_VARIABLE_NAME]
-            if 'images' not in objyaml:
-                objyaml['images'] = []
+            UTIL.create_empty_list_if_no_images_key(objyaml)
             if record_id in RECORD_DICT:
                 for row in RECORD_DICT[record_id]:
-                    objyaml['images'].append(
-                        {'image_path': row['URL'], 'title': row['Name']})
-            # If 'images' list is empty then remove it from objyaml
-            UTIL.delete_key_from_dict_if_value_falsy(
-                objyaml, IMAGES_FRONT_MATTER_VARIABLE_NAME)
-            # Write to the values of objyaml to file
-            UTIL.dump(record_page_path, yaml, objyaml)
+                    item = {'image_path': row['URL'], 'title': row['Name']}
+                    UTIL.insert_image_link_into_list(
+                        objyaml['images'], item, item['title'], KEY_FOR_FIRST_IMG)
+            UTIL.write_image_front_matter(objyaml, record_page_path, yaml)
 print("FINISH")

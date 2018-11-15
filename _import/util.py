@@ -1,5 +1,6 @@
 """Module that contains helper functions used by other modules in this project."""
 
+from consts import IMAGES_FRONT_MATTER_VARIABLE_NAME
 
 def dump(file_path, yaml, objyaml):
     """Write the value of objyaml into file path."""
@@ -28,3 +29,26 @@ def delete_key_from_dict_if_value_falsy(dictionary, key):
     """Remove key from dictionary if the value is falsy."""
     if not dictionary[key]:
         dictionary.pop(key, None)
+
+def delete_images_key_from_yaml_dict_value_false(yaml_list):
+    delete_key_from_dict_if_value_falsy(yaml_list,
+        IMAGES_FRONT_MATTER_VARIABLE_NAME)
+
+def write_image_front_matter(yaml_list, page_path,
+                                yaml, remove_if_empty=True):
+    """Write the yaml_list into Record Page, remove the
+image_front_matter key if value for that key is falsy"""
+    if remove_if_empty:
+        # If 'images' list is empty then remove it from objyaml.
+        delete_images_key_from_yaml_dict_value_false(yaml_list)
+    # Write to record page.
+    dump(page_path, yaml, yaml_list)
+
+def create_empty_list_if_no_key(d, key):
+        if key not in d:
+            d[key] = []
+
+def create_empty_list_if_no_images_key(d):
+    """If there is no front matter variable called 'images'
+then create it and make it a empty list."""
+    create_empty_list_if_no_key(d, IMAGES_FRONT_MATTER_VARIABLE_NAME)
