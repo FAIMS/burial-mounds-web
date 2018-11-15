@@ -87,7 +87,7 @@ This section will explain the structure of the project and decribe the top-level
 * _assets_ folder contain the CSS, Javascript used in the project and also images that is used for the site such as the logo and default images for records.
 * *\_data* contains the configuration YAML files for the project.
 * *\_images* folder contains the images used in the site.
-* *\_import* contains scripts to auto generate record pages from a CSV.
+* *\_import* contains scripts to auto generate record pages from a CSV, link images to associated Record Page. CSV needed to use those scripts.
 * *\_includes* contains content that can included into files.
 * *\_pages* contains pages of the website
 * *\_posts* contains the YML files for the record pages
@@ -112,7 +112,9 @@ Please ensure your images are one of the following types so that the script is a
   3. `.jpeg`
 
 ### Preprocessing Required for Linking Local Images
-First, please ensure your files are of the types discussed in the [file type section](#file-type-for-images). On the root folder of the project, create a folder called `images` if it doesn't exist yet. Inside the `images` folder, group the images by the unique identifer of the record. For each folder, create a new folder inside the `images` folder with the name matching the unique identifer for that record.
+First, please ensure your files are of the types discussed in the [file type section](#file-type-for-images), otherwise, please convert your image to one of the file type discussed in that discussion.
+
+On the root folder of the project, create a folder called `images` if it doesn't exist yet. Inside the `images` folder, group the images by the unique identifer of the record. For each folder, create a new folder inside the `images` folder with the name matching the unique identifer for that record.
 
 **Example**:
 
@@ -141,8 +143,26 @@ images/
 ```
 
 
-### Images on google drive
-There are requirements to use the provided `google_drive.py` Python script to link the image to its record. Please ensure that the id of the record is appended in the name of the image. To use the `google_drive.py`, the unique identifier should be uniform in length.
+### Preprocessing Required for Images on Google Drive
+
+First, please ensure your files are of the types discussed in the [file type section](#file-type-for-images), otherwise, please convert your image to one of the file type discussed in that discussion.
+
+To use the provided `google_drive.py` Python script. The url of the Google Drive images will need to be extracted into a CSV. The script assumes that the length of the unique identifier is uniform, and that the unique identifier of appended in the name of the file.
+
+**Example**
+
+Assume a record with the unique identifer of `1000` and it have 3 images associated with it:
+
+  * `image-one.jpg`
+  * `image-two.jpg`
+  * `image-three.jpg`
+
+User will then append `1000` to the filename of those images:
+
+* `1000_image-one.jpg`
+* `1000_image-two.jpg`
+* `1000_image-three.jpg`
+
 
 # Customization
 Before auto generating record pages, the user can customize the site. This section will discuss some customisations available to the user
