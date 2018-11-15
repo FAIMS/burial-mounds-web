@@ -98,7 +98,50 @@ This section will explain the structure of the project and decribe the top-level
 # Preprocessing
 Before auto generating record pages, ensure your data is well-formed for minimal hassle. A record should have a column that contains the unique identifer for that record.
 
-## Images on google drive
+## Preprocessing for Adding Images
+While it is possible to manually link the images to a Record Page, there are two other ways to link images to a Record Page.
+
+  1. Link local images to Record Pages using the Python script *local_images.py* in the *\_import* folder. Please see the [preprocessing required for linking local images section](#preprocessing-required-for-linking-local-images) for more information.
+  2. Read a CSV that contains Google Drive links to images for Records and write it to the associated Record Page using the *google_drive.py* Python script in the *\_import* folder.
+
+### File type for images
+Please ensure your images are one of the following types so that the script is able to recognise the file as images:
+
+  1. `.png`
+  2. `.jpg`
+  3. `.jpeg`
+
+### Preprocessing Required for Linking Local Images
+First, please ensure your files are of the types discussed in the [file type section](#file-type-for-images). On the root folder of the project, create a folder called `images` if it doesn't exist yet. Inside the `images` folder, group the images by the unique identifer of the record. For each folder, create a new folder inside the `images` folder with the name matching the unique identifer for that record.
+
+**Example**:
+
+For example, given a record with the unique id `1000` and the user wants to have the following images associated with that record:
+
+  * `1000_Detail_Profile_of_RT.JPG`
+  * `1000_Detail_RT2.JPG`
+  * `1000_Large_RT.JPG`
+  * `1000_Large_RT_Scale.JPG`
+  * `1000_Overview_S.JPG`
+  * `1000_Overview_year2009.JPG`
+  * `1000_RT.JPG`
+
+Then the user will need to create a new folder with the name `1000` and put all those images inside that folder. The below structure is the result.
+
+```
+images/
+├── 1000
+│   ├── 1000_Detail_Profile_of_RT.JPG
+│   ├── 1000_Detail_RT2.JPG
+│   ├── 1000_Large_RT.JPG
+│   ├── 1000_Large_RT_Scale.JPG
+│   ├── 1000_Overview_S.JPG
+│   ├── 1000_Overview_year2009.JPG
+│   ├── 1000_RT.JPG
+```
+
+
+### Images on google drive
 There are requirements to use the provided `google_drive.py` Python script to link the image to its record. Please ensure that the id of the record is appended in the name of the image. To use the `google_drive.py`, the unique identifier should be uniform in length.
 
 # Customization
