@@ -98,8 +98,8 @@ This section will explain the structure of the project and decribe the top-level
 # Preprocessing
 Before auto generating record pages, ensure your data is well-formed for minimal hassle. A record should have a column that contains the unique identifer for that record.
 
-## Unique Identifers
-To use the `google_drive.py`, the unique identifier should be uniform in length.
+## Images on google drive
+There are requirements to use the provided `google_drive.py` Python script to link the image to its record. Please ensure that the id of the record is appended in the name of the image. To use the `google_drive.py`, the unique identifier should be uniform in length.
 
 # Customization
 Before auto generating record pages, the user can customize the site. This section will discuss some customisations available to the user
@@ -233,6 +233,10 @@ exclude_from_lunr: "true"
 ```yml
 exclude_from_lunr: 'true'
 ```
+
+## Adding Images for a Record Page
+It is possible to link images to a associated Record Page. 
+
 
 ## Photo Gallery for Records
 The photo gallery is implementing using [slick](http://kenwheeler.github.io/slick/). There is two photo gallery in a record page, one is photo gallery used to display photos for that record and the second photo gallery is used as a navigation. The implmenetation is split into three parts:
