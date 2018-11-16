@@ -199,7 +199,7 @@ In the *\_includes/helper* folder, there is a HTML file called *head.html*, this
 If the user want to add additional information that they want enclosed inside the `<head>` tag of the website, it is recommended to add it into the *additional\_head.html* file so that there is no confusion between the default metadata for the template and the new metadata defined by the user, the additional metadata added will be after the default metadata because we are using jekyll `include` tag to include the content from *additional\_head.html* into the *head.html* file. However, the user is free to modify the *head.html* file.
 
 ## Adding Additional Stylesheet or Javascript
-For users that wish to customise the styling and behaviour of their website by adding additional stylesheet or Javscript, please refer to the [additional additional javascript or stylesheet document](#adding-additional-javascript-or-stylesheet.md) for more information.
+For users that wish to customise the styling and behaviour of their website by adding additional stylesheet or Javscript, please refer to the [additional additional javascript or stylesheet document](adding-additional-javascript-or-stylesheet.md) for more information.
 
 
 ## Search Functionality
