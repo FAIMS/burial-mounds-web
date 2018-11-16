@@ -297,9 +297,22 @@ exclude_from_lunr: "true"
 exclude_from_lunr: 'true'
 ```
 
-## Adding Images for a Record Page
-It is possible to link images to a associated Record Page.
+## Adding Images for a Record Page from Local Source
+Please ensure to read and follow the instructions provided in the [preprocessing required for linking local images section](#preprocessing-required-for-linking-local-images) before proceeding with this section.
 
+
+## Adding Images for a Record Page from Google Drive
+
+Please ensure to read the [generating google drive link to csv page](_import/generating-google-drive-link-csv.md) to generate the CSV that contains the Google Drive CSV.
+
+Once you have the generated CSV, please follow the following steps:
+
+  1. Ensure that the CSV file is in the **\_import** folder.
+  2. Ensure the value for the key `csv_file_name` in [customizable-variables.yaml](_import/customizable-variables.yaml) is the same as the file name of the CSV.
+  3. If you have run the `make_site.py` Python script to generate the Record Pages, then you can skip this step and move onto step 4, otherwise, please run that script.
+  4. Run the `google_drive.py` Python script. Once that is done, you have finish adding images from Google Drive.
+
+Once you have finish all the steps, run the website to test if the images were successfully associated with the Record Page.
 
 ## Photo Gallery for Records
 The photo gallery is implementing using [slick](http://kenwheeler.github.io/slick/). There is two photo gallery in a record page, one is photo gallery used to display photos for that record and the second photo gallery is used as a navigation. The implmenetation is split into three parts:
