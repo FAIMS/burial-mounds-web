@@ -231,6 +231,12 @@ exclude_from_lunr: 'true'
 ## Adding Images for a Record Page from Local Source
 Please ensure to read and follow the instructions provided in the [preprocessing required for linking local images section](#preprocessing-required-for-linking-local-images) before proceeding with this section.
 
+Once you done with that, please follow the following steps:
+
+  1. If you have run the `make_site.py` Python script to generate the Record Pages, then you can skip this step and move onto step 4, otherwise, please read the [generating record pages section](#generating-record-pages) and follow the instructions in that section.
+  2. Run the `local_images.py` Python script. Once that is done, you have finish linking images from the `images/` folder to its associated Record Page.
+
+Once you have finish all the steps, run the website to test if the images were successfully associated with the Record Page.  
 
 ## Adding Images for a Record Page from Google Drive
 
@@ -240,7 +246,7 @@ Once you have the generated CSV, please follow the following steps:
 
   1. Ensure that the CSV file is in the **\_import** folder.
   2. Ensure the value for the key `csv_file_name` in [customizable-variables.yaml](_import/customizable-variables.yaml) is the same as the file name of the CSV.
-  3. If you have run the `make_site.py` Python script to generate the Record Pages, then you can skip this step and move onto step 4, otherwise, please run that script.
+  3. If you have run the `make_site.py` Python script to generate the Record Pages, then you can skip this step and move onto step 4, otherwise, please read the [generating record pages section](#generating-record-pages) and follow the instructions in that section.
   4. Run the `google_drive.py` Python script. Once that is done, you have finish adding images from Google Drive.
 
 Once you have finish all the steps, run the website to test if the images were successfully associated with the Record Page.
