@@ -87,7 +87,7 @@ This section will explain the structure of the project and decribe the top-level
 * _assets_ folder contain the CSS, Javascript used in the project and also images that is used for the site such as the logo and default images for records.
 * *\_data* contains the configuration YAML files for the project.
 * *\_images* folder contains the images used in the site.
-* *\_import* contains scripts to auto generate record pages from a CSV.
+* *\_import* contains scripts to auto generate record pages from a CSV, link images to associated Record Page. CSV needed to use those scripts.
 * *\_includes* contains content that can included into files.
 * *\_pages* contains pages of the website
 * *\_posts* contains the YML files for the record pages
@@ -98,8 +98,71 @@ This section will explain the structure of the project and decribe the top-level
 # Preprocessing
 Before auto generating record pages, ensure your data is well-formed for minimal hassle. A record should have a column that contains the unique identifer for that record.
 
-## Images on google drive
-There are requirements to use the provided `google_drive.py` Python script to link the image to its record. Please ensure that the id of the record is appended in the name of the image. To use the `google_drive.py`, the unique identifier should be uniform in length.
+## Preprocessing for Adding Images
+While it is possible to manually link the images to a Record Page, there are two other ways to link images to a Record Page.
+
+  1. Link local images to Record Pages using the Python script *local_images.py* in the *\_import* folder. Please see the [preprocessing required for linking local images section](#preprocessing-required-for-linking-local-images) for more information.
+  2. Read a CSV that contains Google Drive links to images for Records and write it to the associated Record Page using the *google_drive.py* Python script in the *\_import* folder.
+
+### File type for images
+Please ensure your images are one of the following types so that the script is able to recognise the file as images:
+
+  1. `.png`
+  2. `.jpg`
+  3. `.jpeg`
+
+### Preprocessing Required for Linking Local Images
+First, please ensure your files are of the types discussed in the [file type section](#file-type-for-images), otherwise, please convert your image to one of the file type discussed in that discussion.
+
+On the root folder of the project, create a folder called `images` if it doesn't exist yet. Inside the `images` folder, group the images by the unique identifer of the record. For each folder, create a new folder inside the `images` folder with the name matching the unique identifer for that record.
+
+**Example**:
+
+For example, given a record with the unique id `1000` and the user wants to have the following images associated with that record:
+
+  * `1000_Detail_Profile_of_RT.JPG`
+  * `1000_Detail_RT2.JPG`
+  * `1000_Large_RT.JPG`
+  * `1000_Large_RT_Scale.JPG`
+  * `1000_Overview_S.JPG`
+  * `1000_Overview_year2009.JPG`
+  * `1000_RT.JPG`
+
+Then the user will need to create a new folder with the name `1000` and put all those images inside that folder. The below structure is the result.
+
+```
+images/
+├── 1000
+│   ├── 1000_Detail_Profile_of_RT.JPG
+│   ├── 1000_Detail_RT2.JPG
+│   ├── 1000_Large_RT.JPG
+│   ├── 1000_Large_RT_Scale.JPG
+│   ├── 1000_Overview_S.JPG
+│   ├── 1000_Overview_year2009.JPG
+│   ├── 1000_RT.JPG
+```
+
+
+### Preprocessing Required for Images on Google Drive
+
+First, please ensure your files are of the types discussed in the [file type section](#file-type-for-images), otherwise, please convert your image to one of the file type discussed in that discussion.
+
+To use the provided `google_drive.py` Python script. The url of the Google Drive images will need to be extracted into a CSV. The script assumes that the length of the unique identifier is uniform, and that the unique identifier of appended in the name of the file.
+
+**Example**
+
+Assume a record with the unique identifer of `1000` and it have 3 images associated with it:
+
+  * `image-one.jpg`
+  * `image-two.jpg`
+  * `image-three.jpg`
+
+User will then append `1000` to the filename of those images:
+
+* `1000_image-one.jpg`
+* `1000_image-two.jpg`
+* `1000_image-three.jpg`
+
 
 # Customization
 Before auto generating record pages, the user can customize the site. This section will discuss some customisations available to the user
@@ -136,77 +199,8 @@ In the *\_includes/helper* folder, there is a HTML file called *head.html*, this
 If the user want to add additional information that they want enclosed inside the `<head>` tag of the website, it is recommended to add it into the *additional\_head.html* file so that there is no confusion between the default metadata for the template and the new metadata defined by the user, the additional metadata added will be after the default metadata because we are using jekyll `include` tag to include the content from *additional\_head.html* into the *head.html* file. However, the user is free to modify the *head.html* file.
 
 ## Adding Additional Stylesheet or Javascript
-Users wishing to add more additional styling to their website, please refer to the [adding additional stylesheet](#adding-additional-stylesheet) section. Users that wish to add more *Javascript* should refer to the [adding additional Javascript](#adding-additional-javascript) section in this README.
+For users that wish to customise the styling and behaviour of their website by adding additional stylesheet or Javscript, please refer to the [additional additional javascript or stylesheet document](adding-additional-javascript-or-stylesheet.md) for more information.
 
-### Adding Additional Stylesheet
-If users wish to add additional stylesheets, it is recommended that they create the css file in the *\_assets/custom_css* folder and link the stylesheet in the *additional\_head.html* file.
-
-#### Adding Additional Sass
-If you are using sass, you can create scss files in the *\_sass* folder and then import the file in *assets/custom_css/custom_css.scss*. No additional linking other than importing it in is needed because the css generated from the sass file is already linked.
-
-Please refer to https://jekyllrb.com/docs/assets/#sassscss for more information.
-
-### Adding Additional Javascript
-In the *\_includes/helper* folder, there is a html file called *additional\_footer.html*, users are recommended to put additional javascript in this file. If users wish to add *Javascript* that uses liquid tags and variables then please add the *Javascript* code inside the file, enclosed within `<script>` tags. Alternatively, users can add the set of triple dashes at the top of their file, which will get Jekyll to process the file.
-
-Below is the Javascript code that uses Google Maps API to generate maps for record for the Burial Mounds website which uses Javascript to get the values of the attributes `record-lat` and `record-lng` for the HTML element `record_map`. The values of these element is the latitude and longitude value of that particular record.
-
-```javascript
----
-exclude_from_lunr: true
----
-// Create a map for the record and generate a marker if the google-map-marker
-// front matter variable is set to true.
-function initRecordMap() {
-	// HTML element for which the map will be generated under.
-	var recordMapHTMLElement = document.getElementById('record_map');
-	// Latitude value of the record.
-	var recordLat = parseFloat(recordMapHTMLElement.getAttribute("record-lat"));
-	// Longitude value of the record.
-	var recordLng = parseFloat(recordMapHTMLElement.getAttribute("record-lng"));
-	// Object that contains the latitude and longitude of the record.
-	var latLng = {lat: recordLat, lng: recordLng};
-	// Create a new map inside the recordMapHTMLElement.
-	var map = new google.maps.Map(recordMapHTMLElement, {
-		center: latLng,
-		zoom: 8
-	});
-	// Create a marker that marks the location of the record if the google-map-marker
-	// variable in the _config.yml file is set to true.
-	if('{{ site.data.additional_config.google-map-marker }}' == 'true'){
-		// Title of the record
-		var recordTitle = recordMapHTMLElement.getAttribute("record-title");
-		// Create a marker with the marker position specific to the record. The map
-		// which is used to display the marker, and the title of the marker.
-		var marker = new google.maps.Marker({
-		  position: latLng,
-		  map: map,
-		  title: recordTitle});
-	}
-}
-```
-
-The HTML code before is the `div` element for the map and is located in *\_layouts/records.html* file.
-
-```html
-<div id="record_map" record-title='{{ page.title }}' record-lat='{{ page.latitude }}' record-lng='{{ page.longitude }}'></div>
-```
-
-The `div` have three attributes, namely, `record-title`, `record-lat` and `record-lng`, these store the front matter variables `title`, `latitude`, and `longitude` for that page.
-
-Each page front matter will have variables with that name but possibly different value. For example, the Mound with TRAP ID 1001 have a latitude of 42.627103 and 25.246605 while the Mound with id 1002 have latitude 42.626585 and longitude 25.250297. So the _latitude_ value will be 42.627103 on the page for Mound with id 1001 and the _latitude_ value will be 42.626585 for the Mound with id 1002.
-
-The triple dashes denotes the front matter, the values inside are the front matter variables and its values. In the code snippet above, there is one front matter variable called `exclude_from_lunr` which has the value *true*. One thing to note is that it is possible to have front matter but no values. This is done by triple dashes with the next line with only triple dashes.
-
-```Javascript
----
----
-// Create a map for the record and generate a marker if the google-map-marker
-// front matter variable is set to true.
-function initRecordMap() {
-  // Code that create the map.
-}
-```
 
 ## Search Functionality
 The current search function allows the user to search records by `title` and `record_id` variables. If users wish to customize their search, please read https://learn.cloudcannon.com/jekyll/jekyll-search-using-lunr-js/ which is used as a template for our project.
@@ -234,9 +228,28 @@ exclude_from_lunr: "true"
 exclude_from_lunr: 'true'
 ```
 
-## Adding Images for a Record Page
-It is possible to link images to a associated Record Page.
+## Adding Images for a Record Page from Local Source
+Please ensure to read and follow the instructions provided in the [preprocessing required for linking local images section](#preprocessing-required-for-linking-local-images) before proceeding with this section.
 
+Once you done with that, please follow the following steps:
+
+  1. If you have run the `make_site.py` Python script to generate the Record Pages, then you can skip this step and move onto step 4, otherwise, please read the [generating record pages section](#generating-record-pages) and follow the instructions in that section.
+  2. Run the `local_images.py` Python script. Once that is done, you have finish linking images from the `images/` folder to its associated Record Page.
+
+Once you have finish all the steps, run the website to test if the images were successfully associated with the Record Page.  
+
+## Adding Images for a Record Page from Google Drive
+
+Please ensure to read the [generating google drive link to csv page](_import/generating-google-drive-link-csv.md) to generate the CSV that contains the Google Drive CSV.
+
+Once you have the generated CSV, please follow the following steps:
+
+  1. Ensure that the CSV file is in the **\_import** folder.
+  2. Ensure the value for the key `csv_file_name` in [customizable-variables.yaml](_import/customizable-variables.yaml) is the same as the file name of the CSV.
+  3. If you have run the `make_site.py` Python script to generate the Record Pages, then you can skip this step and move onto step 4, otherwise, please read the [generating record pages section](#generating-record-pages) and follow the instructions in that section.
+  4. Run the `google_drive.py` Python script. Once that is done, you have finish adding images from Google Drive.
+
+Once you have finish all the steps, run the website to test if the images were successfully associated with the Record Page.
 
 ## Photo Gallery for Records
 The photo gallery is implementing using [slick](http://kenwheeler.github.io/slick/). There is two photo gallery in a record page, one is photo gallery used to display photos for that record and the second photo gallery is used as a navigation. The implmenetation is split into three parts:
