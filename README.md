@@ -137,7 +137,7 @@ This section will explain the structure of the project and decribe the top-level
 * _assets_ folder contain the CSS, Javascript used in the project and also images that is used for the site such as the logo and default images for records.
 * *\_data* contains the configuration YAML files for the project.
 * *\_images* folder contains the images used in the site.
-* *\_import* contains scripts to auto generate record pages from a CSV, link images to associated Record Page. CSV needed to use those scripts.
+* *\_import* contains scripts to generate record pages from a CSV, link images to associated Record Page. CSV needed to use those scripts.
 * *\_includes* contains content that can included into files.
 * *\_pages* contains pages of the website
 * *\_posts* contains the YML files for the record pages
@@ -389,4 +389,23 @@ max_diameter: '34'
 surrounding_land_use: Annual Agriculture
 ```
 
+[Back to TOC](#table-of-contents)
+
+# Record Page
+A record page is a page in the *\_post* folder. It contains front matter variables which stores the attributes of that record. The front matter variables are enclosed between triple dashes lines.
+
+Here is a simple example:
+
+```YML
+---
+layout: record
+title: TRAP Mound - 1000
+
+record_id: '1000'
+---
+```
+
+In the example above, there are three front matter variable, namely, `layout`, `title`, and `record_id`. The front matter variables are used by the template to display data specific to that Record.
+
+**NOTE**: The front matter variables must be the first thing in the file.
 [Back to TOC](#table-of-contents)
