@@ -1,7 +1,8 @@
 # README <!-- omit in toc -->
 
-## Table of Contents <!-- omit in toc -->
+## Table of Contents
 
+- [Table of Contents](#table-of-contents)
 - [Introduction](#introduction)
 - [Getting Started](#getting-started)
 - [Software Prerequisites](#software-prerequisites)
@@ -9,16 +10,15 @@
   - [Installing Jekyll](#installing-jekyll)
     - [Running Jekyll Locally](#running-jekyll-locally)
 - [Configuration](#configuration)
-  - [Adding Categories](#adding-categories)
 - [Structure of the Project](#structure-of-the-project)
 - [Preprocessing](#preprocessing)
   - [Preprocessing for Adding Images](#preprocessing-for-adding-images)
     - [File type for images](#file-type-for-images)
   - [Preprocessing Required for Linking Local Images](#preprocessing-required-for-linking-local-images)
   - [Preprocessing Required for Images on Google Drive](#preprocessing-required-for-images-on-google-drive)
+  - [Adding categories](#adding-categories)
 - [Customization](#customization)
   - [Editing Record Pages Template](#editing-record-pages-template)
-  - [Merging Two CSV Together](#merging-two-csv-together)
   - [Map Functionality for Records](#map-functionality-for-records)
     - [Markers for Record Maps](#markers-for-record-maps)
     - [Title of the Markers for Record Maps](#title-of-the-markers-for-record-maps)
@@ -31,7 +31,7 @@
   - [Photo Gallery for Records](#photo-gallery-for-records)
   - [Recompile Changes](#recompile-changes)
 - [Important Pages](#important-pages)
-  - [Collections](#collections)
+  - [Collections Page](#collections-page)
   - [Record Page Template](#record-page-template)
     - [Components of the Record Page Template](#components-of-the-record-page-template)
 - [Generating Record Pages](#generating-record-pages)
@@ -131,11 +131,6 @@ The *\_config.yml* file contains configuration options for the website. For basi
 
 [Back to TOC](#table-of-contents)
 
-### Adding Categories
-
-The `categories` front matter variable is used to group records by tabs in the Collections page.
-
-[Back to TOC](#table-of-contents)
 
 ## Structure of the Project
 
@@ -234,6 +229,55 @@ User will then append `1000` to the filename of those images:
 
 [Back to TOC](#table-of-contents)
 
+### Adding categories
+
+In the [collections page](#collections-page), `record pages` are grouped by categories.
+
+In the following screenshot, there is 5 categories:
+  - `1000-1999`
+  - `2000-2999`
+  - `3000-3999`
+  - `4000-4999`
+  - `5000-5999`
+
+![Overview of record page](README_screenshots/collections_page_overview.png)
+
+Each categories correspond to a tab, for the purpose of this section, you can ignore the `map` tab, because it is not a category.
+
+There are several pages listed under the `1000-1999` category, such as "TRAP Mound - 1000", "TRAP Mound - 1001". This is because of how the records are organized for this project, however your project could be different.
+
+The `category` front matter variable determines on which category appears in the collection page and which categories the `record page` will be in.
+
+**Example**:
+
+```yml
+---
+...
+title: TRAP Mound - 1000
+record_id: '1000'
+categories:
+- 1000-1999
+header: no
+...
+
+---
+
+```
+
+Notice that the `categories` front matter variable is a list that contains one value, `1000-1999`, that means that `record page` will appear under the `1000-1999` category. It is possible to have a record page under multiple category such as this:
+
+```yml
+categories:
+- 1000-1999
+- 2000-2999
+```
+
+This above will make that record page appear in two categories, namely, `1000-1999` and `2000-2999`.
+
+Please refer to [collections section](#collections-page) for more details regarding the collection page.
+
+[Back to TOC](#table-of-contents)
+
 ## Customization
 
 Before auto generating record pages, the user can customize the site. This section will discuss some customisations available to the user.
@@ -243,12 +287,6 @@ Before auto generating record pages, the user can customize the site. This secti
 ### Editing Record Pages Template
 
 The record pages uses *\_layout/record.html* as the template, to modify the template, please see the [Components of the record page template section](#components-of-the-record-page-template)
-
-[Back to TOC](#table-of-contents)
-
-### Merging Two CSV Together
-
-A python script written in Python3 have been provided to merge two csv file based on a key.
 
 [Back to TOC](#table-of-contents)
 
@@ -355,7 +393,7 @@ Once you have finish all the steps, run the website to test if the images were s
 
 ### Photo Gallery for Records
 
-The photo gallery is implementing using [slick](http://kenwheeler.github.io/slick/). There is two photo gallery in a record page, one is photo gallery used to display photos for that record and the second photo gallery is used as a navigation. The implmenetation is split into three parts:
+The photo gallery is implemented using [slick](http://kenwheeler.github.io/slick/). There is two photo gallery in a record page, one is photo gallery used to display photos for that record and the second photo gallery is used as a navigation. The implmenetation is split into three parts:
 
 1. The HTML structure is defined in the template html for the records, which by default is in *\_layouts/record.html*.
 2. The CSS that is used to style the photo gallery such as the the navigation buttons for the photo gallery is in *assets/slick/slick-theme.css*.
@@ -375,11 +413,11 @@ Because this is a static website, everytime users wish to make push their change
 
 ## Important Pages
 
-### Collections
+### Collections Page
 
-The *\_pages/pages-root-folder/collections.md* is the web page that is used to display the links to all the record pages. The organization of the pages is grouped by *categories* where one tab correspond to a category. A record page can appear in one or more category. To add a record page to belong to a category, add the name of the category in the YAML list for that record page under the *categories* key.
+The *\_pages/pages-root-folder/collections.md* is the web page that is used to display the links to all the record pages. The organization of the pages is grouped by `categories` where one tab correspond to a `category`. A record page can appear in one or more `category`. To add a record page to belong to a `category`, add the name of the `category` in the YAML list for that record page under the *categories* key.
 
-If user wish to change the content of the page, they can edit *\_pages/pages-root-folder/collections.md*.
+If user wish to change the content of the page, they can edit *collections.md* file in the *\_pages/pages-root-folder/* folder.
 
 [Back to TOC](#table-of-contents)
 
@@ -398,7 +436,13 @@ The layout file that *\_import/template.yaml* uses is the *\_layout/record.html*
 
 ## Generating Record Pages
 
-In the *\_import* folder there is a Python script named *makeSite.py*. The purpose of the script is to generate a seperate yaml file for each row in the csv. Each column corresponds to a front matter variable in the yaml file. The variable will be the name of the column with all space characters replaced with the '\_' character and the characters are coverted to all lowercase (**EXCEPT** the unique identifer) .
+1. Edit the [customizable-variables.yaml](_import/customizable-variables.yaml) files to suit your requirements.
+2. Customise the category_generation.py to your requirements. Refer [here](_import/README.md) for more information regarding the script. Refer to [adding categories section](#adding-categories) for more information about categories.
+3. Open your terminal and run the Python3 script *makeSite.py*.
+
+The rest of this section will discuss on how to generate record pages in detail.
+
+In the *\_import* folder there is a Python script named *makeSite.py*. The purpose of the script is to generate a seperate yaml file for each row in the csv. Each column corresponds to a front matter variable in the yaml file. The variable will be the name of the column with all space characters replaced with the underscore character `_` and the characters are coverted to all lowercase (**EXCEPT** the unique identifer) .
 
 **NOTE**: The unique identifier will be stored into the front matter variable `record_id`. You would need to provide the column name (case-sensitive) so that the script can extract the id for the record.
 
