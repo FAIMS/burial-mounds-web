@@ -131,7 +131,6 @@ The *\_config.yml* file contains configuration options for the website. For basi
 
 [Back to TOC](#table-of-contents)
 
-
 ## Structure of the Project
 
 This section will explain the structure of the project and decribe the top-level folders for the project:
@@ -234,11 +233,12 @@ User will then append `1000` to the filename of those images:
 In the [collections page](#collections-page), `record pages` are grouped by categories.
 
 In the following screenshot, there is 5 categories:
-  - `1000-1999`
-  - `2000-2999`
-  - `3000-3999`
-  - `4000-4999`
-  - `5000-5999`
+  
+- `1000-1999`
+- `2000-2999`
+- `3000-3999`
+- `4000-4999`
+- `5000-5999`
 
 ![Overview of record page](README_screenshots/collections_page_overview.png)
 

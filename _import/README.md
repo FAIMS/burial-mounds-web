@@ -1,40 +1,43 @@
-# _import README
+# _import README <!-- omit in toc -->
 
 In this folder are files used to generate record pages.
 
-## Table of Contents
+## Table of Contents <!-- omit in toc -->
 
-- [_import README](#import-readme)
-    - [Table of Contents](#table-of-contents)
-    - [make_site.py](#makesitepy)
-    - [google_drive.py](#googledrivepy)
-    - [local_images.py](#localimagespy)
-    - [consts<i>.</i>py <!-- The <i> tag is to disable GFM autolinking https://gist.github.com/alexpeattie/4729247-->](#constsiipy----the-i-tag-is-to-disable-gfm-autolinking-httpsgistgithubcomalexpeattie4729247)
-    - [category_generation.py](#categorygenerationpy)
-    - [csv_merge.py](#csvmergepy)
+- [make_site.py](#makesitepy)
+- [google_drive.py](#googledrivepy)
+- [local_images.py](#localimagespy)
+- [consts.py](#constspy)
+- [category_generation.py](#categorygenerationpy)
+- [csv_merge.py](#csvmergepy)
+- [customizable-variables.yml](#customizable-variablesyml)
 
 ## make_site.py
 
-[Back to TOC](#table-of-contents)
+This script is used to generate `record pages` from the given csv.
 
 ## google_drive.py
 
-[Back to TOC](#table-of-contents)
+The script is used to used to write the URL to images hosted on Google Drive for a associated `record page`.
 
 ## local_images.py
 
-[Back to TOC](#table-of-contents)
+This script is used to write the paths to images for a associated `record page`.
 
-## consts<i>.</i>py <!-- The <i> tag is to disable GFM autolinking https://gist.github.com/alexpeattie/4729247-->
+## consts.py
 
-[Back to TOC](#table-of-contents)
+This Python file contains constants that will be used by the other scripts.
 
 ## category_generation.py
 
-[Back to TOC](#table-of-contents)
+This script is used to generate the category for `record pages`. The `generate_category` method append to the `categories` list based on the value of the `record_id`, modify the if condition inside the method to your requirements.
 
 ## csv_merge.py
 
 A python script written in Python3 that can be used to merge two csv file based on a key.
 
 [Back to TOC](#table-of-contents)
+
+## customizable-variables.yml
+
+This yaml file contains variables that will be used by the above scripts. To customise the generated record pages, please adjust the variables to your needs.
