@@ -36,12 +36,13 @@
     - [Components of the Record Page Template](#components-of-the-record-page-template)
 - [Generating Record Pages](#generating-record-pages)
 - [Record Page](#record-page)
+- [Terminology](#terminology)
 
 ## Introduction
 
 This is a template uses [*Jekyll*](https://jekyllrb.com/) and based off [feeling-responsive](https://github.com/Phlow/feeling-responsive-v2) theme by Phlow.
 
-The purpose of this project is to generate a data-driven website from a CSV. For the purpose of this project, each row in the CSV will be considered a `record`, and a page for each record will be called a `record page` and that a [*post*](https://jekyllrb.com/docs/posts/) in Jekyll is in our case a `record page`. The columns in the csv will be referred to as a `attribute`.
+The purpose of this project is to generate a data-driven website from a CSV. Please first refer to the [terminology section](#terminology).
 
 To get the basic structure, please follow the steps in this README. It is assumed that the user have basic knowledge of *Jekyll* if not, please refer to [Jekyll offical website](https://jekyllrb.com/docs/home/) for more information.
 
@@ -476,5 +477,15 @@ record_id: '1000'
 In the example above, there are three front matter variable, namely, `layout`, `title`, and `record_id`. The front matter variables are used by the template to display data specific to that Record.
 
 **NOTE**: The front matter variables must be the first thing in the file.
+
+[Back to TOC](#table-of-contents)
+
+## Terminology
+
+- `record`: a row in the CSV.
+- `record page`: a markdown page that contains front matter variables where a front matter variable correspond to a column and it's value for that `record`.
+  - A [*post*](https://jekyllrb.com/docs/posts/) in Jekyll is in our case a `record page`.
+- `attribute`: a column in the csv.
+  
 
 [Back to TOC](#table-of-contents)
