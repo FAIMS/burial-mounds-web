@@ -4,11 +4,12 @@
 
 - [Table of Contents](#table-of-contents)
 - [Introduction](#introduction)
-- [Getting Started](#getting-started)
+- [Prerequisites](#prerequisites)
 - [Software Prerequisites](#software-prerequisites)
   - [Required Python Modules](#required-python-modules)
   - [Installing Jekyll](#installing-jekyll)
     - [Running Jekyll Locally](#running-jekyll-locally)
+- [Getting Started](#getting-started)
 - [Configuration](#configuration)
 - [Structure of the Project](#structure-of-the-project)
 - [Preprocessing](#preprocessing)
@@ -44,19 +45,21 @@ This is a template uses [*Jekyll*](https://jekyllrb.com/) and based off [feeling
 
 The purpose of this project is to generate a data-driven website from a CSV. Please first refer to the [terminology section](#terminology).
 
-To get the basic structure, please follow the steps in this README. It is assumed that the user have basic knowledge of *Jekyll* if not, please refer to [Jekyll offical website](https://jekyllrb.com/docs/home/) for more information.
+To get started, please follow the steps in this README.
 
-## Getting Started
+## Prerequisites
 
-This section will briefly discuss the process required to use this project to create a website.
+This project uses Jekyll as its static site generator, therefore users are highly recommended to have a basic understanding of *Jekyll*, please refer to [Jekyll offical website](https://jekyllrb.com/docs/home/) for more information.
 
-1. Configuring the project such as the title of the project, the logo, navigation bar that appears at the top of the page. Refer to [configuration](#configuration) section for more information.
-2. Using the *record.html* located inside the *\_layouts* folder as a template, work through the file and change it according to your requirements. Refer to the [record page template](#record-page-template) section for more information.
-3. Auto generate record pages using the script provided. Refer to the [generating record pages](#generating-record-pages) section for more information.
+User will need to have basic understanding of Python3 to make modification to the scripts provided in the *\_imports* folder, the user will at least need basic understanding of topics such as, variables, `if` statements and functions.
+
+User will need to make modification to the *record.html* page to display their required front matter variables, therefore users will need to have a basic understanding of HTML, especially tables.
+
+It is recommeded to also have basic understanding of CSS and Javascript, however it is not required if user wish to just generate a data driven website without any further customisation.
 
 ## Software Prerequisites
 
-To run the python scripts provided in the *\_import* folder, the user will need to have `Python 3.5.2` installed.
+To run the python scripts provided in the *\_import* folder, the user will need to have `Python` version 3.5.2 or above installed.
 
 To test the website locally, the user will need to have `Jekyll` installed. It is also assumed that you are using `Ubuntu` operating system if you wish to test your website locally before uploading to Github Pages.
 
@@ -89,6 +92,14 @@ bundle exec jekyll serve --config _config.yml,_config_dev.yml
 Another option is to run the shell script *local\_jekyll\_build.sh* located at the root path of this project.
 
 [Back to TOC](#table-of-contents)
+
+## Getting Started
+
+This section will briefly discuss the process required to use this project to create a website. Please ensure that you have read the [prerequisites section](#prerequisites) and the [software prerequisites section](#software-prerequisites) before you continue with the following steps. 
+
+1. Configuring the project such as the title of the project, the logo, navigation bar that appears at the top of the page. Refer to [configuration](#configuration) section for more information.
+2. Using the *record.html* located inside the *\_layouts* folder as a template, work through the file and change it according to your requirements. Refer to the [record page template](#record-page-template) section for more information.
+3. Auto generate record pages using the script provided. Refer to the [generating record pages](#generating-record-pages) section for more information.
 
 ## Configuration
 
