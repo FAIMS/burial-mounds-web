@@ -340,7 +340,7 @@ If the user want to add additional information that they want enclosed inside th
 
 ### Adding Additional Stylesheet or Javascript
 
-For users that wish to customise the styling and behaviour of their website by adding additional stylesheet or Javscript, please refer to the [additional additional javascript or stylesheet document](adding-additional-javascript-or-stylesheet.md) for more information.
+For users that wish to customize the styling and behaviour of their website by adding additional stylesheet or Javscript, please refer to the [additional additional javascript or stylesheet document](adding-additional-javascript-or-stylesheet.md) for more information.
 
 [Back to TOC](#table-of-contents)
 
@@ -449,7 +449,7 @@ The layout file that *\_import/template.yaml* uses is the *\_layout/record.html*
 ## Generating Record Pages
 
 1. Edit the [customizable-variables.yaml](_import/customizable-variables.yaml) files to suit your requirements.
-2. Customise the category_generation.py to your requirements. Refer [here](_import/README.md) for more information regarding the script. Refer to [adding categories section](#adding-categories) for more information about categories.
+2. Customize the category_generation.py to your requirements. Refer [here](_import/README.md) for more information regarding the script. Refer to [adding categories section](#adding-categories) for more information about categories.
 3. Open your terminal and run the Python3 script *makeSite.py*.
 
 The rest of this section will discuss on how to generate record pages in detail.

@@ -1,9 +1,9 @@
 # This file contain the variables that will be need to be defined for the
 # customisation of their website. The variables in this file will be used
-# by the Pytohn scripts.
+# by the Python scripts.
 
 # Name of the CSV file that contains the data, please include the .csv extension.
-csv_file_name: "MergeCSV.csv"
+record_csv_file_name: "MergeCSV.csv"
 # File name of the yaml template used to generate the record page.
 template_file_name: "template.yaml"
 # Column name in the CSV that contains the unique identifier
@@ -19,3 +19,6 @@ key_for_first_img: "Overview"
 # A generic title for each Record Page which will be concatenated with the
 # id of each Record
 generic_record_page_title: "TRAP Mound - "
+# Name of the CSV file that contains links of Google Drive images.
+# Only need to change this if user is planning to use the google-drive.py
+google_drive_csv_file: "google-drive-images.csv"

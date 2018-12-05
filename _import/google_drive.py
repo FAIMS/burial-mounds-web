@@ -9,13 +9,14 @@ from ruamel.yaml import YAML
 
 import util as UTIL
 from consts import FOLDER, ID_FRONT_MATTER_VARIABLE_NAME, KEY_FOR_FIRST_IMG, \
-    IMAGES_FRONT_MATTER_VARIABLE_NAME, KEY_LEN, IMAGE_EXTENSIONS
+    IMAGES_FRONT_MATTER_VARIABLE_NAME, KEY_LEN, IMAGE_EXTENSIONS, \
+    GOOGLE_DRIVE_CSV_FILE_NAME
 
-SHEET = "BM-Pic.csv"
-DEST = "../_posts"
+SHEET = GOOGLE_DRIVE_CSV_FILE_NAME
+DEST = '../_posts'
 
 # Name of the collection of the Records Pages.
-COLLECTION_NAME = "TRAP Mounds"
+COLLECTION_NAME = 'TRAP Mounds'
 
 # Objects is the list of rows from the csv that contains the url of the images.
 OBJECTS = []
@@ -32,16 +33,16 @@ with open(SHEET, newline='') as csvfile:
 
 # Strings to be removed, and replaced with the url so that it can be
 # linked via a website.
-GOOGLE_DRIVE_VIEW_FILE_STR = "https://drive.google.com/file/d/"
-GOOGLE_DRIVE_VIEW_SDK_STR = "/view?usp=drivesdk"
+GOOGLE_DRIVE_VIEW_FILE_STR = 'https://drive.google.com/file/d/'
+GOOGLE_DRIVE_VIEW_SDK_STR = '/view?usp=drivesdk'
 
 IMAGE_TYPES = tuple([x[1:] for x in IMAGE_EXTENSIONS])
 
-print("APPENDING")
+print('APPENDING')
 
 # Iterate through OBJECTS and populate RECORD_DICT.
 for row in OBJECTS:
-    view_link = "https://drive.google.com/uc?id={file_id}"
+    view_link = 'https://drive.google.com/uc?id={file_id}'
     image_name = row['Name']
     # Get the uuid that correspond for that image
     record_id = image_name[:KEY_LEN]
@@ -91,4 +92,5 @@ if os.path.exists(FOLDER):
                         UTIL.insert_image_link_into_list(
                             objyaml['images'], item, item['title'], KEY_FOR_FIRST_IMG)
             UTIL.write_image_front_matter(objyaml, record_page_path, yaml)
-print("FINISH")
+           
+print('FINISH')

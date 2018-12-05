@@ -28,7 +28,7 @@ FOLDER = "../_posts/"
 # Name of the column for the record id
 RECORD_ID_COLUMN_NAME = CUSTOM_VARIABLES['record_id_column_name']
 # File name of the CSV with the record data.
-CSV_FILE_NAME = CUSTOM_VARIABLES['csv_file_name']
+CSV_FILE_NAME = CUSTOM_VARIABLES['record_csv_file_name']
 # File name of the template.
 TEMPLATE_FILE_NAME = CUSTOM_VARIABLES['template_file_name']
 # A generic title for each Record Page which will be concatenated with the
@@ -36,3 +36,5 @@ TEMPLATE_FILE_NAME = CUSTOM_VARIABLES['template_file_name']
 GENERIC_RECORD_PAGE_TITLE = CUSTOM_VARIABLES['generic_record_page_title']
 # Tuple that contains the extensions of images.
 IMAGE_EXTENSIONS  = ('.png', '.jpg', '.jpeg')
+# File name of the CSV with the google drive links
+GOOGLE_DRIVE_CSV_FILE_NAME = CUSTOM_VARIABLES['google_drive_csv_file']

@@ -18,7 +18,7 @@ This script is used to generate `record pages` from the given csv.
 
 ## google_drive.py
 
-The script is used to used to write the URL to images hosted on Google Drive for a associated `record page`.
+The script is used to used to write the URL to images hosted on Google Drive for a associated `record page`. User will need to ensure that the csv is in the *_import* folder, and that the name of csv matches the value of the key `google_drive_csv_file` in the customizable-variables.yaml file.
 
 ## local_images.py
 
@@ -40,4 +40,4 @@ A python script written in Python3 that can be used to merge two csv file based 
 
 ## customizable-variables.yml
 
-This yaml file contains variables that will be used by the above scripts. To customise the generated record pages, please adjust the variables to your needs.
+This yaml file contains variables that will be used by the above scripts. To customize the generated record pages, please adjust the variables to your needs.
