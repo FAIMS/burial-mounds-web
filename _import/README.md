@@ -14,11 +14,11 @@ In this folder are files used to generate record pages.
 
 ## make_site.py
 
-This script is used to generate `record pages` from the given csv.
+This script is used to generate `record pages` from the given CSV.
 
 ## google_drive.py
 
-The script is used to used to write the URL to images hosted on Google Drive for a associated `record page`. User will need to ensure that the csv is in the *_import* folder, and that the name of csv matches the value of the key `google_drive_csv_file` in the customizable-variables.yaml file.
+The script is used to used to write the URL to images hosted on Google Drive for a associated `record page`. User will need to ensure that the CSV is in the *_import* folder, and that the name of CSV matches the value of the key `google_drive_csv_file` in the customizable-variables.yaml file.
 
 ## local_images.py
 
@@ -34,7 +34,7 @@ This script is used to generate the category for `record pages`. The `generate_c
 
 ## csv_merge.py
 
-A python script written in Python3 that can be used to merge two csv file based on a key.
+A python script written in Python3 that can be used to merge two CSV file based on a key.
 
 [Back to TOC](#table-of-contents)
 

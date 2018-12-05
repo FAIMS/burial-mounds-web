@@ -10,6 +10,7 @@
   - [Installing Jekyll](#installing-jekyll)
     - [Running Jekyll Locally](#running-jekyll-locally)
 - [Getting Started](#getting-started)
+- [Recompile Changes](#recompile-changes)
 - [Configuration](#configuration)
 - [Structure of the Project](#structure-of-the-project)
 - [Preprocessing](#preprocessing)
@@ -30,7 +31,6 @@
   - [Adding Images for a Record Page from Local Source](#adding-images-for-a-record-page-from-local-source)
   - [Adding Images for a Record Page from Google Drive](#adding-images-for-a-record-page-from-google-drive)
   - [Photo Gallery for Records](#photo-gallery-for-records)
-  - [Recompile Changes](#recompile-changes)
 - [Important Pages](#important-pages)
   - [Collections Page](#collections-page)
   - [Record Page Template](#record-page-template)
@@ -49,13 +49,13 @@ To get started, please follow the steps in this README.
 
 ## Prerequisites
 
-This project uses Jekyll as its static site generator, therefore users are highly recommended to have a basic understanding of *Jekyll*, please refer to [Jekyll offical website](https://jekyllrb.com/docs/home/) for more information.
+This project uses Jekyll as its static site generator, therefore users are highly recommended to have a basic understanding of *Jekyll*, please refer to [Jekyll official website](https://jekyllrb.com/docs/home/) for more information.
 
 User will need to have basic understanding of Python3 to make modification to the scripts provided in the *\_imports* folder, the user will at least need basic understanding of topics such as, variables, `if` statements and functions.
 
-User will need to make modification to the *record.html* page to display their required front matter variables, therefore users will need to have a basic understanding of HTML, especially tables.
+User will need to make modification to the *record.html* page to display their required front matter variables, therefore users will need to have a basic understanding of HTML, especially tables and some basic understanding of liquid templating.
 
-It is recommeded to also have basic understanding of CSS and Javascript, however it is not required if user wish to just generate a data driven website without any further customisation.
+It is recommended to also have basic understanding of CSS and Javascript, however it is not required if user wish to just generate a data driven website without any further customisation.
 
 ## Software Prerequisites
 
@@ -77,13 +77,13 @@ The required modules to run the Python scripts in *\_import* folder is in the `r
 
 ### Installing Jekyll
 
-Please refer to [Jekyll offical documentation](https://jekyllrb.com/docs/installation/) for instructions to install Jekyll on your system.
+Please refer to [Jekyll official documentation](https://jekyllrb.com/docs/installation/) for instructions to install Jekyll on your system.
 
 If you are using a Windows system, please refer to the page regarding installing [Jekyll on Windows](https://jekyllrb.com/docs/installation/windows/).
 
 #### Running Jekyll Locally
 
-Assuming jekyll is installed, to see your website locally, open up the terminal at the root of the folder of the project. Type in the following command then press enter
+Assuming Jekyll is installed, to see your website locally, open up the terminal at the root of the folder of the project. Type in the following command then press enter
 
 ```bash
 bundle exec jekyll serve --config _config.yml,_config_dev.yml
@@ -101,6 +101,18 @@ This section will briefly discuss the process required to use this project to cr
 2. Using the *record.html* located inside the *\_layouts* folder as a template, work through the file and change it according to your requirements. Refer to the [record page template](#record-page-template) section for more information.
 3. Auto generate record pages using the script provided. Refer to the [generating record pages](#generating-record-pages) section for more information.
 
+## Recompile Changes
+
+Because this is a static website, every time users wish to make push their changes (assuming the website is on Github):
+
+1. Delete the *\_posts* folder
+2. Recompile the record pages by running the *makeSite.py* Python script and additional scripts if needed
+3. `git add` then `git commit` then `git push` to the remote repo
+
+- **NOTE**: If user is running jekyll locally to see their changes, please stop the server then run it again to see changes made in the *\_config.yml* file.
+
+[Back to TOC](#table-of-contents)
+
 ## Configuration
 
 The *\_config.yml* file contains configuration options for the website. For basic configuration, do the following steps.
@@ -109,14 +121,12 @@ The *\_config.yml* file contains configuration options for the website. For basi
     - The main front matter variables for basic customisation is:
         - *title*:
         - *slogan*
-        - *descripton*
+        - *description*
         - *credits*
         - *author*
         - *url*
         - *baseurl*
         - More details can be found on [here](https://help.github.com/articles/configuring-jekyll/) and [here](https://jekyllrb.com/docs/configuration/).
-
-    - **NOTE**: If you are running jekyll locally to see your changes, please stop the server then run it again to see changes made in your *\_config.yml* file
     - If the user wish to add more custom data that can be accessed throughout the site via the Liquid templating system, then rather adding it directly into *\_config.yml* file, users are recommended to add it into the *additional\_config.yml* file which is located in the *\_data* folder.
     - For example the variable *google-map-marker* can be accessed via `site.data.additional_config.google-map-marker`.
     - Refer to [Jekyll datafile page](https://jekyllrb.com/docs/datafiles/) for more information.
@@ -145,7 +155,7 @@ The *\_config.yml* file contains configuration options for the website. For basi
 
 ## Structure of the Project
 
-This section will explain the structure of the project and decribe the top-level folders for the project:
+This section will explain the structure of the project and describe the top-level folders for the project:
 
 - _assets_ folder contain the CSS, Javascript used in the project and also images that is used for the site such as the logo and default images for records.
 - *\_data* contains the configuration YAML files for the project.
@@ -161,7 +171,7 @@ This section will explain the structure of the project and decribe the top-level
 
 ## Preprocessing
 
-Before auto generating record pages, ensure your data is well-formed for minimal hassle. A record should have a column that contains the unique identifer for that record.
+Before auto generating record pages, ensure your data is well-formed for minimal hassle. A record should have a column that contains the unique identifier for that record.
 
 [Back to TOC](#table-of-contents)
 
@@ -188,7 +198,7 @@ Please ensure your images are one of the following types so that the script is a
 
 First, please ensure your files are of the types discussed in the [file type section](#file-type-for-images), otherwise, please convert your image to one of the file type discussed in that discussion.
 
-On the root folder of the project, create a folder called `images` if it doesn't exist yet. Inside the `images` folder, group the images by the unique identifer of the record. For each folder, create a new folder inside the `images` folder with the name matching the unique identifer for that record.
+On the root folder of the project, create a folder called `images` if it doesn't exist yet. Inside the `images` folder, group the images by the unique identifier of the record. For each folder, create a new folder inside the `images` folder with the name matching the unique identifier for that record.
 
 **Example**:
 
@@ -226,7 +236,7 @@ To use the provided `google_drive.py` Python script. The url of the Google Drive
 
 **Example**:
 
-Assume a record with the unique identifer of `1000` and it have 3 images associated with it:
+Assume a record with the unique identifier of `1000` and it have 3 images associated with it:
 
 - `image-one.jpg`
 - `image-two.jpg`
@@ -310,7 +320,7 @@ The map functionality for records is split into several components:
 2. The CSS required for the styling of the `div` element which is in the sass file *\_google\_maps.scss*.
 3. The Javascript function that uses the Maps Javascript API. This is located in the *\_custom_js/record\_pages\_map.js* and importing that script is located in the *\_includes/additional\_helper/additional\_footer.html* file.
 
-The default setting for the Map functionality is that it uses the `latitude` and `longitude` front matter variables of the record page. So if users wish to have a map, the column name in the csv must also correspond to that name.
+The default setting for the Map functionality is that it uses the `latitude` and `longitude` front matter variables of the record page. So if users wish to have a map, the column name in the CSV must also correspond to that name.
 
 **NOTE**: It is fine in the CSV to have the column name "Latitude" and "Longitude" because the script that generate a page for each row then converts the column names to lowercase when it passes it into the Front Matter for the record page.
 
@@ -340,7 +350,7 @@ If the user want to add additional information that they want enclosed inside th
 
 ### Adding Additional Stylesheet or Javascript
 
-For users that wish to customize the styling and behaviour of their website by adding additional stylesheet or Javscript, please refer to the [additional additional javascript or stylesheet document](adding-additional-javascript-or-stylesheet.md) for more information.
+For users that wish to customize the styling and behavior of their website by adding additional stylesheet or Javascript, please refer to the [additional additional javascript or stylesheet document](adding-additional-javascript-or-stylesheet.md) for more information.
 
 [Back to TOC](#table-of-contents)
 
@@ -348,8 +358,8 @@ For users that wish to customize the styling and behaviour of their website by a
 
 The current search function allows the user to search records by `title` and `record_id` variables. If users wish to customize their search, please read this [tutorial](https://learn.cloudcannon.com/jekyll/jekyll-search-using-lunr-js/) which is used as the starting point to implement searching in this project.
 
-- _pages/search.md_ is the file which contains the search data.
-- _assets/js/search.js_ is the file which contains the Javascript logic to perform the search.
+- *pages/search.md* is the file which contains the search data.
+- *assets/js/search.js* is the file which contains the Javascript logic to perform the search.
 
 [Back to TOC](#table-of-contents)
 
@@ -390,12 +400,12 @@ Once you have finish all the steps, run the website to test if the images were s
 
 ### Adding Images for a Record Page from Google Drive
 
-Please ensure to read the [generating google drive link to csv page](_import/generating-google-drive-link-csv.md) to generate the CSV that contains the Google Drive CSV.
+Please ensure to read the [generating google drive link to CSV page](_import/generating-google-drive-link-CSV.md) to generate the CSV that contains the Google Drive CSV.
 
 Once you have the generated CSV, please follow the following steps:
 
   1. Ensure that the CSV file is in the **\_import** folder.
-  2. Ensure the value for the key `csv_file_name` in [customizable-variables.yaml](_import/customizable-variables.yaml) is the same as the file name of the CSV.
+  2. Ensure the value for the key `google_drive_csv_file` in [customizable-variables.yaml](_import/customizable-variables.yaml) is the same as the file name of the CSV with the google drive links.
   3. If you have run the `make_site.py` Python script to generate the Record Pages, then you can skip this step and move onto step 4, otherwise, please read the [generating record pages section](#generating-record-pages) and follow the instructions in that section.
   4. Run the `google_drive.py` Python script. Once that is done, you have finish adding images from Google Drive.
 
@@ -405,21 +415,11 @@ Once you have finish all the steps, run the website to test if the images were s
 
 ### Photo Gallery for Records
 
-The photo gallery is implemented using [slick](http://kenwheeler.github.io/slick/). There is two photo gallery in a record page, one is photo gallery used to display photos for that record and the second photo gallery is used as a navigation. The implmenetation is split into three parts:
+The photo gallery is implemented using [slick](http://kenwheeler.github.io/slick/). There is two photo gallery in a record page, one is photo gallery used to display photos for that record and the second photo gallery is used as a navigation. The implementation is split into three parts:
 
 1. The HTML structure is defined in the template html for the records, which by default is in *\_layouts/record.html*.
 2. The CSS that is used to style the photo gallery such as the the navigation buttons for the photo gallery is in *assets/slick/slick-theme.css*.
 3. The Javascript is used to defined the logic of the photo gallery is in *assets/custom_js/slick-settings.js*.
-
-[Back to TOC](#table-of-contents)
-
-### Recompile Changes
-
-Because this is a static website, everytime users wish to make push their changes (assuming the website is on Github):
-
-1. Delete the *\_posts* folder
-2. Recompile the record pages by running the *makeSite.py* Python script and additional scripts if needed
-3. `git add` then `git commit` then `git push` to the remote repo
 
 [Back to TOC](#table-of-contents)
 
@@ -450,17 +450,18 @@ The layout file that *\_import/template.yaml* uses is the *\_layout/record.html*
 
 1. Edit the [customizable-variables.yaml](_import/customizable-variables.yaml) files to suit your requirements.
 2. Customize the category_generation.py to your requirements. Refer [here](_import/README.md) for more information regarding the script. Refer to [adding categories section](#adding-categories) for more information about categories.
-3. Open your terminal and run the Python3 script *makeSite.py*.
+3. Open your terminal and install all the required dependencies listed in the `requirements.txt` file.
+4. Run the Python3 script *makeSite.py*.
 
 The rest of this section will discuss on how to generate record pages in detail.
 
-In the *\_import* folder there is a Python script named *makeSite.py*. The purpose of the script is to generate a seperate yaml file for each row in the csv. Each column corresponds to a front matter variable in the yaml file. The variable will be the name of the column with all space characters replaced with the underscore character `_` and the characters are coverted to all lowercase (**EXCEPT** the unique identifer) .
+In the *\_import* folder there is a Python script named *makeSite.py*. The purpose of the script is to generate a separate yaml file for each row in the CSV. Each column corresponds to a front matter variable in the yaml file. The variable will be the name of the column with all space characters replaced with the underscore character `_` and the characters are converted to all lowercase (**EXCEPT** the unique identifier) .
 
 **NOTE**: The unique identifier will be stored into the front matter variable `record_id`. You would need to provide the column name (case-sensitive) so that the script can extract the id for the record.
 
 **Example**:
 
-In a csv file with 3 columns, '_TRAP ID_', '_Max diameter_', '_Surrounding Land Use_' and the values are, 1000, 34, "Annual Agriculture" for a row. then in the corresponding record page for that row, the front matter variable will be in the following format and we choose '_TRAP ID_' as the `record_id`, then the following code snippet will be the result.
+In a CSV file with 3 columns, '_TRAP ID_', '_Max diameter_', '_Surrounding Land Use_' and the values are, 1000, 34, "Annual Agriculture" for a row. then in the corresponding record page for that row, the front matter variable will be in the following format and we choose '_TRAP ID_' as the `record_id`, then the following code snippet will be the result.
 
 ```yml
 record_id: '1000'
@@ -496,7 +497,7 @@ In the example above, there are three front matter variable, namely, `layout`, `
 - `record`: a row in the CSV.
 - `record page`: a markdown page that contains front matter variables where a front matter variable correspond to a column and it's value for that `record`.
   - A [*post*](https://jekyllrb.com/docs/posts/) in Jekyll is in our case a `record page`.
-- `attribute`: a column in the csv.
+- `attribute`: a column in the CSV.
   
 
 [Back to TOC](#table-of-contents)
