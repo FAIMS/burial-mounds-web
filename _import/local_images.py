@@ -6,10 +6,8 @@ from ruamel.yaml import YAML
 
 import util as UTIL
 from consts import FOLDER, ID_FRONT_MATTER_VARIABLE_NAME, \
-    KEY_FOR_FIRST_IMG, IMAGES_FRONT_MATTER_VARIABLE_NAME
-
-# Tuple that contains the extensions of images.
-IMAGE_EXTENSIONS  = ('.png', '.jpg', '.jpeg')
+    KEY_FOR_FIRST_IMG, IMAGES_FRONT_MATTER_VARIABLE_NAME, \
+    IMAGE_EXTENSIONS
 
 # Iterate throgh the images folder, extract the path of the image
 # associated with the record and write it into the record page images

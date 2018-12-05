@@ -34,3 +34,5 @@ TEMPLATE_FILE_NAME = CUSTOM_VARIABLES['template_file_name']
 # A generic title for each Record Page which will be concatenated with the
 # id of each Record
 GENERIC_RECORD_PAGE_TITLE = CUSTOM_VARIABLES['generic_record_page_title']
+# Tuple that contains the extensions of images.
+IMAGE_EXTENSIONS  = ('.png', '.jpg', '.jpeg')

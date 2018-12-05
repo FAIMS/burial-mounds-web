@@ -9,7 +9,7 @@ from ruamel.yaml import YAML
 
 import util as UTIL
 from consts import FOLDER, ID_FRONT_MATTER_VARIABLE_NAME, KEY_FOR_FIRST_IMG, \
-    IMAGES_FRONT_MATTER_VARIABLE_NAME, KEY_LEN
+    IMAGES_FRONT_MATTER_VARIABLE_NAME, KEY_LEN, IMAGE_EXTENSIONS
 
 SHEET = "BM-Pic.csv"
 DEST = "../_posts"
@@ -35,6 +35,8 @@ with open(SHEET, newline='') as csvfile:
 GOOGLE_DRIVE_VIEW_FILE_STR = "https://drive.google.com/file/d/"
 GOOGLE_DRIVE_VIEW_SDK_STR = "/view?usp=drivesdk"
 
+IMAGE_TYPES = tuple([x[1:] for x in IMAGE_EXTENSIONS])
+
 print("APPENDING")
 
 # Iterate through OBJECTS and populate RECORD_DICT.
@@ -55,7 +57,7 @@ for row in OBJECTS:
         RECORD_DICT[record_id] = []
 
     url = view_link.format(file_id=google_drive_image_file_id)
-    entry = {'Name': image_name, 'URL': url}
+    entry = {'Name': image_name, 'URL': url, 'Type': row['Type']}
     # If there is Overview in the image name then place it at the front of the list
     # for the record with id record_id
     UTIL.insert_image_link_into_list(
@@ -83,8 +85,10 @@ if os.path.exists(FOLDER):
             UTIL.create_empty_list_if_no_images_key(objyaml)
             if record_id in RECORD_DICT:
                 for row in RECORD_DICT[record_id]:
-                    item = {'image_path': row['URL'], 'title': row['Name']}
-                    UTIL.insert_image_link_into_list(
-                        objyaml['images'], item, item['title'], KEY_FOR_FIRST_IMG)
+                    # print(row['Type'].lower())
+                    if row['Type'].lower().endswith(IMAGE_TYPES):
+                        item = {'image_path': row['URL'], 'title': row['Name']}
+                        UTIL.insert_image_link_into_list(
+                            objyaml['images'], item, item['title'], KEY_FOR_FIRST_IMG)
             UTIL.write_image_front_matter(objyaml, record_page_path, yaml)
 print("FINISH")
