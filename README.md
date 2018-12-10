@@ -19,8 +19,8 @@
   - [Preprocessing Required for Linking Local Images](#preprocessing-required-for-linking-local-images)
   - [Preprocessing Required for Images on Google Drive](#preprocessing-required-for-images-on-google-drive)
   - [Adding categories](#adding-categories)
+  - [Editing the Record Pages Template](#editing-the-record-pages-template)
 - [Customization](#customization)
-  - [Editing Record Pages Template](#editing-record-pages-template)
   - [Map Functionality for Records](#map-functionality-for-records)
     - [Markers for Record Maps](#markers-for-record-maps)
     - [Title of the Markers for Record Maps](#title-of-the-markers-for-record-maps)
@@ -53,7 +53,7 @@ This project uses Jekyll as its static site generator, therefore users are highl
 
 User will need to have basic understanding of Python3 to make modification to the scripts provided in the *\_imports* folder, the user will at least need basic understanding of topics such as, variables, `if` statements and functions.
 
-User will need to make modification to the *record.html* page to display their required front matter variables, therefore users will need to have a basic understanding of HTML, especially tables and some basic understanding of liquid templating.
+User will need to make modification to the *record.html* page to display their required front matter variables, therefore users will need to have a basic understanding of HTML, especially tables and some basic understanding of liquid templating to modify the layout for *record.html*.
 
 It is recommended to also have basic understanding of CSS and Javascript, however it is not required if user wish to just generate a data driven website without any further customisation.
 
@@ -100,6 +100,8 @@ This section will briefly discuss the process required to use this project to cr
 1. Configuring the project such as the title of the project, the logo, navigation bar that appears at the top of the page. Refer to [configuration](#configuration) section for more information.
 2. Using the *record.html* located inside the *\_layouts* folder as a template, work through the file and change it according to your requirements. Refer to the [record page template](#record-page-template) section for more information.
 3. Auto generate record pages using the script provided. Refer to the [generating record pages](#generating-record-pages) section for more information.
+
+[Back to TOC](#table-of-contents)
 
 ## Recompile Changes
 
@@ -300,15 +302,15 @@ Please refer to [collections section](#collections-page) for more details regard
 
 [Back to TOC](#table-of-contents)
 
-## Customization
+### Editing the Record Pages Template
 
-Before auto generating record pages, the user can customize the site. This section will discuss some customisations available to the user.
+The `record pages` uses *\_layout/record.html* as its layout, to modify the layout for `record pages`, to understand have the look at the components of the `record page` html, please see the [Components of the Record Page Template section](#components-of-the-record-page-template).
 
 [Back to TOC](#table-of-contents)
 
-### Editing Record Pages Template
+## Customization
 
-The record pages uses *\_layout/record.html* as the template, to modify the template, please see the [Components of the record page template section](#components-of-the-record-page-template)
+Before auto generating record pages, the user can customise the site. This section will discuss some customisations available to the user.
 
 [Back to TOC](#table-of-contents)
 
@@ -442,7 +444,13 @@ The layout file that *\_import/template.yaml* uses is the *\_layout/record.html*
 
 #### Components of the Record Page Template
 
-![Overview of record page](README_screenshots/record_page_overview.png)
+![Overview of record page](README_screenshots/record_page_overview_marked.png)
+
+1. Subheadline - a subheadline
+2. Title
+3. Table
+4. Photo gallery
+5. Content tabs
 
 [Back to TOC](#table-of-contents)
 
