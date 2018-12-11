@@ -1,3 +1,4 @@
+{%- assign javascript_google_map = site.data.additional_config.javascript_google_map -%}
 {%- if page.id -%}
   <script type="text/javascript" src="{{'assets/slick/slick.min.js' | absolute_url}}"></script>
   <script type="text/javascript" src="{{'assets/custom_js/slick-settings.js' | absolute_url}}"></script>
@@ -7,8 +8,13 @@
   Creating a map for record pages.
   {%- endcomment -%}
   <script type="text/javascript" src="{{'assets/custom_js/record_pages_map.js' | absolute_url}}"></script>
+  {%- comment -%}
+  IMPORTANT: Please change the api key for the following script.
+  {%- endcomment -%}
+  {%- if javascript_google_map == true -%}
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD8ww2qdsoz0oXVdcmWcCfqczAjCPuhnSo&amp;callback=initRecordMap"
       async defer></script>
+  {%- endif -%}
 {%- endif -%}
 
 {%- comment -%}
@@ -16,6 +22,11 @@ Creating the google map for the collection page.
 {%- endcomment -%}
 {%- if page.collection_page -%}
   <script type="text/javascript" src="{{'assets/custom_js/home_page_map.js' | absolute_url}}"></script>
+  {%- comment -%}
+  IMPORTANT: Please change the api key for the following script.
+  {%- endcomment -%}
+  {%- if javascript_google_map == true -%}
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD8ww2qdsoz0oXVdcmWcCfqczAjCPuhnSo&amp;callback=initHomePageMap"
       async defer></script>
+  {%- endif -%}
 {%- endif -%}

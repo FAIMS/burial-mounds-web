@@ -30,27 +30,36 @@ permalink: /collection/
 ---
 
 <ul class="tabs" data-tabs id="category-tabs">
+{%- assign javascript_google_map = site.data.additional_config.javascript_google_map -%}
+  {%- if javascript_google_map == true -%}
  <li class="tabs-title is-active"><a data-tabs-target="#panel1" href="#panel1" aria-selected="true">Map</a></li>
+ {%- endif -%}
+
  {%- for category in site.categories -%}
  {%- capture category_name -%}{{ category | first }}{%- endcapture-%}
  {%- assign index = forloop.index -%}
+  {%- if javascript_google_map == true -%}
  {%- capture index -%}{{index | plus:1}}{%- endcapture -%}
-  <li class="tabs-title ">
+ {%- endif -%}
+
+  <li class="tabs-title {% if javascript_google_map == false %} {% if forloop.first %} is-active {% endif %}  {% endif %}">
     <a data-tabs-target="panel{{ index }}" href="#panel{{ index }}"> {{ category_name }} </a>
   </li>
  {%- endfor -%}
 </ul>
 <div class="tabs-content" data-tabs-content="category-tabs">
-
+  {%- if javascript_google_map == true -%}
   <div class="tabs-panel is-active" id="panel1">
     <div id="home_page_map"></div>
   </div>
+ {%- endif -%}
 {%- for category in site.categories -%}
  {%- capture category_name -%}{{ category | first }}{%- endcapture-%}
  {%- assign index = forloop.index -%}
+  {%- if javascript_google_map == true -%}
  {%- capture index -%}{{index | plus:1}}{%- endcapture -%}
-
-  <div class="tabs-panel"  id="panel{{ index }}">
+ {%- endif -%}
+  <div class="tabs-panel {% if javascript_google_map == false %} {% if forloop.first %} is-active {% endif %}  {% endif %}"  id="panel{{ index }}">
   <!-- <img style="width:100%" src="/images/collection{{forloop.index}}.jpg"/> -->
   <ul>
 	 {%- for post in site.categories[category_name] reversed -%}

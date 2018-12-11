@@ -11,7 +11,7 @@
     - [Running Jekyll Locally](#running-jekyll-locally)
 - [Getting Started](#getting-started)
 - [Recompiling Changes](#recompiling-changes)
-- [Making changes on _config.yml](#making-changes-on-configyml)
+- [Making changes on _config.yml and additional_config.yml](#making-changes-on-configyml-and-additionalconfigyml)
 - [Configuration](#configuration)
 - [Structure of the Project](#structure-of-the-project)
 - [Preprocessing](#preprocessing)
@@ -21,6 +21,7 @@
   - [Preprocessing Required for Images on Google Drive](#preprocessing-required-for-images-on-google-drive)
   - [Adding categories](#adding-categories)
   - [Editing the Record Pages HTML Template](#editing-the-record-pages-html-template)
+- [Displaying Map](#displaying-map)
 - [Customization](#customization)
   - [Map Functionality for Records](#map-functionality-for-records)
     - [Markers for Record Maps](#markers-for-record-maps)
@@ -112,9 +113,9 @@ This section is for user hosting their website on GitHub, if user is not hosting
 2. Recompile the record pages by running the *makeSite.py* Python script and additional scripts if needed
 3. `git add` then `git commit` then `git push` to the remote repo
 
-## Making changes on _config.yml
+## Making changes on _config.yml and additional_config.yml
 
-If user is running jekyll locally to see their changes, please stop the server then run it again to see changes made in the *\_config.yml* file.
+If user is running jekyll locally to see their changes, please stop the server then run it again to see changes made in the *\_config.yml* or *additional_config.yml* file.
 
 [Back to TOC](#table-of-contents)
 
@@ -310,6 +311,16 @@ Please refer to [collections section](#collections-page) for more details regard
 The record pages uses *\_layout/record.html* as its layout, to modify the layout for record pages, to understand have the look at the components of the record page html, please see the [Components of the Record Page Template section](#components-of-the-record-page-html-template).
 
 [Back to TOC](#table-of-contents)
+
+## Displaying Map
+
+This prpoject uses [Google Map Javascript API](https://developers.google.com/maps/documentation/javascript/tutorial), if the user wish to use Google Map API for this project, please go to Google Map website and get a api key, then go to *additional_config.yml* and set the value of the variable `javascript_google_map` to `true`.
+
+**Example**:
+
+```yml
+javascript_google_map: true
+```
 
 ## Customization
 

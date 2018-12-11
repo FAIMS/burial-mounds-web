@@ -4,6 +4,7 @@ format: record
 
 enable-slick: true
 ---
+{%- assign javascript_google_map = site.data.additional_config.javascript_google_map -%}
 <div row class="row">
   <!--Link to next/previous Record page-->
   <div class="PageNavigation">
@@ -260,12 +261,12 @@ enable-slick: true
             <div class="large-12 small-12 columns">
               <!--These are the tabs, the tabs and the tab content must be aligned-->
                <ul class="tabs" data-tabs id="example-tabs">
-                 {%- if page.maps -%}
+                 {%- if page.maps and javascript_google_map == true -%}
                  <li class="tabs-title is-active"><a data-tabs-target="#panel1" href="#panel1" aria-selected="true">Map</a></li>
                  {%- endif -%}
 
                  {%- if page.notes -%}
-                 <li class="tabs-title"><a data-tabs-target="#panel2" href="#panel2">Notes</a></li>
+                 <li class="tabs-title {% if javascript_google_map == false %} is-active {% endif %}"><a data-tabs-target="#panel2" href="#panel2">Notes</a></li>
                  {%- endif -%}
 
                  <li class="tabs-title"><a data-tabs-target="#panel3" href="#panel3">Sharing</a></li>
@@ -284,15 +285,17 @@ enable-slick: true
                </ul>
               <!--These are the content of the tabs, the tabs content should be aligned with the tabs-->
                <div class="tabs-content" data-tabs-content="example-tabs">
-
-                 <div class="tabs-panel is-active" id="panel1">
+                  {%- if javascript_google_map == true -%}
+                  <div class="tabs-panel is-active" id="panel1">
                    <!--HTML MAP ELEMENT FOR RECORD: The title of the record is stored in the record-title attribute because it stores the YAML title variable of the page
                    and that value is the title of the record, the latitude of the record is stored in the record-lat attribute, the longitude of the record is stored in
                    the record-lng attribute
                       -->
                    <div id="record_map" record-title='{{ page.title }}' record-lat='{{ page.latitude }}' record-lng='{{ page.longitude }}'></div>
                  </div>
-                 <div class="tabs-panel" id="panel2">
+                  {%- endif -%}
+                 
+                 <div class="tabs-panel {% if javascript_google_map == false %} is-active {% endif %}" id="panel2">
                     {{ page.notes | newline_to_br}}
                  </div>
                  <div class="tabs-panel" id="panel3">
