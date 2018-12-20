@@ -1,6 +1,6 @@
 # _import README <!-- omit in toc -->
 
-In this folder are files used to generate record pages.
+In this folder are files used to generate ```record pages```.
 
 ## Table of Contents <!-- omit in toc -->
 
@@ -14,7 +14,7 @@ In this folder are files used to generate record pages.
 
 ## make_site.py
 
-This script is used to generate record pages from the given CSV.
+This script is used to generate `record pages` from the given CSV.
 
 ## google_drive.py
 
@@ -30,7 +30,7 @@ This Python file contains constants that will be used by the other scripts.
 
 ## category_generation.py
 
-This script is used to generate the category for record pages. The `generate_category` method append to the `categories` list based on the value of the `record_id`, modify the if condition inside the method to your requirements.
+This script is used to generate the category for `record pages`. The `generate_category` method append to the `categories` list based on the value of the `record_id`, modify the if condition inside the method to your requirements.
 
 ## csv_merge.py
 
@@ -40,4 +40,4 @@ A python script written in Python3 that can be used to merge two CSV file based 
 
 ## customizable-variables.yml
 
-This YAML file contains variables that will be used by the above scripts. To customize the generated record pages, please adjust the variables to your needs.
+This YAML file contains variables that will be used by the above scripts. To customize the generated `record pages`, please adjust the variables to your needs.

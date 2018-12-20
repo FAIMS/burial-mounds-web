@@ -10,7 +10,7 @@
   - [Installing Jekyll](#installing-jekyll)
     - [Running Jekyll Locally](#running-jekyll-locally)
 - [Getting Started](#getting-started)
-- [Recompiling Changes](#recompiling-changes)
+- [Uploading changes to Github](#uploading-changes-to-github)
 - [Making changes on _config.yml and additional_config.yml](#making-changes-on-configyml-and-additionalconfigyml)
 - [Configuration](#configuration)
 - [Structure of the Project](#structure-of-the-project)
@@ -43,29 +43,29 @@
 
 ## Introduction
 
-This is a template uses [*Jekyll*](https://jekyllrb.com/) and is based off [feeling-responsive](https://github.com/Phlow/feeling-responsive-v2) theme by Phlow.
+This is a template that uses [*Jekyll*](https://jekyllrb.com/) and is based off [feeling-responsive](https://github.com/Phlow/feeling-responsive-v2) theme by Phlow.
 
-The purpose of this project is to generate a data-driven website from a CSV. Please first refer to the [Terminology section](#terminology).
+The purpose of this project is to generate a data-driven website from a CSV. Please also refer to the [Terminology section](#terminology).
 
 To get started, please follow the steps in this README.
 
 ## Prerequisites
 
-This project uses Jekyll as its static site generator, therefore users are highly recommended to have a basic understanding of *Jekyll*, please refer to [Jekyll official website](https://jekyllrb.com/docs/home/) for more information.
+This project uses *Jekyll* as its static site generator, therefore users are highly recommended to have a basic understanding of *Jekyll*, please refer to [Jekyll official website](https://jekyllrb.com/docs/home/) for more information. The layout used in this project make use of front matter variables.
 
-User will need to have basic understanding of Python3 to make modification to the scripts provided in the *\_imports* folder, the user will at least need basic understanding of topics such as, variables, *if* statements and functions.
+Users will need to have basic understanding of *Python3*, especially topics such as variables, *if* statements and function, in order to make modifications to the scripts provided in the *\_import* folder.
 
-User will need to make modification to the *record.html* file to display their required front matter variables, therefore users will need to have a basic understanding of HTML, especially tables and some basic understanding of liquid templating to modify the layout for *record.html*.
+Also users will need to make modification to the *record.html* file to display their required front matter variables, therefore users will need to have a basic understanding of HTML, especially tables and some basic understanding of liquid templating to modify the layout for *record.html*.
 
 It is recommended to also have basic understanding of CSS and Javascript, however it is not required if user wish to just generate a data driven website without any further customisation.
 
 ## Software Prerequisites
 
-To run the Python scripts provided in the *\_import* folder, the user will need to have `Python` version 3.5.2 or above installed.
+To run the Python scripts provided in the *\_import* folder, the user will need to have Python version 3.5.2 or above installed.
 
-To test the website locally, the user will need to have `Jekyll` installed. It is also assumed that you are using `Ubuntu` operating system if you wish to test your website locally before uploading to Github Pages.
+To test the website locally, the user will need to have Jekyll installed. It is also assumed that you are using Ubuntu operating system if you wish to test your website locally before uploading to Github Pages.
 
-**NOTE**: If users do not have required Python Modules and attempt to run the Python scripts provided, they will receive errors, please install the required Python modules that are missing. Please refer to the [Required Python Module section](#required-python-modules) in regards to which modules is needed for the Python scripts provided.
+**NOTE:** If users do not have required Python Modules and attempt to run the Python scripts provided, they will receive errors. If errors occur, please install the required Python modules that are missing. Please refer to the [Required Python Module section](#required-python-modules) in regards to which modules are needed for the Python scripts provided.
 
 Please refer to [Python3 documentation](https://docs.python.org/3/installing/index.html) if you need more information on Python modules and how to install Python modules.
 
@@ -73,7 +73,7 @@ Please refer to [Python3 documentation](https://docs.python.org/3/installing/ind
 
 ### Required Python Modules
 
-The required modules to run the Python scripts in *\_import* folder is in the `requirements.txt` file. Please download the modules listed in that file.
+The required modules to run the Python scripts in *\_import* folder are in the *requirements.txt* file. Please download the modules listed in that file.
 
 [Back to TOC](#table-of-contents)
 
@@ -85,7 +85,7 @@ If you are using a Windows system, please refer to the page regarding installing
 
 #### Running Jekyll Locally
 
-Assuming Jekyll is installed, to see your website locally, open up the terminal at the root of the folder of the project. Type in the following command then press enter
+Assuming Jekyll is installed, open up the terminal at the root of the folder of the project to see your website locally. Please enter the following command in the terminal:
 
 ```bash
 bundle exec jekyll serve --config _config.yml,_config_dev.yml
@@ -97,25 +97,26 @@ Another option is to run the shell script *local\_jekyll\_build.sh* located at t
 
 ## Getting Started
 
-This section will briefly discuss the process required to use this project to create a website. Please ensure that you have read the [Prerequisites section](#prerequisites) and the [Software Prerequisites section](#software-prerequisites) before you continue with the following steps. 
+This section will briefly discuss the process required in this project where the outcome is a website created.
+Please ensure that you have read the [Prerequisites section](#prerequisites) and the [Software Prerequisites section](#software-prerequisites) before you continue with the following steps.
 
-1. Configuring the project such as the title of the project, the logo, navigation bar that appears at the top of the page. Refer to [Configuration](#configuration) section for more information.
-2. Using the *record.html* located inside the *\_layouts* folder as a template, work through the file and change it according to your requirements. Refer to the [Editing the Record Pages HTML Template section](#editing-the-record-pages-html-template)  for more information.
-3. Auto generate record pages using the script provided. Refer to the [Generating Record Pages section](#generating-record-pages) for more information.
+1. Customise the project configuration options such as the title of the project, the logo, navigation bar that appears at the top of the page. Refer to [Configuration](#configuration) section for more information.
+2. Using the *record.html* located inside the *\_layouts* folder as a template, work through the file and change it according to your requirements. Refer to the [Editing the Record Pages HTML Template section](#editing-the-record-pages-html-template) for more information.
+3. Auto generate `record pages` using the script provided. Refer to the [Generating Record Pages section](#generating-record-pages) for more information.
 
 [Back to TOC](#table-of-contents)
 
-## Recompiling Changes
+## Uploading changes to Github
 
-This section is for user hosting their website on GitHub, if user is not hosting their website on Github, feel free to skip this section. Because this is a static website, every time users wish to make push their changes (assuming the website is on Github):
+This section is only relevant for users hosting their website on GitHub. Because this is a static website, every time users wish to push their changes (assuming the website is already on Github):
 
-1. Delete the *\_posts* folder
-2. Recompile the record pages by running the *makeSite.py* Python script and additional scripts if needed
-3. `git add` then `git commit` then `git push` to the remote repo
+1. Delete the *\_posts* folder.
+2. Recompile the `record pages` by running the *makeSite.py* Python script and additional scripts if needed.
+3. `git add` then `git commit`, and finally `git push` to the remote repo.
 
 ## Making changes on _config.yml and additional_config.yml
 
-If user is running jekyll locally to see their changes, please stop the server then run it again to see changes made in the *\_config.yml* or *additional_config.yml* file.
+If users are running Jekyll locally to see their changes, please stop the server, then re-run to see the changes made in the *\_config.yml* or *additional_config.yml* file.
 
 [Back to TOC](#table-of-contents)
 
@@ -133,29 +134,27 @@ The *\_config.yml* file contains configuration options for the website. For basi
         - `url`
         - `baseurl`
         - More details can be found on [GitHub article regarding Jekyll configuration](https://help.github.com/articles/configuring-jekyll/) and [Jekyll offical documentation configuration section](https://jekyllrb.com/docs/configuration/).
-    - Rather adding custom data that can be accessed throughout the site via Liquid templating directly into the *\_config* file, users are recommended to add it into the *additional\_config.yml* file which is located in the *\_data* folder.
-    - For example the variable `google-map-marker` can be accessed via `site.data.additional_config.google-map-marker`.
+    - Rather than adding custom data directly into the *\_config.yml* file that can be accessed throughout the site via Liquid templating, users are recommended to add it into the *additional\_config.yml* file which is located in the *\_data* folder.
+    - For example, the variable `google-map-marker` can be accessed via `site.data.additional_config.google-map-marker`.
     - Refer to [Jekyll datafile page](https://jekyllrb.com/docs/datafiles/) for more information.
 
-2. Add your *logo.png* (if you have one) to */assets/img/*.
+2. Add your *logo.png* (if you have one) to the */assets/img/* folder.
 
 3. Open *\_data/socialmedia.yml* and add your own social media links.
 
-4. Open *\_data/navigation.yml* and customize your navigation.
+4. Open *\_data/navigation.yml* and customise your navigation.
   
-    - A navigation link consist of 3 components, `title`, `url`, `side`.
+    - A navigation link consist of 3 components, `title`, `url` and `side`.
   
-      - `title` is the name of the link
+      - `title` is the name of the link.
       - `url` is the relative link to the page.
-      - `side` is whether the link would be located on the left-hand or right-hand side of the navigation bar. It is recommended to put it all in the left hand side to keep the *Search* bar at its current location.
+      - `side` is whether the link would be located on the left-hand or right-hand side of the navigation bar. It is recommended to put the navigation links on the left hand side to keep the *Search* bar at its current location.
 
 5. Open *\_data/language.yml* and translate the theme if necessary.
 
 6. Open *\_data/services.yml* and customize links in the footer.
 
-7. Open *\_data/network.yml* and customize links in the footer.
-
-8. Open *\_data/authors.yml* and edit author information and set default author in config.yml.
+7. Open *\_data/authors.yml* and edit author information and set default author in config.yml.
 
 [Back to TOC](#table-of-contents)
 
@@ -163,15 +162,15 @@ The *\_config.yml* file contains configuration options for the website. For basi
 
 This section will explain the structure of the project and describe the top-level folders for the project:
 
-- _assets_ folder contain the CSS, Javascript used in the project and also images that is used for the site such as the logo and default images for records.
+- _assets_ folder contain the CSS, Javascript used in the project and also images that are used for the site such as the logo and default images for records.
 - *\_data* contains the configuration YAML files for the project.
 - *\_images* folder contains the images used in the site.
-- *\_import* contains scripts to generate record pages from a CSV, link images to associated record page. CSV needed to use those scripts.
-- *\_includes* contains content that can included into files.
-- *\_pages* contains pages of the website
-- *\_posts* contains the YML files for the record pages.
-- *\_sass* contains sass partials of our project.
-- *\_site* contains the generated site that Jekyll outputs. This folder is added into `.gitignore` file.
+- *\_import* contains scripts to generate `record pages` from a CSV and link images to the associated `record page`.
+- *\_includes* contains content that can be included into files.
+- *\_pages* contains pages of the website.
+- *\_posts* contains the YAML files for the `record pages`.
+- *\_sass* contains SASS partials of the project.
+- *\_site* contains the generated site that Jekyll outputs. This folder is added into *.gitignore* file.
 
 [Back to TOC](#table-of-contents)
 
@@ -186,13 +185,13 @@ Before generating record pages, ensure your data is well-formed for minimal hass
 While it is possible to manually link the images to a record page, there are two other ways to link images to a record page.
 
   1. Link local images to record pages using the Python script *local_images.py* in the *\_import* folder. Please see the [preprocessing required for linking local images section](#preprocessing-required-for-linking-local-images) for more information.
-  2. Read a CSV that contains Google Drive links to images for Records and write it to the associated record page using the *google_drive.py* Python script in the *\_import* folder.
+  2. Read a CSV that contains Google Drive Links to images for `records` and write it to the associated record page using the *google_drive.py* Python script in the *\_import* folder.
 
 [Back to TOC](#table-of-contents)
 
 #### File type for images
 
-Please ensure your images are one of the following types so that the script is able to recognise the file as images:
+Please ensure your images are in one of the following types so that the script is able to recognise the file as images:
 
   1. `.png`
   2. `.jpg`
@@ -202,13 +201,13 @@ Please ensure your images are one of the following types so that the script is a
 
 ### Preprocessing Required for Linking Local Images
 
-First, please ensure your files are of the types discussed in the [file type section](#file-type-for-images), otherwise, please convert your image to one of the file type discussed in that discussion.
+First, please ensure your files are of the types discussed in the [file type section](#file-type-for-images), please otherwise convert your image to one of the file type mentioned in that section.
 
-On the root folder of the project, create a folder called `images` if it doesn't exist yet. Inside the `images` folder, group the images by the unique identifier of the record. For each folder, create a new folder inside the `images` folder with the name matching the unique identifier for that record.
+In the root folder of the project, create a folder called *images* if it doesn't exist yet. Inside the *images* folder, group the images by the unique identifier of the record. For each record, create a new folder inside the *images* folder with the name matching the unique identifier for that record.
 
-**Example**:
+**Example:**
 
-For example, given a record with the unique id `1000` and the user wants to have the following images associated with that record:
+For example, given a record with the unique id `1000` and the following images associated with that record:
 
 - `1000_Detail_Profile_of_RT.JPG`
 - `1000_Detail_RT2.JPG`
@@ -218,7 +217,7 @@ For example, given a record with the unique id `1000` and the user wants to have
 - `1000_Overview_year2009.JPG`
 - `1000_RT.JPG`
 
-Then the user will need to create a new folder with the name `1000` and put all those images inside that folder. The below structure is the result.
+The user will then need to create a new folder with the name `1000` and put all those images inside that folder. This results in the following structure:
 
 ```bash
 images/
@@ -236,19 +235,19 @@ images/
 
 ### Preprocessing Required for Images on Google Drive
 
-First, please ensure your files are of the types discussed in the [file type section](#file-type-for-images), otherwise, please convert your image to one of the file type discussed in that discussion.
+First, please ensure your files are of the types mentioned in the [file type section](#file-type-for-images), otherwise convert your image to one of the file type discussed in that discussion.
 
-To use the provided `google_drive.py` Python script. The url of the Google Drive images will need to be extracted into a CSV. The script assumes that the length of the unique identifier is uniform, and that the unique identifier of appended in the name of the file.
+To use the provided `google_drive.py` Python script, the URL of the Google Drive images will need to be extracted into a CSV. The script assumes that the length of the unique identifier is uniform, and that the unique identifier is appended to the start of the file name.
 
-**Example**:
+**Example:**
 
-Assume a record with the unique identifier of `1000` and it have 3 images associated with it:
+Assume a record with the unique identifier of `1000`  has 3 images associated with it:
 
 - `image-one.jpg`
 - `image-two.jpg`
 - `image-three.jpg`
 
-User will then append `1000` to the filename of those images:
+The user will then append `1000` to the filename of those images:
 
 - `1000_image-one.jpg`
 - `1000_image-two.jpg`
@@ -258,9 +257,9 @@ User will then append `1000` to the filename of those images:
 
 ### Adding categories
 
-In the [collections page](#collections-page), record pages are grouped by categories.
+In the [Collections Page](#collections-page), record pages are grouped by categories.
 
-In the following screenshot, there is 5 categories:
+In the following screenshot, there are 5 categories:
   
 - `1000-1999`
 - `2000-2999`
@@ -270,13 +269,13 @@ In the following screenshot, there is 5 categories:
 
 ![Overview of record page](README_screenshots/collections_page_overview.png)
 
-Each categories correspond to a tab, for the purpose of this section, you can ignore the `map` tab, because it is not a category.
+Each category corresponds to a tab. For the purpose of this section, you can ignore the `map` tab, because it is not a category.
 
 There are several pages listed under the `1000-1999` category, such as "TRAP Mound - 1000", "TRAP Mound - 1001". This is because of how the records are organized for this project, however your project could be different.
 
-The `category` front matter variable determines on which category appears in the collection page and which categories the record page will be in.
+The `category` front matter variable determines on which category appears in the collection page and which category or categories the record page will be in.
 
-**Example**:
+**Example:**
 
 ```yml
 ---
@@ -292,7 +291,7 @@ header: no
 
 ```
 
-Notice that the `categories` front matter variable is a list that contains one value, `1000-1999`, this indicates that record page will appear under the `1000-1999` category. It is possible to have a record page under multiple category such as this:
+Notice that the `categories` front matter variable is a list that contains one value, `1000-1999`, this indicates that the record page will appear under the `1000-1999` category. It is possible to have a record page under multiple categories such as this:
 
 ```yml
 categories:
@@ -300,23 +299,23 @@ categories:
 - 2000-2999
 ```
 
-This above will make that record page appear in two categories, namely, `1000-1999` and `2000-2999`.
+This example above will make that record page appear in two categories, namely, `1000-1999` and `2000-2999`.
 
-Please refer to [collections section](#collections-page) for more details regarding the collection page.
+Please refer to [Collections Page section](#collections-page) for more details regarding the collection page.
 
 [Back to TOC](#table-of-contents)
 
 ### Editing the Record Pages HTML Template
 
-The record pages uses *\_layout/record.html* as its layout, to modify the layout for record pages, to understand have the look at the components of the record page html, please see the [Components of the Record Page Template section](#components-of-the-record-page-html-template).
+The record pages use *\_layout/record.html* as its layout. To modify the layout for record pages, users will need to understand the components of the file. Have a look at the components of the record page HTML, please see the [Components of the Record Page Template section](#components-of-the-record-page-html-template).
 
 [Back to TOC](#table-of-contents)
 
 ## Displaying Map
 
-This prpoject uses [Google Map Javascript API](https://developers.google.com/maps/documentation/javascript/tutorial), if the user wish to use Google Map API for this project, please go to Google Map website and get a api key, then go to *additional_config.yml* and set the value of the variable `javascript_google_map` to `true`.
+This project uses [Google Map Javascript API](https://developers.google.com/maps/documentation/javascript/tutorial). If the user wishes to use Google Map API for this project, please go to Google Map website and get a API key, then go to *additional_config.yml* and set the value of the variable `javascript_google_map` to `true`.
 
-**Example**:
+**Example:**
 
 ```yml
 javascript_google_map: true
@@ -332,21 +331,21 @@ Before auto generating record pages, the user can customize the site. This secti
 
 The map functionality for records is split into several components:
 
-1. The `div` element with the id `record_map` is located in the *record.html* file inside the *\_layouts* folder. That div have 3 attributes which stores the title, latitude and longitude of that record.
+1. The `div` element with the id `record_map` is located in the *record.html* file inside the *\_layouts* folder. The element has 3 attributes which store the title, latitude and longitude of that record.
 2. The CSS required for the styling of the `div` element which is in the sass file *\_google\_maps.scss*.
 3. The Javascript function that uses the Maps Javascript API. This is located in the *\_custom_js/record\_pages\_map.js* and importing that script is located in the *\_includes/additional\_helper/additional\_footer.html* file.
 
-The default setting for the Map functionality is that it uses the `latitude` and `longitude` front matter variables of the record page. So if users wish to have a map, the column name in the CSV must also correspond to that name.
+The default setting for the map functionality is that it uses the `latitude` and `longitude` front matter variables of the record page. So if users wish to have a map, the column name in the CSV must also correspond to that name.
 
-**NOTE**: It is fine in the CSV to have the column name "Latitude" and "Longitude" because the script that generate a page for each row then converts the column names to lowercase when it passes it into the Front Matter for the record page.
+**NOTE:** It is fine to have the column names "Latitude" and "Longitude" in the CSV, because the script that generates a page for each row then converts the column names to lowercase when it passes it into the front matter for the record page.
 
-- **IMPORTANT**: The format of the coordinates should also be in *decimal degrees* which is what Google Map API uses.
+- **IMPORTANT:** The format of the coordinates should also be in *decimal degrees* which is what Google Map API uses.
 
 [Back to TOC](#table-of-contents)
 
 #### Markers for Record Maps
 
-The `google-map-marker` variable is in the *additional\_config.yml* file and is used to determine whether to add a marker that points to the location of the record, if the user do not wish to have a Google Map marker then the user can edit the `google-map-marker` variable and change the value from *true* to *false* and if they wish to have the marker back then they would reverse it, changing the value from *false* to *true*.
+The `google-map-marker` variable in the *additional\_config.yml* file is used to determine whether to add a marker that points to the location of the record. If the user does not wish to have a Google Map marker then the user can edit the `google-map-marker` variable and change the value from *true* to *false*, and if they wish to have the marker back then they would reverse it, changing the value from *false* to *true*.
 
 [Back to TOC](#table-of-contents)
 
@@ -358,9 +357,9 @@ The `title` front matter variable in the record page is used as the title of the
 
 ### Adding Additional Metadata Inside the HTML head Tag
 
-In the *\_includes/helper* folder, there is a HTML file called *head.html*, this contains all the default information about the page inside the `<head>` tags, another file named *additional\_head.html* file which is located in the *\_includes/addition\_helper* folder.
+In the *\_includes/helper* folder, there is a HTML file called *head.html*. This contains all the default information about the page inside the `<head>` tags.
 
-If the user want to add additional information that they want enclosed inside the `<head>` tag of the website, it is recommended to add it into the *additional\_head.html* file so that there is no confusion between the default metadata for the template and the new metadata defined by the user, the additional metadata added will be after the default metadata because we are using jekyll `include` tag to include the content from *additional\_head.html* into the *head.html* file. However, the user is free to modify the *head.html* file.
+If the user wants to add additional information enclosed inside the `<head>` tag, it is recommended to add it into the *additional\_head.html* file to distinguish between the default metadata and the new metadata defined by the user. The additional metadata will be added after the default metadata because we are using Jekyll `include` tag to include the content from *additional\_head.html* into the *head.html* file. However, the user is free to modify the *head.html* file.
 
 [Back to TOC](#table-of-contents)
 
@@ -381,15 +380,15 @@ The current search function allows the user to search records by `title` and `re
 
 ### Excluding Files from Search
 
-To explicitly exclude a page from search result. Please add `exclude_from_lunr` variable to the page YAML front matter and set that to `true` with no surrounding quotes, that means, `"true"` or `'true'` is not correct.
+To explicitly exclude a page from search result, please add `exclude_from_lunr` variable to the page front matter and set the value to `true` with no surrounding quotes, that means, `"true"` or `'true'` is not correct.
 
-**Example: Correct value**:
+**Example: Correct value**
 
 ```yml
 exclude_from_lunr: true
 ```
 
-**Example: Incorrect values**:
+**Example: Incorrect values**
 
 ```yml
 exclude_from_lunr: "true"
@@ -405,24 +404,24 @@ exclude_from_lunr: 'true'
 
 Please ensure to read and follow the instructions provided in the [preprocessing required for linking local images section](#preprocessing-required-for-linking-local-images) before proceeding with this section.
 
-Once you done with that, please follow the following steps:
+Please follow the steps listed below:
 
-  1. If you have run the `make_site.py` Python script to generate the record pages, then you can skip this step and move onto step 4, otherwise, please read the [generating record pages section](#generating-record-pages) and follow the instructions in that section.
-  2. Run the `local_images.py` Python script. Once that is done, you have finish linking images from the `images/` folder to its associated record page.
+1. If you have run the *make_site.py* Python script to generate the record pages, then you can skip this step, please otherwise read the [generating record pages section](#generating-record-pages) and follow the instructions in that section.
+2. Run the *local_images.py* Python script. Once that is done, you have finished linking images from the *images\/* folder to its associated record page.
 
-Once you have finish all the steps, run the website to test if the images were successfully associated with the record page.  
+Once you have finished all the steps, run the website to test if the images were successfully associated with the record page.  
 
 [Back to TOC](#table-of-contents)
 
 ### Adding Images for a Record Page from Google Drive
 
-Please ensure to read the [generating google drive link to CSV page](_import/generating-google-drive-link-CSV.md) to generate the CSV that contains the Google Drive CSV.
+Please ensure to read the [Generating Google Drive Link to CSV page](_import/generating-google-drive-link-CSV.md) to generate the CSV that contains the Google Drive CSV.
 
 Once you have the generated CSV, please follow the following steps:
 
-  1. Ensure that the CSV file is in the **\_import** folder.
-  2. Ensure the value for the key `google_drive_csv_file` in [customizable-variables.yaml](_import/customizable-variables.yaml) is the same as the file name of the CSV with the google drive links.
-  3. If you have run the `make_site.py` Python script to generate the record pages, then you can skip this step and move onto step 4, otherwise, please read the [generating record pages section](#generating-record-pages) and follow the instructions in that section.
+  1. Ensure that the CSV file is in the *\_import* folder.
+  2. Ensure the value for the key `google_drive_csv_file` in [customizable-variables.yaml](_import/customizable-variables.yaml) is the same as the file name of the CSV with the Google Drive Links.
+  3. If you have run the `make_site.py` Python script to generate the record pages, you can skip this step and move onto step 4, otherwise, please read the [Generating Record Pages section](#generating-record-pages) and follow the instructions in that section.
   4. Run the `google_drive.py` Python script. Once that is done, you have finish adding images from Google Drive.
 
 Once you have finish all the steps, run the website to test if the images were successfully associated with the record page.
@@ -431,11 +430,11 @@ Once you have finish all the steps, run the website to test if the images were s
 
 ### Photo Gallery for Records
 
-The photo gallery is implemented using [slick](http://kenwheeler.github.io/slick/). There is two photo gallery in a record page, one is photo gallery used to display photos for that record and the second photo gallery is used as a navigation. The implementation is split into three parts:
+The photo gallery is implemented using [slick](http://kenwheeler.github.io/slick/). There are two photo galleries in a record page, one is used to display photos for that record and the second is used as a navigation. The implementation is split into three parts:
 
 1. The HTML structure is defined in the template HTML page for the records, which by default is in *\_layouts/record.html*.
 2. The CSS that is used to style the photo gallery such as the the navigation buttons for the photo gallery is in *assets/slick/slick-theme.css*.
-3. The Javascript is used to defined the logic of the photo gallery is in *assets/custom_js/slick-settings.js*.
+3. The Javascript is used to define the logic of the photo gallery is in *assets/custom_js/slick-settings.js*.
 
 [Back to TOC](#table-of-contents)
 
@@ -443,9 +442,9 @@ The photo gallery is implemented using [slick](http://kenwheeler.github.io/slick
 
 ### Collections Page
 
-The *\_pages/pages-root-folder/collections.md* is the web page that is used to display the links to all the record pages. The organization of the pages is grouped by `categories` where one tab correspond to a `category`. A record page can appear in one or more `category`. To add a record page to belong to a `category`, add the name of the `category` in the YAML list for that record page under the *categories* key.
+The *\_pages/pages-root-folder/collections.md* is the web page that is used to display the links to all the record pages. The organization of the pages is grouped by `categories` where one tab corresponds to a `category`. A record page can appear in one or more `category`. To add a record page under a `category`, add the name of the category in the YAML list for that record page under the `categories` key.
 
-If user wish to change the content of the page, they can edit *collections.md* file in the *\_pages/pages-root-folder/* folder.
+If the user wishes to change the content of the page, they can edit the *collections.md* file in the *\_pages/pages-root-folder/* folder.
 
 [Back to TOC](#table-of-contents)
 
@@ -460,7 +459,7 @@ The layout file that *\_import/template.yaml* uses is the *\_layout/record.html*
 
 ![Overview of record page](README_screenshots/record_page_overview_marked.png)
 
-1. Subheadline - a subheadline
+1. Subheadline
 2. Title
 3. Table
 4. Photo gallery
@@ -471,7 +470,7 @@ The layout file that *\_import/template.yaml* uses is the *\_layout/record.html*
 ## Generating Record Pages
 
 1. Edit the [customizable-variables.yaml](_import/customizable-variables.yaml) files to suit your requirements.
-2. Customize the category_generation.py to your requirements. Refer [here](_import/README.md) for more information regarding the script. Refer to [adding categories section](#adding-categories) for more information about categories.
+2. Customize the *category_generation.py* to your requirements. Refer [here](_import/README.md) for more information regarding the script. Refer to [Adding Categories section](#adding-categories) for more information about `categories`.
 3. Open your terminal and install all the required dependencies listed in the `requirements.txt` file.
 4. Run the Python3 script *makeSite.py*.
 
@@ -481,7 +480,7 @@ In the *\_import* folder there is a Python script named *makeSite.py*. The purpo
 
 **NOTE**: The unique identifier will be stored into the front matter variable `record_id`. You would need to provide the column name (case-sensitive) so that the script can extract the id for the record.
 
-**Example**:
+**Example:**
 
 In a CSV file with 3 columns, '_TRAP ID_', '_Max diameter_', '_Surrounding Land Use_' and the values are, 1000, 34, "Annual Agriculture" for a row. then in the corresponding record page for that row, the front matter variable will be in the following format and we choose '_TRAP ID_' as the `record_id`, then the following code snippet will be the result.
 
