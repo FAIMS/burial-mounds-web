@@ -471,18 +471,18 @@ The layout file that *\_import/template.yaml* uses is the *\_layout/record.html*
 
 1. Edit the [customizable-variables.yaml](_import/customizable-variables.yaml) files to suit your requirements.
 2. Customize the *category_generation.py* to your requirements. Refer [here](_import/README.md) for more information regarding the script. Refer to [Adding Categories section](#adding-categories) for more information about `categories`.
-3. Open your terminal and install all the required dependencies listed in the `requirements.txt` file.
+3. Open your terminal and install the required dependencies listed in the `requirements.txt` file.
 4. Run the Python3 script *makeSite.py*.
 
-The rest of this section will discuss on how to generate record pages in detail.
+The rest of this section will discuss how to generate record pages in detail.
 
 In the *\_import* folder there is a Python script named *makeSite.py*. The purpose of the script is to generate a separate YAML file for each row in the CSV. Each column corresponds to a front matter variable in the YAML file. The variable will be the name of the column with all space characters replaced with the underscore character `_` and the characters are converted to all lowercase (**EXCEPT** the unique identifier) .
 
-**NOTE**: The unique identifier will be stored into the front matter variable `record_id`. You would need to provide the column name (case-sensitive) so that the script can extract the id for the record.
+**NOTE:** The unique identifier will be stored into the front matter variable `record_id`. You would need to provide the column name (case-sensitive) so that the script can extract the id for the record.
 
 **Example:**
 
-In a CSV file with 3 columns, '_TRAP ID_', '_Max diameter_', '_Surrounding Land Use_' and the values are, 1000, 34, "Annual Agriculture" for a row. then in the corresponding record page for that row, the front matter variable will be in the following format and we choose '_TRAP ID_' as the `record_id`, then the following code snippet will be the result.
+There is a CSV file with 3 columns, '_TRAP ID_', '_Max diameter_', '_Surrounding Land Use_', where the values are respectively 1000, 34, "Annual Agriculture" for a row. Then in the corresponding record page for that row, the front matter variable will be in the following format. If we choose '_TRAP ID_' as the `record_id`, the following code snippet will be the result.
 
 ```yml
 record_id: '1000'
@@ -494,7 +494,7 @@ surrounding_land_use: Annual Agriculture
 
 ## Record Page
 
-A record page is a page in the *\_post* folder. It contains front matter variables which stores the attributes of that record. The front matter variables are enclosed between triple dashes lines.
+A record page is a page in the *\_post* folder. It contains front matter variables which store the attributes of that record. The front matter variables are enclosed between triple dashes.
 
 Here is a simple example:
 
@@ -507,16 +507,16 @@ record_id: '1000'
 ---
 ```
 
-In the example above, there are three front matter variable, namely, `layout`, `title`, and `record_id`. The front matter variables are used by the template to display data specific to that Record.
+In the example above, there are three front matter variable, namely `layout`, `title`, and `record_id`. The front matter variables are used by the template to display data specific to that record.
 
-**NOTE**: The front matter variables must be the first thing in the file.
+**NOTE:** The front matter variables must be the first thing in the file.
 
 [Back to TOC](#table-of-contents)
 
 ## Terminology
 
 - `record`: a row in the CSV.
-- `record page`: a markdown page that contains front matter variables where a front matter variable correspond to a column and it's value for that `record`.
+- `record page`: a markdown page that contains front matter variables, where a front matter variable corresponds to a column and its value for that `record`.
   - A [*post*](https://jekyllrb.com/docs/posts/) in Jekyll is in our case a record page.
 - `attribute`: a column in the CSV.
   
