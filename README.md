@@ -152,7 +152,7 @@ The *\_config.yml* file contains configuration options for the website. For basi
 
 5. Open *\_data/language.yml* and translate the theme if necessary.
 
-6. Open *\_data/services.yml* and customize links in the footer.
+6. Open *\_data/services.yml* and customise links in the footer.
 
 7. Open *\_data/authors.yml* and edit author information and set default author in config.yml.
 
@@ -162,7 +162,7 @@ The *\_config.yml* file contains configuration options for the website. For basi
 
 This section will explain the structure of the project and describe the top-level folders for the project:
 
-- _assets_ folder contain the CSS, Javascript used in the project and also images that are used for the site such as the logo and default images for records.
+- _assets_ folder contain the CSS, Javascript used in the project and also images that are used for the site such as the logo and default images for `records`.
 - *\_data* contains the configuration YAML files for the project.
 - *\_images* folder contains the images used in the site.
 - *\_import* contains scripts to generate `record pages` from a CSV and link images to the associated `record page`.
@@ -176,16 +176,16 @@ This section will explain the structure of the project and describe the top-leve
 
 ## Preprocessing
 
-Before generating record pages, ensure your data is well-formed for minimal hassle. A record should have a column that contains the unique identifier for that record.
+Before generating `record pages`, ensure your data is well-formed for minimal hassle. A `record` should have a column that contains the unique identifier for that `record`.
 
 [Back to TOC](#table-of-contents)
 
 ### Preprocessing for Adding Images
 
-While it is possible to manually link the images to a record page, there are two other ways to link images to a record page.
+While it is possible to manually link the images to a `record page`, there are two other ways to link images to a `record page`.
 
-  1. Link local images to record pages using the Python script *local_images.py* in the *\_import* folder. Please see the [preprocessing required for linking local images section](#preprocessing-required-for-linking-local-images) for more information.
-  2. Read a CSV that contains Google Drive Links to images for `records` and write it to the associated record page using the *google_drive.py* Python script in the *\_import* folder.
+  1. Link local images to `record pages` using the Python script *local_images.py* in the *\_import* folder. Please see the [preprocessing required for linking local images section](#preprocessing-required-for-linking-local-images) for more information.
+  2. Read a CSV that contains Google Drive Links to images for `records` and write it to the associated `record page` using the *google_drive.py* Python script in the *\_import* folder.
 
 [Back to TOC](#table-of-contents)
 
@@ -203,11 +203,11 @@ Please ensure your images are in one of the following types so that the script i
 
 First, please ensure your files are of the types discussed in the [file type section](#file-type-for-images), please otherwise convert your image to one of the file type mentioned in that section.
 
-In the root folder of the project, create a folder called *images* if it doesn't exist yet. Inside the *images* folder, group the images by the unique identifier of the record. For each record, create a new folder inside the *images* folder with the name matching the unique identifier for that record.
+In the root folder of the project, create a folder called *images* if it doesn't exist yet. Inside the *images* folder, group the images by the unique identifier of the `record`. For each `record`, create a new folder inside the *images* folder with the name matching the unique identifier for that `record`.
 
 **Example:**
 
-For example, given a record with the unique id `1000` and the following images associated with that record:
+For example, given a `record` with the unique id `1000` and the following images associated with that `record`:
 
 - `1000_Detail_Profile_of_RT.JPG`
 - `1000_Detail_RT2.JPG`
@@ -237,11 +237,11 @@ images/
 
 First, please ensure your files are of the types mentioned in the [file type section](#file-type-for-images), otherwise convert your image to one of the file type discussed in that discussion.
 
-To use the provided `google_drive.py` Python script, the URL of the Google Drive images will need to be extracted into a CSV. The script assumes that the length of the unique identifier is uniform, and that the unique identifier is appended to the start of the file name.
+To use the provided *google_drive.py* Python script, the URL of the Google Drive images will need to be extracted into a CSV. The script assumes that the length of the unique identifier is uniform, and that the unique identifier is appended to the start of the file name.
 
 **Example:**
 
-Assume a record with the unique identifier of `1000`  has 3 images associated with it:
+Assume a `record` with the unique identifier of `1000`  has 3 images associated with it:
 
 - `image-one.jpg`
 - `image-two.jpg`
@@ -257,7 +257,7 @@ The user will then append `1000` to the filename of those images:
 
 ### Adding categories
 
-In the [Collections Page](#collections-page), record pages are grouped by categories.
+In the [Collections Page](#collections-page), `record pages` are grouped by categories.
 
 In the following screenshot, there are 5 categories:
   
@@ -271,9 +271,9 @@ In the following screenshot, there are 5 categories:
 
 Each category corresponds to a tab. For the purpose of this section, you can ignore the `map` tab, because it is not a category.
 
-There are several pages listed under the `1000-1999` category, such as "TRAP Mound - 1000", "TRAP Mound - 1001". This is because of how the records are organized for this project, however your project could be different.
+There are several pages listed under the `1000-1999` category, such as "TRAP Mound - 1000", "TRAP Mound - 1001". This is because of how the `records` are organized for this project, however your project could be different.
 
-The `category` front matter variable determines on which category appears in the collection page and which category or categories the record page will be in.
+The `category` front matter variable determines on which category appears in the collection page and which category or categories the `record page` will be in.
 
 **Example:**
 
@@ -291,7 +291,7 @@ header: no
 
 ```
 
-Notice that the `categories` front matter variable is a list that contains one value, `1000-1999`, this indicates that the record page will appear under the `1000-1999` category. It is possible to have a record page under multiple categories such as this:
+Notice that the `categories` front matter variable is a list that contains one value, `1000-1999`, this indicates that the `record page` will appear under the `1000-1999` category. It is possible to have a `record page` under multiple categories such as this:
 
 ```yml
 categories:
@@ -299,7 +299,7 @@ categories:
 - 2000-2999
 ```
 
-This example above will make that record page appear in two categories, namely, `1000-1999` and `2000-2999`.
+This example above will make that `record page` appear in two categories, namely, `1000-1999` and `2000-2999`.
 
 Please refer to [Collections Page section](#collections-page) for more details regarding the collection page.
 
@@ -307,7 +307,7 @@ Please refer to [Collections Page section](#collections-page) for more details r
 
 ### Editing the Record Pages HTML Template
 
-The record pages use *\_layout/record.html* as its layout. To modify the layout for record pages, users will need to understand the components of the file. Have a look at the components of the record page HTML, please see the [Components of the Record Page Template section](#components-of-the-record-page-html-template).
+The `record pages` use *\_layout/record.html* as its layout. To modify the layout for `record pages`, users will need to understand the components of the file. Have a look at the components of the `record page` HTML, please see the [Components of the Record Page Template section](#components-of-the-record-page-html-template).
 
 [Back to TOC](#table-of-contents)
 
@@ -323,21 +323,21 @@ javascript_google_map: true
 
 ## Customization
 
-Before auto generating record pages, the user can customize the site. This section will discuss some customizations available to the user.
+Before auto generating `record pages`, the user can customise the site. This section will discuss some customizations available to the user.
 
 [Back to TOC](#table-of-contents)
 
 ### Map Functionality for Records
 
-The map functionality for records is split into several components:
+The map functionality for `records` is split into several components:
 
-1. The `div` element with the id `record_map` is located in the *record.html* file inside the *\_layouts* folder. The element has 3 attributes which store the title, latitude and longitude of that record.
+1. The `div` element with the id `record_map` is located in the *record.html* file inside the *\_layouts* folder. The element has 3 attributes which store the title, latitude and longitude of that `record`.
 2. The CSS required for the styling of the `div` element which is in the sass file *\_google\_maps.scss*.
 3. The Javascript function that uses the Maps Javascript API. This is located in the *\_custom_js/record\_pages\_map.js* and importing that script is located in the *\_includes/additional\_helper/additional\_footer.html* file.
 
-The default setting for the map functionality is that it uses the `latitude` and `longitude` front matter variables of the record page. So if users wish to have a map, the column name in the CSV must also correspond to that name.
+The default setting for the map functionality is that it uses the `latitude` and `longitude` front matter variables of the `record page`. So if users wish to have a map, the column name in the CSV must also correspond to that name.
 
-**NOTE:** It is fine to have the column names "Latitude" and "Longitude" in the CSV, because the script that generates a page for each row then converts the column names to lowercase when it passes it into the front matter for the record page.
+**NOTE:** It is fine to have the column names "Latitude" and "Longitude" in the CSV, because the script that generates a page for each row then converts the column names to lowercase when it passes it into the front matter for the `record page`.
 
 - **IMPORTANT:** The format of the coordinates should also be in *decimal degrees* which is what Google Map API uses.
 
@@ -345,13 +345,13 @@ The default setting for the map functionality is that it uses the `latitude` and
 
 #### Markers for Record Maps
 
-The `google-map-marker` variable in the *additional\_config.yml* file is used to determine whether to add a marker that points to the location of the record. If the user does not wish to have a Google Map marker then the user can edit the `google-map-marker` variable and change the value from *true* to *false*, and if they wish to have the marker back then they would reverse it, changing the value from *false* to *true*.
+The `google-map-marker` variable in the *additional\_config.yml* file is used to determine whether to add a marker that points to the location of the `record`. If the user does not wish to have a Google Map marker then the user can edit the `google-map-marker` variable and change the value from *true* to *false*, and if they wish to have the marker back then they would reverse it, changing the value from *false* to *true*.
 
 [Back to TOC](#table-of-contents)
 
 #### Title of the Markers for Record Maps
 
-The `title` front matter variable in the record page is used as the title of the Google Map marker.
+The `title` front matter variable in the `record page` is used as the title of the Google Map marker.
 
 [Back to TOC](#table-of-contents)
 
@@ -365,13 +365,13 @@ If the user wants to add additional information enclosed inside the `<head>` tag
 
 ### Adding Additional Stylesheet or Javascript
 
-For users that wish to customize the styling and behavior of their website by adding additional stylesheet or Javascript, please refer to the [additional additional javascript or stylesheet document](adding-additional-javascript-or-stylesheet.md) for more information.
+For users that wish to customise the styling and behavior of their website by adding additional stylesheet or Javascript, please refer to the [additional additional javascript or stylesheet document](adding-additional-javascript-or-stylesheet.md) for more information.
 
 [Back to TOC](#table-of-contents)
 
 ### Search Functionality
 
-The current search function allows the user to search records by `title` and `record_id` variables. If users wish to customize their search, please read this [tutorial](https://learn.cloudcannon.com/jekyll/jekyll-search-using-lunr-js/) which is used as the starting point to implement searching in this project.
+The current search function allows the user to search `records` by `title` and `record_id` variables. If users wish to customize their search, please read this [tutorial](https://learn.cloudcannon.com/jekyll/jekyll-search-using-lunr-js/) which is used as the starting point to implement searching in this project.
 
 - *pages/search.md* is the file which contains the search data.
 - *assets/js/search.js* is the file which contains the Javascript logic to perform the search.
@@ -406,10 +406,10 @@ Please ensure to read and follow the instructions provided in the [preprocessing
 
 Please follow the steps listed below:
 
-1. If you have run the *make_site.py* Python script to generate the record pages, then you can skip this step, please otherwise read the [generating record pages section](#generating-record-pages) and follow the instructions in that section.
-2. Run the *local_images.py* Python script. Once that is done, you have finished linking images from the *images\/* folder to its associated record page.
+1. If you have run the *make_site.py* Python script to generate the `record pages`, then you can skip this step, please otherwise read the [generating `record pages` section](#generating-record-pages) and follow the instructions in that section.
+2. Run the *local_images.py* Python script. Once that is done, you have finished linking images from the *images\/* folder to its associated `record page`.
 
-Once you have finished all the steps, run the website to test if the images were successfully associated with the record page.  
+Once you have finished all the steps, run the website to test if the images were successfully associated with the `record page`.  
 
 [Back to TOC](#table-of-contents)
 
@@ -421,18 +421,18 @@ Once you have the generated CSV, please follow the following steps:
 
   1. Ensure that the CSV file is in the *\_import* folder.
   2. Ensure the value for the key `google_drive_csv_file` in [customizable-variables.yaml](_import/customizable-variables.yaml) is the same as the file name of the CSV with the Google Drive Links.
-  3. If you have run the `make_site.py` Python script to generate the record pages, you can skip this step and move onto step 4, otherwise, please read the [Generating Record Pages section](#generating-record-pages) and follow the instructions in that section.
-  4. Run the `google_drive.py` Python script. Once that is done, you have finish adding images from Google Drive.
+  3. If you have run the *make_site.py* Python script to generate the `record pages`, you can skip this step and move onto step 4, otherwise, please read the [Generating Record Pages section](#generating-record-pages) and follow the instructions in that section.
+  4. Run the *google_drive.py* Python script. Once that is done, you have finish adding images from Google Drive.
 
-Once you have finish all the steps, run the website to test if the images were successfully associated with the record page.
+Once you have finish all the steps, run the website to test if the images were successfully associated with the `record page`.
 
 [Back to TOC](#table-of-contents)
 
 ### Photo Gallery for Records
 
-The photo gallery is implemented using [slick](http://kenwheeler.github.io/slick/). There are two photo galleries in a record page, one is used to display photos for that record and the second is used as a navigation. The implementation is split into three parts:
+The photo gallery is implemented using [slick](http://kenwheeler.github.io/slick/). There are two photo galleries in a `record page`, one is used to display photos for that `record` and the second is used as a navigation. The implementation is split into three parts:
 
-1. The HTML structure is defined in the template HTML page for the records, which by default is in *\_layouts/record.html*.
+1. The HTML structure is defined in the template HTML page for the `records`, which by default is in *\_layouts/record.html*.
 2. The CSS that is used to style the photo gallery such as the the navigation buttons for the photo gallery is in *assets/slick/slick-theme.css*.
 3. The Javascript is used to define the logic of the photo gallery is in *assets/custom_js/slick-settings.js*.
 
@@ -442,7 +442,7 @@ The photo gallery is implemented using [slick](http://kenwheeler.github.io/slick
 
 ### Collections Page
 
-The *\_pages/pages-root-folder/collections.md* is the web page that is used to display the links to all the record pages. The organization of the pages is grouped by `categories` where one tab corresponds to a `category`. A record page can appear in one or more `category`. To add a record page under a `category`, add the name of the category in the YAML list for that record page under the `categories` key.
+The *\_pages/pages-root-folder/collections.md* is the web page that is used to display the links to all the `record pages`. The organization of the pages is grouped by `categories` where one tab corresponds to a `category`. A `record page` can appear in one or more `category`. To add a `record page` under a `category`, add the name of the category in the YAML list for that `record page` under the `categories` key.
 
 If the user wishes to change the content of the page, they can edit the *collections.md* file in the *\_pages/pages-root-folder/* folder.
 
@@ -450,7 +450,7 @@ If the user wishes to change the content of the page, they can edit the *collect
 
 ### Record Page Front Matter Template
 
-The YAML template for record pages is the *\_import/template.yaml* file. The script that will generate record pages will use that as a template for the record pages.
+The YAML template for `record pages` is the *\_import/template.yaml* file. The script that will generate `record pages` will use that as a template for the `record pages`.
 The layout file that *\_import/template.yaml* uses is the *\_layout/record.html* file.
 
 [Back to TOC](#table-of-contents)
@@ -471,18 +471,18 @@ The layout file that *\_import/template.yaml* uses is the *\_layout/record.html*
 
 1. Edit the [customizable-variables.yaml](_import/customizable-variables.yaml) files to suit your requirements.
 2. Customize the *category_generation.py* to your requirements. Refer [here](_import/README.md) for more information regarding the script. Refer to [Adding Categories section](#adding-categories) for more information about `categories`.
-3. Open your terminal and install the required dependencies listed in the `requirements.txt` file.
+3. Open your terminal and install the required dependencies listed in the *requirements.txt* file.
 4. Run the Python3 script *makeSite.py*.
 
-The rest of this section will discuss how to generate record pages in detail.
+The rest of this section will discuss how to generate `record pages` in detail.
 
 In the *\_import* folder there is a Python script named *makeSite.py*. The purpose of the script is to generate a separate YAML file for each row in the CSV. Each column corresponds to a front matter variable in the YAML file. The variable will be the name of the column with all space characters replaced with the underscore character `_` and the characters are converted to all lowercase (**EXCEPT** the unique identifier) .
 
-**NOTE:** The unique identifier will be stored into the front matter variable `record_id`. You would need to provide the column name (case-sensitive) so that the script can extract the id for the record.
+**NOTE:** The unique identifier will be stored into the front matter variable `record_id`. You would need to provide the column name (case-sensitive) so that the script can extract the id for the `record`.
 
 **Example:**
 
-There is a CSV file with 3 columns, '_TRAP ID_', '_Max diameter_', '_Surrounding Land Use_', where the values are respectively 1000, 34, "Annual Agriculture" for a row. Then in the corresponding record page for that row, the front matter variable will be in the following format. If we choose '_TRAP ID_' as the `record_id`, the following code snippet will be the result.
+There is a CSV file with 3 columns, '_TRAP ID_', '_Max diameter_', '_Surrounding Land Use_', where the values are respectively 1000, 34, "Annual Agriculture" for a row. Then in the corresponding `record page` for that row, the front matter variable will be in the following format. If we choose '_TRAP ID_' as the `record_id`, the following code snippet will be the result.
 
 ```yml
 record_id: '1000'
@@ -494,7 +494,7 @@ surrounding_land_use: Annual Agriculture
 
 ## Record Page
 
-A record page is a page in the *\_post* folder. It contains front matter variables which store the attributes of that record. The front matter variables are enclosed between triple dashes.
+A `record page` is a page in the *\_post* folder. It contains front matter variables which store the attributes of that `record`. The front matter variables are enclosed between triple dashes.
 
 Here is a simple example:
 
@@ -507,7 +507,7 @@ record_id: '1000'
 ---
 ```
 
-In the example above, there are three front matter variable, namely `layout`, `title`, and `record_id`. The front matter variables are used by the template to display data specific to that record.
+In the example above, there are three front matter variable, namely `layout`, `title`, and `record_id`. The front matter variables are used by the template to display data specific to that `record`.
 
 **NOTE:** The front matter variables must be the first thing in the file.
 
@@ -517,7 +517,7 @@ In the example above, there are three front matter variable, namely `layout`, `t
 
 - `record`: a row in the CSV.
 - `record page`: a markdown page that contains front matter variables, where a front matter variable corresponds to a column and its value for that `record`.
-  - A [*post*](https://jekyllrb.com/docs/posts/) in Jekyll is in our case a record page.
+  - A [*post*](https://jekyllrb.com/docs/posts/) in Jekyll is in our case a `record page`.
 - `attribute`: a column in the CSV.
   
 

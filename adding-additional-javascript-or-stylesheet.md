@@ -4,19 +4,19 @@ Users wishing to add more additional styling to their website, please refer to t
 
 ## Adding Additional Stylesheet
 
-If users wish to add additional stylesheets, it is recommended that they create the css file in the *\_assets/custom_css* folder and link the stylesheet in the *additional\_head.html* file.
+If users wish to add additional stylesheets, it is recommended that they create the CSS file in the *\_assets/custom_css* folder and link the stylesheet in the *additional\_head.html* file.
 
 ### Adding Additional Sass
 
-If you are using sass, you can create scss files in the *\_sass* folder and then import the file in *assets/custom_css/custom_css.scss*. No additional linking other than importing it in is needed because the css generated from the sass file is already linked.
+If you are using SASS, you can create SCSS files in the *\_sass* folder and then import the file in *assets/custom_css/custom_css.scss*, because the CSS generated from the *custom_css.scss* is included in the base layout *default.html* via *additional_head.html*.
 
-Please refer to [Jekyll official documentation regarding sass](https://jekyllrb.com/docs/assets/#sassscss) for more information.
+Please refer to [Jekyll official documentation regarding SASS](https://jekyllrb.com/docs/assets/#sassscss) for more information.
 
 ## Adding Additional Javascript
 
-In the *\_includes/helper* folder, there is a html file called *additional\_footer.html*, users are recommended to put additional javascript in this file. If users wish to add *Javascript* that uses liquid tags and variables then please add the *Javascript* code inside the file, enclosed within `<script>` tags. Alternatively, users can add the set of triple dashes at the top of their file, which will get Jekyll to process the file.
+In the *\_includes/helper* folder, there is a HTML file called *additional\_footer.html*, users are recommended to put additional Javascript in this file. If users wish to add Javascript that uses liquid tags and variables then please add the Javascript code inside the file, enclosed within the `<script>` tags. Alternatively, users can add the set of triple dashes at the top of their file, which will get Jekyll to process the file.
 
-Below is the Javascript code that uses Google Maps API to generate maps for record for the Burial Mounds website which uses Javascript to get the values of the attributes `record-lat` and `record-lng` for the HTML element `record_map`. The values of these element is the latitude and longitude value of that particular record.
+Below is the Javascript code that uses Google Maps API to generate the map for records for the Burial Mounds website which uses Javascript to get the values of the attributes `record-lat` and `record-lng` for the HTML element `record_map`. The values of these element is the latitude and longitude value of that particular record.
 
 ```javascript
 ---
