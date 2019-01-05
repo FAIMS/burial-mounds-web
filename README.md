@@ -371,7 +371,7 @@ For users that wish to customise the styling and behavior of their website by ad
 
 ### Search Functionality
 
-The current search function allows the user to search `records` by `title` and `record_id` variables. If users wish to customize their search, please read this [tutorial](https://learn.cloudcannon.com/jekyll/jekyll-search-using-lunr-js/) which is used as the starting point to implement searching in this project.
+The current search function allows the user to search `records` by `title` and `record_id` variables. If users wish to customise their search, please read this [tutorial](https://learn.cloudcannon.com/jekyll/jekyll-search-using-lunr-js/) which is used as the starting point to implement searching in this project.
 
 - *pages/search.md* is the file which contains the search data.
 - *assets/js/search.js* is the file which contains the Javascript logic to perform the search.
@@ -470,7 +470,7 @@ The layout file that *\_import/template.yaml* uses is the *\_layout/record.html*
 ## Generating Record Pages
 
 1. Edit the [customizable-variables.yaml](_import/customizable-variables.yaml) files to suit your requirements.
-2. Customize the *category_generation.py* to your requirements. Refer [here](_import/README.md) for more information regarding the script. Refer to [Adding Categories section](#adding-categories) for more information about `categories`.
+2. customise the *category_generation.py* to your requirements. Refer [here](_import/README.md) for more information regarding the script. Refer to [Adding Categories section](#adding-categories) for more information about `categories`.
 3. Open your terminal and install the required dependencies listed in the *requirements.txt* file.
 4. Run the Python3 script *makeSite.py*.
 
