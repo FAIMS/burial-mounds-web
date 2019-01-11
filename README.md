@@ -1,8 +1,7 @@
 # README <!-- omit in toc -->
 
-## Table of Contents
+## Table of Contents <!-- omit in toc -->
 
-- [Table of Contents](#table-of-contents)
 - [Introduction](#introduction)
 - [Prerequisites](#prerequisites)
 - [Software Prerequisites](#software-prerequisites)
