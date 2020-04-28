@@ -72,7 +72,7 @@ Please refer to [Python3 documentation](https://docs.python.org/3/installing/ind
 
 ### Required Python Modules
 
-The required modules to run the Python scripts in *\_import* folder are in the *requirements.txt* file. Please download the modules listed in that file.
+The required modules to run the Python scripts in *\_import* folder are in the *requirements.txt* file. Please download the modules listed in that file. Navigate to the *\_import folder* and run ```python3 install -r requirements.txt```
 
 [Back to TOC](#table-of-contents)
 
